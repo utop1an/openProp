@@ -1,0 +1,1728 @@
+{
+  "aggregate": {
+    "0.00": {
+      "estimated_parameters": {
+        "absolute_false_positive_error": {
+          "maximum": 8.390833049992938e-05,
+          "mean": 1.7581666099985875e-05,
+          "minimum": 1e-06,
+          "standard_deviation": 3.3163332199971755e-05
+        },
+        "false_positive_rate": {
+          "maximum": 8.390833049992938e-05,
+          "mean": 1.7581666099985875e-05,
+          "minimum": 1e-06,
+          "standard_deviation": 3.3163332199971755e-05
+        },
+        "final_training_observation_nll": {
+          "maximum": 22.53851352899561,
+          "mean": 22.43169216703115,
+          "minimum": 22.31825778038855,
+          "standard_deviation": 0.074185836405934
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2519816885125691,
+          "mean": 0.2448428857326366,
+          "minimum": 0.2373226995384702,
+          "standard_deviation": 0.005249678806416504
+        },
+        "initial_training_observation_nll": {
+          "maximum": 22.618215469732565,
+          "mean": 22.512223716079866,
+          "minimum": 22.40104797657653,
+          "standard_deviation": 0.07372325349915416
+        },
+        "iterations": {
+          "maximum": 94.0,
+          "mean": 45.0,
+          "minimum": 20.0,
+          "standard_deviation": 25.37715508089904
+        }
+      },
+      "estimated_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.012677300461529789,
+          "mean": 0.005949789672391043,
+          "minimum": 0.000890700799305616,
+          "standard_deviation": 0.004330699480625588
+        },
+        "exact_test_nll": {
+          "maximum": 2.2936357333724784,
+          "mean": 2.28052770754718,
+          "minimum": 2.243895358418039,
+          "standard_deviation": 0.01866377861622275
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2519816885125691,
+          "mean": 0.2448428857326366,
+          "minimum": 0.2373226995384702,
+          "standard_deviation": 0.005249678806416504
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15067275569174673,
+          "mean": 0.14849032476764462,
+          "minimum": 0.14613505478181157,
+          "standard_deviation": 0.0016774594767507396
+        }
+      },
+      "interval_only": {
+        "absolute_hazard_error": {
+          "maximum": 0.018837271682944023,
+          "mean": 0.010273136758155776,
+          "minimum": 0.00014314507954926725,
+          "standard_deviation": 0.007286393275627396
+        },
+        "exact_test_nll": {
+          "maximum": 2.2970047892907246,
+          "mean": 2.2815196450282773,
+          "minimum": 2.2452284298000844,
+          "standard_deviation": 0.018825511218817544
+        },
+        "hazard_per_hour": {
+          "maximum": 0.268837271682944,
+          "mean": 0.2602731367581558,
+          "minimum": 0.25014314507954927,
+          "standard_deviation": 0.007286393275627396
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15136457437639778,
+          "mean": 0.1486865166022614,
+          "minimum": 0.1459603505684167,
+          "standard_deviation": 0.001929412192059334
+        }
+      },
+      "logged_observation_process": {
+        "absolute_hazard_error": {
+          "maximum": 0.012807325963644284,
+          "mean": 0.006059292415055812,
+          "minimum": 0.00013654563218035154,
+          "standard_deviation": 0.004600981766350807
+        },
+        "exact_test_nll": {
+          "maximum": 2.2936708015831835,
+          "mean": 2.2805518639947056,
+          "minimum": 2.243901247465283,
+          "standard_deviation": 0.018673074113381635
+        },
+        "hazard_per_hour": {
+          "maximum": 0.25181241706249907,
+          "mean": 0.24472029266281595,
+          "minimum": 0.23719267403635572,
+          "standard_deviation": 0.005478024116333413
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15068746850261147,
+          "mean": 0.14849685374266333,
+          "minimum": 0.146139301030612,
+          "standard_deviation": 0.001680075506583138
+        }
+      },
+      "perfect_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.012677642967800273,
+          "mean": 0.005945162183369884,
+          "minimum": 0.0008913646014729049,
+          "standard_deviation": 0.004331456175869446
+        },
+        "exact_test_nll": {
+          "maximum": 2.293635715958476,
+          "mean": 2.2805276115502875,
+          "minimum": 2.2438953807056077,
+          "standard_deviation": 0.01866370527093747
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2519810238594536,
+          "mean": 0.24484724736041155,
+          "minimum": 0.23732235703219973,
+          "standard_deviation": 0.005249343408966802
+        },
+        "integrated_brier_score": {
+          "maximum": 0.1506727470291599,
+          "mean": 0.14849029474052572,
+          "minimum": 0.14613506589708075,
+          "standard_deviation": 0.0016774491313494458
+        }
+      }
+    },
+    "0.02": {
+      "estimated_parameters": {
+        "absolute_false_positive_error": {
+          "maximum": 0.005447341915941768,
+          "mean": 0.0033727843555216145,
+          "minimum": 0.0009252542044044555,
+          "standard_deviation": 0.0017735569967474863
+        },
+        "false_positive_rate": {
+          "maximum": 0.02544734191594177,
+          "mean": 0.021143294298147472,
+          "minimum": 0.016126798725343866,
+          "standard_deviation": 0.003635114424249503
+        },
+        "final_training_observation_nll": {
+          "maximum": 22.600682803670523,
+          "mean": 22.4917722395557,
+          "minimum": 22.37079117758893,
+          "standard_deviation": 0.07643743933331669
+        },
+        "hazard_per_hour": {
+          "maximum": 0.25244503842488153,
+          "mean": 0.24469422641682953,
+          "minimum": 0.23696403484005524,
+          "standard_deviation": 0.005813297225573272
+        },
+        "initial_training_observation_nll": {
+          "maximum": 22.65527976236379,
+          "mean": 22.547054292264075,
+          "minimum": 22.430333177813594,
+          "standard_deviation": 0.07549109253697547
+        },
+        "iterations": {
+          "maximum": 14.0,
+          "mean": 13.2,
+          "minimum": 12.0,
+          "standard_deviation": 0.7483314773547883
+        }
+      },
+      "estimated_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.013035965159944762,
+          "mean": 0.00637045469068096,
+          "minimum": 0.00021666434389472355,
+          "standard_deviation": 0.004622008760561618
+        },
+        "exact_test_nll": {
+          "maximum": 2.2936742169035127,
+          "mean": 2.2805700268806692,
+          "minimum": 2.2438814224442445,
+          "standard_deviation": 0.018689055045757647
+        },
+        "hazard_per_hour": {
+          "maximum": 0.25244503842488153,
+          "mean": 0.24469422641682953,
+          "minimum": 0.23696403484005524,
+          "standard_deviation": 0.005813297225573272
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15068872516100987,
+          "mean": 0.14849759823731462,
+          "minimum": 0.14614689715547194,
+          "standard_deviation": 0.0016801531303332938
+        }
+      },
+      "interval_only": {
+        "absolute_hazard_error": {
+          "maximum": 0.025913328116990875,
+          "mean": 0.01770351207854808,
+          "minimum": 0.005728280904785721,
+          "standard_deviation": 0.007555259892201391
+        },
+        "exact_test_nll": {
+          "maximum": 2.2995110855423273,
+          "mean": 2.283182462000566,
+          "minimum": 2.2469770847965647,
+          "standard_deviation": 0.019006422265532008
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2759133281169909,
+          "mean": 0.2677035120785481,
+          "minimum": 0.2557282809047857,
+          "standard_deviation": 0.007555259892201391
+        },
+        "integrated_brier_score": {
+          "maximum": 0.1517943830245664,
+          "mean": 0.14896143112764829,
+          "minimum": 0.14602065318751625,
+          "standard_deviation": 0.002052405489579554
+        }
+      },
+      "logged_observation_process": {
+        "absolute_hazard_error": {
+          "maximum": 0.013166690416028387,
+          "mean": 0.006586007802485893,
+          "minimum": 0.0009052683630043634,
+          "standard_deviation": 0.004516915292399645
+        },
+        "exact_test_nll": {
+          "maximum": 2.293707609995591,
+          "mean": 2.280587298801632,
+          "minimum": 2.2438899187955337,
+          "standard_deviation": 0.018693094847511298
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2521502479729793,
+          "mean": 0.24463619873190756,
+          "minimum": 0.2368333095839716,
+          "standard_deviation": 0.0059167270081970915
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15070017051345277,
+          "mean": 0.14850330540576956,
+          "minimum": 0.14615131462125772,
+          "standard_deviation": 0.0016812425460354767
+        }
+      },
+      "perfect_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.008989839424130897,
+          "mean": 0.004641057565749768,
+          "minimum": 0.00015226493356612636,
+          "standard_deviation": 0.0032349675592162445
+        },
+        "exact_test_nll": {
+          "maximum": 2.294069974575462,
+          "mean": 2.2804823491032704,
+          "minimum": 2.2440199985024334,
+          "standard_deviation": 0.018674738322381822
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2589898394241309,
+          "mean": 0.2518385790681613,
+          "minimum": 0.2429938037560289,
+          "standard_deviation": 0.005350145553898857
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15079523894396096,
+          "mean": 0.14850020154514318,
+          "minimum": 0.14600009610136444,
+          "standard_deviation": 0.0017630261760782225
+        }
+      }
+    },
+    "0.05": {
+      "estimated_parameters": {
+        "absolute_false_positive_error": {
+          "maximum": 0.00957205633910991,
+          "mean": 0.006548959846108947,
+          "minimum": 0.002222219225853375,
+          "standard_deviation": 0.002739927118665356
+        },
+        "false_positive_rate": {
+          "maximum": 0.055888589064388955,
+          "mean": 0.04669536346998799,
+          "minimum": 0.040427943660890094,
+          "standard_deviation": 0.0062829493938798605
+        },
+        "final_training_observation_nll": {
+          "maximum": 22.652878819944146,
+          "mean": 22.549703445500068,
+          "minimum": 22.427898341820963,
+          "standard_deviation": 0.07495677728901266
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2529380846362819,
+          "mean": 0.24522711001338818,
+          "minimum": 0.23774046850317357,
+          "standard_deviation": 0.0057137014894468405
+        },
+        "initial_training_observation_nll": {
+          "maximum": 22.698989815044126,
+          "mean": 22.59543753984414,
+          "minimum": 22.475521527813797,
+          "standard_deviation": 0.07466677421481029
+        },
+        "iterations": {
+          "maximum": 12.0,
+          "mean": 10.8,
+          "minimum": 10.0,
+          "standard_deviation": 0.7483314773547883
+        }
+      },
+      "estimated_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.012259531496826431,
+          "mean": 0.00620859375793506,
+          "minimum": 0.000651174792026199,
+          "standard_deviation": 0.0041085553524001775
+        },
+        "exact_test_nll": {
+          "maximum": 2.293694446719259,
+          "mean": 2.2805246917017197,
+          "minimum": 2.2438700966168934,
+          "standard_deviation": 0.018684118103054332
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2529380846362819,
+          "mean": 0.24522711001338818,
+          "minimum": 0.23774046850317357,
+          "standard_deviation": 0.0057137014894468405
+        },
+        "integrated_brier_score": {
+          "maximum": 0.1506958131422747,
+          "mean": 0.14849164959134795,
+          "minimum": 0.14612177137873375,
+          "standard_deviation": 0.0016892622034933866
+        }
+      },
+      "interval_only": {
+        "absolute_hazard_error": {
+          "maximum": 0.03579967159131836,
+          "mean": 0.02805958678635607,
+          "minimum": 0.015735473148963175,
+          "standard_deviation": 0.007059858160343411
+        },
+        "exact_test_nll": {
+          "maximum": 2.304060188210393,
+          "mean": 2.2866549211292884,
+          "minimum": 2.2497127035895303,
+          "standard_deviation": 0.019713319409320487
+        },
+        "hazard_per_hour": {
+          "maximum": 0.28579967159131836,
+          "mean": 0.27805958678635606,
+          "minimum": 0.2657354731489632,
+          "standard_deviation": 0.007059858160343411
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15252404634462752,
+          "mean": 0.1495085745537765,
+          "minimum": 0.14630529032158932,
+          "standard_deviation": 0.002232685797712141
+        }
+      },
+      "logged_observation_process": {
+        "absolute_hazard_error": {
+          "maximum": 0.012910346187571198,
+          "mean": 0.006463204871186884,
+          "minimum": 0.0010755802328963338,
+          "standard_deviation": 0.004369242499235272
+        },
+        "exact_test_nll": {
+          "maximum": 2.2937169824964485,
+          "mean": 2.2805711234141337,
+          "minimum": 2.2438917549864605,
+          "standard_deviation": 0.018688186497441455
+        },
+        "hazard_per_hour": {
+          "maximum": 0.25209186395381256,
+          "mean": 0.24480377280349666,
+          "minimum": 0.2370896538124288,
+          "standard_deviation": 0.005819151153422354
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15070317847597667,
+          "mean": 0.1485017460226873,
+          "minimum": 0.14614270323768955,
+          "standard_deviation": 0.001684022352656556
+        }
+      },
+      "perfect_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.017387732018065205,
+          "mean": 0.011039048179205391,
+          "minimum": 0.002167897352177317,
+          "standard_deviation": 0.005078056149968915
+        },
+        "exact_test_nll": {
+          "maximum": 2.2955061463672295,
+          "mean": 2.2815033971591077,
+          "minimum": 2.2450798038235407,
+          "standard_deviation": 0.018825416700947558
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2673877320180652,
+          "mean": 0.26103904817920537,
+          "minimum": 0.2521678973521773,
+          "standard_deviation": 0.005078056149968915
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15108995674133407,
+          "mean": 0.1486860545542671,
+          "minimum": 0.14597342044271758,
+          "standard_deviation": 0.0018816006319283334
+        }
+      }
+    },
+    "0.10": {
+      "estimated_parameters": {
+        "absolute_false_positive_error": {
+          "maximum": 0.016569020958630234,
+          "mean": 0.00680355105783397,
+          "minimum": 0.0015039541187394367,
+          "standard_deviation": 0.005952194246546668
+        },
+        "false_positive_rate": {
+          "maximum": 0.10237283028304837,
+          "mean": 0.09474716270288115,
+          "minimum": 0.08343097904136977,
+          "standard_deviation": 0.007356943908660317
+        },
+        "final_training_observation_nll": {
+          "maximum": 22.744149172075865,
+          "mean": 22.629807930832428,
+          "minimum": 22.508029328749465,
+          "standard_deviation": 0.07834090999387726
+        },
+        "hazard_per_hour": {
+          "maximum": 0.25224925975269274,
+          "mean": 0.24509559037310494,
+          "minimum": 0.23755087530519128,
+          "standard_deviation": 0.005632937196176863
+        },
+        "initial_training_observation_nll": {
+          "maximum": 22.799786992209942,
+          "mean": 22.683157726468746,
+          "minimum": 22.55766272035074,
+          "standard_deviation": 0.07915977812985178
+        },
+        "iterations": {
+          "maximum": 11.0,
+          "mean": 10.0,
+          "minimum": 9.0,
+          "standard_deviation": 0.6324555320336759
+        }
+      },
+      "estimated_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.012449124694808716,
+          "mean": 0.006098410637881279,
+          "minimum": 0.0007357427747727852,
+          "standard_deviation": 0.004311914068743755
+        },
+        "exact_test_nll": {
+          "maximum": 2.2936987186579936,
+          "mean": 2.2805395133600714,
+          "minimum": 2.243886920899294,
+          "standard_deviation": 0.018680599393741257
+        },
+        "hazard_per_hour": {
+          "maximum": 0.25224925975269274,
+          "mean": 0.24509559037310494,
+          "minimum": 0.23755087530519128,
+          "standard_deviation": 0.005632937196176863
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15069724601590695,
+          "mean": 0.14849412398104675,
+          "minimum": 0.1461277318331492,
+          "standard_deviation": 0.0016869086408250512
+        }
+      },
+      "interval_only": {
+        "absolute_hazard_error": {
+          "maximum": 0.058461377151627913,
+          "mean": 0.04766081717190747,
+          "minimum": 0.033193103399048685,
+          "standard_deviation": 0.009272810799531715
+        },
+        "exact_test_nll": {
+          "maximum": 2.318689602705639,
+          "mean": 2.2968719302935368,
+          "minimum": 2.2617517715418645,
+          "standard_deviation": 0.019970257595520655
+        },
+        "hazard_per_hour": {
+          "maximum": 0.3084613771516279,
+          "mean": 0.29766081717190745,
+          "minimum": 0.2831931033990487,
+          "standard_deviation": 0.009272810799531715
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15464598449595635,
+          "mean": 0.1509750943107474,
+          "minimum": 0.1472533888695978,
+          "standard_deviation": 0.0025547154864409504
+        }
+      },
+      "logged_observation_process": {
+        "absolute_hazard_error": {
+          "maximum": 0.013269143342762413,
+          "mean": 0.006615590128820731,
+          "minimum": 0.0012102576323289593,
+          "standard_deviation": 0.00455054100319194
+        },
+        "exact_test_nll": {
+          "maximum": 2.2937247057949115,
+          "mean": 2.2805989282798875,
+          "minimum": 2.243902040740489,
+          "standard_deviation": 0.01869206174429303
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2517905140075252,
+          "mean": 0.24458471852712094,
+          "minimum": 0.2367308566572376,
+          "standard_deviation": 0.005928590283007776
+        },
+        "integrated_brier_score": {
+          "maximum": 0.1507056065538444,
+          "mean": 0.14850629454991424,
+          "minimum": 0.14615481461718158,
+          "standard_deviation": 0.0016809609927998666
+        }
+      },
+      "perfect_specificity_em": {
+        "absolute_hazard_error": {
+          "maximum": 0.03939009831709278,
+          "mean": 0.028430848545297614,
+          "minimum": 0.017055317489677313,
+          "standard_deviation": 0.0073204012364721585
+        },
+        "exact_test_nll": {
+          "maximum": 2.302197423709264,
+          "mean": 2.2866886930679056,
+          "minimum": 2.252146823673704,
+          "standard_deviation": 0.018374964120995003
+        },
+        "hazard_per_hour": {
+          "maximum": 0.2893900983170928,
+          "mean": 0.2784308485452976,
+          "minimum": 0.2670553174896773,
+          "standard_deviation": 0.0073204012364721585
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15223123133055447,
+          "mean": 0.14950457103507855,
+          "minimum": 0.1463582065702147,
+          "standard_deviation": 0.002097170438581915
+        }
+      }
+    }
+  },
+  "primary_paired_inference": {
+    "0.02": {
+      "mean_fixed_minus_estimated_nll": -8.767777739899784e-05,
+      "simultaneous_bootstrap_95_ci": [
+        -0.0005583369394069983,
+        0.0003829813846090026
+      ],
+      "wins_ties_losses": [
+        3,
+        0,
+        2
+      ]
+    },
+    "0.05": {
+      "mean_fixed_minus_estimated_nll": 0.0009787054573877185,
+      "simultaneous_bootstrap_95_ci": [
+        -0.00013891325149438917,
+        0.002096324166269826
+      ],
+      "wins_ties_losses": [
+        4,
+        0,
+        1
+      ]
+    },
+    "0.10": {
+      "mean_fixed_minus_estimated_nll": 0.0061491797078339515,
+      "simultaneous_bootstrap_95_ci": [
+        0.0034291986739987124,
+        0.00886916074166919
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    }
+  },
+  "protocol": {
+    "claim_scope": "synthetic false-positive observation-process mechanism validation",
+    "detection_sensitivity": 0.65,
+    "estimation_data": "training observation sequences only",
+    "false_positive_rates": [
+      0.0,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "paired_exact_test_partitions": true,
+    "paired_training_transition_draws": true,
+    "post_transition_inspection_probability": 0.75,
+    "pre_transition_inspection_probability": 0.15,
+    "primary_family": "fixed-specificity minus estimated-specificity exact-test NLL at the three nonzero false-positive rates",
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "simultaneous_inference": "paired max-standardized-deviation bootstrap, 20000 shared seed resamples",
+    "test_samples": 1000,
+    "train_samples": 1200,
+    "true_hazard_per_hour": 0.25,
+    "validation_or_test_tuning": false
+  },
+  "runs": [
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 1e-06,
+        "converged": true,
+        "detection_sensitivity": 0.6461610707829076,
+        "false_positive_rate": 1e-06,
+        "final_training_observation_nll": 22.393914283205994,
+        "hazard_per_hour": 0.24139522632942578,
+        "initial_training_observation_nll": 22.471492101518866,
+        "iterations": 36,
+        "post_transition_inspection_probability": 0.7547259465474867,
+        "pre_transition_inspection_probability": 0.14661994831447472
+      },
+      "false_positive_rate": 0.0,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.008604773670574217,
+          "exact_test_nll": 2.2909406344661343,
+          "hazard_per_hour": 0.24139522632942578,
+          "integrated_brier_score": 0.14981293541540686
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.005242141996993244,
+          "exact_test_nll": 2.2913628173278666,
+          "hazard_per_hour": 0.25524214199699324,
+          "integrated_brier_score": 0.15000474060188268
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.008588834336126838,
+          "exact_test_nll": 2.290939382080616,
+          "hazard_per_hour": 0.24141116566387316,
+          "integrated_brier_score": 0.1498128672828031
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.00860682856751771,
+          "exact_test_nll": 2.29094079622619,
+          "hazard_per_hour": 0.2413931714324823,
+          "integrated_brier_score": 0.14981294425138644
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2413931714324823
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.005447341915941768,
+        "converged": true,
+        "detection_sensitivity": 0.646173647525498,
+        "false_positive_rate": 0.02544734191594177,
+        "final_training_observation_nll": 22.461774563754396,
+        "hazard_per_hour": 0.2406418565125465,
+        "initial_training_observation_nll": 22.51094063508401,
+        "iterations": 12,
+        "post_transition_inspection_probability": 0.7551232942033175,
+        "pre_transition_inspection_probability": 0.14735969703683674
+      },
+      "false_positive_rate": 0.02,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.009358143487453507,
+          "exact_test_nll": 2.2910045822086262,
+          "hazard_per_hour": 0.2406418565125465,
+          "integrated_brier_score": 0.1498169794596743
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.013885273166911127,
+          "exact_test_nll": 2.293070567988607,
+          "hazard_per_hour": 0.2638852731669111,
+          "integrated_brier_score": 0.15034896801931408
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.008858628711080119,
+          "exact_test_nll": 2.2909611413695363,
+          "hazard_per_hour": 0.24114137128891988,
+          "integrated_brier_score": 0.1498141175883614
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.00015226493356612636,
+          "exact_test_nll": 2.290864387653929,
+          "hazard_per_hour": 0.2501522649335661,
+          "integrated_brier_score": 0.14987866727354537
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2501522649335661
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.02,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.002222219225853375,
+        "converged": true,
+        "detection_sensitivity": 0.6462318417098911,
+        "false_positive_rate": 0.05222221922585338,
+        "final_training_observation_nll": 22.52156526219603,
+        "hazard_per_hour": 0.24131886431528393,
+        "initial_training_observation_nll": 22.562493662904814,
+        "iterations": 10,
+        "post_transition_inspection_probability": 0.7547202705187458,
+        "pre_transition_inspection_probability": 0.14676125839748205
+      },
+      "false_positive_rate": 0.05,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.008681135684716068,
+          "exact_test_nll": 2.2909466920886845,
+          "hazard_per_hour": 0.24131886431528393,
+          "integrated_brier_score": 0.1498132718042145
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.025789044257993443,
+          "exact_test_nll": 2.29708551341285,
+          "hazard_per_hour": 0.27578904425799344,
+          "integrated_brier_score": 0.15105463990884715
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.008484191214252479,
+          "exact_test_nll": 2.2909312633108514,
+          "hazard_per_hour": 0.24151580878574752,
+          "integrated_brier_score": 0.14981243783256668
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.00962470307145763,
+          "exact_test_nll": 2.292096548439161,
+          "hazard_per_hour": 0.25962470307145763,
+          "integrated_brier_score": 0.1501599090267236
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.25962470307145763
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.05,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.002372830283048369,
+        "converged": true,
+        "detection_sensitivity": 0.6459347917966306,
+        "false_positive_rate": 0.10237283028304837,
+        "final_training_observation_nll": 22.60378950507216,
+        "hazard_per_hour": 0.2408955503497428,
+        "initial_training_observation_nll": 22.65937077262907,
+        "iterations": 10,
+        "post_transition_inspection_probability": 0.7549922110490556,
+        "pre_transition_inspection_probability": 0.14726995758413503
+      },
+      "false_positive_rate": 0.1,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.009104449650257196,
+          "exact_test_nll": 2.290982006827122,
+          "hazard_per_hour": 0.2408955503497428,
+          "integrated_brier_score": 0.149815436946455
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.04377416277477042,
+          "exact_test_nll": 2.306478656585624,
+          "hazard_per_hour": 0.2937741627747704,
+          "integrated_brier_score": 0.15252770330683948
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.008834958936908888,
+          "exact_test_nll": 2.2909591846197235,
+          "hazard_per_hour": 0.2411650410630911,
+          "integrated_brier_score": 0.14981399962806852
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.026539412466113965,
+          "exact_test_nll": 2.2973998083602822,
+          "hazard_per_hour": 0.27653941246611397,
+          "integrated_brier_score": 0.1511070502566579
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.27653941246611397
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.1,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 8.390833049992938e-05,
+        "converged": true,
+        "detection_sensitivity": 0.6429609614891835,
+        "false_positive_rate": 8.390833049992938e-05,
+        "final_training_observation_nll": 22.433551897959873,
+        "hazard_per_hour": 0.2444055150820235,
+        "initial_training_observation_nll": 22.51434755326028,
+        "iterations": 94,
+        "post_transition_inspection_probability": 0.7451200194784451,
+        "pre_transition_inspection_probability": 0.14295392457585035
+      },
+      "false_positive_rate": 0.0,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.005594484917976511,
+          "exact_test_nll": 2.291179160421034,
+          "hazard_per_hour": 0.2444055150820235,
+          "integrated_brier_score": 0.148736646549017
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.00896578553587779,
+          "exact_test_nll": 2.29239445848682,
+          "hazard_per_hour": 0.2589657855358778,
+          "integrated_brier_score": 0.14890728314159404
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.006951339080828511,
+          "exact_test_nll": 2.291232426776173,
+          "hazard_per_hour": 0.2430486609191715,
+          "integrated_brier_score": 0.14874825230550245
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.005568950920604943,
+          "exact_test_nll": 2.2911784409221543,
+          "hazard_per_hour": 0.24443104907939506,
+          "integrated_brier_score": 0.14873647683130117
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.24443104907939506
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.0049176005138264894,
+        "converged": true,
+        "detection_sensitivity": 0.6432750392631787,
+        "false_positive_rate": 0.02491760051382649,
+        "final_training_observation_nll": 22.491233703013624,
+        "hazard_per_hour": 0.24320353796276972,
+        "initial_training_observation_nll": 22.54863741800344,
+        "iterations": 13,
+        "post_transition_inspection_probability": 0.7458266563908913,
+        "pre_transition_inspection_probability": 0.14425518678957516
+      },
+      "false_positive_rate": 0.02,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.0067964620372302775,
+          "exact_test_nll": 2.2912248497426426,
+          "hazard_per_hour": 0.24320353796276972,
+          "integrated_brier_score": 0.1487466690449536
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.01754137486311913,
+          "exact_test_nll": 2.294544908410905,
+          "hazard_per_hour": 0.26754137486311913,
+          "integrated_brier_score": 0.14922820726345812
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.007849203549337297,
+          "exact_test_nll": 2.2912840009643,
+          "hazard_per_hour": 0.2421507964506627,
+          "integrated_brier_score": 0.14875876021282258
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.0019169051833500816,
+          "exact_test_nll": 2.2914074927887866,
+          "hazard_per_hour": 0.2519169051833501,
+          "integrated_brier_score": 0.1487605516304535
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2519169051833501
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.02,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.005888589064388952,
+        "converged": true,
+        "detection_sensitivity": 0.6432999375562305,
+        "false_positive_rate": 0.055888589064388955,
+        "final_training_observation_nll": 22.55404042100443,
+        "hazard_per_hour": 0.24348695782017532,
+        "initial_training_observation_nll": 22.604732427459574,
+        "iterations": 10,
+        "post_transition_inspection_probability": 0.7458689075217657,
+        "pre_transition_inspection_probability": 0.143892708608005
+      },
+      "false_positive_rate": 0.05,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.00651304217982468,
+          "exact_test_nll": 2.2912119854612296,
+          "hazard_per_hour": 0.24348695782017532,
+          "integrated_brier_score": 0.1487439451313018
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.029393148649931478,
+          "exact_test_nll": 2.299118344105541,
+          "hazard_per_hour": 0.2793931486499315,
+          "integrated_brier_score": 0.1498918947524987
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.007754042767401853,
+          "exact_test_nll": 2.2912779151489544,
+          "hazard_per_hour": 0.24224595723259815,
+          "integrated_brier_score": 0.14875753852373264
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.012706995406008503,
+          "exact_test_nll": 2.2932079438803945,
+          "hazard_per_hour": 0.2627069954060085,
+          "integrated_brier_score": 0.14902922889598236
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2627069954060085
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.05,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.0026591694673443883,
+        "converged": true,
+        "detection_sensitivity": 0.6438865183579279,
+        "false_positive_rate": 0.09734083053265562,
+        "final_training_observation_nll": 22.618733484199996,
+        "hazard_per_hour": 0.24404652368312504,
+        "initial_training_observation_nll": 22.6784953648604,
+        "iterations": 11,
+        "post_transition_inspection_probability": 0.745574869243974,
+        "pre_transition_inspection_probability": 0.1432406982675069
+      },
+      "false_positive_rate": 0.1,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.005953476316874956,
+          "exact_test_nll": 2.2911903794254314,
+          "hazard_per_hour": 0.24404652368312504,
+          "integrated_brier_score": 0.14873922200549147
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.04594581033185452,
+          "exact_test_nll": 2.3083505177346337,
+          "hazard_per_hour": 0.2959458103318545,
+          "integrated_brier_score": 0.15116442162325663
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.00797307672457817,
+          "exact_test_nll": 2.2912921437569134,
+          "hazard_per_hour": 0.24202692327542183,
+          "integrated_brier_score": 0.14876038909760322
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.02711557794694064,
+          "exact_test_nll": 2.298101567898133,
+          "hazard_per_hour": 0.27711557794694064,
+          "integrated_brier_score": 0.14974652481420828
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.27711557794694064
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.1,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 1e-06,
+        "converged": true,
+        "detection_sensitivity": 0.6571851357557277,
+        "false_positive_rate": 1e-06,
+        "final_training_observation_nll": 22.474223344605736,
+        "hazard_per_hour": 0.24910929920069438,
+        "initial_training_observation_nll": 22.55601547931109,
+        "iterations": 20,
+        "post_transition_inspection_probability": 0.7559014973572894,
+        "pre_transition_inspection_probability": 0.15124779532571117
+      },
+      "false_positive_rate": 0.0,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.000890700799305616,
+          "exact_test_nll": 2.2936357333724784,
+          "hazard_per_hour": 0.24910929920069438,
+          "integrated_brier_score": 0.15067275569174673
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.018837271682944023,
+          "exact_test_nll": 2.2970047892907246,
+          "hazard_per_hour": 0.268837271682944,
+          "integrated_brier_score": 0.15136457437639778
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.00013654563218035154,
+          "exact_test_nll": 2.2936708015831835,
+          "hazard_per_hour": 0.25013654563218035,
+          "integrated_brier_score": 0.15068746850261147
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.0008913646014729049,
+          "exact_test_nll": 2.293635715958476,
+          "hazard_per_hour": 0.2491086353985271,
+          "integrated_brier_score": 0.1506727470291599
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2491086353985271
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.0038732012746561344,
+        "converged": true,
+        "detection_sensitivity": 0.6571130234274304,
+        "false_positive_rate": 0.016126798725343866,
+        "final_training_observation_nll": 22.53437894975103,
+        "hazard_per_hour": 0.2502166643438947,
+        "initial_training_observation_nll": 22.590080468055547,
+        "iterations": 14,
+        "post_transition_inspection_probability": 0.7552189049628097,
+        "pre_transition_inspection_probability": 0.15022440911192497
+      },
+      "false_positive_rate": 0.02,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.00021666434389472355,
+          "exact_test_nll": 2.2936742169035127,
+          "hazard_per_hour": 0.2502166643438947,
+          "integrated_brier_score": 0.15068872516100987
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.025913328116990875,
+          "exact_test_nll": 2.2995110855423273,
+          "hazard_per_hour": 0.2759133281169909,
+          "integrated_brier_score": 0.1517943830245664
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.0009052683630043634,
+          "exact_test_nll": 2.293707609995591,
+          "hazard_per_hour": 0.25090526836300436,
+          "integrated_brier_score": 0.15070017051345277
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.0051400820437306205,
+          "exact_test_nll": 2.294069974575462,
+          "hazard_per_hour": 0.2551400820437306,
+          "integrated_brier_score": 0.15079523894396096
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2551400820437306
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.02,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.00957205633910991,
+        "converged": true,
+        "detection_sensitivity": 0.6572151880435256,
+        "false_positive_rate": 0.040427943660890094,
+        "final_training_observation_nll": 22.592134382534773,
+        "hazard_per_hour": 0.2506511747920262,
+        "initial_training_observation_nll": 22.635450265998394,
+        "iterations": 12,
+        "post_transition_inspection_probability": 0.7550494581821743,
+        "pre_transition_inspection_probability": 0.14964817029003805
+      },
+      "false_positive_rate": 0.05,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.000651174792026199,
+          "exact_test_nll": 2.293694446719259,
+          "hazard_per_hour": 0.2506511747920262,
+          "integrated_brier_score": 0.1506958131422747
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.03579967159131836,
+          "exact_test_nll": 2.304060188210393,
+          "hazard_per_hour": 0.28579967159131836,
+          "integrated_brier_score": 0.15252404634462752
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.0010755802328963338,
+          "exact_test_nll": 2.2937169824964485,
+          "hazard_per_hour": 0.25107558023289633,
+          "integrated_brier_score": 0.15070317847597667
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.013307913048318298,
+          "exact_test_nll": 2.2955061463672295,
+          "hazard_per_hour": 0.2633079130483183,
+          "integrated_brier_score": 0.15108995674133407
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2633079130483183
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.05,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.010912780461407423,
+        "converged": true,
+        "detection_sensitivity": 0.6572849152722843,
+        "false_positive_rate": 0.08908721953859258,
+        "final_training_observation_nll": 22.674338164064654,
+        "hazard_per_hour": 0.2507357427747728,
+        "initial_training_observation_nll": 22.72047278229358,
+        "iterations": 10,
+        "post_transition_inspection_probability": 0.7551568018514763,
+        "pre_transition_inspection_probability": 0.1489448275928266
+      },
+      "false_positive_rate": 0.1,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.0007357427747727852,
+          "exact_test_nll": 2.2936987186579936,
+          "hazard_per_hour": 0.2507357427747728,
+          "integrated_brier_score": 0.15069724601590695
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.058461377151627913,
+          "exact_test_nll": 2.318689602705639,
+          "hazard_per_hour": 0.3084613771516279,
+          "integrated_brier_score": 0.15464598449595635
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.0012102576323289593,
+          "exact_test_nll": 2.2937247057949115,
+          "hazard_per_hour": 0.25121025763232896,
+          "integrated_brier_score": 0.1507056065538444
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.03205383650666338,
+          "exact_test_nll": 2.302197423709264,
+          "hazard_per_hour": 0.2820538365066634,
+          "integrated_brier_score": 0.15223123133055447
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2820538365066634
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.1,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 1e-06,
+        "converged": true,
+        "detection_sensitivity": 0.6453793267198785,
+        "false_positive_rate": 1e-06,
+        "final_training_observation_nll": 22.31825778038855,
+        "hazard_per_hour": 0.2373226995384702,
+        "initial_training_observation_nll": 22.40104797657653,
+        "iterations": 38,
+        "post_transition_inspection_probability": 0.753181156827621,
+        "pre_transition_inspection_probability": 0.1470755058904191
+      },
+      "false_positive_rate": 0.0,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.012677300461529789,
+          "exact_test_nll": 2.282987651058216,
+          "hazard_per_hour": 0.2373226995384702,
+          "integrated_brier_score": 0.14613505478181157
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.00014314507954926725,
+          "exact_test_nll": 2.2816077302358915,
+          "hazard_per_hour": 0.25014314507954927,
+          "integrated_brier_score": 0.1459603505684167
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.012807325963644284,
+          "exact_test_nll": 2.283015462068272,
+          "hazard_per_hour": 0.23719267403635572,
+          "integrated_brier_score": 0.146139301030612
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.012677642967800273,
+          "exact_test_nll": 2.282987723939009,
+          "hazard_per_hour": 0.23732235703219973,
+          "integrated_brier_score": 0.14613506589708075
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.23732235703219973
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.0017005238687792246,
+        "converged": true,
+        "detection_sensitivity": 0.6457394814347771,
+        "false_positive_rate": 0.018299476131220776,
+        "final_training_observation_nll": 22.37079117758893,
+        "hazard_per_hour": 0.23696403484005524,
+        "initial_training_observation_nll": 22.430333177813594,
+        "iterations": 13,
+        "post_transition_inspection_probability": 0.7535338573438689,
+        "pre_transition_inspection_probability": 0.1475778700489111
+      },
+      "false_positive_rate": 0.02,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.013035965159944762,
+          "exact_test_nll": 2.283065063104321,
+          "hazard_per_hour": 0.23696403484005524,
+          "integrated_brier_score": 0.14614689715547194
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.005728280904785721,
+          "exact_test_nll": 2.2818086632644263,
+          "hazard_per_hour": 0.2557282809047857,
+          "integrated_brier_score": 0.14602065318751625
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.013166690416028387,
+          "exact_test_nll": 2.2830938228831985,
+          "hazard_per_hour": 0.2368333095839716,
+          "integrated_brier_score": 0.14615131462125772
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.007006196243971113,
+          "exact_test_nll": 2.282049891995741,
+          "hazard_per_hour": 0.2429938037560289,
+          "integrated_brier_score": 0.14600009610136444
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2429938037560289
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.02,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.009442960949426989,
+        "converged": true,
+        "detection_sensitivity": 0.6455389876948073,
+        "false_positive_rate": 0.040557039050573014,
+        "final_training_observation_nll": 22.427898341820963,
+        "hazard_per_hour": 0.23774046850317357,
+        "initial_training_observation_nll": 22.475521527813797,
+        "iterations": 11,
+        "post_transition_inspection_probability": 0.7531502597290217,
+        "pre_transition_inspection_probability": 0.14650755640723462
+      },
+      "false_positive_rate": 0.05,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.012259531496826431,
+          "exact_test_nll": 2.2829002376225325,
+          "hazard_per_hour": 0.23774046850317357,
+          "integrated_brier_score": 0.14612177137873375
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.015735473148963175,
+          "exact_test_nll": 2.2832978563281268,
+          "hazard_per_hour": 0.2657354731489632,
+          "integrated_brier_score": 0.14630529032158932
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.012910346187571198,
+          "exact_test_nll": 2.2830377011279537,
+          "hazard_per_hour": 0.2370896538124288,
+          "integrated_brier_score": 0.14614270323768955
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.002167897352177317,
+          "exact_test_nll": 2.2816265432852116,
+          "hazard_per_hour": 0.2521678973521773,
+          "integrated_brier_score": 0.14597342044271758
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2521678973521773
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.05,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.016569020958630234,
+        "converged": true,
+        "detection_sensitivity": 0.6456721269977912,
+        "false_positive_rate": 0.08343097904136977,
+        "final_training_observation_nll": 22.508029328749465,
+        "hazard_per_hour": 0.23755087530519128,
+        "initial_training_observation_nll": 22.55766272035074,
+        "iterations": 9,
+        "post_transition_inspection_probability": 0.7532079008624827,
+        "pre_transition_inspection_probability": 0.1465571069335389
+      },
+      "false_positive_rate": 0.1,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.012449124694808716,
+          "exact_test_nll": 2.282939540990516,
+          "hazard_per_hour": 0.23755087530519128,
+          "integrated_brier_score": 0.1461277318331492
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.033193103399048685,
+          "exact_test_nll": 2.289089102899923,
+          "hazard_per_hour": 0.2831931033990487,
+          "integrated_brier_score": 0.1472533888695978
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.013269143342762413,
+          "exact_test_nll": 2.2831165664874007,
+          "hazard_per_hour": 0.2367308566572376,
+          "integrated_brier_score": 0.14615481461718158
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.017055317489677313,
+          "exact_test_nll": 2.2835978416981435,
+          "hazard_per_hour": 0.2670553174896773,
+          "integrated_brier_score": 0.1463582065702147
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2670553174896773
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.1,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 1e-06,
+        "converged": true,
+        "detection_sensitivity": 0.6540915120051454,
+        "false_positive_rate": 1e-06,
+        "final_training_observation_nll": 22.53851352899561,
+        "hazard_per_hour": 0.2519816885125691,
+        "initial_training_observation_nll": 22.618215469732565,
+        "iterations": 37,
+        "post_transition_inspection_probability": 0.7465785291288558,
+        "pre_transition_inspection_probability": 0.14961312601418864
+      },
+      "false_positive_rate": 0.0,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.0019816885125690797,
+          "exact_test_nll": 2.243895358418039,
+          "hazard_per_hour": 0.2519816885125691,
+          "integrated_brier_score": 0.14709423140024092
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.018177339495414557,
+          "exact_test_nll": 2.2452284298000844,
+          "hazard_per_hour": 0.26817733949541456,
+          "integrated_brier_score": 0.14719563432301574
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.001812417062499072,
+          "exact_test_nll": 2.243901247465283,
+          "hazard_per_hour": 0.25181241706249907,
+          "integrated_brier_score": 0.14709637959178765
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.00198102385945359,
+          "exact_test_nll": 2.2438953807056077,
+          "hazard_per_hour": 0.2519810238594536,
+          "integrated_brier_score": 0.1470942396937003
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2519810238594536
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.0009252542044044555,
+        "converged": true,
+        "detection_sensitivity": 0.6537252403828895,
+        "false_positive_rate": 0.020925254204404456,
+        "final_training_observation_nll": 22.600682803670523,
+        "hazard_per_hour": 0.25244503842488153,
+        "initial_training_observation_nll": 22.65527976236379,
+        "iterations": 14,
+        "post_transition_inspection_probability": 0.746278426751566,
+        "pre_transition_inspection_probability": 0.14889957746784882
+      },
+      "false_positive_rate": 0.02,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.0024450384248815293,
+          "exact_test_nll": 2.2438814224442445,
+          "hazard_per_hour": 0.25244503842488153,
+          "integrated_brier_score": 0.1470887203654634
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.025449303340933538,
+          "exact_test_nll": 2.2469770847965647,
+          "hazard_per_hour": 0.27544930334093354,
+          "integrated_brier_score": 0.14741494414338652
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.0021502479729793023,
+          "exact_test_nll": 2.2438899187955337,
+          "hazard_per_hour": 0.2521502479729793,
+          "integrated_brier_score": 0.14709216409295325
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.008989839424130897,
+          "exact_test_nll": 2.2440199985024334,
+          "hazard_per_hour": 0.2589898394241309,
+          "integrated_brier_score": 0.1470664537763916
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2589898394241309
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.02,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.005618973651765509,
+        "converged": true,
+        "detection_sensitivity": 0.6539205808156058,
+        "false_positive_rate": 0.044381026348234494,
+        "final_training_observation_nll": 22.652878819944146,
+        "hazard_per_hour": 0.2529380846362819,
+        "initial_training_observation_nll": 22.698989815044126,
+        "iterations": 11,
+        "post_transition_inspection_probability": 0.7459544399192388,
+        "pre_transition_inspection_probability": 0.14839565682167086
+      },
+      "false_positive_rate": 0.05,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.0029380846362819235,
+          "exact_test_nll": 2.2438700966168934,
+          "hazard_per_hour": 0.2529380846362819,
+          "integrated_brier_score": 0.14708344650021504
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.033580596283573905,
+          "exact_test_nll": 2.2497127035895303,
+          "hazard_per_hour": 0.2835805962835739,
+          "integrated_brier_score": 0.14776700144131982
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.002091863953812556,
+          "exact_test_nll": 2.2438917549864605,
+          "hazard_per_hour": 0.25209186395381256,
+          "integrated_brier_score": 0.14709287204347088
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.017387732018065205,
+          "exact_test_nll": 2.2450798038235407,
+          "hazard_per_hour": 0.2673877320180652,
+          "integrated_brier_score": 0.14717775766457783
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2673877320180652
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.05,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    },
+    {
+      "estimated_observation_process": {
+        "absolute_false_positive_error": 0.0015039541187394367,
+        "converged": true,
+        "detection_sensitivity": 0.6537966878547925,
+        "false_positive_rate": 0.10150395411873944,
+        "final_training_observation_nll": 22.744149172075865,
+        "hazard_per_hour": 0.25224925975269274,
+        "initial_training_observation_nll": 22.799786992209942,
+        "iterations": 10,
+        "post_transition_inspection_probability": 0.7462285599924249,
+        "pre_transition_inspection_probability": 0.1489892606788593
+      },
+      "false_positive_rate": 0.1,
+      "models": {
+        "estimated_specificity_em": {
+          "absolute_hazard_error": 0.002249259752692745,
+          "exact_test_nll": 2.243886920899294,
+          "hazard_per_hour": 0.25224925975269274,
+          "integrated_brier_score": 0.1470909831042312
+        },
+        "interval_only": {
+          "absolute_hazard_error": 0.05692963220223579,
+          "exact_test_nll": 2.2617517715418645,
+          "hazard_per_hour": 0.3069296322022358,
+          "integrated_brier_score": 0.14928397325808673
+        },
+        "logged_observation_process": {
+          "absolute_hazard_error": 0.0017905140075252235,
+          "exact_test_nll": 2.243902040740489,
+          "hazard_per_hour": 0.2517905140075252,
+          "integrated_brier_score": 0.14709666285287346
+        },
+        "perfect_specificity_em": {
+          "absolute_hazard_error": 0.03939009831709278,
+          "exact_test_nll": 2.252146823673704,
+          "hazard_per_hour": 0.2893900983170928,
+          "integrated_brier_score": 0.1480798422037574
+        }
+      },
+      "perfect_specificity_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0,
+        "hazard_per_hour": 0.2893900983170928
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.65,
+        "false_positive_rate": 0.1,
+        "hazard_per_hour": 0.25,
+        "post_transition_inspection_probability": 0.75,
+        "pre_transition_inspection_probability": 0.15
+      }
+    }
+  ]
+}

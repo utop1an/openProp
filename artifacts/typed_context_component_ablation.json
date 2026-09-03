@@ -1,0 +1,2512 @@
+{
+  "aggregate": {
+    "full_context": {
+      "concordance_index": {
+        "maximum": 0.7717376166380391,
+        "mean": 0.7465724098164938,
+        "minimum": 0.7107861060329068,
+        "standard_deviation": 0.017944337007451905
+      },
+      "grounding_top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.09752611783091,
+        "mean": 0.0829250508810401,
+        "minimum": 0.0671814865605534,
+        "standard_deviation": 0.008218612232131625
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.3738911181317282,
+        "mean": 1.261487116726971,
+        "minimum": 1.1830377322165944,
+        "standard_deviation": 0.0637113286630191
+      }
+    },
+    "intercept_only": {
+      "concordance_index": {
+        "maximum": 0.5,
+        "mean": 0.5,
+        "minimum": 0.5,
+        "standard_deviation": 0.0
+      },
+      "grounding_top1": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.2876690590155761,
+        "mean": 0.2770462424085477,
+        "minimum": 0.25225167504584944,
+        "standard_deviation": 0.01069716835090284
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.907768620259125,
+        "mean": 1.8626448959909294,
+        "minimum": 1.7492487853544898,
+        "standard_deviation": 0.04489988148646267
+      }
+    },
+    "relation_only": {
+      "concordance_index": {
+        "maximum": 0.7717376166380391,
+        "mean": 0.7465724098164938,
+        "minimum": 0.7107861060329068,
+        "standard_deviation": 0.017944337007451905
+      },
+      "grounding_top1": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.23392637471722386,
+        "mean": 0.218455161512164,
+        "minimum": 0.18938235877098675,
+        "standard_deviation": 0.013189531991589495
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.7465929018974868,
+        "mean": 1.6794488626639035,
+        "minimum": 1.5582542289235826,
+        "standard_deviation": 0.04962012091409538
+      }
+    },
+    "relation_scene": {
+      "concordance_index": {
+        "maximum": 0.7717376166380391,
+        "mean": 0.7465724098164938,
+        "minimum": 0.7107861060329068,
+        "standard_deviation": 0.017944337007451905
+      },
+      "grounding_top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.10593229346354084,
+        "mean": 0.09486371870264541,
+        "minimum": 0.08041616085474455,
+        "standard_deviation": 0.007211931718374854
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.40085212484561,
+        "mean": 1.3135318997145704,
+        "minimum": 1.2403118116602412,
+        "standard_deviation": 0.04872802703734046
+      }
+    },
+    "scene_only": {
+      "concordance_index": {
+        "maximum": 0.7302925829295565,
+        "mean": 0.7177904958646317,
+        "minimum": 0.700845521023766,
+        "standard_deviation": 0.009319155494034547
+      },
+      "grounding_top1": {
+        "maximum": 1.0,
+        "mean": 0.9666666666666667,
+        "minimum": 0.8333333333333334,
+        "standard_deviation": 0.055277079839256664
+      },
+      "integrated_brier_score": {
+        "maximum": 0.15857077145168083,
+        "mean": 0.14833530002721476,
+        "minimum": 0.13636529191471364,
+        "standard_deviation": 0.0067692028462532595
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.5822970698697616,
+        "mean": 1.5140228739720143,
+        "minimum": 1.431026124558791,
+        "standard_deviation": 0.044441306130110374
+      }
+    },
+    "subject_only": {
+      "concordance_index": {
+        "maximum": 0.4659917527683825,
+        "mean": 0.41382881066890365,
+        "minimum": 0.22826238336196092,
+        "standard_deviation": 0.07945372870948772
+      },
+      "grounding_top1": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.30640702644006534,
+        "mean": 0.28503952464039156,
+        "minimum": 0.2607429688572524,
+        "standard_deviation": 0.014501937690077649
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.9533890693672058,
+        "mean": 1.8855634471755116,
+        "minimum": 1.7991387414254578,
+        "standard_deviation": 0.04606990331980199
+      }
+    },
+    "subject_relation": {
+      "concordance_index": {
+        "maximum": 0.7717376166380391,
+        "mean": 0.7189893780410295,
+        "minimum": 0.6805182163715584,
+        "standard_deviation": 0.03287723514916299
+      },
+      "grounding_top1": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.24223397853255788,
+        "mean": 0.2186355424491899,
+        "minimum": 0.18952223598430573,
+        "standard_deviation": 0.016967611654159512
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.741437729716848,
+        "mean": 1.663668751356969,
+        "minimum": 1.5412882260731096,
+        "standard_deviation": 0.05545918723998854
+      }
+    },
+    "subject_scene": {
+      "concordance_index": {
+        "maximum": 0.7717376166380391,
+        "mean": 0.7089484785707554,
+        "minimum": 0.6764072887273422,
+        "standard_deviation": 0.027536451708511708
+      },
+      "grounding_top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.1371934418683305,
+        "mean": 0.12211186622824417,
+        "minimum": 0.10787663578644203,
+        "standard_deviation": 0.007667139510287905
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.5020846941948958,
+        "mean": 1.417936040070764,
+        "minimum": 1.3570479884457416,
+        "standard_deviation": 0.04707117789053016
+      }
+    }
+  },
+  "conditions": [
+    {
+      "active_feature_indices": [],
+      "active_groups": [],
+      "name": "intercept_only"
+    },
+    {
+      "active_feature_indices": [
+        1
+      ],
+      "active_groups": [
+        "subject"
+      ],
+      "name": "subject_only"
+    },
+    {
+      "active_feature_indices": [
+        2,
+        3
+      ],
+      "active_groups": [
+        "relation"
+      ],
+      "name": "relation_only"
+    },
+    {
+      "active_feature_indices": [
+        4
+      ],
+      "active_groups": [
+        "scene"
+      ],
+      "name": "scene_only"
+    },
+    {
+      "active_feature_indices": [
+        1,
+        2,
+        3
+      ],
+      "active_groups": [
+        "subject",
+        "relation"
+      ],
+      "name": "subject_relation"
+    },
+    {
+      "active_feature_indices": [
+        1,
+        4
+      ],
+      "active_groups": [
+        "subject",
+        "scene"
+      ],
+      "name": "subject_scene"
+    },
+    {
+      "active_feature_indices": [
+        2,
+        3,
+        4
+      ],
+      "active_groups": [
+        "relation",
+        "scene"
+      ],
+      "name": "relation_scene"
+    },
+    {
+      "active_feature_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "active_groups": [
+        "subject",
+        "relation",
+        "scene"
+      ],
+      "name": "full_context"
+    }
+  ],
+  "feature_columns": {
+    "0": "property name (constant and excluded from all ablations)",
+    "1": "subject type",
+    "2": "relation predicate",
+    "3": "relation object",
+    "4": "scene"
+  },
+  "paired_full_advantage": {
+    "intercept_only": {
+      "concordance_index": {
+        "bootstrap_95_ci": [
+          0.23517576405581275,
+          0.25749911874369785
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.24657240981649378,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "grounding_top1": {
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 1.0,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "integrated_brier_score": {
+        "bootstrap_95_ci": [
+          0.18541223829266698,
+          0.20211588179387652
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.1941211915275076,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "negative_log_likelihood": {
+        "bootstrap_95_ci": [
+          0.5677887204276305,
+          0.6309298628817266
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.6011577792639585,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      }
+    },
+    "relation_only": {
+      "concordance_index": {
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.0,
+        "orientation": "positive means full_context is better",
+        "ties": 10,
+        "wins": 0
+      },
+      "grounding_top1": {
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 1.0,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "integrated_brier_score": {
+        "bootstrap_95_ci": [
+          0.1269358164173595,
+          0.1432318804147726
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.13553011063112388,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "negative_log_likelihood": {
+        "bootstrap_95_ci": [
+          0.38740590375468215,
+          0.444440489435005
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.4179617459369327,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      }
+    },
+    "relation_scene": {
+      "concordance_index": {
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.0,
+        "orientation": "positive means full_context is better",
+        "ties": 10,
+        "wins": 0
+      },
+      "grounding_top1": {
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.0,
+        "orientation": "positive means full_context is better",
+        "ties": 10,
+        "wins": 0
+      },
+      "integrated_brier_score": {
+        "bootstrap_95_ci": [
+          0.009685716482034982,
+          0.01412528548795735
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.01193866782160531,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "negative_log_likelihood": {
+        "bootstrap_95_ci": [
+          0.03952906061354344,
+          0.06418939550202526
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.05204478298759958,
+        "orientation": "positive means full_context is better",
+        "simultaneous_bootstrap_95_ci": [
+          0.037751322438247234,
+          0.06633824353695193
+        ],
+        "ties": 0,
+        "wins": 10
+      }
+    },
+    "scene_only": {
+      "concordance_index": {
+        "bootstrap_95_ci": [
+          0.022350614643904955,
+          0.03566999610330934
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.028781913951862036,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "grounding_top1": {
+        "bootstrap_95_ci": [
+          0.0,
+          0.06666666666666668
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.03333333333333334,
+        "orientation": "positive means full_context is better",
+        "ties": 7,
+        "wins": 3
+      },
+      "integrated_brier_score": {
+        "bootstrap_95_ci": [
+          0.06106688567487701,
+          0.07035543124054358
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.06541024914617466,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "negative_log_likelihood": {
+        "bootstrap_95_ci": [
+          0.2313120598029325,
+          0.2747325577610596
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.2525357572450434,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      }
+    },
+    "subject_only": {
+      "concordance_index": {
+        "bootstrap_95_ci": [
+          0.28948507255775974,
+          0.3895347590378426
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.3327435991475901,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "grounding_top1": {
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 1.0,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "integrated_brier_score": {
+        "bootstrap_95_ci": [
+          0.19070430936216115,
+          0.2122246298864269
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.2021144737593515,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "negative_log_likelihood": {
+        "bootstrap_95_ci": [
+          0.5815816483871394,
+          0.6615749736152712
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.6240763304485406,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      }
+    },
+    "subject_relation": {
+      "concordance_index": {
+        "bootstrap_95_ci": [
+          0.012470785656319417,
+          0.0433590957750009
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.027583031775464274,
+        "orientation": "positive means full_context is better",
+        "ties": 4,
+        "wins": 6
+      },
+      "grounding_top1": {
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 1.0,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "integrated_brier_score": {
+        "bootstrap_95_ci": [
+          0.12494122507826526,
+          0.145225003391193
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.1357104915681498,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "negative_log_likelihood": {
+        "bootstrap_95_ci": [
+          0.3678761032570278,
+          0.4335182035739368
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.40218163462999806,
+        "orientation": "positive means full_context is better",
+        "simultaneous_bootstrap_95_ci": [
+          0.36386323738987636,
+          0.44050003187011977
+        ],
+        "ties": 0,
+        "wins": 10
+      }
+    },
+    "subject_scene": {
+      "concordance_index": {
+        "bootstrap_95_ci": [
+          0.0169330851514231,
+          0.058577440392259185
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.037623931245738464,
+        "orientation": "positive means full_context is better",
+        "ties": 4,
+        "wins": 6
+      },
+      "grounding_top1": {
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.0,
+        "orientation": "positive means full_context is better",
+        "ties": 10,
+        "wins": 0
+      },
+      "integrated_brier_score": {
+        "bootstrap_95_ci": [
+          0.036686229656927666,
+          0.0421386828840022
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.039186815347204064,
+        "orientation": "positive means full_context is better",
+        "ties": 0,
+        "wins": 10
+      },
+      "negative_log_likelihood": {
+        "bootstrap_95_ci": [
+          0.14081898864428413,
+          0.17384779883783774
+        ],
+        "losses": 0,
+        "mean_full_advantage": 0.156448923343793,
+        "orientation": "positive means full_context is better",
+        "simultaneous_bootstrap_95_ci": [
+          0.13719999964168605,
+          0.17569784704589997
+        ],
+        "ties": 0,
+        "wins": 10
+      }
+    }
+  },
+  "protocol": {
+    "bootstrap_samples": 20000,
+    "dataset": "compositional_location_data",
+    "delta_orientation": "positive paired delta means full_context is better",
+    "epochs": 1200,
+    "grounding_repetitions": 12,
+    "samples_per_context": 80,
+    "selection": "condition matrix and metrics fixed before execution",
+    "simultaneous_inference": "paired bootstrap max standardized mean deviation; one shared seed resample across the three predeclared primary comparisons",
+    "split": "all feature values seen; validation/test tuples held out",
+    "test_policy": "same paired test rows for every condition; no test selection",
+    "training": "train only; one hazard scale calibrated on validation"
+  },
+  "runs": [
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7717376166380391,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.07536818792128178,
+          "negative_log_likelihood": 1.226759260440237,
+          "validation_hazard_scale": 0.8568413313205949
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2845618363508564,
+          "negative_log_likelihood": 1.895689704441065,
+          "validation_hazard_scale": 0.7158555001896203
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7717376166380391,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.21524857468165798,
+          "negative_log_likelihood": 1.6804933769960237,
+          "validation_hazard_scale": 0.6555943666954938
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7717376166380391,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.089963852436557,
+          "negative_log_likelihood": 1.3003991134786965,
+          "validation_hazard_scale": 0.9452398494033377
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7284016526623648,
+          "grounding_by_tag": {
+            "compositional-ood": 0.9166666666666666,
+            "en": 0.9166666666666666,
+            "informative-scene-context": 0.9166666666666666,
+            "subject-book": 0.9166666666666666,
+            "subject-cup": 0.9166666666666666,
+            "subject-tool": 0.9166666666666666
+          },
+          "grounding_top1": 0.9166666666666666,
+          "integrated_brier_score": 0.15594157322107557,
+          "negative_log_likelihood": 1.5490051166445322,
+          "validation_hazard_scale": 0.7932152949921475
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.22826238336196092,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.29963819035924005,
+          "negative_log_likelihood": 1.9373166996299023,
+          "validation_hazard_scale": 0.7060893605005802
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.7717376166380391,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.22232800390471583,
+          "negative_log_likelihood": 1.6864809696992062,
+          "validation_hazard_scale": 0.5552741763250029
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.7717376166380391,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.1255852177138783,
+          "negative_log_likelihood": 1.4427752775528757,
+          "validation_hazard_scale": 0.7146758822780248
+        }
+      },
+      "seed": 31
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7285335648677055,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.09752611783091,
+          "negative_log_likelihood": 1.3738911181317282,
+          "validation_hazard_scale": 1.0151485404193894
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.26735523990165827,
+          "negative_log_likelihood": 1.8660478606644126,
+          "validation_hazard_scale": 0.8738167154176453
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7285335648677055,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.21290065945238573,
+          "negative_log_likelihood": 1.6949911593827929,
+          "validation_hazard_scale": 0.8438427620278112
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7285335648677055,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.10593229346354084,
+          "negative_log_likelihood": 1.40085212484561,
+          "validation_hazard_scale": 1.1458264913817295
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7033542018918796,
+          "grounding_by_tag": {
+            "compositional-ood": 0.8333333333333334,
+            "en": 0.8333333333333334,
+            "informative-scene-context": 0.8333333333333334,
+            "subject-book": 0.8333333333333334,
+            "subject-cup": 0.8333333333333334,
+            "subject-tool": 0.8333333333333334
+          },
+          "grounding_top1": 0.8333333333333334,
+          "integrated_brier_score": 0.15857077145168083,
+          "negative_log_likelihood": 1.5822970698697616,
+          "validation_hazard_scale": 0.9290054083457617
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.4558561440387515,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2682730347484808,
+          "negative_log_likelihood": 1.869083239110138,
+          "validation_hazard_scale": 0.8760098405499219
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.7285335648677055,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2113981955353833,
+          "negative_log_likelihood": 1.67641310015535,
+          "validation_hazard_scale": 0.7101119425147926
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.7285335648677055,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.1371934418683305,
+          "negative_log_likelihood": 1.5020846941948958,
+          "validation_hazard_scale": 0.801711761238785
+        }
+      },
+      "seed": 41
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7564992545657846,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.0671814865605534,
+          "negative_log_likelihood": 1.2010938204513577,
+          "validation_hazard_scale": 0.9891777380972526
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.28077584311328946,
+          "negative_log_likelihood": 1.8578471063307243,
+          "validation_hazard_scale": 0.7835615412188235
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7564992545657846,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2108219628789085,
+          "negative_log_likelihood": 1.6404249761647947,
+          "validation_hazard_scale": 0.7521093628339351
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7564992545657846,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08041616085474455,
+          "negative_log_likelihood": 1.250651919058381,
+          "validation_hazard_scale": 1.076452482886215
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7302925829295565,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.14255531092961152,
+          "negative_log_likelihood": 1.483269050263848,
+          "validation_hazard_scale": 0.8382069986194638
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.4532007081625047,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.28079515246941184,
+          "negative_log_likelihood": 1.8619479845357436,
+          "validation_hazard_scale": 0.7945717348859788
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.7040859112933283,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.20226964823613736,
+          "negative_log_likelihood": 1.6047180317283045,
+          "validation_hazard_scale": 0.6519522487548208
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.7040859112933283,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.10787663578644203,
+          "negative_log_likelihood": 1.3602366583596657,
+          "validation_hazard_scale": 0.7200904815728993
+        }
+      },
+      "seed": 53
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7455328731580751,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.07673744291319974,
+          "negative_log_likelihood": 1.1830377322165944,
+          "validation_hazard_scale": 1.195324805950831
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.25225167504584944,
+          "negative_log_likelihood": 1.7492487853544898,
+          "validation_hazard_scale": 0.9260444042294845
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7455328731580751,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.18938235877098675,
+          "negative_log_likelihood": 1.5582542289235826,
+          "validation_hazard_scale": 0.9167764990076418
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7455328731580751,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08785902796189307,
+          "negative_log_likelihood": 1.2403118116602412,
+          "validation_hazard_scale": 1.2572509022843725
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.723136045430068,
+          "grounding_by_tag": {
+            "compositional-ood": 0.9166666666666666,
+            "en": 0.9166666666666666,
+            "informative-scene-context": 0.9166666666666666,
+            "subject-book": 0.9166666666666666,
+            "subject-cup": 0.9166666666666666,
+            "subject-tool": 0.9166666666666666
+          },
+          "grounding_top1": 0.9166666666666666,
+          "integrated_brier_score": 0.13636529191471364,
+          "negative_log_likelihood": 1.431026124558791,
+          "validation_hazard_scale": 1.0141259286741824
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.45821706564840653,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2714158462328826,
+          "negative_log_likelihood": 1.7991387414254578,
+          "validation_hazard_scale": 0.9139219547795338
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.700739217702061,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.18952223598430573,
+          "negative_log_likelihood": 1.5412882260731096,
+          "validation_hazard_scale": 0.7881399513111998
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.700739217702061,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.11567574174562817,
+          "negative_log_likelihood": 1.3570479884457416,
+          "validation_hazard_scale": 0.9999447050925007
+        }
+      },
+      "seed": 67
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7421702792064658,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08054783855677213,
+          "negative_log_likelihood": 1.2101152200791812,
+          "validation_hazard_scale": 0.9662446524714159
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2777625576454368,
+          "negative_log_likelihood": 1.8514302766888022,
+          "validation_hazard_scale": 0.7891463264280103
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7421702792064658,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.22598161066709108,
+          "negative_log_likelihood": 1.6862954870079614,
+          "validation_hazard_scale": 0.7781703939864393
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7421702792064658,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.09751688534424897,
+          "negative_log_likelihood": 1.2888555113759166,
+          "validation_hazard_scale": 1.046800257970942
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7201047024246877,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.14475511771875674,
+          "negative_log_likelihood": 1.4775367492551905,
+          "validation_hazard_scale": 0.8526846918443058
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.4649384643644379,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2909593596166227,
+          "negative_log_likelihood": 1.890360624778132,
+          "validation_hazard_scale": 0.7852111250191021
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.6980391256429096,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2274991713078246,
+          "negative_log_likelihood": 1.6666695280517303,
+          "validation_hazard_scale": 0.6518498108936127
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.6980391256429096,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.11827939454175539,
+          "negative_log_likelihood": 1.3799411540604534,
+          "validation_hazard_scale": 0.8127238461786627
+        }
+      },
+      "seed": 79
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7335634527174165,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08945397963343017,
+          "negative_log_likelihood": 1.3443934694965138,
+          "validation_hazard_scale": 1.0468235615946855
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.26976914798397095,
+          "negative_log_likelihood": 1.8985042719468805,
+          "validation_hazard_scale": 0.8440852233521816
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7335634527174165,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.20899547978077096,
+          "negative_log_likelihood": 1.7090109473736932,
+          "validation_hazard_scale": 0.7983075065402682
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7335634527174165,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.09475826968503878,
+          "negative_log_likelihood": 1.3702891324506143,
+          "validation_hazard_scale": 1.1551924702199672
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7123198813881295,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.1475177316440533,
+          "negative_log_likelihood": 1.5641404523868094,
+          "validation_hazard_scale": 0.9122461374391857
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.4659917527683825,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2607429688572524,
+          "negative_log_likelihood": 1.8723811651112092,
+          "validation_hazard_scale": 0.854377542081166
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.6910763100588426,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.19732128013482028,
+          "negative_log_likelihood": 1.665019386200637,
+          "validation_hazard_scale": 0.6967537522270595
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.7335634527174165,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.12260470583330725,
+          "negative_log_likelihood": 1.467008139032797,
+          "validation_hazard_scale": 0.749097417825333
+        }
+      },
+      "seed": 83
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.752642069157319,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08084028006146121,
+          "negative_log_likelihood": 1.2145129098338043,
+          "validation_hazard_scale": 0.9399442194614933
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2763159215648961,
+          "negative_log_likelihood": 1.825766888918942,
+          "validation_hazard_scale": 0.7752422631382214
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.752642069157319,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.22231232087350017,
+          "negative_log_likelihood": 1.6555055253871183,
+          "validation_hazard_scale": 0.7370001653910242
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.752642069157319,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.09428692321594138,
+          "negative_log_likelihood": 1.282574212285202,
+          "validation_hazard_scale": 1.0294145122120508
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7165801427644387,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.1471780206795732,
+          "negative_log_likelihood": 1.4784509718549799,
+          "validation_hazard_scale": 0.8555851551352577
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.44254658385093165,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2785346202433079,
+          "negative_log_likelihood": 1.8316188149641022,
+          "validation_hazard_scale": 0.771790947176307
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.6805182163715584,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.22196714951227642,
+          "negative_log_likelihood": 1.6347369689447335,
+          "validation_hazard_scale": 0.6221886156870448
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.6805182163715584,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.11913207967715439,
+          "negative_log_likelihood": 1.3719700549702698,
+          "validation_hazard_scale": 0.7458698117219202
+        }
+      },
+      "seed": 97
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7107861060329068,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08976543816536293,
+          "negative_log_likelihood": 1.2897757745247382,
+          "validation_hazard_scale": 0.9626264317622709
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.28669253219004215,
+          "negative_log_likelihood": 1.8963872137692215,
+          "validation_hazard_scale": 0.7472665812856573
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7107861060329068,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.23392637471722386,
+          "negative_log_likelihood": 1.7190784492248161,
+          "validation_hazard_scale": 0.6834862719063666
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7107861060329068,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.10028105298440955,
+          "negative_log_likelihood": 1.3307170658995362,
+          "validation_hazard_scale": 1.048171312193437
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.700845521023766,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.14671476420208804,
+          "negative_log_likelihood": 1.5088180947779835,
+          "validation_hazard_scale": 0.8539228407149052
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.28921389396709324,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.30640702644006534,
+          "negative_log_likelihood": 1.9533890693672058,
+          "validation_hazard_scale": 0.7278940514929261
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.6909049360146252,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.24223397853255788,
+          "negative_log_likelihood": 1.7247981832709016,
+          "validation_hazard_scale": 0.5707065601947005
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.7107861060329068,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.1282706740576953,
+          "negative_log_likelihood": 1.429824933930703,
+          "validation_hazard_scale": 0.7326856906521992
+        }
+      },
+      "seed": 109
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7528685714285714,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08684195812327301,
+          "negative_log_likelihood": 1.2452581958169293,
+          "validation_hazard_scale": 0.8219639898103409
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2873086112739012,
+          "negative_log_likelihood": 1.8777582315356312,
+          "validation_hazard_scale": 0.7341319829111832
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7528685714285714,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.23304923202880054,
+          "negative_log_likelihood": 1.703841574280766,
+          "validation_hazard_scale": 0.7089020215822948
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7528685714285714,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.10370531424179891,
+          "negative_log_likelihood": 1.318054623086507,
+          "validation_hazard_scale": 0.9487144799492612
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7189714285714286,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.15805659592158067,
+          "negative_log_likelihood": 1.5231705338066608,
+          "validation_hazard_scale": 0.7803408002469715
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.4532114285714286,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.29816623469181935,
+          "negative_log_likelihood": 1.911800626148268,
+          "validation_hazard_scale": 0.7323810698656172
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.7528685714285714,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.23605461629512253,
+          "negative_log_likelihood": 1.6951253897288687,
+          "validation_hazard_scale": 0.5919413236583835
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.6850742857142857,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.1277188013565555,
+          "negative_log_likelihood": 1.4144223738639923,
+          "validation_hazard_scale": 0.6904152488163664
+        }
+      },
+      "seed": 127
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7713903103926539,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.08498777904415669,
+          "negative_log_likelihood": 1.3260336662786247,
+          "validation_hazard_scale": 0.7990366453964152
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "active_groups": [],
+          "concordance_index": 0.5,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2876690590155761,
+          "negative_log_likelihood": 1.907768620259125,
+          "validation_hazard_scale": 0.6468360290359276
+        },
+        "relation_only": {
+          "active_feature_indices": [
+            2,
+            3
+          ],
+          "active_groups": [
+            "relation"
+          ],
+          "concordance_index": 0.7713903103926539,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.23193304127031436,
+          "negative_log_likelihood": 1.7465929018974868,
+          "validation_hazard_scale": 0.6165124363263935
+        },
+        "relation_scene": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "active_groups": [
+            "relation",
+            "scene"
+          ],
+          "concordance_index": 0.7713903103926539,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.0939174068382811,
+          "negative_log_likelihood": 1.352613483005,
+          "validation_hazard_scale": 0.9201003260645416
+        },
+        "scene_only": {
+          "active_feature_indices": [
+            4
+          ],
+          "active_groups": [
+            "scene"
+          ],
+          "concordance_index": 0.7238987995599981,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.14569782258901423,
+          "negative_log_likelihood": 1.5425145763015862,
+          "validation_hazard_scale": 0.7433037147503594
+        },
+        "subject_only": {
+          "active_feature_indices": [
+            1
+          ],
+          "active_groups": [
+            "subject"
+          ],
+          "concordance_index": 0.42684968195513895,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.2954628127448328,
+          "negative_log_likelihood": 1.9285975066849563,
+          "validation_hazard_scale": 0.6438557698131022
+        },
+        "subject_relation": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "active_groups": [
+            "subject",
+            "relation"
+          ],
+          "concordance_index": 0.7713903103926539,
+          "grounding_by_tag": {
+            "compositional-ood": 0.0,
+            "en": 0.0,
+            "informative-scene-context": 0.0,
+            "subject-book": 0.0,
+            "subject-cup": 0.0,
+            "subject-tool": 0.0
+          },
+          "grounding_top1": 0.0,
+          "integrated_brier_score": 0.23576114504875492,
+          "negative_log_likelihood": 1.741437729716848,
+          "validation_hazard_scale": 0.5115889900557004
+        },
+        "subject_scene": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "active_groups": [
+            "subject",
+            "scene"
+          ],
+          "concordance_index": 0.6764072887273422,
+          "grounding_by_tag": {
+            "compositional-ood": 1.0,
+            "en": 1.0,
+            "informative-scene-context": 1.0,
+            "subject-book": 1.0,
+            "subject-cup": 1.0,
+            "subject-tool": 1.0
+          },
+          "grounding_top1": 1.0,
+          "integrated_brier_score": 0.11878196970169491,
+          "negative_log_likelihood": 1.454049126296245,
+          "validation_hazard_scale": 0.6577354712990636
+        }
+      },
+      "seed": 149
+    }
+  ],
+  "seeds": [
+    31,
+    41,
+    53,
+    67,
+    79,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "simultaneous_primary_component_inference": {
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20270826,
+    "confidence": 0.95,
+    "critical_value": 2.1482094024912093,
+    "family": [
+      "relation_scene",
+      "subject_scene",
+      "subject_relation"
+    ],
+    "family_size": 3,
+    "method": "paired bootstrap max standardized mean deviation",
+    "metric": "negative_log_likelihood",
+    "orientation": "positive means full_context is better",
+    "shared_resample_indices": true
+  }
+}

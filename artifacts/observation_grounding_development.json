@@ -1,0 +1,450 @@
+{
+  "aggregate": {
+    "interval_aware": {
+      "mean_reciprocal_rank": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "target_scene_gap": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      },
+      "top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "top1_by_target_scene": {
+        "frequent-scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "sparse-scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "worst_target_scene_top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      }
+    },
+    "naive": {
+      "mean_reciprocal_rank": {
+        "maximum": 0.75,
+        "mean": 0.75,
+        "minimum": 0.75,
+        "standard_deviation": 0.0
+      },
+      "target_scene_gap": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "top1": {
+        "maximum": 0.5,
+        "mean": 0.5,
+        "minimum": 0.5,
+        "standard_deviation": 0.0
+      },
+      "top1_by_target_scene": {
+        "frequent-scene": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "sparse-scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "worst_target_scene_top1": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      }
+    },
+    "oracle": {
+      "mean_reciprocal_rank": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "target_scene_gap": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      },
+      "top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "top1_by_target_scene": {
+        "frequent-scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "sparse-scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "worst_target_scene_top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      }
+    }
+  },
+  "cases": {
+    "target_frequent_scene": 20,
+    "target_sparse_scene": 20,
+    "total": 40
+  },
+  "paired_interval_advantage": {
+    "target_scene_gap": {
+      "bootstrap_95_ci": [
+        1.0,
+        1.0
+      ],
+      "losses": 0,
+      "mean_advantage": 1.0,
+      "orientation": "naive minus interval_aware",
+      "ties": 0,
+      "wins": 5
+    },
+    "top1": {
+      "bootstrap_95_ci": [
+        0.5,
+        0.5
+      ],
+      "losses": 0,
+      "mean_advantage": 0.5,
+      "orientation": "interval_aware minus naive",
+      "ties": 0,
+      "wins": 5
+    },
+    "worst_target_scene_top1": {
+      "bootstrap_95_ci": [
+        1.0,
+        1.0
+      ],
+      "losses": 0,
+      "mean_advantage": 1.0,
+      "orientation": "interval_aware minus naive",
+      "ties": 0,
+      "wins": 5
+    }
+  },
+  "phase": "development",
+  "protocol": {
+    "bootstrap_samples": 20000,
+    "candidate_order_policy": "analytic cases alternate candidate order; reversal is tested",
+    "case_design": "target has a 3h observation and distractor a 4h observation under equal latent hazards",
+    "cases_fixed_before_confirmation": true,
+    "claim_scope": "synthetic controlled decision evidence",
+    "confirmation_seeds": [
+      607,
+      701,
+      809,
+      907,
+      1009,
+      1103,
+      1201,
+      1301,
+      1409,
+      1511
+    ],
+    "development_seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "latent_hazard_per_hour": 0.25,
+    "primary_metric": "overall top1",
+    "query_policy": "scene is persistence context but is not a query constraint",
+    "samples_per_scene": 600,
+    "scene_inspection_intervals_hours": {
+      "frequent-scene": 0.5,
+      "sparse-scene": 4.0
+    },
+    "secondary_metrics": [
+      "worst target-scene top1",
+      "absolute target-scene top1 gap"
+    ],
+    "target_scene_balance": "20 frequent-scene and 20 sparse-scene targets",
+    "test_samples_per_scene": 20,
+    "truth_boundary": "current truth labels never enter matcher entities"
+  },
+  "runs": [
+    {
+      "conditions": {
+        "interval_aware": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.24869728968682048,
+            "sparse-scene": 0.2315064501612269
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        },
+        "naive": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.23385618252189855,
+            "sparse-scene": 0.15096878363832078
+          },
+          "mean_reciprocal_rank": 0.75,
+          "target_scene_gap": 1.0,
+          "top1": 0.5,
+          "top1_by_target_scene": {
+            "frequent-scene": 0.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 0.0
+        },
+        "oracle": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.25,
+            "sparse-scene": 0.25
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        }
+      },
+      "seed": 101
+    },
+    {
+      "conditions": {
+        "interval_aware": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.2442470107397387,
+            "sparse-scene": 0.24631106780521078
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        },
+        "naive": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.22992189064690566,
+            "sparse-scene": 0.15666299559471367
+          },
+          "mean_reciprocal_rank": 0.75,
+          "target_scene_gap": 1.0,
+          "top1": 0.5,
+          "top1_by_target_scene": {
+            "frequent-scene": 0.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 0.0
+        },
+        "oracle": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.25,
+            "sparse-scene": 0.25
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        }
+      },
+      "seed": 211
+    },
+    {
+      "conditions": {
+        "interval_aware": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.25087984251270834,
+            "sparse-scene": 0.2474295501072431
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        },
+        "naive": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.2357824823578248,
+            "sparse-scene": 0.1570796460176991
+          },
+          "mean_reciprocal_rank": 0.75,
+          "target_scene_gap": 1.0,
+          "top1": 0.5,
+          "top1_by_target_scene": {
+            "frequent-scene": 0.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 0.0
+        },
+        "oracle": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.25,
+            "sparse-scene": 0.25
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        }
+      },
+      "seed": 307
+    },
+    {
+      "conditions": {
+        "interval_aware": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.23108940164165143,
+            "sparse-scene": 0.24484367682518304
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        },
+        "naive": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.2182385035074045,
+            "sparse-scene": 0.15611353711790393
+          },
+          "mean_reciprocal_rank": 0.75,
+          "target_scene_gap": 1.0,
+          "top1": 0.5,
+          "top1_by_target_scene": {
+            "frequent-scene": 0.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 0.0
+        },
+        "oracle": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.25,
+            "sparse-scene": 0.25
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        }
+      },
+      "seed": 401
+    },
+    {
+      "conditions": {
+        "interval_aware": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.25452951781854527,
+            "sparse-scene": 0.251103150786953
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        },
+        "naive": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.23899895724713244,
+            "sparse-scene": 0.15843507214206437
+          },
+          "mean_reciprocal_rank": 0.75,
+          "target_scene_gap": 1.0,
+          "top1": 0.5,
+          "top1_by_target_scene": {
+            "frequent-scene": 0.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 0.0
+        },
+        "oracle": {
+          "hazards_per_hour": {
+            "frequent-scene": 0.25,
+            "sparse-scene": 0.25
+          },
+          "mean_reciprocal_rank": 1.0,
+          "target_scene_gap": 0.0,
+          "top1": 1.0,
+          "top1_by_target_scene": {
+            "frequent-scene": 1.0,
+            "sparse-scene": 1.0
+          },
+          "worst_target_scene_top1": 1.0
+        }
+      },
+      "seed": 503
+    }
+  ],
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ]
+}

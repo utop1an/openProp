@@ -1,0 +1,36 @@
+Bootstrap: docker
+From: python:3.11.11-slim-bookworm
+
+%labels
+    org.opencontainers.image.title OpenProp AI2-THOR capture runtime
+    org.opencontainers.image.version 2
+    ai2thor.version 5.0.0
+
+%files
+    hpc/requirements-ai2thor.txt /opt/openprop/requirements-ai2thor.txt
+
+%post
+    apt-get update -y
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        bash ca-certificates curl libasound2 libgl1 libglib2.0-0 libnss3 \
+        libsm6 libvulkan1 libx11-6 libxcursor1 libxext6 libxi6 \
+        libxinerama1 libxrandr2 libxrender1 vulkan-tools
+    rm -rf /var/lib/apt/lists/*
+    python -m pip install --no-cache-dir --upgrade pip setuptools wheel
+    python -m pip install --no-cache-dir -r /opt/openprop/requirements-ai2thor.txt
+
+%environment
+    export PYTHONUNBUFFERED=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export PYTHONPATH=/work/src
+    export MPLBACKEND=Agg
+    export MPLCONFIGDIR=/tmp/openprop-matplotlib
+    export AI2THOR_PLATFORM=CloudRendering
+
+%runscript
+    exec python "$@"
+
+%test
+    python -c "import ai2thor; assert ai2thor.__version__ == '5.0.0'"
+    python -c "import matplotlib, openai, PIL"
+    vulkaninfo --summary >/dev/null 2>&1 || true

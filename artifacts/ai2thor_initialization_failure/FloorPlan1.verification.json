@@ -1,0 +1,15 @@
+{
+  "artifacts_verified": 0,
+  "manifest": "C:\\anu\\openProp\\artifacts\\ai2thor_initialization_failure\\FloorPlan1.capture-manifest.json",
+  "manifest_sha256": "846ade70b03d8246edd865545398a0ad5c6ca84b5b7e7199e3b5b60049104f9c",
+  "records": 0,
+  "run_status": "initialization_failed",
+  "scene": "FloorPlan1",
+  "schema_version": 1,
+  "status_counts": {
+    "captured": 0,
+    "excluded": 0,
+    "failed": 0
+  },
+  "truth_exposed_to_matcher": false
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "protocol_id": "openprop-visual-datasets-v1",
+  "generated_on": "2026-09-03",
+  "datasets": [
+    {
+      "id": "ai2thor_ithor",
+      "priority": "required_now",
+      "claim_role": "controlled_causal_end_to_end",
+      "version": "5.0.0",
+      "access": "automatic_package_and_unity_build_download",
+      "official_url": "https://ai2thor.allenai.org/ithor/",
+      "license_url": "https://github.com/allenai/ai2thor/blob/main/LICENSE",
+      "estimated_download": "approximately 500 MB Unity build plus Python dependencies",
+      "required_repository_artifacts": [
+        "artifacts/ai2thor_protocol/scene_split.json",
+        "artifacts/visual_protocol/experiment_protocol.json"
+      ],
+      "credential_env": null,
+      "completion_marker": null,
+      "end_to_end_query_claim_eligible": true
+    },
+    {
+      "id": "custom_real_video",
+      "priority": "required_before_real_world_claim",
+      "claim_role": "room_person_disjoint_end_to_end_confirmation",
+      "version": "openprop-real-video-v1",
+      "access": "self_recorded_with_consent",
+      "official_url": null,
+      "license_url": null,
+      "estimated_download": "collection dependent",
+      "required_repository_artifacts": [],
+      "credential_env": null,
+      "completion_marker": "custom_real_video/.openprop-dataset-complete.json",
+      "end_to_end_query_claim_eligible": true
+    },
+    {
+      "id": "ego4d_hands_objects",
+      "priority": "secondary_real_perception",
+      "claim_role": "state_change_and_changed_object_association",
+      "version": "v2",
+      "access": "license_and_temporary_AWS_credentials_required",
+      "official_url": "https://ego4d-data.org/docs/benchmarks/hands-and-objects/",
+      "license_url": "https://ego4d-data.org/docs/start-here/",
+      "estimated_download": "annotations first; selected FHO clips only, never full 7 TB video",
+      "required_repository_artifacts": [],
+      "credential_env": "EGO4D_AWS_PROFILE",
+      "completion_marker": "ego4d_hands_objects/.openprop-dataset-complete.json",
+      "end_to_end_query_claim_eligible": false
+    },
+    {
+      "id": "aria_digital_twin",
+      "priority": "secondary_real_tracking",
+      "claim_role": "occlusion_tracking_and_moved_object_identity",
+      "version": "v2",
+      "access": "license_and_expiring_CDN_manifest_required",
+      "official_url": "https://facebookresearch.github.io/projectaria_tools/docs/open_datasets/aria_digital_twin_dataset/",
+      "license_url": "https://www.projectaria.com/datasets/aria-digital-twin/",
+      "estimated_download": "approximately 500 MB sample; selected sequences and data types only",
+      "required_repository_artifacts": [],
+      "credential_env": "ADT_CDN_FILE",
+      "completion_marker": "aria_digital_twin/.openprop-dataset-complete.json",
+      "end_to_end_query_claim_eligible": false
+    },
+    {
+      "id": "epic_kitchens_visor",
+      "priority": "secondary_real_candidates",
+      "claim_role": "active_object_candidates_and_appearance_shift",
+      "version": "VISOR public release",
+      "access": "public_annotations_and_sparse_frames_with_dataset_terms",
+      "official_url": "https://epic-kitchens.github.io/VISOR/site/",
+      "license_url": "https://data.bris.ac.uk/data/dataset/2v6cgv1x04ol22qp9rm9x2j6a7",
+      "estimated_download": "download annotation and sparse-frame release before full videos",
+      "required_repository_artifacts": [],
+      "credential_env": null,
+      "completion_marker": "epic_kitchens_visor/.openprop-dataset-complete.json",
+      "end_to_end_query_claim_eligible": false
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "cases": [
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_074524_006355:ann-1",
+      "query_sha256": "dd79fdb63ac4e28b2dea152def9da60540f302fa9ec83d555d8ca875bd422d28",
+      "source_path": "valid_unseen/pick_and_place_simple-Watch-None-Safe-219/trial_T20190907_074524_006355/traj_data.json",
+      "task_id": "trial_T20190907_074524_006355",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_074556_124850:ann-1",
+      "query_sha256": "242f799f1046e8c404927d62d4c6389571529dc866ec691e1a62c08965fd24ca",
+      "source_path": "valid_unseen/pick_and_place_simple-Watch-None-Safe-219/trial_T20190907_074556_124850/traj_data.json",
+      "task_id": "trial_T20190907_074556_124850",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_074643_810052:ann-1",
+      "query_sha256": "ec08fab668bdf51622158ba94a5793dba6743768a1ba88e8b068a037de6e8c4b",
+      "source_path": "valid_unseen/pick_and_place_simple-Watch-None-Safe-219/trial_T20190907_074643_810052/traj_data.json",
+      "task_id": "trial_T20190907_074643_810052",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_021510_064551:ann-1",
+      "query_sha256": "636955bd6d4004006dc3f263dc9e4552f1a82d561884d38bc610c9d3c4fbcbba",
+      "source_path": "valid_unseen/pick_and_place_simple-Plunger-None-Cabinet-424/trial_T20190908_021510_064551/traj_data.json",
+      "task_id": "trial_T20190908_021510_064551",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_021537_611374:ann-1",
+      "query_sha256": "b98b327977180940fd8ffc7102d998ec67fbb4ec45025a6eae6503c9b088c4b1",
+      "source_path": "valid_unseen/pick_and_place_simple-Plunger-None-Cabinet-424/trial_T20190908_021537_611374/traj_data.json",
+      "task_id": "trial_T20190908_021537_611374",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_062908_529599:ann-1",
+      "query_sha256": "a9459336ab1f4c696e4cbc16d3fb82b46fab4ca5bdf504e193607040a22af3d1",
+      "source_path": "valid_unseen/pick_and_place_simple-Plunger-None-Cabinet-424/trial_T20190908_062908_529599/traj_data.json",
+      "task_id": "trial_T20190908_062908_529599",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_121952_610012:ann-1",
+      "query_sha256": "6f6e8afc601e3ca09fc9c5f2012b7f3bd7f459cb05f4534ddade5b3f23929163",
+      "source_path": "valid_unseen/pick_and_place_simple-Pencil-None-Shelf-308/trial_T20190908_121952_610012/traj_data.json",
+      "task_id": "trial_T20190908_121952_610012",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_122024_052056:ann-1",
+      "query_sha256": "6f3b4c56e902d91241abd5b29713d285a03c22d0d57c1797d58e8888254c5d20",
+      "source_path": "valid_unseen/pick_and_place_simple-Pencil-None-Shelf-308/trial_T20190908_122024_052056/traj_data.json",
+      "task_id": "trial_T20190908_122024_052056",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_122154_042763:ann-1",
+      "query_sha256": "ae5c040c566c1a27335cfa6818f1ebe963322a0cce429d86166b7a1965a86d3e",
+      "source_path": "valid_unseen/pick_and_place_simple-Pencil-None-Shelf-308/trial_T20190908_122154_042763/traj_data.json",
+      "task_id": "trial_T20190908_122154_042763",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_125200_737896:ann-1",
+      "query_sha256": "5ff34cebbed3d142f8682a64a831648dfbf7cd2f7882702d685b2976d399735b",
+      "source_path": "valid_unseen/pick_and_place_simple-Mug-None-Desk-308/trial_T20190908_125200_737896/traj_data.json",
+      "task_id": "trial_T20190908_125200_737896",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_022345_347148:ann-1",
+      "query_sha256": "5ef9324b8cdb542a53913d98704b40f29eba8e9d6a621abe4317c91f6643421f",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Cloth-None-Cabinet-424/trial_T20190908_022345_347148/traj_data.json",
+      "task_id": "trial_T20190908_022345_347148",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_022436_073995:ann-1",
+      "query_sha256": "007d17e0557144509cccc5b6c52ec12801f447d20cc231005dd887b71ad89b9c",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Cloth-None-Cabinet-424/trial_T20190908_022436_073995/traj_data.json",
+      "task_id": "trial_T20190908_022436_073995",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_032434_013084:ann-1",
+      "query_sha256": "10b74d7263da9b1a656da593932502aa70f50e7de1dd63da5d5085e244bc71fe",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Pan-None-CounterTop-10/trial_T20190908_032434_013084/traj_data.json",
+      "task_id": "trial_T20190908_032434_013084",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_032518_891433:ann-1",
+      "query_sha256": "3b426fdc045ac319e397df9334791e78cd9d80ead201a5e24e6ccf7ec6c17f85",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Pan-None-CounterTop-10/trial_T20190908_032518_891433/traj_data.json",
+      "task_id": "trial_T20190908_032518_891433",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_032543_712058:ann-1",
+      "query_sha256": "21eaa7b3308d16365ab351f3623152dcf505aa92572ec8f8905e8c0a814e2c62",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Pan-None-CounterTop-10/trial_T20190908_032543_712058/traj_data.json",
+      "task_id": "trial_T20190908_032543_712058",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_100512_362932:ann-1",
+      "query_sha256": "1c618805573064c6d9f15a06132ff695a1ae59c0f914ae3743d752afd3631bd5",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Cloth-None-CounterTop-424/trial_T20190908_100512_362932/traj_data.json",
+      "task_id": "trial_T20190908_100512_362932",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_100632_546757:ann-1",
+      "query_sha256": "8e397342f0928248e485c2e8facbcaa99a597b0fa64918df9de6c27e7774815a",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Cloth-None-CounterTop-424/trial_T20190908_100632_546757/traj_data.json",
+      "task_id": "trial_T20190908_100632_546757",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_114340_674467:ann-1",
+      "query_sha256": "8e397342f0928248e485c2e8facbcaa99a597b0fa64918df9de6c27e7774815a",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Cloth-None-CounterTop-424/trial_T20190908_114340_674467/traj_data.json",
+      "task_id": "trial_T20190908_114340_674467",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_115403_911841:ann-1",
+      "query_sha256": "c36f3701fe1cca9ee71bdac37aa800805ac2604f241144b156a00425a19d1bbd",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-LettuceSliced-None-GarbageCan-10/trial_T20190908_115403_911841/traj_data.json",
+      "task_id": "trial_T20190908_115403_911841",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_115651_521111:ann-1",
+      "query_sha256": "886b9583a6fe7e9341c8ac571cadf8566e462135741659e9e2832ae3c44ef385",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-LettuceSliced-None-GarbageCan-10/trial_T20190908_115651_521111/traj_data.json",
+      "task_id": "trial_T20190908_115651_521111",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_173149_648833:ann-1",
+      "query_sha256": "cb90298b2e6b922814a6f143a9bfb1132f3645f768bbf08777e5f47ab06ba27b",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Egg-None-SinkBasin-10/trial_T20190907_173149_648833/traj_data.json",
+      "task_id": "trial_T20190907_173149_648833",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_173215_875825:ann-1",
+      "query_sha256": "31f6505ad0cdd94a50d5f845be1d6c85708ec8a759234202262b909bd13325af",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Egg-None-SinkBasin-10/trial_T20190907_173215_875825/traj_data.json",
+      "task_id": "trial_T20190907_173215_875825",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_183715_299073:ann-1",
+      "query_sha256": "4fbca8d260ff2e4a36bc1f7669e59f97b39e3b6407e256d496a7f1bc0e42c0fc",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_183715_299073/traj_data.json",
+      "task_id": "trial_T20190907_183715_299073",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_183807_477267:ann-1",
+      "query_sha256": "565581477e4f99652c689910519fc8c2c82a0a7b87d8363923bb37042066c8d0",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_183807_477267/traj_data.json",
+      "task_id": "trial_T20190907_183807_477267",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_183853_958104:ann-1",
+      "query_sha256": "967a7388df4c452fb018d6bdb5831cd35228831e1ceaa9aff7871f73933f53db",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_183853_958104/traj_data.json",
+      "task_id": "trial_T20190907_183853_958104",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_091747_866951:ann-1",
+      "query_sha256": "f1c021edd9e0221f9f94e667528b6b8bfab05ae4eef590b3c621e8e06ae9b2bf",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Bread-None-CounterTop-10/trial_T20190908_091747_866951/traj_data.json",
+      "task_id": "trial_T20190908_091747_866951",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_091811_414150:ann-1",
+      "query_sha256": "f84c55ffdcf7faabdcdd7817ff385033b1599352a5c2945b0c9ad2743c1deaa4",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Bread-None-CounterTop-10/trial_T20190908_091811_414150/traj_data.json",
+      "task_id": "trial_T20190908_091811_414150",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_091835_825830:ann-1",
+      "query_sha256": "01920f397afc44d68dbdb50c21f43a939dc9bccda94555e7d594f374485cc0d8",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Bread-None-CounterTop-10/trial_T20190908_091835_825830/traj_data.json",
+      "task_id": "trial_T20190908_091835_825830",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_114545_244903:ann-1",
+      "query_sha256": "684d8109c72279f83f38b956bcf88d4d6349e709a31d470b0e195051117609e2",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Pan-None-CounterTop-10/trial_T20190908_114545_244903/traj_data.json",
+      "task_id": "trial_T20190908_114545_244903",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_114622_738670:ann-1",
+      "query_sha256": "8a41cca8a18be1adb4b112120dd865c69571d25d4bf78db1bd3f6ab7fa2889d7",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Pan-None-CounterTop-10/trial_T20190908_114622_738670/traj_data.json",
+      "task_id": "trial_T20190908_114622_738670",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_161817_163233:ann-1",
+      "query_sha256": "747f189147a8a01560dc23dc20f8522017bb7a6ae7a3a030c1b7287c66699571",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Potato-None-GarbageCan-10/trial_T20190907_161817_163233/traj_data.json",
+      "task_id": "trial_T20190907_161817_163233",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_161853_945788:ann-1",
+      "query_sha256": "205c36f6adf82f3af8d689f180a40ca73209ca685724febeb67a1bbc784bcd44",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Potato-None-GarbageCan-10/trial_T20190907_161853_945788/traj_data.json",
+      "task_id": "trial_T20190907_161853_945788",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_171806_406231:ann-1",
+      "query_sha256": "734aca01e332297b8c34c8111aab06dacfdf0d4383be906fb80aac73ae06bd21",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_171806_406231/traj_data.json",
+      "task_id": "trial_T20190907_171806_406231",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_171850_960211:ann-1",
+      "query_sha256": "80588c9a2e49b8ebbee788385b0fcf11da5ae58e27dd645d9e79abd6e8b65cf1",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_171850_960211/traj_data.json",
+      "task_id": "trial_T20190907_171850_960211",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_171933_349922:ann-1",
+      "query_sha256": "b5d21f1a6ce3168a25bc5ab9f98942f8c05d54868afd83744cfed45f96a0d8e7",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_171933_349922/traj_data.json",
+      "task_id": "trial_T20190907_171933_349922",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_025158_582174:ann-1",
+      "query_sha256": "c21765f1caf619516c59ab630224885d8edff19b4f023b9b3636317f3ef026e5",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-BreadSliced-None-CounterTop-10/trial_T20190908_025158_582174/traj_data.json",
+      "task_id": "trial_T20190908_025158_582174",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_025303_695053:ann-1",
+      "query_sha256": "511fd99501fa571b9fe41115c013169fd1c03dcb512aeed384e792ccb0f3e524",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-BreadSliced-None-CounterTop-10/trial_T20190908_025303_695053/traj_data.json",
+      "task_id": "trial_T20190908_025303_695053",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_025420_586121:ann-1",
+      "query_sha256": "dca5d86d028a681bd0902a48d84cc735064dcbe6dd182381074c58d68598881f",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-BreadSliced-None-CounterTop-10/trial_T20190908_025420_586121/traj_data.json",
+      "task_id": "trial_T20190908_025420_586121",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_073656_715770:ann-1",
+      "query_sha256": "3576d5b67d7b0035bf114c5af828c76c27c8d566c82d183d96ac845327230451",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-AppleSliced-None-GarbageCan-10/trial_T20190908_073656_715770/traj_data.json",
+      "task_id": "trial_T20190908_073656_715770",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_073749_086690:ann-1",
+      "query_sha256": "804dcf1ba7b25c68a731f9a9a57f08ed5e60d391818e0aaf4d0c50bf32927209",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-AppleSliced-None-GarbageCan-10/trial_T20190908_073749_086690/traj_data.json",
+      "task_id": "trial_T20190908_073749_086690",
+      "task_type": "pick_heat_then_place_in_recep"
+    }
+  ],
+  "protocol": {
+    "annotation_index": 1,
+    "frozen_before_model_requests": true,
+    "gold_labels_in_manifest": false,
+    "ordering": "case_id lexical order within task type",
+    "query_overlap_with_reference": 0,
+    "reference_annotation_index": 0,
+    "reference_trajectory_offset": 0,
+    "split": "valid_unseen",
+    "task_id_overlap_with_reference": 0,
+    "trajectories_per_task": 10,
+    "trajectory_offset": 10
+  }
+}

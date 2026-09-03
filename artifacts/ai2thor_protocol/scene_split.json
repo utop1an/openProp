@@ -1,0 +1,614 @@
+{
+  "assignments": [
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan415",
+      "split": "calibration"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan416",
+      "split": "calibration"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan417",
+      "split": "calibration"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan424",
+      "split": "calibration"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan426",
+      "split": "calibration"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan428",
+      "split": "calibration"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan310",
+      "split": "calibration"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan311",
+      "split": "calibration"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan317",
+      "split": "calibration"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan322",
+      "split": "calibration"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan326",
+      "split": "calibration"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan328",
+      "split": "calibration"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan11",
+      "split": "calibration"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan16",
+      "split": "calibration"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan18",
+      "split": "calibration"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan2",
+      "split": "calibration"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan20",
+      "split": "calibration"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan21",
+      "split": "calibration"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan203",
+      "split": "calibration"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan206",
+      "split": "calibration"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan213",
+      "split": "calibration"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan220",
+      "split": "calibration"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan226",
+      "split": "calibration"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan227",
+      "split": "calibration"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan401",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan403",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan404",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan406",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan409",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan410",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan411",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan412",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan413",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan414",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan418",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan419",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan420",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan421",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan422",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan423",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan429",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan430",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan301",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan302",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan303",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan304",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan306",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan308",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan309",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan312",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan313",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan314",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan315",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan318",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan320",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan323",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan324",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan327",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan329",
+      "split": "development"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan330",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan1",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan12",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan14",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan15",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan17",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan19",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan22",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan23",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan24",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan26",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan27",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan29",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan3",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan30",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan5",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan6",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan7",
+      "split": "development"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan9",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan201",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan202",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan205",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan207",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan209",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan210",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan211",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan214",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan216",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan218",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan219",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan221",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan222",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan223",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan224",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan228",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan229",
+      "split": "development"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan230",
+      "split": "development"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan402",
+      "split": "test"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan405",
+      "split": "test"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan407",
+      "split": "test"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan408",
+      "split": "test"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan425",
+      "split": "test"
+    },
+    {
+      "category": "bathroom",
+      "scene": "FloorPlan427",
+      "split": "test"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan305",
+      "split": "test"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan307",
+      "split": "test"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan316",
+      "split": "test"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan319",
+      "split": "test"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan321",
+      "split": "test"
+    },
+    {
+      "category": "bedroom",
+      "scene": "FloorPlan325",
+      "split": "test"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan10",
+      "split": "test"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan13",
+      "split": "test"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan25",
+      "split": "test"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan28",
+      "split": "test"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan4",
+      "split": "test"
+    },
+    {
+      "category": "kitchen",
+      "scene": "FloorPlan8",
+      "split": "test"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan204",
+      "split": "test"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan208",
+      "split": "test"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan212",
+      "split": "test"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan215",
+      "split": "test"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan217",
+      "split": "test"
+    },
+    {
+      "category": "living_room",
+      "scene": "FloorPlan225",
+      "split": "test"
+    }
+  ],
+  "category_split_sizes": {
+    "calibration": 6,
+    "development": 18,
+    "test": 6
+  },
+  "protocol_id": "openprop-ai2thor-scene-split-v1",
+  "schema_version": 1,
+  "seed": "openprop-iclr2027-v1",
+  "selection_uses_model_outputs": false,
+  "split_sha256": "c99adcdc6f7118f11c2bfdd66143beb71279665668c406eb18c92bdfe2d80ea4"
+}

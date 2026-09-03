@@ -1,0 +1,292 @@
+{
+  "aggregate": {
+    "factorized": {
+      "concordance_index": {
+        "maximum": 0.7717376166380391,
+        "mean": 0.748894717687214,
+        "minimum": 0.7285335648677055,
+        "standard_deviation": 0.014496369402536574
+      },
+      "grounding_top1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.0975261171766356,
+        "mean": 0.07948341893947485,
+        "minimum": 0.06718531383663567,
+        "standard_deviation": 0.010023989426299498
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.3738910737215533,
+        "mean": 1.239012848059974,
+        "minimum": 1.1830377398733192,
+        "standard_deviation": 0.06890560431666147
+      }
+    },
+    "global": {
+      "concordance_index": {
+        "maximum": 0.5,
+        "mean": 0.5,
+        "minimum": 0.5,
+        "standard_deviation": 0.0
+      },
+      "grounding_top1": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "standard_deviation": 0.0
+      },
+      "integrated_brier_score": {
+        "maximum": 0.24754600337719232,
+        "mean": 0.24340310488100564,
+        "minimum": 0.23751414949283206,
+        "standard_deviation": 0.0034948956813497215
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.8301000386305624,
+        "mean": 1.7948987521874324,
+        "minimum": 1.732880690670317,
+        "standard_deviation": 0.03292013115712652
+      }
+    },
+    "neural": {
+      "concordance_index": {
+        "maximum": 0.7564992545657846,
+        "mean": 0.7226016010057414,
+        "minimum": 0.6850656886866905,
+        "standard_deviation": 0.026283381806762936
+      },
+      "grounding_top1": {
+        "maximum": 1.0,
+        "mean": 0.9722222222222222,
+        "minimum": 0.8611111111111112,
+        "standard_deviation": 0.05555555555555554
+      },
+      "integrated_brier_score": {
+        "maximum": 0.09534255126262456,
+        "mean": 0.08358843866032235,
+        "minimum": 0.06802702448580247,
+        "standard_deviation": 0.008813920638042087
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.376042539157083,
+        "mean": 1.2661728384689506,
+        "minimum": 1.2055163552964854,
+        "standard_deviation": 0.06128833735145791
+      }
+    }
+  },
+  "protocol": {
+    "epochs": 350,
+    "grounding_repetitions": 12,
+    "samples_per_context": 80,
+    "split": "feature values seen; complete validation/test contexts held out"
+  },
+  "runs": [
+    {
+      "factorized": {
+        "concordance_index": 0.7717376166380391,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.0753780373814798,
+        "negative_log_likelihood": 1.2267829472858098
+      },
+      "factorized_validation_hazard_scale": 0.8639708838891655,
+      "global": {
+        "concordance_index": 0.5,
+        "grounding_top1": 0.0,
+        "integrated_brier_score": 0.23751414949283206,
+        "negative_log_likelihood": 1.8103646576497732
+      },
+      "neural": {
+        "concordance_index": 0.6850656886866905,
+        "grounding_by_tag": {
+          "compositional-ood": 0.8611111111111112,
+          "en": 0.8611111111111112,
+          "informative-scene-context": 0.8611111111111112,
+          "subject-book": 0.75,
+          "subject-cup": 0.8333333333333334,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 0.8611111111111112,
+        "integrated_brier_score": 0.08399985557089572,
+        "negative_log_likelihood": 1.2865879420845643
+      },
+      "seed": 31,
+      "validation_hazard_scale": 0.7656342071513035
+    },
+    {
+      "factorized": {
+        "concordance_index": 0.7285335648677055,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.0975261171766356,
+        "negative_log_likelihood": 1.3738910737215533
+      },
+      "factorized_validation_hazard_scale": 1.0151469692716266,
+      "global": {
+        "concordance_index": 0.5,
+        "grounding_top1": 0.0,
+        "integrated_brier_score": 0.24547260070190877,
+        "negative_log_likelihood": 1.8301000386305624
+      },
+      "neural": {
+        "concordance_index": 0.7285335648677055,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.09534255126262456,
+        "negative_log_likelihood": 1.376042539157083
+      },
+      "seed": 41,
+      "validation_hazard_scale": 1.1351588067804366
+    },
+    {
+      "factorized": {
+        "concordance_index": 0.7564992545657846,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.06718531383663567,
+        "negative_log_likelihood": 1.2010754978379614
+      },
+      "factorized_validation_hazard_scale": 0.9929665479589194,
+      "global": {
+        "concordance_index": 0.5,
+        "grounding_top1": 0.0,
+        "integrated_brier_score": 0.24754600337719232,
+        "negative_log_likelihood": 1.804427062749084
+      },
+      "neural": {
+        "concordance_index": 0.7564992545657846,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.06802702448580247,
+        "negative_log_likelihood": 1.2055163552964854
+      },
+      "seed": 53,
+      "validation_hazard_scale": 0.9402514587852394
+    },
+    {
+      "factorized": {
+        "concordance_index": 0.7455328731580751,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.07673744269597456,
+        "negative_log_likelihood": 1.1830377398733192
+      },
+      "factorized_validation_hazard_scale": 1.1953209318008469,
+      "global": {
+        "concordance_index": 0.5,
+        "grounding_top1": 0.0,
+        "integrated_brier_score": 0.24167726325365946,
+        "negative_log_likelihood": 1.732880690670317
+      },
+      "neural": {
+        "concordance_index": 0.700739217702061,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.0863289572948442,
+        "negative_log_likelihood": 1.241103250468655
+      },
+      "seed": 67,
+      "validation_hazard_scale": 0.8741195808808317
+    },
+    {
+      "factorized": {
+        "concordance_index": 0.7421702792064658,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.08059018360664857,
+        "negative_log_likelihood": 1.2102769815812262
+      },
+      "factorized_validation_hazard_scale": 0.9796707049657958,
+      "global": {
+        "concordance_index": 0.5,
+        "grounding_top1": 0.0,
+        "integrated_brier_score": 0.24480550757943564,
+        "negative_log_likelihood": 1.7967213112374254
+      },
+      "neural": {
+        "concordance_index": 0.7421702792064658,
+        "grounding_by_tag": {
+          "compositional-ood": 1.0,
+          "en": 1.0,
+          "informative-scene-context": 1.0,
+          "subject-book": 1.0,
+          "subject-cup": 1.0,
+          "subject-tool": 1.0
+        },
+        "grounding_top1": 1.0,
+        "integrated_brier_score": 0.08424380468744479,
+        "negative_log_likelihood": 1.221614105337965
+      },
+      "seed": 79,
+      "validation_hazard_scale": 1.116319097819982
+    }
+  ],
+  "seeds": [
+    31,
+    41,
+    53,
+    67,
+    79
+  ]
+}

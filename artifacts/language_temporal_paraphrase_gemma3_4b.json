@@ -1,0 +1,5576 @@
+{
+  "protocol": {
+    "cases": 40,
+    "matcher_truth_access": "none",
+    "model": "gemma3:4b",
+    "primary_metric_denominator": "all cases including request and parse failures",
+    "query_set": "paraphrase",
+    "raw_response_replay": true,
+    "repair_input_boundary": "query schema and raw response only",
+    "response_source": "live Ollama",
+    "unique_queries": 30
+  },
+  "raw_responses": {
+    "find the blue shirt that is still clean": {
+      "error": null,
+      "latency_seconds": 7.592222500010394,
+      "query": "find the blue shirt that is still clean",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "find the ceramic cup that is red": {
+      "error": null,
+      "latency_seconds": 3.416503499960527,
+      "query": "find the ceramic cup that is red",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "find the red cup resting on the table": {
+      "error": null,
+      "latency_seconds": 7.681612099986523,
+      "query": "find the red cup resting on the table",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "locate the clean shirt with the blue color": {
+      "error": null,
+      "latency_seconds": 3.826018099905923,
+      "query": "locate the clean shirt with the blue color",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "locate the red-colored ceramic cup": {
+      "error": null,
+      "latency_seconds": 8.295084499986842,
+      "query": "locate the red-colored ceramic cup",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "locate the red-colored cup atop the table": {
+      "error": null,
+      "latency_seconds": 7.954461899935268,
+      "query": "locate the red-colored cup atop the table",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "atop",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "point to the blue-colored shirt that remains clean": {
+      "error": null,
+      "latency_seconds": 3.2841137999203056,
+      "query": "point to the blue-colored shirt that remains clean",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "point to the cup with red color and ceramic material": {
+      "error": null,
+      "latency_seconds": 3.4479314000345767,
+      "query": "point to the cup with red color and ceramic material",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "point to the red cup positioned on the table": {
+      "error": null,
+      "latency_seconds": 13.532823500107042,
+      "query": "point to the red cup positioned on the table",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "select the cup that is red and on the table": {
+      "error": null,
+      "latency_seconds": 3.7212730000028387,
+      "query": "select the cup that is red and on the table",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "table"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "select the currently clean blue shirt": {
+      "error": null,
+      "latency_seconds": 3.022050099913031,
+      "query": "select the currently clean blue shirt",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "shirt",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "select the red cup made of ceramic": {
+      "error": null,
+      "latency_seconds": 2.4702509000198916,
+      "query": "select the red cup made of ceramic",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "which ceramic drinking cup is red": {
+      "error": null,
+      "latency_seconds": 13.712276600068435,
+      "query": "which ceramic drinking cup is red",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "which red cup is currently on the tabletop": {
+      "error": null,
+      "latency_seconds": 2.508975200005807,
+      "query": "which red cup is currently on the tabletop",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "tabletop"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "which shirt is both blue and clean now": {
+      "error": null,
+      "latency_seconds": 13.2593029999407,
+      "query": "which shirt is both blue and clean now",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "哪一个杯子既是红色又是陶瓷的": {
+      "error": null,
+      "latency_seconds": 3.3187552000163123,
+      "query": "哪一个杯子既是红色又是陶瓷的",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "哪一件蓝衬衫目前是干净的": {
+      "error": null,
+      "latency_seconds": 2.9299018000019714,
+      "query": "哪一件蓝衬衫目前是干净的",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "shirt",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "定位桌上那只红杯": {
+      "error": null,
+      "latency_seconds": 21.078258999972604,
+      "query": "定位桌上那只红杯",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "table"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "定位红色陶瓷杯具": {
+      "error": null,
+      "latency_seconds": 14.215326300007291,
+      "query": "定位红色陶瓷杯具",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "我要桌子上那个红色的杯子": {
+      "error": null,
+      "latency_seconds": 3.0339515999658033,
+      "query": "我要桌子上那个红色的杯子",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "table"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "我要状态为干净的那件蓝衬衫": {
+      "error": null,
+      "latency_seconds": 4.2382004000246525,
+      "query": "我要状态为干净的那件蓝衬衫",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "semantic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "我要那只红色的陶瓷杯": {
+      "error": null,
+      "latency_seconds": 2.3275954000419006,
+      "query": "我要那只红色的陶瓷杯",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "找出现在仍然干净的蓝色衬衫": {
+      "error": null,
+      "latency_seconds": 18.129116700030863,
+      "query": "找出现在仍然干净的蓝色衬衫",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "shirt",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "指出当前干净的蓝色上衣": {
+      "error": null,
+      "latency_seconds": 17.811215099995025,
+      "query": "指出当前干净的蓝色上衣",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clothing",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "指向仍在桌上的红色杯子": {
+      "error": null,
+      "latency_seconds": 4.393826400046237,
+      "query": "指向仍在桌上的红色杯子",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "table"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "桌面上哪一个杯子是红色的": {
+      "error": null,
+      "latency_seconds": 2.466693599941209,
+      "query": "桌面上哪一个杯子是红色的",
+      "response": {
+        "constraints": [
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "table",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "请定位那件干净的蓝色衬衣": {
+      "error": null,
+      "latency_seconds": 3.137839400093071,
+      "query": "请定位那件干净的蓝色衬衣",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clothing",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "blue",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "currently observed cleanliness state",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.65,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "clean",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "请找出放在桌面上的红杯子": {
+      "error": null,
+      "latency_seconds": 15.078124399995431,
+      "query": "请找出放在桌面上的红杯子",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "current spatial relation between an entity and another entity",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "desktop"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "请找出红色陶瓷材质的杯子": {
+      "error": null,
+      "latency_seconds": 5.887759800069034,
+      "query": "请找出红色陶瓷材质的杯子",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "perceived surface color",
+            "known_property": false,
+            "property_name": "color",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "red",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "请指出材质为陶瓷的红杯子": {
+      "error": null,
+      "latency_seconds": 3.2448117999592796,
+      "query": "请指出材质为陶瓷的红杯子",
+      "response": {
+        "constraints": [
+          {
+            "description": "primary physical material",
+            "known_property": false,
+            "property_name": "material",
+            "relevance": 0.95,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "ceramic",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "杯子",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    }
+  },
+  "reports": [
+    {
+      "accuracy_by_tag": {
+        "en": 1.0,
+        "event": 1.0,
+        "event-invalidated": 1.0,
+        "irrelevant-properties": 1.0,
+        "missing-observation": 1.0,
+        "stale-location": 1.0,
+        "static-control": 1.0,
+        "zh": 1.0
+      },
+      "cases": 40,
+      "completed": 40,
+      "conditional_top1_accuracy": 1.0,
+      "failures": 0,
+      "mean_reciprocal_rank": 1.0,
+      "parse_success_rate": 1.0,
+      "property_f1": 1.0,
+      "property_precision": 1.0,
+      "property_recall": 1.0,
+      "relevance_mae": 0.0,
+      "repair_rate": 0.0,
+      "results": [
+        {
+          "case_id": "stale-location-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-01",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-01",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-01",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-01",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-01",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-01",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-01",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-01",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-03",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-03",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-03",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-03",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-03",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-03",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-03",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-03",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-04",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-04",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-04",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-04",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-04",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-04",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-04",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-04",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-05",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-05",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-05",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-05",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-05",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-05",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-05",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-05",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-07",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-07",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-07",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-07",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-07",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-07",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-07",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-07",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-09",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-09",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-09",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-09",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-09",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-09",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-09",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-09",
+          "validation_errors": [],
+          "value_recall": 1.0
+        }
+      ],
+      "strategy": "gold",
+      "top1_accuracy": 1.0,
+      "top3_recall": 1.0,
+      "validation_error_rate": 0.0,
+      "value_recall": 1.0
+    },
+    {
+      "accuracy_by_tag": {
+        "en": 0.55,
+        "event": 0.4,
+        "event-invalidated": 1.0,
+        "irrelevant-properties": 0.675,
+        "missing-observation": 0.3,
+        "stale-location": 0.35,
+        "static-control": 1.0,
+        "zh": 0.8
+      },
+      "cases": 40,
+      "completed": 40,
+      "conditional_top1_accuracy": 0.675,
+      "failures": 0,
+      "mean_reciprocal_rank": 0.8125,
+      "parse_success_rate": 1.0,
+      "property_f1": 0.8764285714285714,
+      "property_precision": 0.99375,
+      "property_recall": 0.8,
+      "relevance_mae": 0.4382291666666666,
+      "repair_rate": 0.0,
+      "results": [
+        {
+          "case_id": "stale-location-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 2,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-00",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "missing-observation-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 3,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-00",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "event-invalidated-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "material",
+            "color"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.36666666666666664,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-01",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "type"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-02",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-02",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-03",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-03",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-03",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-03",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-03",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-04",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-04",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-04",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "missing-observation-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "event-invalidated-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5166666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-06",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-06",
+          "property_f1": 0.8571428571428571,
+          "property_precision": 0.75,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5125,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-06",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3999999999999999,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-07",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-08",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-08",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.48333333333333334,
+          "repair_actions": [],
+          "selected_properties": [
+            "material",
+            "type"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-08",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4000000000000001,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-09",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4000000000000001,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-09",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.36666666666666664,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-09",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-09",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        }
+      ],
+      "strategy": "llm-strict",
+      "top1_accuracy": 0.675,
+      "top3_recall": 1.0,
+      "validation_error_rate": 0.0,
+      "value_recall": 0.6416666666666666
+    },
+    {
+      "accuracy_by_tag": {
+        "en": 0.55,
+        "event": 0.4,
+        "event-invalidated": 1.0,
+        "irrelevant-properties": 0.675,
+        "missing-observation": 0.3,
+        "stale-location": 0.35,
+        "static-control": 1.0,
+        "zh": 0.8
+      },
+      "cases": 40,
+      "completed": 40,
+      "conditional_top1_accuracy": 0.675,
+      "failures": 0,
+      "mean_reciprocal_rank": 0.8125,
+      "parse_success_rate": 1.0,
+      "property_f1": 0.8764285714285714,
+      "property_precision": 0.99375,
+      "property_recall": 0.8,
+      "relevance_mae": 0.4382291666666666,
+      "repair_rate": 0.0,
+      "results": [
+        {
+          "case_id": "stale-location-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 2,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-00",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "missing-observation-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 3,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-00",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "event-invalidated-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "material",
+            "color"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.36666666666666664,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-01",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "type"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-02",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-02",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-03",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-03",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-03",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-03",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-03",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-04",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-04",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-04",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "missing-observation-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "event-invalidated-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5166666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-06",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-06",
+          "property_f1": 0.8571428571428571,
+          "property_precision": 0.75,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5125,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-06",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3999999999999999,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-07",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-08",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-08",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.48333333333333334,
+          "repair_actions": [],
+          "selected_properties": [
+            "material",
+            "type"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-08",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4000000000000001,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-09",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4000000000000001,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-09",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.36666666666666664,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-09",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-09",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        }
+      ],
+      "strategy": "llm-tolerant",
+      "top1_accuracy": 0.675,
+      "top3_recall": 1.0,
+      "validation_error_rate": 0.0,
+      "value_recall": 0.6416666666666666
+    },
+    {
+      "accuracy_by_tag": {
+        "en": 0.55,
+        "event": 0.5,
+        "event-invalidated": 1.0,
+        "irrelevant-properties": 0.7,
+        "missing-observation": 0.3,
+        "stale-location": 0.4,
+        "static-control": 1.0,
+        "zh": 0.85
+      },
+      "cases": 40,
+      "completed": 40,
+      "conditional_top1_accuracy": 0.7,
+      "failures": 0,
+      "mean_reciprocal_rank": 0.8291666666666666,
+      "parse_success_rate": 1.0,
+      "property_f1": 0.8764285714285714,
+      "property_precision": 0.99375,
+      "property_recall": 0.8,
+      "relevance_mae": 0.4382291666666666,
+      "repair_rate": 0.1,
+      "results": [
+        {
+          "case_id": "stale-location-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 2,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-00",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "missing-observation-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 3,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-00",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "event-invalidated-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-00",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-00",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "material",
+            "color"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-00",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "stale-location-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.36666666666666664,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-01",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-01",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-01",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "type"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-01",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-02",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-02",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-02",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-02",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-02",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-03",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-03",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-03",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-03",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "static-control-03",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-03",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-03",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "missing-observation-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "event-invalidated-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-04",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.4166666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-04",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-04",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-04",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "missing-observation-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "event-invalidated-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3833333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-05",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-05",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-05",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-06",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-06",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5166666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-06",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-06",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-06",
+          "property_f1": 0.8571428571428571,
+          "property_precision": 0.75,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5125,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "material",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-06",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "stale-location-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3999999999999999,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-07",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-07",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-07",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.3333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-07",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "current-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "missing-observation-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "missing-color-cup-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "location"
+          ],
+          "tags": [
+            "zh",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-08",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "event-invalidated-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-08",
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "rank": 1,
+          "relevance_mae": 0.5,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "zh",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-08",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-08",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-08",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.48333333333333334,
+          "repair_actions": [],
+          "selected_properties": [
+            "material",
+            "type"
+          ],
+          "tags": [
+            "zh",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-08",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "stale-location-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 2,
+          "relevance_mae": 0.4000000000000001,
+          "repair_actions": [
+            "constraint[1] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "stale-location",
+            "event",
+            "irrelevant-properties"
+          ],
+          "target_id": "current-cup-09",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "missing-observation-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "stale-cup-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 3,
+          "relevance_mae": 0.4000000000000001,
+          "repair_actions": [
+            "constraint[1] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "color",
+            "location"
+          ],
+          "tags": [
+            "en",
+            "missing-observation",
+            "stale-location",
+            "irrelevant-properties"
+          ],
+          "target_id": "missing-color-cup-09",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "event-invalidated-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "clean-shirt-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.36666666666666664,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "cleanliness"
+          ],
+          "tags": [
+            "en",
+            "event-invalidated",
+            "irrelevant-properties"
+          ],
+          "target_id": "clean-shirt-09",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "static-control-09",
+          "error": null,
+          "ignored_properties": [],
+          "predicted_id": "control-red-09",
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "rank": 1,
+          "relevance_mae": 0.4666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "color",
+            "material"
+          ],
+          "tags": [
+            "en",
+            "static-control",
+            "irrelevant-properties"
+          ],
+          "target_id": "control-red-09",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        }
+      ],
+      "strategy": "llm-schema-repaired",
+      "top1_accuracy": 0.7,
+      "top3_recall": 1.0,
+      "validation_error_rate": 0.0,
+      "value_recall": 0.6583333333333333
+    }
+  ]
+}

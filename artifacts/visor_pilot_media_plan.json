@@ -1,0 +1,408 @@
+{
+  "contains_private_credentials": false,
+  "declared_download_bytes": 5468340556,
+  "file_count": 44,
+  "files": [
+    {
+      "declared_bytes": 165668857,
+      "official_split": "train",
+      "participant_id": "P01",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P01/P01_01.zip",
+      "source_etag": "\"62c87a0f-9dfe7f9\"",
+      "split": "train",
+      "video_id": "P01_01"
+    },
+    {
+      "declared_bytes": 16349310,
+      "official_split": "train",
+      "participant_id": "P01",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P01/P01_03.zip",
+      "source_etag": "\"62c87a93-f9787e\"",
+      "split": "train",
+      "video_id": "P01_03"
+    },
+    {
+      "declared_bytes": 415626989,
+      "official_split": "train",
+      "participant_id": "P01",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P01/P01_09.zip",
+      "source_etag": "\"62c87a27-18c5f6ed\"",
+      "split": "train",
+      "video_id": "P01_09"
+    },
+    {
+      "declared_bytes": 48231584,
+      "official_split": "train",
+      "participant_id": "P01",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P01/P01_103.zip",
+      "source_etag": "\"62c87ab7-2dff4a0\"",
+      "split": "train",
+      "video_id": "P01_103"
+    },
+    {
+      "declared_bytes": 45226742,
+      "official_split": "val",
+      "participant_id": "P02",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P02/P02_02.zip",
+      "source_etag": "\"62c87b47-2b21af6\"",
+      "split": "test",
+      "video_id": "P02_02"
+    },
+    {
+      "declared_bytes": 392778725,
+      "official_split": "val",
+      "participant_id": "P02",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P02/P02_09.zip",
+      "source_etag": "\"62c87b51-176953e5\"",
+      "split": "test",
+      "video_id": "P02_09"
+    },
+    {
+      "declared_bytes": 279042914,
+      "official_split": "val",
+      "participant_id": "P02",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P02/P02_12.zip",
+      "source_etag": "\"62c87b58-10a1db62\"",
+      "split": "test",
+      "video_id": "P02_12"
+    },
+    {
+      "declared_bytes": 12640206,
+      "official_split": "train",
+      "participant_id": "P03",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P03/P03_03.zip",
+      "source_etag": "\"62f62d32-c0dfce\"",
+      "split": "train",
+      "video_id": "P03_03"
+    },
+    {
+      "declared_bytes": 35995768,
+      "official_split": "train",
+      "participant_id": "P03",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P03/P03_05.zip",
+      "source_etag": "\"62c87a4a-2254078\"",
+      "split": "train",
+      "video_id": "P03_05"
+    },
+    {
+      "declared_bytes": 175473717,
+      "official_split": "train",
+      "participant_id": "P03",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P03/P03_101.zip",
+      "source_etag": "\"62c87add-a758435\"",
+      "split": "train",
+      "video_id": "P03_101"
+    },
+    {
+      "declared_bytes": 13660629,
+      "official_split": "train",
+      "participant_id": "P03",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P03/P03_17.zip",
+      "source_etag": "\"62c879dc-d071d5\"",
+      "split": "train",
+      "video_id": "P03_17"
+    },
+    {
+      "declared_bytes": 74229734,
+      "official_split": "val",
+      "participant_id": "P04",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P04/P04_06.zip",
+      "source_etag": "\"62c87b60-46ca7e6\"",
+      "split": "test",
+      "video_id": "P04_06"
+    },
+    {
+      "declared_bytes": 35639900,
+      "official_split": "val",
+      "participant_id": "P04",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P04/P04_13.zip",
+      "source_etag": "\"62c87b61-21fd25c\"",
+      "split": "test",
+      "video_id": "P04_13"
+    },
+    {
+      "declared_bytes": 43912379,
+      "official_split": "val",
+      "participant_id": "P04",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P04/P04_24.zip",
+      "source_etag": "\"62c87b62-29e0cbb\"",
+      "split": "test",
+      "video_id": "P04_24"
+    },
+    {
+      "declared_bytes": 14145136,
+      "official_split": "train",
+      "participant_id": "P06",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P06/P06_01.zip",
+      "source_etag": "\"62c879a7-d7d670\"",
+      "split": "train",
+      "video_id": "P06_01"
+    },
+    {
+      "declared_bytes": 60001058,
+      "official_split": "train",
+      "participant_id": "P06",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P06/P06_107.zip",
+      "source_etag": "\"62c87a81-3938b22\"",
+      "split": "train",
+      "video_id": "P06_107"
+    },
+    {
+      "declared_bytes": 8466617,
+      "official_split": "train",
+      "participant_id": "P06",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P06/P06_110.zip",
+      "source_etag": "\"62c879bc-8130b9\"",
+      "split": "train",
+      "video_id": "P06_110"
+    },
+    {
+      "declared_bytes": 14759067,
+      "official_split": "train",
+      "participant_id": "P07",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P07/P07_08.zip",
+      "source_etag": "\"62c87a5c-e1349b\"",
+      "split": "train",
+      "video_id": "P07_08"
+    },
+    {
+      "declared_bytes": 292627129,
+      "official_split": "train",
+      "participant_id": "P10",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P10/P10_04.zip",
+      "source_etag": "\"62c87a68-117122b9\"",
+      "split": "train",
+      "video_id": "P10_04"
+    },
+    {
+      "declared_bytes": 13595805,
+      "official_split": "train",
+      "participant_id": "P11",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P11/P11_107.zip",
+      "source_etag": "\"62c879cc-cf749d\"",
+      "split": "train",
+      "video_id": "P11_107"
+    },
+    {
+      "declared_bytes": 67321580,
+      "official_split": "val",
+      "participant_id": "P12",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P12/P12_04.zip",
+      "source_etag": "\"62c87b75-4033eec\"",
+      "split": "test",
+      "video_id": "P12_04"
+    },
+    {
+      "declared_bytes": 6401461,
+      "official_split": "train",
+      "participant_id": "P14",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P14/P14_05.zip",
+      "source_etag": "\"62c879f7-61adb5\"",
+      "split": "calibration",
+      "video_id": "P14_05"
+    },
+    {
+      "declared_bytes": 39630042,
+      "official_split": "train",
+      "participant_id": "P15",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P15/P15_02.zip",
+      "source_etag": "\"62c879fe-25cb4da\"",
+      "split": "calibration",
+      "video_id": "P15_02"
+    },
+    {
+      "declared_bytes": 9168429,
+      "official_split": "train",
+      "participant_id": "P17",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P17/P17_01.zip",
+      "source_etag": "\"62c87a82-8be62d\"",
+      "split": "train",
+      "video_id": "P17_01"
+    },
+    {
+      "declared_bytes": 21338726,
+      "official_split": "val",
+      "participant_id": "P18",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P18/P18_01.zip",
+      "source_etag": "\"62c87b76-1459a66\"",
+      "split": "test",
+      "video_id": "P18_01"
+    },
+    {
+      "declared_bytes": 16402826,
+      "official_split": "val",
+      "participant_id": "P18",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P18/P18_02.zip",
+      "source_etag": "\"62c87b76-fa498a\"",
+      "split": "test",
+      "video_id": "P18_02"
+    },
+    {
+      "declared_bytes": 163857679,
+      "official_split": "train",
+      "participant_id": "P22",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P22/P22_01.zip",
+      "source_etag": "\"62c87a07-9c4450f\"",
+      "split": "train",
+      "video_id": "P22_01"
+    },
+    {
+      "declared_bytes": 340119408,
+      "official_split": "train",
+      "participant_id": "P22",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P22/P22_07.zip",
+      "source_etag": "\"62c879f6-1445cf70\"",
+      "split": "train",
+      "video_id": "P22_07"
+    },
+    {
+      "declared_bytes": 189278429,
+      "official_split": "train",
+      "participant_id": "P24",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P24/P24_05.zip",
+      "source_etag": "\"62c87ab5-b4828dd\"",
+      "split": "calibration",
+      "video_id": "P24_05"
+    },
+    {
+      "declared_bytes": 216926340,
+      "official_split": "train",
+      "participant_id": "P24",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P24/P24_08.zip",
+      "source_etag": "\"62c87ac5-cee0884\"",
+      "split": "calibration",
+      "video_id": "P24_08"
+    },
+    {
+      "declared_bytes": 64470894,
+      "official_split": "val",
+      "participant_id": "P25",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P25/P25_09.zip",
+      "source_etag": "\"62c87b81-3d7bf6e\"",
+      "split": "test",
+      "video_id": "P25_09"
+    },
+    {
+      "declared_bytes": 62347379,
+      "official_split": "val",
+      "participant_id": "P25",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P25/P25_101.zip",
+      "source_etag": "\"62c87b83-3b75873\"",
+      "split": "test",
+      "video_id": "P25_101"
+    },
+    {
+      "declared_bytes": 31041266,
+      "official_split": "train",
+      "participant_id": "P26",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P26/P26_110.zip",
+      "source_etag": "\"62c879e9-1d9a6f2\"",
+      "split": "train",
+      "video_id": "P26_110"
+    },
+    {
+      "declared_bytes": 379073465,
+      "official_split": "train",
+      "participant_id": "P27",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P27/P27_101.zip",
+      "source_etag": "\"62c87a57-169833b9\"",
+      "split": "train",
+      "video_id": "P27_101"
+    },
+    {
+      "declared_bytes": 54497803,
+      "official_split": "val",
+      "participant_id": "P28",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/val/P28/P28_05.zip",
+      "source_etag": "\"62c87b8c-33f920b\"",
+      "split": "test",
+      "video_id": "P28_05"
+    },
+    {
+      "declared_bytes": 411731921,
+      "official_split": "train",
+      "participant_id": "P30",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P30/P30_05.zip",
+      "source_etag": "\"62c87a91-188a87d1\"",
+      "split": "calibration",
+      "video_id": "P30_05"
+    },
+    {
+      "declared_bytes": 320527102,
+      "official_split": "train",
+      "participant_id": "P30",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P30/P30_107.zip",
+      "source_etag": "\"62c87a19-131adafe\"",
+      "split": "calibration",
+      "video_id": "P30_107"
+    },
+    {
+      "declared_bytes": 249982028,
+      "official_split": "train",
+      "participant_id": "P30",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P30/P30_111.zip",
+      "source_etag": "\"62c87abe-ee66c4c\"",
+      "split": "calibration",
+      "video_id": "P30_111"
+    },
+    {
+      "declared_bytes": 16712577,
+      "official_split": "train",
+      "participant_id": "P30",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P30/P30_112.zip",
+      "source_etag": "\"62c879cd-ff0381\"",
+      "split": "calibration",
+      "video_id": "P30_112"
+    },
+    {
+      "declared_bytes": 31235257,
+      "official_split": "train",
+      "participant_id": "P32",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P32/P32_01.zip",
+      "source_etag": "\"62c879a6-1dc9cb9\"",
+      "split": "train",
+      "video_id": "P32_01"
+    },
+    {
+      "declared_bytes": 265810461,
+      "official_split": "train",
+      "participant_id": "P35",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P35/P35_105.zip",
+      "source_etag": "\"62c87a2e-fd7f21d\"",
+      "split": "train",
+      "video_id": "P35_105"
+    },
+    {
+      "declared_bytes": 157075565,
+      "official_split": "train",
+      "participant_id": "P35",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P35/P35_109.zip",
+      "source_etag": "\"62c87a4e-95cc86d\"",
+      "split": "train",
+      "video_id": "P35_109"
+    },
+    {
+      "declared_bytes": 157190020,
+      "official_split": "train",
+      "participant_id": "P37",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P37/P37_101.zip",
+      "source_etag": "\"62c87aa8-95e8784\"",
+      "split": "train",
+      "video_id": "P37_101"
+    },
+    {
+      "declared_bytes": 38127632,
+      "official_split": "train",
+      "participant_id": "P37",
+      "path": "GroundTruth-SparseAnnotations/rgb_frames/train/P37/P37_103.zip",
+      "source_etag": "\"62c87a92-245c810\"",
+      "split": "train",
+      "video_id": "P37_103"
+    }
+  ],
+  "performance_evidence": false,
+  "protocol_id": "openprop-visor-pilot-media-plan-v1",
+  "schema_version": 1,
+  "selection_sha256": "4c7da15919ec69a6f55d381ffe267806cd818444f4c743a4a8a106682329dbd6",
+  "source_doi": "10.5523/bris.2v6cgv1x04ol22qp9rm9x2j6a7"
+}

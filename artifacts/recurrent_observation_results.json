@@ -1,0 +1,1892 @@
+{
+  "aggregate": {
+    "0.00": {
+      "irreversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.010809426907887054,
+          "mean": 0.004560155914915365,
+          "minimum": 0.001223483947673909,
+          "standard_deviation": 0.0033047292708812217
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.15884146063565288,
+          "mean": 0.15267124173314686,
+          "minimum": 0.14462672140871885,
+          "standard_deviation": 0.005435617118480289
+        },
+        "exact_test_nll": {
+          "maximum": 0.4786836321971296,
+          "mean": 0.46055535122017044,
+          "minimum": 0.43748914732619826,
+          "standard_deviation": 0.015569031076762056
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3012234839476739,
+          "mean": 0.2959292376641542,
+          "minimum": 0.28919057309211293,
+          "standard_deviation": 0.0038916772126187387
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "logged_reversible": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.1588049749360179,
+          "mean": 0.15264589078414928,
+          "minimum": 0.14467193829354608,
+          "standard_deviation": 0.005367422150863296
+        },
+        "exact_test_nll": {
+          "maximum": 0.47851550910620844,
+          "mean": 0.46044649875611565,
+          "minimum": 0.4372339547134175,
+          "standard_deviation": 0.015581182732553314
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "reversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.010789705420842177,
+          "mean": 0.004682364267352357,
+          "minimum": 0.002334508126052348,
+          "standard_deviation": 0.0031503078361158786
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0008167207281402944,
+          "mean": 0.0003262022068554867,
+          "minimum": 5.091754038967382e-06,
+          "standard_deviation": 0.000356581399564709
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.15884077736009822,
+          "mean": 0.15267856391741802,
+          "minimum": 0.14463148592249744,
+          "standard_deviation": 0.005431598396589242
+        },
+        "exact_test_nll": {
+          "maximum": 0.47868224859961467,
+          "mean": 0.4606090008010104,
+          "minimum": 0.4375455167974802,
+          "standard_deviation": 0.015512168956044849
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.30233450812605234,
+          "mean": 0.29625143898306855,
+          "minimum": 0.2892102945791578,
+          "standard_deviation": 0.004218680468678966
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.0008167207281402944,
+          "mean": 0.0003262022068554867,
+          "minimum": 5.091754038967382e-06,
+          "standard_deviation": 0.000356581399564709
+        }
+      },
+      "reversible_estimated_parameters": {
+        "detection_sensitivity": {
+          "maximum": 0.9041740763377472,
+          "mean": 0.8996035086524796,
+          "minimum": 0.8926420969167101,
+          "standard_deviation": 0.004110560844255593
+        },
+        "false_positive_rate": {
+          "maximum": 0.0414571700227384,
+          "mean": 0.03853941999039179,
+          "minimum": 0.03469336589102128,
+          "standard_deviation": 0.002586159993450565
+        },
+        "final_training_observation_nll": {
+          "maximum": 14.35533935265734,
+          "mean": 14.250624287615906,
+          "minimum": 14.163679468871893,
+          "standard_deviation": 0.06242869507453336
+        },
+        "initial_training_observation_nll": {
+          "maximum": 15.710594526364448,
+          "mean": 15.377959945449687,
+          "minimum": 15.106880815603017,
+          "standard_deviation": 0.2578779527009819
+        },
+        "inspection_probability_state_0": {
+          "maximum": 0.6969326949442989,
+          "mean": 0.6909787466888148,
+          "minimum": 0.6826606380722396,
+          "standard_deviation": 0.005798293967391704
+        },
+        "inspection_probability_state_1": {
+          "maximum": 0.755134291376726,
+          "mean": 0.7508958510002659,
+          "minimum": 0.7457815526577498,
+          "standard_deviation": 0.0030619839079361515
+        },
+        "iterations": {
+          "maximum": 49.0,
+          "mean": 39.8,
+          "minimum": 26.0,
+          "standard_deviation": 7.884161337770809
+        }
+      }
+    },
+    "0.15": {
+      "irreversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.11887081259751953,
+          "mean": 0.09659553451808858,
+          "minimum": 0.08477813697454481,
+          "standard_deviation": 0.012415798141806511
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.15,
+          "mean": 0.15,
+          "minimum": 0.15,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.24578524327076257,
+          "mean": 0.24099901920051406,
+          "minimum": 0.23548256028418024,
+          "standard_deviation": 0.003929712062034508
+        },
+        "exact_test_nll": {
+          "maximum": 0.7142042592725197,
+          "mean": 0.6996824279552705,
+          "minimum": 0.6852772852089091,
+          "standard_deviation": 0.011462801668502685
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.21522186302545518,
+          "mean": 0.2034044654819114,
+          "minimum": 0.18112918740248046,
+          "standard_deviation": 0.012415798141806511
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "logged_reversible": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.22728524812080433,
+          "mean": 0.2237209553576524,
+          "minimum": 0.22015547859194134,
+          "standard_deviation": 0.002677514044227264
+        },
+        "exact_test_nll": {
+          "maximum": 0.6466295053019705,
+          "mean": 0.638776454356353,
+          "minimum": 0.6313030585621117,
+          "standard_deviation": 0.0056609342125699316
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.15,
+          "mean": 0.15,
+          "minimum": 0.15,
+          "standard_deviation": 0.0
+        }
+      },
+      "reversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.018264672204646892,
+          "mean": 0.01138913136187808,
+          "minimum": 0.005639279811746278,
+          "standard_deviation": 0.0041666912063236415
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.01969746358618288,
+          "mean": 0.01245025810926893,
+          "minimum": 0.0043616017372273,
+          "standard_deviation": 0.005968860407451016
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.22769092125057455,
+          "mean": 0.22395531005882358,
+          "minimum": 0.22006653185351152,
+          "standard_deviation": 0.0028025923956266057
+        },
+        "exact_test_nll": {
+          "maximum": 0.647609301178472,
+          "mean": 0.6393010226613153,
+          "minimum": 0.6311009910321318,
+          "standard_deviation": 0.005956369216523123
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3182646722046469,
+          "mean": 0.29591673751998065,
+          "minimum": 0.2874592077550349,
+          "standard_deviation": 0.011419308048486829
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.16391724544095954,
+          "mean": 0.14756517608959654,
+          "minimum": 0.13030253641381712,
+          "standard_deviation": 0.013590726767777382
+        }
+      },
+      "reversible_estimated_parameters": {
+        "detection_sensitivity": {
+          "maximum": 0.9008425291688259,
+          "mean": 0.8963015058959806,
+          "minimum": 0.8905587604131423,
+          "standard_deviation": 0.003947581909783293
+        },
+        "false_positive_rate": {
+          "maximum": 0.046679938965105895,
+          "mean": 0.04166676165944835,
+          "minimum": 0.030233940842805184,
+          "standard_deviation": 0.005990000723608
+        },
+        "final_training_observation_nll": {
+          "maximum": 15.419039204558391,
+          "mean": 15.352011394352884,
+          "minimum": 15.293353565821896,
+          "standard_deviation": 0.040780966683284015
+        },
+        "initial_training_observation_nll": {
+          "maximum": 15.857107047878083,
+          "mean": 15.50065964969027,
+          "minimum": 15.339863277187957,
+          "standard_deviation": 0.18484255779747852
+        },
+        "inspection_probability_state_0": {
+          "maximum": 0.7015173612623186,
+          "mean": 0.6968359528120757,
+          "minimum": 0.6894465208497743,
+          "standard_deviation": 0.004166161196973738
+        },
+        "inspection_probability_state_1": {
+          "maximum": 0.7536069134044238,
+          "mean": 0.7479307783516415,
+          "minimum": 0.7362505113218933,
+          "standard_deviation": 0.0060237686997234655
+        },
+        "iterations": {
+          "maximum": 18.0,
+          "mean": 15.4,
+          "minimum": 14.0,
+          "standard_deviation": 1.4966629547095767
+        }
+      }
+    },
+    "0.30": {
+      "irreversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.17085623883874138,
+          "mean": 0.15218023312470733,
+          "minimum": 0.1410857909868454,
+          "standard_deviation": 0.011154424053416722
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.26438481733219876,
+          "mean": 0.2610857065113966,
+          "minimum": 0.2572682176404309,
+          "standard_deviation": 0.002315726951950193
+        },
+        "exact_test_nll": {
+          "maximum": 0.7407252982172994,
+          "mean": 0.7318392396925907,
+          "minimum": 0.7199274784958861,
+          "standard_deviation": 0.007299423145138653
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.1589142090131546,
+          "mean": 0.14781976687529266,
+          "minimum": 0.1291437611612586,
+          "standard_deviation": 0.011154424053416722
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "logged_reversible": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.23249532384877988,
+          "mean": 0.22932019974197163,
+          "minimum": 0.22722103701721655,
+          "standard_deviation": 0.0018826659252035257
+        },
+        "exact_test_nll": {
+          "maximum": 0.6568299909663815,
+          "mean": 0.649817202251082,
+          "minimum": 0.6451871443544785,
+          "standard_deviation": 0.004129196222371564
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        }
+      },
+      "reversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.026140601849566292,
+          "mean": 0.013751230263228487,
+          "minimum": 0.001221035520508007,
+          "standard_deviation": 0.00955356865472529
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.043992168040143,
+          "mean": 0.0218793288269022,
+          "minimum": 0.00300276932142296,
+          "standard_deviation": 0.015958332615993175
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.2329140733337634,
+          "mean": 0.22982362128885273,
+          "minimum": 0.22752952466390064,
+          "standard_deviation": 0.002088790353299575
+        },
+        "exact_test_nll": {
+          "maximum": 0.6577666810756884,
+          "mean": 0.6508503127455225,
+          "minimum": 0.6457666849822377,
+          "standard_deviation": 0.004571667309185466
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3142002748784295,
+          "mean": 0.2919288796881433,
+          "minimum": 0.2738593981504337,
+          "standard_deviation": 0.014670515488707786
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.343992168040143,
+          "mean": 0.31281770221278377,
+          "minimum": 0.2773459334647039,
+          "standard_deviation": 0.02385539603072612
+        }
+      },
+      "reversible_estimated_parameters": {
+        "detection_sensitivity": {
+          "maximum": 0.9151569372082499,
+          "mean": 0.9013730412080209,
+          "minimum": 0.8935095033961531,
+          "standard_deviation": 0.007306496630805929
+        },
+        "false_positive_rate": {
+          "maximum": 0.051370739685684,
+          "mean": 0.04366810676937926,
+          "minimum": 0.034352525831223016,
+          "standard_deviation": 0.0060468019289352465
+        },
+        "final_training_observation_nll": {
+          "maximum": 15.683089784137643,
+          "mean": 15.634484613135863,
+          "minimum": 15.554629562488602,
+          "standard_deviation": 0.0444533945940426
+        },
+        "initial_training_observation_nll": {
+          "maximum": 16.471735564627952,
+          "mean": 16.092973055096046,
+          "minimum": 15.84000025774731,
+          "standard_deviation": 0.2573050105744422
+        },
+        "inspection_probability_state_0": {
+          "maximum": 0.7036759426620638,
+          "mean": 0.6969935352493589,
+          "minimum": 0.6906819391430181,
+          "standard_deviation": 0.005252014704136511
+        },
+        "inspection_probability_state_1": {
+          "maximum": 0.75775945330707,
+          "mean": 0.7504981591251139,
+          "minimum": 0.7418216910620673,
+          "standard_deviation": 0.006402991357116078
+        },
+        "iterations": {
+          "maximum": 36.0,
+          "mean": 28.4,
+          "minimum": 22.0,
+          "standard_deviation": 5.0039984012787215
+        }
+      }
+    },
+    "0.45": {
+      "irreversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.19342447267629842,
+          "mean": 0.18454674257828882,
+          "minimum": 0.17436425618264545,
+          "standard_deviation": 0.00781564553829221
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.45,
+          "mean": 0.45,
+          "minimum": 0.45,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.2588124690160219,
+          "mean": 0.25269794542085355,
+          "minimum": 0.24929659931276796,
+          "standard_deviation": 0.003917083037970211
+        },
+        "exact_test_nll": {
+          "maximum": 0.7213060946757536,
+          "mean": 0.7078840055965673,
+          "minimum": 0.6987309708321396,
+          "standard_deviation": 0.008616590821836507
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.12563574381735454,
+          "mean": 0.11545325742171117,
+          "minimum": 0.10657552732370158,
+          "standard_deviation": 0.007815645538292207
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "logged_reversible": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.22061006773451342,
+          "mean": 0.21720403284827605,
+          "minimum": 0.21520164331464245,
+          "standard_deviation": 0.0019076050293718486
+        },
+        "exact_test_nll": {
+          "maximum": 0.6317440397644067,
+          "mean": 0.624656421547111,
+          "minimum": 0.6202104989678093,
+          "standard_deviation": 0.004102602625223553
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.45,
+          "mean": 0.45,
+          "minimum": 0.45,
+          "standard_deviation": 0.0
+        }
+      },
+      "reversible_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.036965088385256195,
+          "mean": 0.01602593750116451,
+          "minimum": 0.002029553566982256,
+          "standard_deviation": 0.013004703111235227
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.08909090035312245,
+          "mean": 0.039367390779080115,
+          "minimum": 0.005728606761793487,
+          "standard_deviation": 0.030455970896236015
+        },
+        "exact_test_brier_score": {
+          "maximum": 0.22083194246076873,
+          "mean": 0.217466856094248,
+          "minimum": 0.2154621060750546,
+          "standard_deviation": 0.0018153312773871594
+        },
+        "exact_test_nll": {
+          "maximum": 0.6322117369968578,
+          "mean": 0.6252568587504287,
+          "minimum": 0.6207971822012599,
+          "standard_deviation": 0.0038606647260741164
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.321534201324931,
+          "mean": 0.2933995644556008,
+          "minimum": 0.2630349116147438,
+          "standard_deviation": 0.019554723890324654
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.5390909003531225,
+          "mean": 0.4870759480743627,
+          "minimum": 0.4442713932382065,
+          "standard_deviation": 0.0332074042100905
+        }
+      },
+      "reversible_estimated_parameters": {
+        "detection_sensitivity": {
+          "maximum": 0.9421854393434584,
+          "mean": 0.9094736211464586,
+          "minimum": 0.8863254335632378,
+          "standard_deviation": 0.01886525373417867
+        },
+        "false_positive_rate": {
+          "maximum": 0.05490542452391914,
+          "mean": 0.041285816853786794,
+          "minimum": 0.03284952301710826,
+          "standard_deviation": 0.007502719724840601
+        },
+        "final_training_observation_nll": {
+          "maximum": 15.686625056975721,
+          "mean": 15.62903986945494,
+          "minimum": 15.601378462446618,
+          "standard_deviation": 0.030533111097011872
+        },
+        "initial_training_observation_nll": {
+          "maximum": 16.153374309517208,
+          "mean": 16.033993121422416,
+          "minimum": 15.915530803863005,
+          "standard_deviation": 0.07950777103105063
+        },
+        "inspection_probability_state_0": {
+          "maximum": 0.7032045186086617,
+          "mean": 0.6961108899989364,
+          "minimum": 0.6847589499558424,
+          "standard_deviation": 0.00794584865310911
+        },
+        "inspection_probability_state_1": {
+          "maximum": 0.7732020962937647,
+          "mean": 0.7520299618662042,
+          "minimum": 0.7393634839997366,
+          "standard_deviation": 0.011534766818709484
+        },
+        "iterations": {
+          "maximum": 42.0,
+          "mean": 35.8,
+          "minimum": 27.0,
+          "standard_deviation": 5.528109984434101
+        }
+      }
+    }
+  },
+  "primary_paired_inference": {
+    "0.15": {
+      "mean_irreversible_minus_reversible_nll": 0.06038140529395515,
+      "simultaneous_bootstrap_95_ci": [
+        0.05015834664022051,
+        0.0706044639476898
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    },
+    "0.30": {
+      "mean_irreversible_minus_reversible_nll": 0.08098892694706819,
+      "simultaneous_bootstrap_95_ci": [
+        0.07313744339363752,
+        0.08884041050049886
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    },
+    "0.45": {
+      "mean_irreversible_minus_reversible_nll": 0.08262714684613856,
+      "simultaneous_bootstrap_95_ci": [
+        0.07560360693332807,
+        0.08965068675894905
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    }
+  },
+  "protocol": {
+    "claim_scope": "synthetic recurrent binary-state mechanism validation",
+    "detection_sensitivity": 0.9,
+    "estimation_data": "training missing/negative/positive observation sequences only; latent state paths discarded",
+    "false_positive_rate": 0.04,
+    "followup_hours": 8.0,
+    "forward_rate_per_hour": 0.3,
+    "horizons_hours": [
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      12.0
+    ],
+    "inspection_probability_state_0": 0.7,
+    "inspection_probability_state_1": 0.75,
+    "logged_reversible_role": "oracle-style data-generating-rate reference; not a learned comparator",
+    "opportunity_interval_hours": 0.5,
+    "paired_exact_test_horizons_and_outcome_uniforms": true,
+    "paired_training_random_streams": true,
+    "primary_family": "irreversible minus reversible exact-test NLL at the three nonzero return rates",
+    "return_rates_per_hour": [
+      0.0,
+      0.15,
+      0.3,
+      0.45
+    ],
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "simultaneous_inference": "paired max-standardized-deviation bootstrap, 20000 shared seed resamples",
+    "test_rows": 2000,
+    "train_episodes": 600,
+    "validation_or_test_tuning": false,
+    "zero_return_condition_role": "compatibility and added-complexity control; excluded from primary family"
+  },
+  "runs": [
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.039305707511134075,
+        "hazard_per_hour": 0.28919057309211293,
+        "iterations": 5
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.010809426907887054,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.15795668824426867,
+          "exact_test_nll": 0.4786836321971296,
+          "forward_rate_per_hour": 0.28919057309211293,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.15776639255215252,
+          "exact_test_nll": 0.47851550910620844,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.0
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.010789705420842177,
+          "absolute_return_rate_error": 5.091754038967382e-06,
+          "exact_test_brier_score": 0.15795620919028833,
+          "exact_test_nll": 0.47868224859961467,
+          "forward_rate_per_hour": 0.2892102945791578,
+          "return_rate_per_hour": 5.091754038967382e-06
+        }
+      },
+      "return_rate_per_hour": 0.0,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9001788807711303,
+        "false_positive_rate": 0.039287393221720215,
+        "final_training_observation_nll": 14.226541759892855,
+        "forward_rate_per_hour": 0.2892102945791578,
+        "initial_training_observation_nll": 15.106880815603017,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6938283677191576,
+        "inspection_probability_state_1": 0.7507362034052794,
+        "iterations": 44,
+        "return_rate_per_hour": 5.091754038967382e-06
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.0
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.087475899435243,
+        "hazard_per_hour": 0.21107798761470528,
+        "iterations": 17
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.08892201238529471,
+          "absolute_return_rate_error": 0.15,
+          "exact_test_brier_score": 0.24578524327076257,
+          "exact_test_nll": 0.7142042592725197,
+          "forward_rate_per_hour": 0.21107798761470528,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.22500518062263775,
+          "exact_test_nll": 0.6409825647293034,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.15
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.00912058048126918,
+          "absolute_return_rate_error": 0.01969746358618288,
+          "exact_test_brier_score": 0.22541959280576304,
+          "exact_test_nll": 0.6418777770570515,
+          "forward_rate_per_hour": 0.2908794195187308,
+          "return_rate_per_hour": 0.13030253641381712
+        }
+      },
+      "return_rate_per_hour": 0.15,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8935875265147428,
+        "false_positive_rate": 0.04181821765299287,
+        "final_training_observation_nll": 15.293353565821896,
+        "forward_rate_per_hour": 0.2908794195187308,
+        "initial_training_observation_nll": 15.339863277187957,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6961300952012877,
+        "inspection_probability_state_1": 0.7503601487571845,
+        "iterations": 14,
+        "return_rate_per_hour": 0.13030253641381712
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.15
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.11247211186447234,
+        "hazard_per_hour": 0.15638585699252466,
+        "iterations": 24
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.14361414300747533,
+          "absolute_return_rate_error": 0.3,
+          "exact_test_brier_score": 0.26438481733219876,
+          "exact_test_nll": 0.7407252982172994,
+          "forward_rate_per_hour": 0.15638585699252466,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.22877795664994335,
+          "exact_test_nll": 0.6484112093415638,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.3
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.02212946740259536,
+          "absolute_return_rate_error": 0.022654066535296113,
+          "exact_test_brier_score": 0.22885449783946163,
+          "exact_test_nll": 0.6485855624317306,
+          "forward_rate_per_hour": 0.27787053259740463,
+          "return_rate_per_hour": 0.2773459334647039
+        }
+      },
+      "return_rate_per_hour": 0.3,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8935095033961531,
+        "false_positive_rate": 0.04859957483831715,
+        "final_training_observation_nll": 15.621689892936507,
+        "forward_rate_per_hour": 0.27787053259740463,
+        "initial_training_observation_nll": 15.84000025774731,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.7036759426620638,
+        "inspection_probability_state_1": 0.7418216910620673,
+        "iterations": 24,
+        "return_rate_per_hour": 0.2773459334647039
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.3
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.12457972226615963,
+        "hazard_per_hour": 0.12314914218113351,
+        "iterations": 33
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.17685085781886647,
+          "absolute_return_rate_error": 0.45,
+          "exact_test_brier_score": 0.25588313352382225,
+          "exact_test_nll": 0.7144515013383959,
+          "forward_rate_per_hour": 0.12314914218113351,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.21520164331464245,
+          "exact_test_nll": 0.6202104989678093,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.002029553566982256,
+          "absolute_return_rate_error": 0.08909090035312245,
+          "exact_test_brier_score": 0.2154621060750546,
+          "exact_test_nll": 0.6207971822012599,
+          "forward_rate_per_hour": 0.30202955356698225,
+          "return_rate_per_hour": 0.5390909003531225
+        }
+      },
+      "return_rate_per_hour": 0.45,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.902829185909345,
+        "false_positive_rate": 0.03869203815343272,
+        "final_training_observation_nll": 15.629802089003336,
+        "forward_rate_per_hour": 0.30202955356698225,
+        "initial_training_observation_nll": 16.153374309517208,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.7031378257765046,
+        "inspection_probability_state_1": 0.7393634839997366,
+        "iterations": 42,
+        "return_rate_per_hour": 0.5390909003531225
+      },
+      "seed": 101,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.45
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.037334910856801615,
+        "hazard_per_hour": 0.3012234839476739,
+        "iterations": 5
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.001223483947673909,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.15333102946838664,
+          "exact_test_nll": 0.4644052675924123,
+          "forward_rate_per_hour": 0.3012234839476739,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.15332167045738682,
+          "exact_test_nll": 0.46440122824525815,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.0
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.002334508126052348,
+          "absolute_return_rate_error": 0.0008167207281402944,
+          "exact_test_brier_score": 0.15334585149670069,
+          "exact_test_nll": 0.46437825769398455,
+          "forward_rate_per_hour": 0.30233450812605234,
+          "return_rate_per_hour": 0.0008167207281402944
+        }
+      },
+      "return_rate_per_hour": 0.0,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9030757316732102,
+        "false_positive_rate": 0.036443264684724495,
+        "final_training_observation_nll": 14.163679468871893,
+        "forward_rate_per_hour": 0.30233450812605234,
+        "initial_training_observation_nll": 15.133497252166448,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6826606380722396,
+        "inspection_probability_state_1": 0.755134291376726,
+        "iterations": 26,
+        "return_rate_per_hour": 0.0008167207281402944
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.0
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.10260748585729487,
+        "hazard_per_hour": 0.21080339303391288,
+        "iterations": 21
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.08919660696608711,
+          "absolute_return_rate_error": 0.15,
+          "exact_test_brier_score": 0.2443907259462034,
+          "exact_test_nll": 0.711881406185668,
+          "forward_rate_per_hour": 0.21080339303391288,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.22507396071588115,
+          "exact_test_nll": 0.6416368120334334,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.15
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.018264672204646892,
+          "absolute_return_rate_error": 0.013917245440959541,
+          "exact_test_brier_score": 0.22519601134872855,
+          "exact_test_nll": 0.6418878592038186,
+          "forward_rate_per_hour": 0.3182646722046469,
+          "return_rate_per_hour": 0.16391724544095954
+        }
+      },
+      "return_rate_per_hour": 0.15,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9008425291688259,
+        "false_positive_rate": 0.030233940842805184,
+        "final_training_observation_nll": 15.33376257604334,
+        "forward_rate_per_hour": 0.3182646722046469,
+        "initial_training_observation_nll": 15.857107047878083,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6894465208497743,
+        "inspection_probability_state_1": 0.7536069134044238,
+        "iterations": 18,
+        "return_rate_per_hour": 0.16391724544095954
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.15
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.13421423924337972,
+        "hazard_per_hour": 0.15350664180861623,
+        "iterations": 28
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.14649335819138376,
+          "absolute_return_rate_error": 0.3,
+          "exact_test_brier_score": 0.26187406679577996,
+          "exact_test_nll": 0.7347826467583987,
+          "forward_rate_per_hour": 0.15350664180861623,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.2278705890352248,
+          "exact_test_nll": 0.6468609555655591,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.3
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.014200274878429509,
+          "absolute_return_rate_error": 0.005392877578615618,
+          "exact_test_brier_score": 0.22817113672349731,
+          "exact_test_nll": 0.6474886872844773,
+          "forward_rate_per_hour": 0.3142002748784295,
+          "return_rate_per_hour": 0.3053928775786156
+        }
+      },
+      "return_rate_per_hour": 0.3,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8981003054076434,
+        "false_positive_rate": 0.034352525831223016,
+        "final_training_observation_nll": 15.658451320417047,
+        "forward_rate_per_hour": 0.3142002748784295,
+        "initial_training_observation_nll": 15.887017544057,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6906819391430181,
+        "inspection_probability_state_1": 0.7568091789618353,
+        "iterations": 29,
+        "return_rate_per_hour": 0.3053928775786156
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.3
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.15627123885405578,
+        "hazard_per_hour": 0.11435823005686781,
+        "iterations": 44
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.1856417699431322,
+          "absolute_return_rate_error": 0.45,
+          "exact_test_brier_score": 0.2494168274509321,
+          "exact_test_nll": 0.7008149341812295,
+          "forward_rate_per_hour": 0.11435823005686781,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.21696168454414144,
+          "exact_test_nll": 0.6241824300077065,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.021534201324931,
+          "absolute_return_rate_error": 0.058571810948428726,
+          "exact_test_brier_score": 0.21702290332519977,
+          "exact_test_nll": 0.6243238041963549,
+          "forward_rate_per_hour": 0.321534201324931,
+          "return_rate_per_hour": 0.5085718109484287
+        }
+      },
+      "return_rate_per_hour": 0.45,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9159253439449154,
+        "false_positive_rate": 0.03284952301710826,
+        "final_training_observation_nll": 15.686625056975721,
+        "forward_rate_per_hour": 0.321534201324931,
+        "initial_training_observation_nll": 16.00072669085383,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6847589499558424,
+        "inspection_probability_state_1": 0.7732020962937647,
+        "iterations": 27,
+        "return_rate_per_hour": 0.5085718109484287
+      },
+      "seed": 211,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.45
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.040783433286384806,
+        "hazard_per_hour": 0.2953844533673485,
+        "iterations": 6
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.004615546632651513,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.14462672140871885,
+          "exact_test_nll": 0.43748914732619826,
+          "forward_rate_per_hour": 0.2953844533673485,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.14467193829354608,
+          "exact_test_nll": 0.4372339547134175,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.0
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.004605428022238234,
+          "absolute_return_rate_error": 0.00010336173528100065,
+          "exact_test_brier_score": 0.14463148592249744,
+          "exact_test_nll": 0.4375455167974802,
+          "forward_rate_per_hour": 0.29539457197776176,
+          "return_rate_per_hour": 0.00010336173528100065
+        }
+      },
+      "return_rate_per_hour": 0.0,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9041740763377472,
+        "false_positive_rate": 0.04081590613175456,
+        "final_training_observation_nll": 14.267237264891495,
+        "forward_rate_per_hour": 0.29539457197776176,
+        "initial_training_observation_nll": 15.710594526364448,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6854813775546108,
+        "inspection_probability_state_1": 0.7457815526577498,
+        "iterations": 49,
+        "return_rate_per_hour": 0.00010336173528100065
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.0
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.10560862375426101,
+        "hazard_per_hour": 0.19878989633300323,
+        "iterations": 18
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.10121010366699676,
+          "absolute_return_rate_error": 0.15,
+          "exact_test_brier_score": 0.23548256028418024,
+          "exact_test_nll": 0.6852772852089091,
+          "forward_rate_per_hour": 0.19878989633300323,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.22015547859194134,
+          "exact_test_nll": 0.6313030585621117,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.15
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.011380332066762977,
+          "absolute_return_rate_error": 0.0175152414629981,
+          "exact_test_brier_score": 0.22006653185351152,
+          "exact_test_nll": 0.6311009910321318,
+          "forward_rate_per_hour": 0.288619667933237,
+          "return_rate_per_hour": 0.1324847585370019
+        }
+      },
+      "return_rate_per_hour": 0.15,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8961047159942297,
+        "false_positive_rate": 0.04340601160508266,
+        "final_training_observation_nll": 15.357227356404543,
+        "forward_rate_per_hour": 0.288619667933237,
+        "initial_training_observation_nll": 15.3960283250746,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6971393837252973,
+        "inspection_probability_state_1": 0.7362505113218933,
+        "iterations": 14,
+        "return_rate_per_hour": 0.1324847585370019
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.15
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.13239430769226598,
+        "hazard_per_hour": 0.14114836540090925,
+        "iterations": 28
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.15885163459909074,
+          "absolute_return_rate_error": 0.3,
+          "exact_test_brier_score": 0.2572682176404309,
+          "exact_test_nll": 0.7199274784958861,
+          "forward_rate_per_hour": 0.14114836540090925,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.22722103701721655,
+          "exact_test_nll": 0.6451871443544785,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.3
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.026140601849566292,
+          "absolute_return_rate_error": 0.00300276932142296,
+          "exact_test_brier_score": 0.22752952466390064,
+          "exact_test_nll": 0.6457666849822377,
+          "forward_rate_per_hour": 0.2738593981504337,
+          "return_rate_per_hour": 0.30300276932142295
+        }
+      },
+      "return_rate_per_hour": 0.3,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8993867734334366,
+        "false_positive_rate": 0.051370739685684,
+        "final_training_observation_nll": 15.683089784137643,
+        "forward_rate_per_hour": 0.2738593981504337,
+        "initial_training_observation_nll": 15.935645066617866,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6911027007748943,
+        "inspection_probability_state_1": 0.7445026753542735,
+        "iterations": 22,
+        "return_rate_per_hour": 0.30300276932142295
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.3
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.14224724433536834,
+        "hazard_per_hour": 0.1075476437294984,
+        "iterations": 28
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.19245235627050158,
+          "absolute_return_rate_error": 0.45,
+          "exact_test_brier_score": 0.24929659931276796,
+          "exact_test_nll": 0.6987309708321396,
+          "forward_rate_per_hour": 0.1075476437294984,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.2156613268590624,
+          "exact_test_nll": 0.6211661153201701,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.036965088385256195,
+          "absolute_return_rate_error": 0.02632520667407201,
+          "exact_test_brier_score": 0.21650007023943063,
+          "exact_test_nll": 0.6230311621067948,
+          "forward_rate_per_hour": 0.2630349116147438,
+          "return_rate_per_hour": 0.476325206674072
+        }
+      },
+      "return_rate_per_hour": 0.45,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9421854393434584,
+        "false_positive_rate": 0.05490542452391914,
+        "final_training_observation_nll": 15.606322900739963,
+        "forward_rate_per_hour": 0.2630349116147438,
+        "initial_training_observation_nll": 15.915530803863005,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6882734399198123,
+        "inspection_probability_state_1": 0.7531460556184346,
+        "iterations": 40,
+        "return_rate_per_hour": 0.476325206674072
+      },
+      "seed": 307,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.45
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.034749373525586866,
+        "hazard_per_hour": 0.29700084648323954,
+        "iterations": 5
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.0029991535167604444,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.15884146063565288,
+          "exact_test_nll": 0.4740584357658186,
+          "forward_rate_per_hour": 0.29700084648323954,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.1588049749360179,
+          "exact_test_nll": 0.4739290432319588,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.0
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.0029498349741804986,
+          "absolute_return_rate_error": 5.826386515415518e-06,
+          "exact_test_brier_score": 0.15884077736009822,
+          "exact_test_nll": 0.4740572795086147,
+          "forward_rate_per_hour": 0.2970501650258195,
+          "return_rate_per_hour": 5.826386515415518e-06
+        }
+      },
+      "return_rate_per_hour": 0.0,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8979467575636001,
+        "false_positive_rate": 0.03469336589102128,
+        "final_training_observation_nll": 14.240323591765947,
+        "forward_rate_per_hour": 0.2970501650258195,
+        "initial_training_observation_nll": 15.658999952345921,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6959906551537671,
+        "inspection_probability_state_1": 0.750365586685705,
+        "iterations": 43,
+        "return_rate_per_hour": 5.826386515415518e-06
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.0
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.12466368102551952,
+        "hazard_per_hour": 0.18112918740248046,
+        "iterations": 19
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.11887081259751953,
+          "absolute_return_rate_error": 0.15,
+          "exact_test_brier_score": 0.24176929891478113,
+          "exact_test_nll": 0.6908850402492955,
+          "forward_rate_per_hour": 0.18112918740248046,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.22728524812080433,
+          "exact_test_nll": 0.6466295053019705,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.15
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.012540792244965071,
+          "absolute_return_rate_error": 0.0043616017372273,
+          "exact_test_brier_score": 0.22769092125057455,
+          "exact_test_nll": 0.647609301178472,
+          "forward_rate_per_hour": 0.2874592077550349,
+          "return_rate_per_hour": 0.1543616017372273
+        }
+      },
+      "return_rate_per_hour": 0.15,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.900413997388962,
+        "false_positive_rate": 0.04619569923125513,
+        "final_training_observation_nll": 15.356674268936246,
+        "forward_rate_per_hour": 0.2874592077550349,
+        "initial_training_observation_nll": 15.417509211364004,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6999464030217006,
+        "inspection_probability_state_1": 0.7492229324207841,
+        "iterations": 16,
+        "return_rate_per_hour": 0.1543616017372273
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.15
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.15184640899937046,
+        "hazard_per_hour": 0.1291437611612586,
+        "iterations": 44
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.17085623883874138,
+          "absolute_return_rate_error": 0.3,
+          "exact_test_brier_score": 0.2603601030211216,
+          "exact_test_nll": 0.7275856949043217,
+          "forward_rate_per_hour": 0.1291437611612586,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.23249532384877988,
+          "exact_test_nll": 0.6568299909663815,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.3
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.005064771665043266,
+          "absolute_return_rate_error": 0.03435476265903331,
+          "exact_test_brier_score": 0.2329140733337634,
+          "exact_test_nll": 0.6577666810756884,
+          "forward_rate_per_hour": 0.2949352283349567,
+          "return_rate_per_hour": 0.3343547626590333
+        }
+      },
+      "return_rate_per_hour": 0.3,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9151569372082499,
+        "false_positive_rate": 0.04015374556075441,
+        "final_training_observation_nll": 15.554629562488602,
+        "forward_rate_per_hour": 0.2949352283349567,
+        "initial_training_observation_nll": 16.3304668424301,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.7010745728228691,
+        "inspection_probability_state_1": 0.751597796940323,
+        "iterations": 31,
+        "return_rate_per_hour": 0.3343547626590333
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.3
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.14982766680377546,
+        "hazard_per_hour": 0.10657552732370158,
+        "iterations": 41
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.19342447267629842,
+          "absolute_return_rate_error": 0.45,
+          "exact_test_brier_score": 0.2500806978007237,
+          "exact_test_nll": 0.7041165269553178,
+          "forward_rate_per_hour": 0.10657552732370158,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.2175854417890206,
+          "exact_test_nll": 0.6259790236754623,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.01699102911448086,
+          "absolute_return_rate_error": 0.005728606761793487,
+          "exact_test_brier_score": 0.2175172583707864,
+          "exact_test_nll": 0.6259204082508761,
+          "forward_rate_per_hour": 0.28300897088551913,
+          "return_rate_per_hour": 0.4442713932382065
+        }
+      },
+      "return_rate_per_hour": 0.45,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9001027029713362,
+        "false_positive_rate": 0.04270294120168186,
+        "final_training_observation_nll": 15.601378462446618,
+        "forward_rate_per_hour": 0.28300897088551913,
+        "initial_training_observation_nll": 16.02107736898889,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.701179715733861,
+        "inspection_probability_state_1": 0.749342831661257,
+        "iterations": 32,
+        "return_rate_per_hour": 0.4442713932382065
+      },
+      "seed": 401,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.45
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.04160767121883959,
+        "hazard_per_hour": 0.2968468314303961,
+        "iterations": 6
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.0031531685696039036,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.14860030890870732,
+          "exact_test_nll": 0.4481402732192935,
+          "forward_rate_per_hour": 0.2968468314303961,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.14866447768164304,
+          "exact_test_nll": 0.4481527584837353,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.0
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.0027323447934485268,
+          "absolute_return_rate_error": 0.0007000104303017557,
+          "exact_test_brier_score": 0.1486184956175054,
+          "exact_test_nll": 0.4483817014053579,
+          "forward_rate_per_hour": 0.29726765520655146,
+          "return_rate_per_hour": 0.0007000104303017557
+        }
+      },
+      "return_rate_per_hour": 0.0,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8926420969167101,
+        "false_positive_rate": 0.0414571700227384,
+        "final_training_observation_nll": 14.35533935265734,
+        "forward_rate_per_hour": 0.29726765520655146,
+        "initial_training_observation_nll": 15.279827180768605,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6969326949442989,
+        "inspection_probability_state_1": 0.7524616208758694,
+        "iterations": 37,
+        "return_rate_per_hour": 0.0007000104303017557
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.0
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.0915280042088995,
+        "hazard_per_hour": 0.21522186302545518,
+        "iterations": 15
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.08477813697454481,
+          "absolute_return_rate_error": 0.15,
+          "exact_test_brier_score": 0.237567267586643,
+          "exact_test_nll": 0.69616414885996,
+          "forward_rate_per_hour": 0.21522186302545518,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.2210849087369975,
+          "exact_test_nll": 0.633330331154946,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.15
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.005639279811746278,
+          "absolute_return_rate_error": 0.006759738318976832,
+          "exact_test_brier_score": 0.22140349303554022,
+          "exact_test_nll": 0.6340291848351026,
+          "forward_rate_per_hour": 0.2943607201882537,
+          "return_rate_per_hour": 0.15675973831897683
+        }
+      },
+      "return_rate_per_hour": 0.15,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8905587604131423,
+        "false_positive_rate": 0.046679938965105895,
+        "final_training_observation_nll": 15.419039204558391,
+        "forward_rate_per_hour": 0.2943607201882537,
+        "initial_training_observation_nll": 15.492790386946705,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.7015173612623186,
+        "inspection_probability_state_1": 0.7502133858539216,
+        "iterations": 15,
+        "return_rate_per_hour": 0.15675973831897683
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.15
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.1168703807945708,
+        "hazard_per_hour": 0.1589142090131546,
+        "iterations": 20
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.1410857909868454,
+          "absolute_return_rate_error": 0.3,
+          "exact_test_brier_score": 0.261541327767452,
+          "exact_test_nll": 0.7361750800870478,
+          "forward_rate_per_hour": 0.1589142090131546,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.23023609215869356,
+          "exact_test_nll": 0.6517967110274266,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.3
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.001221035520508007,
+          "absolute_return_rate_error": 0.043992168040143,
+          "exact_test_brier_score": 0.23164887388364067,
+          "exact_test_nll": 0.6546439479534788,
+          "forward_rate_per_hour": 0.298778964479492,
+          "return_rate_per_hour": 0.343992168040143
+        }
+      },
+      "return_rate_per_hour": 0.3,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9007116865946214,
+        "false_positive_rate": 0.043863947930917725,
+        "final_training_observation_nll": 15.654562505699516,
+        "forward_rate_per_hour": 0.298778964479492,
+        "initial_training_observation_nll": 16.471735564627952,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.6984325208439494,
+        "inspection_probability_state_1": 0.75775945330707,
+        "iterations": 36,
+        "return_rate_per_hour": 0.343992168040143
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.3
+      }
+    },
+    {
+      "irreversible_estimate": {
+        "converged": true,
+        "false_positive_rate": 0.12403676028445618,
+        "hazard_per_hour": 0.12563574381735454,
+        "iterations": 27
+      },
+      "models": {
+        "irreversible_em": {
+          "absolute_forward_rate_error": 0.17436425618264545,
+          "absolute_return_rate_error": 0.45,
+          "exact_test_brier_score": 0.2588124690160219,
+          "exact_test_nll": 0.7213060946757536,
+          "forward_rate_per_hour": 0.12563574381735454,
+          "return_rate_per_hour": 0.0
+        },
+        "logged_reversible": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_test_brier_score": 0.22061006773451342,
+          "exact_test_nll": 0.6317440397644067,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "reversible_em": {
+          "absolute_forward_rate_error": 0.0026098151141722425,
+          "absolute_return_rate_error": 0.017120429157983896,
+          "exact_test_brier_score": 0.22083194246076873,
+          "exact_test_nll": 0.6322117369968578,
+          "forward_rate_per_hour": 0.29739018488582775,
+          "return_rate_per_hour": 0.4671204291579839
+        }
+      },
+      "return_rate_per_hour": 0.45,
+      "reversible_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8863254335632378,
+        "false_positive_rate": 0.03727915737279198,
+        "final_training_observation_nll": 15.621070838109063,
+        "forward_rate_per_hour": 0.29739018488582775,
+        "initial_training_observation_nll": 16.079256433889142,
+        "initializations_tried": 4,
+        "inspection_probability_state_0": 0.7032045186086617,
+        "inspection_probability_state_1": 0.7450953417578281,
+        "iterations": 38,
+        "return_rate_per_hour": 0.4671204291579839
+      },
+      "seed": 503,
+      "truth": {
+        "detection_sensitivity": 0.9,
+        "false_positive_rate": 0.04,
+        "forward_rate_per_hour": 0.3,
+        "inspection_probability_state_0": 0.7,
+        "inspection_probability_state_1": 0.75,
+        "return_rate_per_hour": 0.45
+      }
+    }
+  ],
+  "simultaneous_inference_details": {
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20260827,
+    "confidence": 0.95,
+    "critical_value": 1.916198051436694,
+    "family": [
+      "0.15",
+      "0.30",
+      "0.45"
+    ],
+    "family_size": 3,
+    "intervals": {
+      "0.15": [
+        0.05015834664022051,
+        0.0706044639476898
+      ],
+      "0.30": [
+        0.07313744339363752,
+        0.08884041050049886
+      ],
+      "0.45": [
+        0.07560360693332807,
+        0.08965068675894905
+      ]
+    },
+    "method": "paired bootstrap max standardized mean deviation",
+    "shared_resample_indices": true
+  }
+}

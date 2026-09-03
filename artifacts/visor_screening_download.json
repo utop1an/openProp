@@ -1,0 +1,822 @@
+{
+  "dataset_id": "epic_kitchens_visor",
+  "file_count": 161,
+  "files": [
+    {
+      "bytes": 57107,
+      "path": "metadata/EPIC_100_noun_classes_v2.csv",
+      "sha256": "f36a1ba474c52ff505f25ca68854a44085e170d791e167ac9f15835f9fae4fbd"
+    },
+    {
+      "bytes": 2822360,
+      "path": "metadata/frame_mapping.json",
+      "sha256": "dfab2f90e33db26aec6a6991012ba3e4700fe71ce1a761704e3a129f01a718dc"
+    },
+    {
+      "bytes": 5939,
+      "path": "metadata/README.txt",
+      "sha256": "667d7cb63aa531899d692a7a63cee36d9f86d5f5d8755b43d926218c80b60728"
+    },
+    {
+      "bytes": 271379,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_03.json",
+      "sha256": "704b5127036610db970bb3602205efd794df4e6bcd0bc86d337f22c903c009b4"
+    },
+    {
+      "bytes": 886173,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_07.json",
+      "sha256": "249ecf914a7cb364fbda99de6bede5a5a2b340d9e6edc120df9d83e2a36bd2fc"
+    },
+    {
+      "bytes": 6385857,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_05.json",
+      "sha256": "433b8b33d256bcc24e9c35e622569b2f8362bfc5e24326906065d0ab8357a2b1"
+    },
+    {
+      "bytes": 17282261,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_01.json",
+      "sha256": "b826142ec8ab896f2645c1fac214af36bf8a3b0bf5696ddbd4fc5c49fca81dee"
+    },
+    {
+      "bytes": 3006463,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_104.json",
+      "sha256": "46787f1b15deb6d78fcb02efe49c3d188a43e26324faba63e4caceecd1a67c0a"
+    },
+    {
+      "bytes": 8599491,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_14.json",
+      "sha256": "90ed8ac756ecd5fd6b6a3142efa73c27d5614fcd20d8db407402f7b9660730e3"
+    },
+    {
+      "bytes": 1879960,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_103.json",
+      "sha256": "fc71de6df4b112c3d5cb6742077f843d3f874cc3712de94fac1f9874a5c07ca5"
+    },
+    {
+      "bytes": 1215169,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_01.json",
+      "sha256": "dad78a276118c6c501dab103c4d4f064a58edcea5f53be506a39a1bb83cd573f"
+    },
+    {
+      "bytes": 1991793,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_07.json",
+      "sha256": "9031f77d72a37b17cf1301e377cfa6a29add625f32f3fc95681d404d95a29d4e"
+    },
+    {
+      "bytes": 15702836,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_03.json",
+      "sha256": "2ea809e6e6a966ae1f0335253107d1b834502192ddfe4625c4a2e4dd7c605c70"
+    },
+    {
+      "bytes": 3315585,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_101.json",
+      "sha256": "218e6222da57cdeb3e3e587ea5d5f2fac358f1f45a90b0d59d3b6ea36f32026b"
+    },
+    {
+      "bytes": 960201,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_107.json",
+      "sha256": "d975298e5ae6f8927c97d97599f94a9f6e71bce0113ddbf61b01e58057ad88de"
+    },
+    {
+      "bytes": 2299515,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_102.json",
+      "sha256": "f41b745517dae3ee95359cf3ceb4a578628955a48b369a8d482dad8abc075cbb"
+    },
+    {
+      "bytes": 5784218,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_109.json",
+      "sha256": "3f06422516d45c100e6dc2f20b305c5b74c776b1c18e2c67a29cefcea7075d6d"
+    },
+    {
+      "bytes": 2292376,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_121.json",
+      "sha256": "88d9f72aea89962c3396b1fc8e9d2b9ccbb2f1b47ba4a3ee017288acc221f9ff"
+    },
+    {
+      "bytes": 4932064,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_122.json",
+      "sha256": "b49811e73465a508cf22ae2eed549e2be61ce1113801d801ce74de74c0373cbe"
+    },
+    {
+      "bytes": 2090465,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_124.json",
+      "sha256": "d9b0cf7b0bed2f266d39ed49a84b46e8ee48b6a9f45c01d03a6e80015383a25d"
+    },
+    {
+      "bytes": 1822450,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_128.json",
+      "sha256": "6cdece05b693367b78d3bc7fb46fb297411cb5acdab543e2ff3524d310e8cc3f"
+    },
+    {
+      "bytes": 8756529,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_130.json",
+      "sha256": "377093b7c8b68675e154ecc69aeaede1a81a3c7a4719defb3e0cab1ebbf3f1fb"
+    },
+    {
+      "bytes": 407876,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_03.json",
+      "sha256": "e8da89ad41ddf0e995703d96e5e348c3191545b23728c0d47c2ec44d1cfc2049"
+    },
+    {
+      "bytes": 2950744,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_132.json",
+      "sha256": "357a64e66b8f656650f34f7c25bf2f29cf96c3a2fab2c6c49b1a9549b8e124f9"
+    },
+    {
+      "bytes": 2178695,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P02_135.json",
+      "sha256": "6a2a204d283e2faccd7dfd02d21fbf6df8978d0b60af7aecde05c7af6e62a39f"
+    },
+    {
+      "bytes": 2114250,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_05.json",
+      "sha256": "a5a07614d746dcec0a8aafe073e973224535f148461403492adb248e6ec3a3c1"
+    },
+    {
+      "bytes": 9338290,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_101.json",
+      "sha256": "663e83a201ba362ee8f77d0879444da9283fd4b94f096fb8fea11facdf670a0f"
+    },
+    {
+      "bytes": 464025,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_11.json",
+      "sha256": "76e5dc8f24ab749cea4ac8d2ebf26c4582397d2bc0d419c5b2b1e02dba2f3fbb"
+    },
+    {
+      "bytes": 8984438,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_04.json",
+      "sha256": "032314d5e4010016a7804a98bc88fbd7d2d8fb3cd1d18e35e4176490160d2212"
+    },
+    {
+      "bytes": 3269009,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_112.json",
+      "sha256": "d883ee0a3c8f648eb1571b8f7fa2731a93ac3b2f8c4fdd5ae18ac1e723daff7e"
+    },
+    {
+      "bytes": 2651131,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_113.json",
+      "sha256": "9361c574afda8b5bed587ddc505b54cf1aa43406cd3fdfe704c5451cd4791efb"
+    },
+    {
+      "bytes": 244454,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_13.json",
+      "sha256": "627fff853a45ebf989479b57ee4ab9f7449bbd7398f052ae1777d8ed7460559f"
+    },
+    {
+      "bytes": 814697,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_17.json",
+      "sha256": "34d701e568617cf8f12441652f200f5a3d4176c4baf1b84b639d8c9e5906d14b"
+    },
+    {
+      "bytes": 3938996,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_123.json",
+      "sha256": "7f2260934f443c0560e721bbd299d53c5a3ceb9071c193f376bc9e5828d66f3d"
+    },
+    {
+      "bytes": 10952358,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_02.json",
+      "sha256": "8f3ac4ef8792e418cbd5887687e43435e0a9876be1942e461f0b7aca39b99696"
+    },
+    {
+      "bytes": 2601327,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_23.json",
+      "sha256": "f991924a44f06880703bf9089cec3c9500120a3a2101236bf5b4495ee6a2e2d5"
+    },
+    {
+      "bytes": 5469496,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P03_24.json",
+      "sha256": "47c6b43569e9e014e3ea09fb384fa3fcd1a9b5cd6c7ef96cc667045f1cb6ce8d"
+    },
+    {
+      "bytes": 6396182,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_04.json",
+      "sha256": "bc28c744cfac8c14a33377b66fb169576e1c4f6d180a20b8e56159a814665407"
+    },
+    {
+      "bytes": 7186156,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_03.json",
+      "sha256": "8ad778be89ebcfce0c412c42c0a33407203d5e51894abf37b3c6125be2153145"
+    },
+    {
+      "bytes": 17633707,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_05.json",
+      "sha256": "f478a3bdbd63000ea6bbccaa419d3b78992400e4cebf43d74eed8742157a71f7"
+    },
+    {
+      "bytes": 1186420,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_11.json",
+      "sha256": "140f48d651009ff44c37cd136a5dc09aba2fd6d78e99bcbb12abd743ac8b2a76"
+    },
+    {
+      "bytes": 5412365,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_101.json",
+      "sha256": "98dd54c8ece1c40cebc40ac4c707d344444b7d8a4a87667929271509f8fbcfd5"
+    },
+    {
+      "bytes": 17386427,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_109.json",
+      "sha256": "45a31289c01a3deec20b0ab703d51ba912515b03ab2c980b3c0d32ee69550051"
+    },
+    {
+      "bytes": 2728430,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_114.json",
+      "sha256": "1fef70a53fbee1f0e03d209c692d68b293d5ed9608e29a81cc77e311964f4369"
+    },
+    {
+      "bytes": 418124,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_12.json",
+      "sha256": "00e7373f836b19d7052275edd49756f05eb2737736f050011f79079faa423ce2"
+    },
+    {
+      "bytes": 672839,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_21.json",
+      "sha256": "aa6a65b164b0d9e9eb7496986cbe06a909bc0f41d0dc0dc14050d36d3887e5da"
+    },
+    {
+      "bytes": 1199470,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_25.json",
+      "sha256": "e3937ccb3ed6de0a4c94e1e438b9044bfbf42cf8b72316ab1027cbec50029228"
+    },
+    {
+      "bytes": 80944,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_26.json",
+      "sha256": "027ea643b4588334eadbae5abd54b1d479ad3ea3dce0df42ac60c3e1f2ae73ac"
+    },
+    {
+      "bytes": 1156322,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_33.json",
+      "sha256": "bdc09dbf0f70a0a40dace936d818e57e4e80a0d9782456029a8a1ce59b400b1e"
+    },
+    {
+      "bytes": 937398,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P05_01.json",
+      "sha256": "bd8fb5bb854d51fba246ac3e1919af2a0306f5911f8a0960a198c70966fb7e2c"
+    },
+    {
+      "bytes": 3224021,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P05_08.json",
+      "sha256": "1c45f1d4a45a43a9568fba19736893358bd27cb15f1393a11a920c0e81c2f577"
+    },
+    {
+      "bytes": 598828,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_01.json",
+      "sha256": "70e24094976f2e3a0d598a8187c1074724eb7d541df0d3f008f7ae5f005a2f8f"
+    },
+    {
+      "bytes": 8751831,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_07.json",
+      "sha256": "30c50020e001c981f5ff551d090635743cdb575366f91a1d5b01589fba00d7c7"
+    },
+    {
+      "bytes": 4451700,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_09.json",
+      "sha256": "93ff737fc7425ba5f5643842a535021a75c0a09ee40016d570ffa0bb4fdc1516"
+    },
+    {
+      "bytes": 14540937,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_101.json",
+      "sha256": "86efd0a697e5df14f74d5f48f2bb595ce475e638697f02dd4eef963c55a106d6"
+    },
+    {
+      "bytes": 3324618,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_102.json",
+      "sha256": "233c49f4beb3abee892beca976a6e0086f89823bed431e4d0b17010c47555900"
+    },
+    {
+      "bytes": 3913178,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_103.json",
+      "sha256": "ead674891b26e2cd7316c1d923a496cf22a1021944a7a83a850a0ce8b4954e46"
+    },
+    {
+      "bytes": 2198041,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_107.json",
+      "sha256": "51cf30ae56865240fb2cc0320e08b2a223ccd970c6d9030c9382fa05f6715723"
+    },
+    {
+      "bytes": 798354,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_11.json",
+      "sha256": "ad56f0d55ff40649e088f9901bb5994bffe7c80cf9fa2cfbc6ba4d2c22046636"
+    },
+    {
+      "bytes": 273095,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_110.json",
+      "sha256": "2e4dc81163e5633f12e64134291e2a0479544f9f28b52f6d3861592b8d75566b"
+    },
+    {
+      "bytes": 667896,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_12.json",
+      "sha256": "8194091e90d47e7c107a4919385cfa3e42d2d41bbd83dce3685060fcb583a4be"
+    },
+    {
+      "bytes": 3417524,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_13.json",
+      "sha256": "9d5b6c829ee88786d71d49e27b123b209e4165409beda83749a253420c811a1e"
+    },
+    {
+      "bytes": 658192,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P06_14.json",
+      "sha256": "85cbaf85887d71533b1f6e0e68a53fd356a27d332cfeac77b3332f0c52c9bd30"
+    },
+    {
+      "bytes": 556856,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P07_08.json",
+      "sha256": "0241004f5209c3cecd62e25c60a33bb1e4028beecb261e3edba786f237b48af1"
+    },
+    {
+      "bytes": 3959492,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P08_09.json",
+      "sha256": "f964093bdae9f3fa3ff80708ce4ec07d01266632796f377a6eafc025c2e4a7ea"
+    },
+    {
+      "bytes": 5314429,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P08_16.json",
+      "sha256": "8ffc0bdc2d74484e2bd60d798a8ce934668aa3ba64d8415d82fd02a161804d8a"
+    },
+    {
+      "bytes": 9943586,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P08_21.json",
+      "sha256": "abd370a1be88f77378b1149f7e452a5bbeb927648879deaaef26ee01fbbb8fc0"
+    },
+    {
+      "bytes": 14225993,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P10_04.json",
+      "sha256": "e0d5b89990f7c62615d4bfa244c9ee4f75add5c1d4dcd77900aec2dca6f21a2c"
+    },
+    {
+      "bytes": 1018176,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P11_101.json",
+      "sha256": "fab1c85ce918a9bac1beb10aed304e3fdf3771c0a78c28dab5e24405335c4683"
+    },
+    {
+      "bytes": 1325239,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P11_102.json",
+      "sha256": "db441cb7f875fc3a03fbb61a05a81d1b44ec10fe25a85910c6733b880d03cc52"
+    },
+    {
+      "bytes": 2219478,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P11_103.json",
+      "sha256": "a2c8f7c4cdfbe552532d4cee411ac0b5a0f63893e3e75a83a370fdbf71ef9b4a"
+    },
+    {
+      "bytes": 8083170,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P11_104.json",
+      "sha256": "a991cd2b837d0a0d650930ec1ed973454bcbed5da2e85377468633bacd69b9c2"
+    },
+    {
+      "bytes": 2114210,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P11_105.json",
+      "sha256": "16b52b7d1553e7ef83267f2e8b7decad1c00b414ea7c2f27aa0d9a0efb2b6fa7"
+    },
+    {
+      "bytes": 605833,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P11_107.json",
+      "sha256": "2caa206ae457821576db5bf0b376e2e456d62ee76c4af1e2482cd54544760db9"
+    },
+    {
+      "bytes": 1895125,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P11_16.json",
+      "sha256": "4deb3ae4549a3b2b93c11512ce4b354408e0d01b5ef0c569f878adccf768a07b"
+    },
+    {
+      "bytes": 5726460,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P12_02.json",
+      "sha256": "ec603fb8a4f247b6978c6f2d6a4c7412b16519643b9ff880552123308e42e749"
+    },
+    {
+      "bytes": 3786094,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P12_03.json",
+      "sha256": "dda793406ee6a7f310b1ec6a8e3d2cc637be06526e10eb576e08016e94bf5969"
+    },
+    {
+      "bytes": 17732104,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P12_101.json",
+      "sha256": "c6aef7cf4f4674eea494014c927410b075882a99740a186cb09d05cdd463fab4"
+    },
+    {
+      "bytes": 832464,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P13_10.json",
+      "sha256": "e646059c17ff162678f89bc70acadb40e6786ec7eca84e0dd0290c63ab05492b"
+    },
+    {
+      "bytes": 464879,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P14_05.json",
+      "sha256": "c85f92bae2d17db5e6fb35d21e163f9027d4aeb872e91574b3490f831b1656f9"
+    },
+    {
+      "bytes": 2698882,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P15_02.json",
+      "sha256": "c6e336d52035f09ea8497f265784f72f7e5729a58583ef748db26dc2b2be1d2e"
+    },
+    {
+      "bytes": 357042,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P17_01.json",
+      "sha256": "bd878b2ace7db13f705f1a2656e0d3cc54276ca37a964bdb5a8787327db11693"
+    },
+    {
+      "bytes": 3330141,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P18_03.json",
+      "sha256": "ae226aaf393ce7c121b8193e462fcdaf65f4caa3c80dc6f5092ec5230462dd50"
+    },
+    {
+      "bytes": 1850250,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P18_06.json",
+      "sha256": "3f58276028e0124e195cc891231d09fee3aa509e180694e3d66ba488e86331d9"
+    },
+    {
+      "bytes": 1161213,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P18_07.json",
+      "sha256": "a3afe4848d0c6c7350cbbe8cc38320ec4f8327026a8ca73ab9cf53323076147b"
+    },
+    {
+      "bytes": 1469147,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P20_03.json",
+      "sha256": "7e5d467881a3428663e9854ad7c7d6c691341a92dc8b321dfe9f8a883fbb8a90"
+    },
+    {
+      "bytes": 9979947,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P22_01.json",
+      "sha256": "ba083d7700981f361e81353b292c7533fc354f128b26c602f1af9e49003d45c5"
+    },
+    {
+      "bytes": 22578742,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_110.json",
+      "sha256": "33f0f95e2f2e9f4385351c3ebaf8ff9bfe498540b1c31722d33f516b39f12ab9"
+    },
+    {
+      "bytes": 8593811,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P22_117.json",
+      "sha256": "b91a017e91bd5a3c199bfc4ac77684d80477864b0212be6db047779f9578a765"
+    },
+    {
+      "bytes": 5407412,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P23_02.json",
+      "sha256": "a34736330307010949ab4acb8ecc16fa104ae442dfded9acee70e5a5573ba269"
+    },
+    {
+      "bytes": 2483731,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P23_05.json",
+      "sha256": "e10dc62878a3eb2485dcf40646d30e79d643e7a3c3829376f135a6617cd02e55"
+    },
+    {
+      "bytes": 21894542,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P04_121.json",
+      "sha256": "a5be06d405eb11c94f376c69547726a0ae04421d9ea1f707a48dceba88b651d7"
+    },
+    {
+      "bytes": 23220642,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P01_09.json",
+      "sha256": "374d20b1d6c39343ab6fbefb2f97da26da8d09b062dab5e58354f90a585282f6"
+    },
+    {
+      "bytes": 12150939,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P24_05.json",
+      "sha256": "e59b0d073caab9bcb94ba32e8bce9adec3073f2679e990de5a0d09158ce67a4d"
+    },
+    {
+      "bytes": 3858139,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P26_110.json",
+      "sha256": "d7798e7d767cc5b7a67fffca50466c210c8ee34d2c1409f56f6eac767d7fb783"
+    },
+    {
+      "bytes": 14163672,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P24_08.json",
+      "sha256": "1dc20b2d902e477933d1cd395356685624f863eb475022295837f2c8e712fdd1"
+    },
+    {
+      "bytes": 18979191,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P22_07.json",
+      "sha256": "c9f43e8d9c5ceb6dfb4004436191a5fd36a334f874c9410d5432bf2905e39c27"
+    },
+    {
+      "bytes": 3742006,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_06.json",
+      "sha256": "a4e18656d4c74b5e4eef6a9d3f38f5d7f71fad7ef44d83c9e5e939846717d54f"
+    },
+    {
+      "bytes": 4019094,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_101.json",
+      "sha256": "75e78209eafd16fce465cc6a869c4db1bea38949f4e035b83bc9cd5ed3a7eb44"
+    },
+    {
+      "bytes": 24613693,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P25_107.json",
+      "sha256": "1bf5ce37bc79f440cf3a83558223fd4edc70e7e9d27a7ea9e6e52d213f710802"
+    },
+    {
+      "bytes": 2401743,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_109.json",
+      "sha256": "4353997dfce8f34b1a776ac047a0fb952d97c3007169f33ebfc91e309eed3f2a"
+    },
+    {
+      "bytes": 1581533,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_110.json",
+      "sha256": "49497feda38ebc928ce7aec9a1d861cc0043e66569dbe5ba0af61c086d196d11"
+    },
+    {
+      "bytes": 10377017,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_103.json",
+      "sha256": "2aa418d0ec1016f7e8549ba807a54f3e45a2188413e4a7e99d2a6c8aaa6e3ece"
+    },
+    {
+      "bytes": 1548952,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_13.json",
+      "sha256": "4799620836659d3111bfec688604387cd005fd0b814642518506a2c737013279"
+    },
+    {
+      "bytes": 21492142,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P27_101.json",
+      "sha256": "e36b6b5fe35c6a4d249653980468a976081167de4c29265e90c4e1fc159e8c1c"
+    },
+    {
+      "bytes": 1556517,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_14.json",
+      "sha256": "232310ed750eb3fbafd6d3a622a3db2ab232ee072cbd10ceec99471e314ad7af"
+    },
+    {
+      "bytes": 4851825,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_113.json",
+      "sha256": "556c3adedd00210c904a92c69f66b2969c4371e1a0e3ec8657e53b09ba3f3603"
+    },
+    {
+      "bytes": 6479538,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P28_112.json",
+      "sha256": "9b29b88ee46a91b4578f859678d485f16780fb3b418f943801ba372c83df8154"
+    },
+    {
+      "bytes": 8056891,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P30_101.json",
+      "sha256": "1b981d9546e3fe3ffe5f8bed0b2fd9c75c3269b96452b50e2c0d97c3fabeb089"
+    },
+    {
+      "bytes": 1184963,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P30_112.json",
+      "sha256": "dd2b08d0bff168031cc353f05d56314dcaf153fbcf6d5af8c6d48a684bf0505e"
+    },
+    {
+      "bytes": 1673218,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P32_01.json",
+      "sha256": "815519469eb0f1d4499c9fcc48a2deda9b12182d85807873060b959150ade6eb"
+    },
+    {
+      "bytes": 10861505,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P30_111.json",
+      "sha256": "a16b7f64387e838326534a406d7fa90ed3f6994122b71aac59f76b108abd8cbd"
+    },
+    {
+      "bytes": 9282242,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P35_109.json",
+      "sha256": "62e677c6dd11ea92a33043daccb1dcb3e54eaf33f6a2885d1025543b1d3d9479"
+    },
+    {
+      "bytes": 21578021,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P30_05.json",
+      "sha256": "c24e435e89b1850d3ebb96cd823b6ac1f3601c91671c3cd9abe2280414d24376"
+    },
+    {
+      "bytes": 27792454,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P30_107.json",
+      "sha256": "9944ac5e2feb18352c812980a36ddfd7dfb6b7be652303ffbcce3024d749f14e"
+    },
+    {
+      "bytes": 4373819,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P37_103.json",
+      "sha256": "1ed139635497538de08e41fa0cf43b1dba32b5beed6dd3cfed171915f1e4b042"
+    },
+    {
+      "bytes": 13149827,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P35_105.json",
+      "sha256": "3258bd76c19b14b69e9a3855634ab21a3bceb8463bfe09799f202caf3404a742"
+    },
+    {
+      "bytes": 15844749,
+      "path": "GroundTruth-SparseAnnotations/annotations/train/P37_101.json",
+      "sha256": "f14437feda29a7c936646a89495acdf4c75b48e0539e7e2c69eab8daaadfa94e"
+    },
+    {
+      "bytes": 1220825,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P01_107.json",
+      "sha256": "03bef9119f7343db282349f69e98e625a304c68c4a83342989984275b3d3ee9d"
+    },
+    {
+      "bytes": 519008,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P03_10.json",
+      "sha256": "d4e41d4d90f60dbdd2899d97ec2c8576bafd8149d7a10745d12ce58a1bae10de"
+    },
+    {
+      "bytes": 2443392,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P02_02.json",
+      "sha256": "53921a7e92f150c77b6472ceed8fb54fa3d9c98f57a5b64cd4ca359414d68817"
+    },
+    {
+      "bytes": 1151853,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P03_14.json",
+      "sha256": "ed0acd9043d2a78a632a6b1d0d20ebf1d52ab05845c3195f4b5a00e8b233cef1"
+    },
+    {
+      "bytes": 227988,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P03_22.json",
+      "sha256": "1a41281126b743c94d3b55dba6a5d49d86c7ac9138e3acfa9a606f2dc6625f74"
+    },
+    {
+      "bytes": 8027427,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P03_120.json",
+      "sha256": "dfbf1f16eddc951ad287c77dcb2c40ada43756d4015a0dce830f1b01b30924ea"
+    },
+    {
+      "bytes": 6165367,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P04_06.json",
+      "sha256": "5db360b1454cf55c379e213302118667cb53696a554d5df822ba05035bb7fab9"
+    },
+    {
+      "bytes": 2258949,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P04_13.json",
+      "sha256": "1c211a1ad0ac967def51e9ca5ee77de3072adc37dfc78d9df07cd9757c298f0c"
+    },
+    {
+      "bytes": 2552517,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P04_24.json",
+      "sha256": "68009f5c9c0f9ad829fb25af1df5e9c2834d8c9b2d63676b016ee55a68413205"
+    },
+    {
+      "bytes": 4074565,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P06_03.json",
+      "sha256": "f56bb0e1697c80c3fbb22ef4aab4716c300a39de840378c494682f652302ae49"
+    },
+    {
+      "bytes": 7807503,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P06_05.json",
+      "sha256": "a967b920652e362255b8bcef3eb8f0b55120e6b23cfdf7c18f85d41f9bf77019"
+    },
+    {
+      "bytes": 1755738,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P06_10.json",
+      "sha256": "25669083d299efd9daad26ac5a7cb0e637b66401fa10afe9177d434ca286b905"
+    },
+    {
+      "bytes": 1940354,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P06_106.json",
+      "sha256": "8fc8c867a0f9fda16fb709ea6f024dfd1981c225cdff1e729c8b7d01c53b9c24"
+    },
+    {
+      "bytes": 21246604,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P02_09.json",
+      "sha256": "26a2c28a2c2e505f991928fb183bffe33029d3bbeee627906fd5ce1e2de0f17f"
+    },
+    {
+      "bytes": 1762317,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P07_101.json",
+      "sha256": "c1551499185010a2d3e021958dbf077a1b6c750e0016334a22488542ba6a7373"
+    },
+    {
+      "bytes": 314221,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P07_103.json",
+      "sha256": "041ee331b87c9fc91d428b6a8dae837886dba0e479a42b5b2dc2da1f272373cc"
+    },
+    {
+      "bytes": 5951407,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P06_108.json",
+      "sha256": "4c4efca289e57727f6719a35c992aa940037d3715c873b5b59ca1846334a471a"
+    },
+    {
+      "bytes": 1906611,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P07_110.json",
+      "sha256": "c86af11dfcb5597c634f77a246630f050a8ff7346bdc479199e75124b29ef4a7"
+    },
+    {
+      "bytes": 482212,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P09_07.json",
+      "sha256": "9b6e0e1facbd94e65e05610c02fd9981d4aa78bcd80ccc3404258ec0a3118546"
+    },
+    {
+      "bytes": 1920265,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P09_02.json",
+      "sha256": "7494994a672cc73eaf97ba200cefe97b1a29f60c2d663f20e4cbd159c3b3caf1"
+    },
+    {
+      "bytes": 1551587,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P09_103.json",
+      "sha256": "6e4cbd87c4760d7885dae376ba1b2e25113fc040ad90e9b567cbed98be130849"
+    },
+    {
+      "bytes": 375417,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P09_106.json",
+      "sha256": "ffa52ed40fba2a1d98d26e001a63ce717d05d9f3ce3024269ad6fa1f095c53b1"
+    },
+    {
+      "bytes": 2215561,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P09_104.json",
+      "sha256": "6ba29fc8e3f06cf8838be0df16dc9ae572ed503944cf24ba0d928fcc9482783d"
+    },
+    {
+      "bytes": 1067017,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P18_01.json",
+      "sha256": "bd5d1d359985db9d7b9a9e6164b43889904e2ae2759f9998d828bb5850997364"
+    },
+    {
+      "bytes": 8001234,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P08_17.json",
+      "sha256": "5099f0c5eab95e4762bd545ee96b1d7e64bed5634c94eb002aee2227c0cfe277"
+    },
+    {
+      "bytes": 28993034,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P02_12.json",
+      "sha256": "6bcae9a526bed37793f4a1976ca960a668c45a5c79ee255e2235e2bb15931666"
+    },
+    {
+      "bytes": 2476402,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P21_01.json",
+      "sha256": "d51f4194d4beba3af73a0527856c6ed789f09a662469365bd550273654256320"
+    },
+    {
+      "bytes": 1028272,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P18_02.json",
+      "sha256": "974627baf66d48a753aa02fe7932bbfaa2e17fcc6e25b1c5bf0798c2d42a4859"
+    },
+    {
+      "bytes": 5913246,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P12_04.json",
+      "sha256": "07132327279399a3986a2b36957242eb86029af8dfcdc214e2ce990f3bf8dbd1"
+    },
+    {
+      "bytes": 5759265,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P22_107.json",
+      "sha256": "ffb9b6021de7afc4cafe5be456093abf15c4b651dc7c5d8c899e628f8cf580ea"
+    },
+    {
+      "bytes": 531868,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P26_01.json",
+      "sha256": "2a17c36baff9f04f9bfe050ed9c3243e224624feec89f735da6bbb4b7644fd52"
+    },
+    {
+      "bytes": 6158202,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P25_101.json",
+      "sha256": "5d47258fc7fd4ec0bd72064c65a7a43acee34164531f45e9c1a84df8e7a68353"
+    },
+    {
+      "bytes": 7197632,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P25_09.json",
+      "sha256": "b7cd4e3fb389a9901694d621db2c9ebec955733760d2c87f4c27d8682c23d347"
+    },
+    {
+      "bytes": 589898,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P26_108.json",
+      "sha256": "b4821db20b4b3da0053b878ffe43e8663272da0447d89701542563a8cb9dc8a8"
+    },
+    {
+      "bytes": 2432313,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P28_05.json",
+      "sha256": "16a3d679618648b4de037f17aeebe1a89bc9bede6cb03647d0907c9f755920ea"
+    },
+    {
+      "bytes": 12371108,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P24_09.json",
+      "sha256": "a7996da4fc8013506e84bfa29412a80bc91f38ae43953847911ab7b837effbcb"
+    },
+    {
+      "bytes": 924585,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P29_04.json",
+      "sha256": "7e41b9b54467d1754f699ad2093dde4866ff3f3ee45547a5f607becd75706c04"
+    },
+    {
+      "bytes": 2979268,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P26_02.json",
+      "sha256": "cc690c327688d2dd840cc77c2f929a8e9f927d76e82e0e93185abd21fd6c6879"
+    },
+    {
+      "bytes": 68074,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P32_07.json",
+      "sha256": "15a3d51abcb9d8cee1f28c529bd0d595e4817d097de9ec00c4a164a606f4231b"
+    },
+    {
+      "bytes": 2159328,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P30_07.json",
+      "sha256": "af9dcba1ed2e5a732b2f06b1d25824f89f42b037f66a1b6a3c1e0a9551575da2"
+    },
+    {
+      "bytes": 3700001,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P37_102.json",
+      "sha256": "fa29cb0c8cfcb474c64c271306c1a9fac16bc74b9dd9675fda6370f68960f0f8"
+    },
+    {
+      "bytes": 4002242,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P30_110.json",
+      "sha256": "0b80b561bb95f41735013fd0efb9026628013515900761d92bb3b12585d94c02"
+    },
+    {
+      "bytes": 9086419,
+      "path": "GroundTruth-SparseAnnotations/annotations/val/P27_105.json",
+      "sha256": "13adc4702e7e4ce1d69ccb0a2a4e084317be12b2ddd50a4cb4018581e8a5337b"
+    }
+  ],
+  "license": "CC BY-NC 4.0",
+  "license_accepted_by_user": true,
+  "performance_evidence": false,
+  "protocol_id": "openprop-visor-screening-download-v1",
+  "schema_version": 1,
+  "source_doi": "10.5523/bris.2v6cgv1x04ol22qp9rm9x2j6a7",
+  "split_counts": {
+    "train": 115,
+    "val": 43
+  },
+  "total_bytes": 871706852
+}

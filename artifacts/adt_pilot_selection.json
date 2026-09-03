@@ -1,0 +1,1025 @@
+{
+  "declared_download_bytes": {
+    "main_groundtruth": 1945428787,
+    "segmentation": 5714720466,
+    "video_main_rgb": 6615887539
+  },
+  "performance_evidence": false,
+  "protocol_id": "openprop-adt-pilot-selection-v1",
+  "schema_version": 1,
+  "segmentation_sequence_count": 18,
+  "selection_seed": "openprop-adt-pilot-v1",
+  "selection_uses_screening_outcomes": false,
+  "sequence_count": 63,
+  "sequences": [
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20147262,
+        "segmentation": 298838575,
+        "video_main_rgb": 103410118
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq131_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 19748739,
+        "segmentation": 274346607,
+        "video_main_rgb": 109839793
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq133_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21178856,
+        "segmentation": 297781429,
+        "video_main_rgb": 102993259
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq134_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21880584,
+        "segmentation": 317428376,
+        "video_main_rgb": 107835537
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq135_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21913158,
+        "segmentation": 312912896,
+        "video_main_rgb": 114143011
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq136_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21000067,
+        "segmentation": 289801213,
+        "video_main_rgb": 118004608
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq137_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21341557,
+        "segmentation": 309837746,
+        "video_main_rgb": 111883823
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq138_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20548495,
+        "segmentation": 270021853,
+        "video_main_rgb": 111910924
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq140_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20902045,
+        "segmentation": 312915570,
+        "video_main_rgb": 104420681
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq141_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21305209,
+        "segmentation": 300310365,
+        "video_main_rgb": 108541683
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq142_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20117325,
+        "segmentation": 296522653,
+        "video_main_rgb": 114727474
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq143_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20916399,
+        "segmentation": 300335682,
+        "video_main_rgb": 108289469
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq144_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21231559,
+        "segmentation": 305948077,
+        "video_main_rgb": 108083594
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq145_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21908190,
+        "segmentation": 306544470,
+        "video_main_rgb": 113755684
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq146_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20924606,
+        "segmentation": 301897235,
+        "video_main_rgb": 103825065
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq147_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21372745,
+        "segmentation": 293810065,
+        "video_main_rgb": 104877921
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq148_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21302960,
+        "segmentation": 308839575,
+        "video_main_rgb": 108269014
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq149_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "clean",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 17651995,
+        "segmentation": 277674714,
+        "video_main_rgb": 106968737
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_clean_seq150_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 14538354,
+        "segmentation": 186253186,
+        "video_main_rgb": 96157036
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq131_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 14475471,
+        "segmentation": 185124219,
+        "video_main_rgb": 106475514
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq132_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 14600454,
+        "segmentation": 191484550,
+        "video_main_rgb": 105358792
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq133_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 14791532,
+        "segmentation": 185903278,
+        "video_main_rgb": 86459090
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq134_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 13336746,
+        "segmentation": 173663148,
+        "video_main_rgb": 102736937
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq135_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 15528858,
+        "segmentation": 215034270,
+        "video_main_rgb": 93516527
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq136_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 15642220,
+        "segmentation": 204805527,
+        "video_main_rgb": 104032982
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq137_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 14205602,
+        "segmentation": 187199527,
+        "video_main_rgb": 93990208
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq138_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 14204059,
+        "segmentation": 175943580,
+        "video_main_rgb": 98328967
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq139_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 14609169,
+        "segmentation": 187297730,
+        "video_main_rgb": 83470725
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_seq140_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 56412755,
+        "segmentation": 370290703,
+        "video_main_rgb": 102728299
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq131_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 53335089,
+        "segmentation": 357304486,
+        "video_main_rgb": 88056480
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq132_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 55940426,
+        "segmentation": 384272324,
+        "video_main_rgb": 87823999
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq133_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 53148709,
+        "segmentation": 357505357,
+        "video_main_rgb": 96750955
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq134_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 55157977,
+        "segmentation": 371969173,
+        "video_main_rgb": 91291982
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq135_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 52507991,
+        "segmentation": 356804817,
+        "video_main_rgb": 96121996
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq136_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 55479902,
+        "segmentation": 370992063,
+        "video_main_rgb": 96265757
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq137_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 53873483,
+        "segmentation": 359366398,
+        "video_main_rgb": 103705317
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq138_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 55915462,
+        "segmentation": 402785336,
+        "video_main_rgb": 115956948
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq139_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "decoration",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 55466462,
+        "segmentation": 389552798,
+        "video_main_rgb": 91565426
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_decoration_skeleton_seq140_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21320911,
+        "segmentation": 297370864,
+        "video_main_rgb": 109589174
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq131_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 19258142,
+        "segmentation": 291075877,
+        "video_main_rgb": 102015578
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq132_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 17506693,
+        "segmentation": 270979848,
+        "video_main_rgb": 94162623
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq133_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21042516,
+        "segmentation": 312410126,
+        "video_main_rgb": 119631978
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq136_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 19966591,
+        "segmentation": 292638916,
+        "video_main_rgb": 116605663
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq138_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21656427,
+        "segmentation": 305137648,
+        "video_main_rgb": 120800590
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq139_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 18855707,
+        "segmentation": 288027706,
+        "video_main_rgb": 111803081
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq140_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 19316888,
+        "segmentation": 298273339,
+        "video_main_rgb": 93327770
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq141_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 16170349,
+        "segmentation": 259352264,
+        "video_main_rgb": 98251000
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq142_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 19134548,
+        "segmentation": 288870098,
+        "video_main_rgb": 108824404
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq143_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 21338208,
+        "segmentation": 283537047,
+        "video_main_rgb": 115318380
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq144_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 18676898,
+        "segmentation": 296114292,
+        "video_main_rgb": 95027701
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq145_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 16427200,
+        "segmentation": 260719125,
+        "video_main_rgb": 97157270
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq146_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20510513,
+        "segmentation": 295815948,
+        "video_main_rgb": 113684503
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq147_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 18056514,
+        "segmentation": 289439345,
+        "video_main_rgb": 95009518
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq149_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "regular",
+      "declared_bytes": {
+        "main_groundtruth": 20416047,
+        "segmentation": 283467944,
+        "video_main_rgb": 115714152
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_seq150_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 58345632,
+        "segmentation": 521569966,
+        "video_main_rgb": 108976897
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq131_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 64724856,
+        "segmentation": 557289600,
+        "video_main_rgb": 118385123
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq132_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 59531925,
+        "segmentation": 554995530,
+        "video_main_rgb": 104905650
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq133_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 64125923,
+        "segmentation": 541972301,
+        "video_main_rgb": 118231778
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq134_M1292",
+      "split": "calibration"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 64687297,
+        "segmentation": 574564774,
+        "video_main_rgb": 117965869
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq135_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 64122595,
+        "segmentation": 606332379,
+        "video_main_rgb": 116649819
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": true,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq136_M1292",
+      "split": "test"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 63661050,
+        "segmentation": 608223507,
+        "video_main_rgb": 101286973
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq137_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 63641753,
+        "segmentation": 589462964,
+        "video_main_rgb": 110548807
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq139_M1292",
+      "split": "train"
+    },
+    {
+      "activity": "meal",
+      "condition": "skeleton",
+      "declared_bytes": {
+        "main_groundtruth": 64371132,
+        "segmentation": 598624204,
+        "video_main_rgb": 109438906
+      },
+      "download": {
+        "main_groundtruth": true,
+        "segmentation": false,
+        "video_main_rgb": true
+      },
+      "sequence_name": "Apartment_release_meal_skeleton_seq140_M1292",
+      "split": "train"
+    }
+  ],
+  "split_scope": "pilot_sequence_level_not_subject_generalization"
+}

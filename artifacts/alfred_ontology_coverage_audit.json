@@ -1,0 +1,36 @@
+{
+  "ontology": {
+    "alias_policy": "exact or unique token-containment match",
+    "ambiguous_policy": "preserve original value",
+    "annotation_text_used_for_fit": false,
+    "object_labels": 53,
+    "predeclared_schema_semantics": [
+      "thermal and cleanliness aliases",
+      "receptacle class to on/inside relation"
+    ],
+    "receptacle_labels": 24,
+    "source_split": "train",
+    "validation_labels_used_for_fit": false
+  },
+  "protocol": {
+    "evaluation_use": "coverage reporting only; validation labels never update ontology",
+    "ontology_fit": "train PDDL labels only",
+    "performance_metric": false
+  },
+  "splits": {
+    "valid_seen": {
+      "cases": 487,
+      "object_case_coverage": 1.0,
+      "receptacle_case_coverage": 1.0,
+      "unseen_object_labels": [],
+      "unseen_receptacle_labels": []
+    },
+    "valid_unseen": {
+      "cases": 458,
+      "object_case_coverage": 1.0,
+      "receptacle_case_coverage": 1.0,
+      "unseen_object_labels": [],
+      "unseen_receptacle_labels": []
+    }
+  }
+}

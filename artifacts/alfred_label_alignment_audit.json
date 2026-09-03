@@ -1,0 +1,645 @@
+{
+  "by_split": {
+    "valid_seen": {
+      "cases": 487,
+      "exact_destination_label_rate": 0.35523613963039014,
+      "exact_object_label_rate": 0.7330595482546202,
+      "explicit_object_conflict_rate": 0.06570841889117043,
+      "explicit_object_conflicts": 32,
+      "state_cue_rate": 0.7248459958932238
+    },
+    "valid_unseen": {
+      "cases": 458,
+      "exact_destination_label_rate": 0.44541484716157204,
+      "exact_object_label_rate": 0.7925764192139738,
+      "explicit_object_conflict_rate": 0.0611353711790393,
+      "explicit_object_conflicts": 28,
+      "state_cue_rate": 0.7161572052401747
+    }
+  },
+  "explicit_conflict_examples": [
+    {
+      "case_id": "trial_T20190908_052232_887934:ann-0",
+      "gold_destination": "toilet",
+      "gold_object": "candle",
+      "other_known_types_mentioned": [
+        "newspaper"
+      ],
+      "query": "Put a bottle on the back of a newspaper.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_234406_356490:ann-2",
+      "gold_destination": "microwave",
+      "gold_object": "egg",
+      "other_known_types_mentioned": [
+        "potato"
+      ],
+      "query": "Put a potato in the microwave.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190910_155319_795672:ann-1",
+      "gold_destination": "toilet",
+      "gold_object": "tissue box",
+      "other_known_types_mentioned": [
+        "box"
+      ],
+      "query": "Put a box of tissues on top of the toilet.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_091246_807206:ann-1",
+      "gold_destination": "coffee table",
+      "gold_object": "vase",
+      "other_known_types_mentioned": [
+        "bowl"
+      ],
+      "query": "Place a bowl on a table.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_091246_807206:ann-2",
+      "gold_destination": "coffee table",
+      "gold_object": "vase",
+      "other_known_types_mentioned": [
+        "bowl"
+      ],
+      "query": "Move bowl to coffee table.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_105559_983897:ann-1",
+      "gold_destination": "counter top",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Place a cleaned knife on a counter top.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_105559_983897:ann-2",
+      "gold_destination": "counter top",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "clean the knife and put it back on the counter top",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_114508_617301:ann-0",
+      "gold_destination": "dining table",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "To wash an knife and place it on the kitchen table.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_114508_617301:ann-2",
+      "gold_destination": "dining table",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Put a clean knife on the table.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_121728_511866:ann-1",
+      "gold_destination": "drawer",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Put a cleaned knife in a drawer.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_121728_511866:ann-2",
+      "gold_destination": "drawer",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Put a cleaned knife in a drawer.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_052007_212776:ann-0",
+      "gold_destination": "drawer",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Place a rinsed knife inside a drawer.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_052007_212776:ann-1",
+      "gold_destination": "drawer",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Put a cleaned knife in a drawer.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_052007_212776:ann-2",
+      "gold_destination": "drawer",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "place a clean knife in the drawer",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_124425_112757:ann-0",
+      "gold_destination": "drawer",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Place a clean knife in a drawer.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_124425_112757:ann-2",
+      "gold_destination": "drawer",
+      "gold_object": "butter knife",
+      "other_known_types_mentioned": [
+        "knife"
+      ],
+      "query": "Put a rinsed off knife in the drawer.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_233056_022802:ann-1",
+      "gold_destination": "coffee machine",
+      "gold_object": "mug",
+      "other_known_types_mentioned": [
+        "cup"
+      ],
+      "query": "Place a clean cup in the coffee maker.",
+      "split": "valid_seen",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_192823_237997:ann-2",
+      "gold_destination": "side table",
+      "gold_object": "cup",
+      "other_known_types_mentioned": [
+        "vase"
+      ],
+      "query": "Put a chilled vase on the three tiered black table.",
+      "split": "valid_seen",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_234112_645480:ann-2",
+      "gold_destination": "microwave",
+      "gold_object": "egg",
+      "other_known_types_mentioned": [
+        "potato"
+      ],
+      "query": "Place a cold potato in the microwave.",
+      "split": "valid_seen",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_184242_348366:ann-1",
+      "gold_destination": "coffee machine",
+      "gold_object": "mug",
+      "other_known_types_mentioned": [
+        "cup"
+      ],
+      "query": "cool the cup in the refrigerator, put it in the coffee machine",
+      "split": "valid_seen",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_184242_348366:ann-2",
+      "gold_destination": "coffee machine",
+      "gold_object": "mug",
+      "other_known_types_mentioned": [
+        "cup"
+      ],
+      "query": "Cool down the cup on the coffee maker.",
+      "split": "valid_seen",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_232648_241836:ann-2",
+      "gold_destination": "dining table",
+      "gold_object": "pan",
+      "other_known_types_mentioned": [
+        "pot"
+      ],
+      "query": "Move a chilled pot to the round table in the corner.",
+      "split": "valid_seen",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_181023_216915:ann-2",
+      "gold_destination": "stove burner",
+      "gold_object": "pan",
+      "other_known_types_mentioned": [
+        "plate"
+      ],
+      "query": "Place a chilled plate on a stove.",
+      "split": "valid_seen",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_004531_429065:ann-2",
+      "gold_destination": "dining table",
+      "gold_object": "pot",
+      "other_known_types_mentioned": [
+        "pan"
+      ],
+      "query": "Place a frying pan in the fridge and take it out.",
+      "split": "valid_seen",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190918_205656_000147:ann-2",
+      "gold_destination": "dining table",
+      "gold_object": "apple",
+      "other_known_types_mentioned": [
+        "potato",
+        "knife",
+        "bowl"
+      ],
+      "query": "Pick up knife, slice potato, put knife in bowl, heat slice of potato in microwave, put potato on table.",
+      "split": "valid_seen",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_023536_977733:ann-2",
+      "gold_destination": "dining table",
+      "gold_object": "bread",
+      "other_known_types_mentioned": [
+        "potato"
+      ],
+      "query": "TO heat a potato slice and put in on the table by the spoon.",
+      "split": "valid_seen",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_014639_335717:ann-1",
+      "gold_destination": "cabinet",
+      "gold_object": "mug",
+      "other_known_types_mentioned": [
+        "cup"
+      ],
+      "query": "Place a heated cup in the bottom of the counter",
+      "split": "valid_seen",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_222640_487432:ann-1",
+      "gold_destination": "coffee machine",
+      "gold_object": "mug",
+      "other_known_types_mentioned": [
+        "cup"
+      ],
+      "query": "Warm up the cup on the coffee maker.",
+      "split": "valid_seen",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_090729_088825:ann-2",
+      "gold_destination": "side table",
+      "gold_object": "mug",
+      "other_known_types_mentioned": [
+        "cup"
+      ],
+      "query": "Put a microwaved cup on a black table.",
+      "split": "valid_seen",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190909_115736_122556:ann-2",
+      "gold_destination": "sink basin",
+      "gold_object": "potato",
+      "other_known_types_mentioned": [
+        "egg"
+      ],
+      "query": "Put a sliced egg inside the sink",
+      "split": "valid_seen",
+      "task_type": "pick_heat_then_place_in_recep"
+    }
+  ],
+  "overall": {
+    "cases": 945,
+    "exact_destination_label_rate": 0.39894179894179893,
+    "exact_object_label_rate": 0.7619047619047619,
+    "explicit_object_conflict_rate": 0.06349206349206349,
+    "explicit_object_conflicts": 60,
+    "state_cue_rate": 0.7206349206349206
+  },
+  "protocol": {
+    "destination_support": "normalized whole-phrase match to PDDL parent_target",
+    "explicit_conflict": "gold object phrase absent and another known full object label present",
+    "limitations": [
+      "aliases and hypernyms are counted as unsupported rather than incorrect",
+      "cue presence does not prove full goal-frame correctness",
+      "no model outputs are used"
+    ],
+    "object_support": "normalized whole-phrase match to PDDL object_target",
+    "scope": "lexical support audit, not semantic equivalence scoring"
+  },
+  "unsupported_or_alias_examples": [
+    {
+      "case_id": "trial_T20190908_050633_745514:ann-0",
+      "gold_destination": "side table",
+      "gold_object": "book",
+      "other_known_types_mentioned": [],
+      "query": "move a magazine from the bed to the table",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_050633_745514:ann-2",
+      "gold_destination": "side table",
+      "gold_object": "book",
+      "other_known_types_mentioned": [],
+      "query": "Move a game from the bed to the bedside table",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_052232_887934:ann-1",
+      "gold_destination": "toilet",
+      "gold_object": "candle",
+      "other_known_types_mentioned": [],
+      "query": "Put a bottle of nail polish on the toilet.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_120047_968274:ann-1",
+      "gold_destination": "arm chair",
+      "gold_object": "cell phone",
+      "other_known_types_mentioned": [],
+      "query": "Move a phone to the chair",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_120047_968274:ann-2",
+      "gold_destination": "arm chair",
+      "gold_object": "cell phone",
+      "other_known_types_mentioned": [],
+      "query": "Put a phone on a chair.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_233817_198528:ann-1",
+      "gold_destination": "bed",
+      "gold_object": "cell phone",
+      "other_known_types_mentioned": [],
+      "query": "Put a phone on a bed.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_233817_198528:ann-2",
+      "gold_destination": "bed",
+      "gold_object": "cell phone",
+      "other_known_types_mentioned": [],
+      "query": "move the phone from the dresser to the bed",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_162502_940304:ann-1",
+      "gold_destination": "bathtub basin",
+      "gold_object": "cloth",
+      "other_known_types_mentioned": [],
+      "query": "move a rag from cabinet to the tub",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_162502_940304:ann-2",
+      "gold_destination": "bathtub basin",
+      "gold_object": "cloth",
+      "other_known_types_mentioned": [],
+      "query": "place a rag inside the tub",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_162502_940304:ann-4",
+      "gold_destination": "bathtub basin",
+      "gold_object": "cloth",
+      "other_known_types_mentioned": [],
+      "query": "Put the red rag into the bathtub",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_162502_940304:ann-5",
+      "gold_destination": "bathtub basin",
+      "gold_object": "cloth",
+      "other_known_types_mentioned": [],
+      "query": "Move the rag from the bottom left cupboard to the bath tub.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_124340_258012:ann-1",
+      "gold_destination": "arm chair",
+      "gold_object": "credit card",
+      "other_known_types_mentioned": [],
+      "query": "move a card from a couch to a chair",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_053502_505422:ann-0",
+      "gold_destination": "bathtub basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "Put a towel in a tub.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_053502_505422:ann-1",
+      "gold_destination": "bathtub basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "Put a towel in the bath tub.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_053502_505422:ann-2",
+      "gold_destination": "bathtub basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "Carry a towel to the bath tub",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_023400_293044:ann-0",
+      "gold_destination": "bathtub basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "Place a towel in the bath tub.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190908_023400_293044:ann-2",
+      "gold_destination": "bathtub basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "Put a towel in a tub.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_061934_041977:ann-0",
+      "gold_destination": "sink basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "Place a towel inside a sink",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_061934_041977:ann-1",
+      "gold_destination": "sink basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "move the towel from the wall to the sink",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_061934_041977:ann-2",
+      "gold_destination": "sink basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "Getting the towel ready to be used",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_061934_041977:ann-3",
+      "gold_destination": "sink basin",
+      "gold_object": "hand towel",
+      "other_known_types_mentioned": [],
+      "query": "move the towel from the towel rack to the sink",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_032340_274147:ann-0",
+      "gold_destination": "side table",
+      "gold_object": "mug",
+      "other_known_types_mentioned": [],
+      "query": "Place a CD on a table.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_021000_274398:ann-1",
+      "gold_destination": "arm chair",
+      "gold_object": "remote control",
+      "other_known_types_mentioned": [],
+      "query": "Move a remote to the chair.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_021000_274398:ann-2",
+      "gold_destination": "arm chair",
+      "gold_object": "remote control",
+      "other_known_types_mentioned": [],
+      "query": "Put one remote on a chair.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_153609_373481:ann-0",
+      "gold_destination": "sofa",
+      "gold_object": "remote control",
+      "other_known_types_mentioned": [],
+      "query": "move the remote from the table to the couch",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_153609_373481:ann-2",
+      "gold_destination": "sofa",
+      "gold_object": "remote control",
+      "other_known_types_mentioned": [],
+      "query": "put remote on couch",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_054906_608944:ann-0",
+      "gold_destination": "cart",
+      "gold_object": "soap bar",
+      "other_known_types_mentioned": [],
+      "query": "To place the soap on the rack.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_054906_608944:ann-1",
+      "gold_destination": "cart",
+      "gold_object": "soap bar",
+      "other_known_types_mentioned": [],
+      "query": "Move the bar of soap from the shelves to the metal rack.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_054906_608944:ann-2",
+      "gold_destination": "cart",
+      "gold_object": "soap bar",
+      "other_known_types_mentioned": [],
+      "query": "Put a bar of soap on a shelf.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190909_100455_031300:ann-0",
+      "gold_destination": "drawer",
+      "gold_object": "soap bar",
+      "other_known_types_mentioned": [],
+      "query": "Put a bar of soap in the drawer.",
+      "split": "valid_seen",
+      "task_type": "pick_and_place_simple"
+    }
+  ]
+}

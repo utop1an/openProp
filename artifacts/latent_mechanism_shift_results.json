@@ -1,0 +1,2694 @@
+{
+  "aggregate": {
+    "decreasing_hazard_shape": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.712785309021612,
+          "mean": 0.6933940160229102,
+          "minimum": 0.6698374419435512,
+          "standard_deviation": 0.017182093150023763
+        },
+        "integrated_brier_score": {
+          "maximum": 0.15433668081652197,
+          "mean": 0.1401734656456546,
+          "minimum": 0.13021948282810306,
+          "standard_deviation": 0.008072877443954699
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.7123193545527086,
+          "mean": 0.681604852351898,
+          "minimum": 0.6538394906665512,
+          "standard_deviation": 0.019848113042686168
+        },
+        "integrated_brier_score": {
+          "maximum": 0.1493011666905964,
+          "mean": 0.14123762775069454,
+          "minimum": 0.1289137597045809,
+          "standard_deviation": 0.00733433759177548
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.6046869916787825,
+          "mean": 1.4888083165970796,
+          "minimum": 1.4460796104541072,
+          "standard_deviation": 0.05916827434670945
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.712785309021612,
+          "mean": 0.6933940160229102,
+          "minimum": 0.6698374419435512,
+          "standard_deviation": 0.017182093150023763
+        },
+        "integrated_brier_score": {
+          "maximum": 0.14936528949117076,
+          "mean": 0.14115357696383396,
+          "minimum": 0.12843854477646163,
+          "standard_deviation": 0.007605930784579701
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.6181832996765126,
+          "mean": 1.4909136021428617,
+          "minimum": 1.4337327071320314,
+          "standard_deviation": 0.06775284680541854
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.7123193545527086,
+          "mean": 0.681604852351898,
+          "minimum": 0.6538394906665512,
+          "standard_deviation": 0.019848113042686168
+        },
+        "integrated_brier_score": {
+          "maximum": 0.14994109102049777,
+          "mean": 0.1414788645777527,
+          "minimum": 0.12891330200596454,
+          "standard_deviation": 0.0075988090477001015
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.6334714440373184,
+          "mean": 1.4993762724759723,
+          "minimum": 1.4413639954517852,
+          "standard_deviation": 0.07090397656276341
+        }
+      }
+    },
+    "global_rate_acceleration": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.7708632519546833,
+          "mean": 0.7555477802473521,
+          "minimum": 0.7399288141077496,
+          "standard_deviation": 0.012323014846943798
+        },
+        "integrated_brier_score": {
+          "maximum": 0.08167155947688885,
+          "mean": 0.07122207510886912,
+          "minimum": 0.05851431727972786,
+          "standard_deviation": 0.008013737675300397
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.7642795371247375,
+          "mean": 0.7398225528658299,
+          "minimum": 0.692237115047072,
+          "standard_deviation": 0.025677017926819347
+        },
+        "integrated_brier_score": {
+          "maximum": 0.09816898956245539,
+          "mean": 0.08247599835448854,
+          "minimum": 0.06771075790367627,
+          "standard_deviation": 0.010465045234613496
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.2665893293287243,
+          "mean": 1.2124800516861123,
+          "minimum": 1.1532209391274653,
+          "standard_deviation": 0.03903319071222522
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.7708632519546833,
+          "mean": 0.7555477802473521,
+          "minimum": 0.7399288141077496,
+          "standard_deviation": 0.012323014846943798
+        },
+        "integrated_brier_score": {
+          "maximum": 0.09817443570544918,
+          "mean": 0.08265677359102591,
+          "minimum": 0.06793568760705457,
+          "standard_deviation": 0.010301687506578857
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.268042123206634,
+          "mean": 1.2122448978339169,
+          "minimum": 1.153867490786953,
+          "standard_deviation": 0.04306037125787625
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.7642795371247375,
+          "mean": 0.7398225528658299,
+          "minimum": 0.692237115047072,
+          "standard_deviation": 0.025677017926819347
+        },
+        "integrated_brier_score": {
+          "maximum": 0.09896953576163559,
+          "mean": 0.08274879757672944,
+          "minimum": 0.06770983434627566,
+          "standard_deviation": 0.010627973863156042
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.2741199411599036,
+          "mean": 1.2170741083824403,
+          "minimum": 1.1535241318186953,
+          "standard_deviation": 0.04408083322401874
+        }
+      }
+    },
+    "in_distribution": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.772189349112426,
+          "mean": 0.7508829782769622,
+          "minimum": 0.7287002701094172,
+          "standard_deviation": 0.016382921784631806
+        },
+        "integrated_brier_score": {
+          "maximum": 0.08483466369744631,
+          "mean": 0.080247097446666,
+          "minimum": 0.0759203511085722,
+          "standard_deviation": 0.0030755971051305312
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.7618840844684157,
+          "mean": 0.7332805237514307,
+          "minimum": 0.6841770764847688,
+          "standard_deviation": 0.027526294702052617
+        },
+        "integrated_brier_score": {
+          "maximum": 0.0837870645507519,
+          "mean": 0.08094421164145826,
+          "minimum": 0.07703847088723256,
+          "standard_deviation": 0.002424629865534415
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.3491270058796345,
+          "mean": 1.284762175268316,
+          "minimum": 1.251918414450549,
+          "standard_deviation": 0.03535239505116522
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.772189349112426,
+          "mean": 0.7508829782769622,
+          "minimum": 0.7287002701094172,
+          "standard_deviation": 0.016382921784631806
+        },
+        "integrated_brier_score": {
+          "maximum": 0.08344710098641005,
+          "mean": 0.08091817725317058,
+          "minimum": 0.07725800365209515,
+          "standard_deviation": 0.002309714070548359
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.3481362696816166,
+          "mean": 1.287156755853232,
+          "minimum": 1.2521922551242293,
+          "standard_deviation": 0.03441022148564649
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.7618840844684157,
+          "mean": 0.7332805237514307,
+          "minimum": 0.6841770764847688,
+          "standard_deviation": 0.027526294702052617
+        },
+        "integrated_brier_score": {
+          "maximum": 0.08379827372678544,
+          "mean": 0.08091575482490715,
+          "minimum": 0.07703850878084727,
+          "standard_deviation": 0.002445236999063942
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.344433536035308,
+          "mean": 1.284144161026894,
+          "minimum": 1.2520257822443552,
+          "standard_deviation": 0.03354956584727193
+        }
+      }
+    },
+    "increasing_hazard_shape": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.8064863410039026,
+          "mean": 0.7835692397933568,
+          "minimum": 0.7628566194990154,
+          "standard_deviation": 0.015941294377857948
+        },
+        "integrated_brier_score": {
+          "maximum": 0.05124357709374676,
+          "mean": 0.045112095944931666,
+          "minimum": 0.03965015386731303,
+          "standard_deviation": 0.004276959512634163
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.7902027992002285,
+          "mean": 0.7580186185221057,
+          "minimum": 0.6787332346476472,
+          "standard_deviation": 0.04116271988702865
+        },
+        "integrated_brier_score": {
+          "maximum": 0.04852751101060009,
+          "mean": 0.04520739219540869,
+          "minimum": 0.039340175851036045,
+          "standard_deviation": 0.003487585187593274
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.2328664124781867,
+          "mean": 1.1659511212834064,
+          "minimum": 1.1096348653908186,
+          "standard_deviation": 0.04677748339986621
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.8064863410039026,
+          "mean": 0.7835692397933568,
+          "minimum": 0.7628566194990154,
+          "standard_deviation": 0.015941294377857948
+        },
+        "integrated_brier_score": {
+          "maximum": 0.04903871334309977,
+          "mean": 0.045381427369779445,
+          "minimum": 0.03939523324517845,
+          "standard_deviation": 0.003367919482823119
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.232927998340102,
+          "mean": 1.1711664644706232,
+          "minimum": 1.1197231755706645,
+          "standard_deviation": 0.050414689968908896
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.7902027992002285,
+          "mean": 0.7580186185221057,
+          "minimum": 0.6787332346476472,
+          "standard_deviation": 0.04116271988702865
+        },
+        "integrated_brier_score": {
+          "maximum": 0.048547900758236444,
+          "mean": 0.044985834472781566,
+          "minimum": 0.03931528922475299,
+          "standard_deviation": 0.003387401944882228
+        },
+        "negative_log_likelihood": {
+          "maximum": 1.2139565000533403,
+          "mean": 1.1604326949069566,
+          "minimum": 1.1129243330577192,
+          "standard_deviation": 0.04214430427434814
+        }
+      }
+    },
+    "typed_factor_reversal": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.1944376498214373,
+          "mean": 0.18077125949672193,
+          "minimum": 0.14746719560573696,
+          "standard_deviation": 0.017034114704601297
+        },
+        "integrated_brier_score": {
+          "maximum": 0.6972295343372169,
+          "mean": 0.6592146181151496,
+          "minimum": 0.6208787158973614,
+          "standard_deviation": 0.02432581809480312
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.1944376498214373,
+          "mean": 0.18223013171607008,
+          "minimum": 0.14746719560573696,
+          "standard_deviation": 0.017508634726203308
+        },
+        "integrated_brier_score": {
+          "maximum": 0.6597040179815286,
+          "mean": 0.6376161582447518,
+          "minimum": 0.6019339763633381,
+          "standard_deviation": 0.01933469156673542
+        },
+        "negative_log_likelihood": {
+          "maximum": 3.8092215062260766,
+          "mean": 3.6463800611725996,
+          "minimum": 3.2956016102186734,
+          "standard_deviation": 0.179971330583345
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.1944376498214373,
+          "mean": 0.18077125949672193,
+          "minimum": 0.14746719560573696,
+          "standard_deviation": 0.017034114704601297
+        },
+        "integrated_brier_score": {
+          "maximum": 0.6595692786595485,
+          "mean": 0.6371108359589165,
+          "minimum": 0.6042760419224695,
+          "standard_deviation": 0.018292219451354917
+        },
+        "negative_log_likelihood": {
+          "maximum": 3.877328855371576,
+          "mean": 3.6655005290430456,
+          "minimum": 3.353033938677066,
+          "standard_deviation": 0.18658206443510492
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.1944376498214373,
+          "mean": 0.18223013171607008,
+          "minimum": 0.14746719560573696,
+          "standard_deviation": 0.017508634726203308
+        },
+        "integrated_brier_score": {
+          "maximum": 0.6624797685697803,
+          "mean": 0.6385325680684238,
+          "minimum": 0.6042277572469007,
+          "standard_deviation": 0.01917747457795044
+        },
+        "negative_log_likelihood": {
+          "maximum": 3.8586913050190903,
+          "mean": 3.6858331815236847,
+          "minimum": 3.3850323878265427,
+          "standard_deviation": 0.16550261569678829
+        }
+      }
+    }
+  },
+  "oracle_aggregate": {
+    "decreasing_hazard_shape": {
+      "concordance_index": {
+        "maximum": 0.712785309021612,
+        "mean": 0.6933940160229102,
+        "minimum": 0.6698374419435512,
+        "standard_deviation": 0.017182093150023763
+      },
+      "integrated_brier_score": {
+        "maximum": 0.1395344825579372,
+        "mean": 0.13204052262016697,
+        "minimum": 0.1252652712522677,
+        "standard_deviation": 0.005068622010456755
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.471830166957063,
+        "mean": 1.3380627617124947,
+        "minimum": 1.2760644712978944,
+        "standard_deviation": 0.0732700870358347
+      }
+    },
+    "global_rate_acceleration": {
+      "concordance_index": {
+        "maximum": 0.7708632519546833,
+        "mean": 0.7555477802473521,
+        "minimum": 0.7399288141077496,
+        "standard_deviation": 0.012323014846943798
+      },
+      "integrated_brier_score": {
+        "maximum": 0.06603758858180354,
+        "mean": 0.06168526309858203,
+        "minimum": 0.054519266219849566,
+        "standard_deviation": 0.004195778790492644
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.1271766135928851,
+        "mean": 1.0507945334273368,
+        "minimum": 0.977916781107259,
+        "standard_deviation": 0.05060912362412173
+      }
+    },
+    "in_distribution": {
+      "concordance_index": {
+        "maximum": 0.772189349112426,
+        "mean": 0.7508829782769622,
+        "minimum": 0.7287002701094172,
+        "standard_deviation": 0.016382921784631806
+      },
+      "integrated_brier_score": {
+        "maximum": 0.0830840705657591,
+        "mean": 0.07911589111450469,
+        "minimum": 0.07675381456930198,
+        "standard_deviation": 0.002486924904733301
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.3271727816215342,
+        "mean": 1.2744579542435999,
+        "minimum": 1.2484588305214492,
+        "standard_deviation": 0.03177945960209078
+      }
+    },
+    "increasing_hazard_shape": {
+      "concordance_index": {
+        "maximum": 0.8064863410039026,
+        "mean": 0.7835692397933568,
+        "minimum": 0.7628566194990154,
+        "standard_deviation": 0.015941294377857948
+      },
+      "integrated_brier_score": {
+        "maximum": 0.04370879477181328,
+        "mean": 0.038454586538776626,
+        "minimum": 0.035005067571186405,
+        "standard_deviation": 0.002929086550675615
+      },
+      "negative_log_likelihood": {
+        "maximum": 1.0660607609360702,
+        "mean": 1.0392508907027511,
+        "minimum": 1.0102414816069447,
+        "standard_deviation": 0.021484660229301896
+      }
+    },
+    "typed_factor_reversal": {
+      "concordance_index": {
+        "maximum": 0.852532804394263,
+        "mean": 0.8192287405032781,
+        "minimum": 0.8055623501785627,
+        "standard_deviation": 0.017034114704601297
+      },
+      "integrated_brier_score": {
+        "maximum": 0.11896243465244512,
+        "mean": 0.10449714648724204,
+        "minimum": 0.09011159302308921,
+        "standard_deviation": 0.011350724415294037
+      },
+      "negative_log_likelihood": {
+        "maximum": 0.9499458614440651,
+        "mean": 0.9343440000947435,
+        "minimum": 0.9229432363998432,
+        "standard_deviation": 0.009462969257706748
+      }
+    }
+  },
+  "oracle_regret": {
+    "decreasing_hazard_shape": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.014802198258584753,
+          "mean": 0.008132943025487654,
+          "minimum": 0.0049542115758353655,
+          "standard_deviation": 0.003556637555338969
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.05894581835506074,
+          "mean": 0.011789163671012149,
+          "minimum": 0.0,
+          "standard_deviation": 0.023578327342024297
+        },
+        "integrated_brier_score": {
+          "maximum": 0.015617082859320203,
+          "mean": 0.00919710513052759,
+          "minimum": 0.00364848845231322,
+          "standard_deviation": 0.003842508505170715
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.1924076265788457,
+          "mean": 0.1507455548845848,
+          "minimum": 0.08447950590925868,
+          "standard_deviation": 0.03982559894809255
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.01589181964105263,
+          "mean": 0.009113054343667003,
+          "minimum": 0.0031732735241939425,
+          "standard_deviation": 0.004075112215755764
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.20624201424614141,
+          "mean": 0.15285084043036687,
+          "minimum": 0.0721326025871829,
+          "standard_deviation": 0.04799749355418875
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.05894581835506074,
+          "mean": 0.011789163671012149,
+          "minimum": 0.0,
+          "standard_deviation": 0.023578327342024297
+        },
+        "integrated_brier_score": {
+          "maximum": 0.016300467788020495,
+          "mean": 0.00943834195758574,
+          "minimum": 0.0036480307536968515,
+          "standard_deviation": 0.0040977835912764755
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.218296984344176,
+          "mean": 0.16131351076347755,
+          "minimum": 0.08446251003969696,
+          "standard_deviation": 0.04547094723010131
+        }
+      }
+    },
+    "global_rate_acceleration": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.021764643711621103,
+          "mean": 0.009536812010287095,
+          "minimum": 0.003995051059878296,
+          "standard_deviation": 0.006676187568174679
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.07862613690761133,
+          "mean": 0.015725227381522267,
+          "minimum": 0.0,
+          "standard_deviation": 0.03145045476304453
+        },
+        "integrated_brier_score": {
+          "maximum": 0.038262073797187636,
+          "mean": 0.020790735255906512,
+          "minimum": 0.013191491683826703,
+          "standard_deviation": 0.009589533886590973
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.26270054829029565,
+          "mean": 0.16168551825877564,
+          "minimum": 0.11106646017334199,
+          "standard_deviation": 0.05697698618387145
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.038267519940181426,
+          "mean": 0.020971510492443887,
+          "minimum": 0.013416421387205002,
+          "standard_deviation": 0.009432410843419892
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.27715260856820134,
+          "mean": 0.16145036440658023,
+          "minimum": 0.10343440202481036,
+          "standard_deviation": 0.06294452843327883
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.07862613690761133,
+          "mean": 0.015725227381522267,
+          "minimum": 0.0,
+          "standard_deviation": 0.03145045476304453
+        },
+        "integrated_brier_score": {
+          "maximum": 0.039062619996367835,
+          "mean": 0.02106353447814741,
+          "minimum": 0.013190568126426092,
+          "standard_deviation": 0.009791440845967553
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.2807105378906306,
+          "mean": 0.1662795749551037,
+          "minimum": 0.11136965286457201,
+          "standard_deviation": 0.06271164147466961
+        }
+      }
+    },
+    "in_distribution": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.00760290606081615,
+          "mean": 0.001131206332161308,
+          "minimum": -0.0009403737105533189,
+          "standard_deviation": 0.0032985601769408603
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.0880122726276572,
+          "mean": 0.01760245452553144,
+          "minimum": 0.0,
+          "standard_deviation": 0.03520490905106288
+        },
+        "integrated_brier_score": {
+          "maximum": 0.007033249981449913,
+          "mean": 0.0018283205269535696,
+          "minimum": -0.0006956833725920708,
+          "standard_deviation": 0.00280489231614323
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.024044245491227967,
+          "mean": 0.010304221024716176,
+          "minimum": -0.002547899021252409,
+          "standard_deviation": 0.010859503745849165
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.006693286417108063,
+          "mean": 0.0018022861386658817,
+          "minimum": -0.0006306059884159665,
+          "standard_deviation": 0.0026262538273641735
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.02776744312285384,
+          "mean": 0.01269880160963197,
+          "minimum": 0.0010413329015821482,
+          "standard_deviation": 0.010338302724563498
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.0880122726276572,
+          "mean": 0.01760245452553144,
+          "minimum": 0.0,
+          "standard_deviation": 0.03520490905106288
+        },
+        "integrated_brier_score": {
+          "maximum": 0.00704445915748346,
+          "mean": 0.0017998637104024607,
+          "minimum": -0.0007010718388882897,
+          "standard_deviation": 0.0028078612172891928
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.025532343751813125,
+          "mean": 0.009686206783294038,
+          "minimum": -0.0025411773064776266,
+          "standard_deviation": 0.010404770883773335
+        }
+      }
+    },
+    "increasing_hazard_shape": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.012197572607446375,
+          "mean": 0.006657509406155037,
+          "minimum": 0.00347461288940374,
+          "standard_deviation": 0.0033930473563190612
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.12775310635625536,
+          "mean": 0.025550621271251073,
+          "minimum": 0.0,
+          "standard_deviation": 0.051101242542502145
+        },
+        "integrated_brier_score": {
+          "maximum": 0.01097821984512639,
+          "mean": 0.006752805656632062,
+          "minimum": 0.004335108279849641,
+          "standard_deviation": 0.0023886997681614943
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.17155465632671296,
+          "mean": 0.12670023058065522,
+          "minimum": 0.09790703253110644,
+          "standard_deviation": 0.027746782079230762
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "integrated_brier_score": {
+          "maximum": 0.010171466274061909,
+          "mean": 0.006926840831002819,
+          "minimum": 0.004390165673992044,
+          "standard_deviation": 0.0019954859587863606
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.17161624218862825,
+          "mean": 0.1319155737678721,
+          "minimum": 0.09853614767531838,
+          "standard_deviation": 0.030579858515105817
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.12775310635625536,
+          "mean": 0.025550621271251073,
+          "minimum": 0.0,
+          "standard_deviation": 0.051101242542502145
+        },
+        "integrated_brier_score": {
+          "maximum": 0.010461860223438035,
+          "mean": 0.0065312479340049355,
+          "minimum": 0.004310221653566586,
+          "standard_deviation": 0.0021590359008196477
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.15264474390186655,
+          "mean": 0.12118180420420548,
+          "minimum": 0.0973939674716977,
+          "standard_deviation": 0.022144119078745354
+        }
+      }
+    },
+    "typed_factor_reversal": {
+      "factorized_cox": {
+        "concordance_index": {
+          "maximum": 0.7050656087885261,
+          "mean": 0.6384574810065562,
+          "minimum": 0.6111247003571254,
+          "standard_deviation": 0.034068229409202594
+        },
+        "integrated_brier_score": {
+          "maximum": 0.6071179413141277,
+          "mean": 0.5547174716279075,
+          "minimum": 0.5019162812449163,
+          "standard_deviation": 0.034654460383837585
+        }
+      },
+      "factorized_exponential": {
+        "concordance_index": {
+          "maximum": 0.7050656087885261,
+          "mean": 0.6369986087872079,
+          "minimum": 0.6111247003571254,
+          "standard_deviation": 0.03442257217118892
+        },
+        "integrated_brier_score": {
+          "maximum": 0.5695924249584393,
+          "mean": 0.5331190117575098,
+          "minimum": 0.482971541710893,
+          "standard_deviation": 0.02954128482639139
+        },
+        "negative_log_likelihood": {
+          "maximum": 2.8592756447820116,
+          "mean": 2.712036061077856,
+          "minimum": 2.3596148729363375,
+          "standard_deviation": 0.17942984169667253
+        }
+      },
+      "factorized_piecewise": {
+        "concordance_index": {
+          "maximum": 0.7050656087885261,
+          "mean": 0.6384574810065562,
+          "minimum": 0.6111247003571254,
+          "standard_deviation": 0.034068229409202594
+        },
+        "integrated_brier_score": {
+          "maximum": 0.5694576856364593,
+          "mean": 0.5326136894716744,
+          "minimum": 0.4853136072700244,
+          "standard_deviation": 0.02845705227686629
+        },
+        "negative_log_likelihood": {
+          "maximum": 2.927382993927511,
+          "mean": 2.7311565289483024,
+          "minimum": 2.41704720139473,
+          "standard_deviation": 0.18556318962377608
+        }
+      },
+      "factorized_weibull": {
+        "concordance_index": {
+          "maximum": 0.7050656087885261,
+          "mean": 0.6369986087872079,
+          "minimum": 0.6111247003571254,
+          "standard_deviation": 0.03442257217118892
+        },
+        "integrated_brier_score": {
+          "maximum": 0.5723681755466911,
+          "mean": 0.5340354215811818,
+          "minimum": 0.4852653225944556,
+          "standard_deviation": 0.029514008809948845
+        },
+        "negative_log_likelihood": {
+          "maximum": 2.935748068619247,
+          "mean": 2.751489181428941,
+          "minimum": 2.449045650544207,
+          "standard_deviation": 0.1661871851529166
+        }
+      }
+    }
+  },
+  "protocol": {
+    "calibration": "source validation only; never shifted test",
+    "claim_scope": "synthetic latent-mechanism shift failure analysis",
+    "conditions": {
+      "decreasing_hazard_shape": {
+        "rate_multiplier": 1.0,
+        "weibull_shape": 0.6
+      },
+      "global_rate_acceleration": {
+        "rate_multiplier": 2.0,
+        "weibull_shape": 1.0
+      },
+      "in_distribution": {
+        "rate_multiplier": 1.0,
+        "weibull_shape": 1.0
+      },
+      "increasing_hazard_shape": {
+        "rate_multiplier": 1.0,
+        "weibull_shape": 1.6
+      },
+      "typed_factor_reversal": {
+        "rate_transform": "0.12^2 / source_hazard",
+        "weibull_shape": 1.0
+      }
+    },
+    "cox_metrics": "C-index and IBS only; continuous event NLL is undefined for the Breslow step baseline",
+    "evaluation_horizons_hours": [
+      1.0,
+      4.0,
+      8.0,
+      12.0
+    ],
+    "oracle": "generator truth is evaluation-only and never exposed to fitted models",
+    "paired_test_latent_and_censor_draws": true,
+    "piecewise_bin_edges_hours": [
+      2.0,
+      6.0
+    ],
+    "regret_direction": "positive values mean worse than same-test oracle",
+    "samples_per_context": 80,
+    "seeds": [
+      31,
+      41,
+      53,
+      67,
+      79
+    ],
+    "shared_source_train_and_validation": true
+  },
+  "runs": [
+    {
+      "condition": "in_distribution",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.330244674430768,
+            "factorized_exponential": 0.006049681426064256,
+            "factorized_piecewise": 0.006784727147909945,
+            "factorized_weibull": 0.005947900593249774
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.1403142999969216,
+            "factorized_exponential": 0.5549378617974746,
+            "factorized_piecewise": 0.5797891838704081,
+            "factorized_weibull": 0.5584270248162616
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3396514779588242,
+            "factorized_exponential": 0.24961011901887825,
+            "factorized_piecewise": 0.26178910233939706,
+            "factorized_weibull": 0.24960936988452545
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.832887319091938,
+        "cox_initial_partial_nll": 6.2886938920117235,
+        "cox_validation_baseline_scale": 1.1995276192389202,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1105395393930581,
+          -0.0847363913972432
+        ],
+        "weibull_shape": 0.9902532842535365
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7618840844684157,
+          "integrated_brier_score": 0.08006439878086712,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7618840844684157,
+          "integrated_brier_score": 0.08214984735163973,
+          "negative_log_likelihood": 1.251918414450549
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7618840844684157,
+          "integrated_brier_score": 0.08220660126108231,
+          "negative_log_likelihood": 1.2521922551242293
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7618840844684157,
+          "integrated_brier_score": 0.08214399756999101,
+          "negative_log_likelihood": 1.2520257822443552
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7618840844684157,
+        "integrated_brier_score": 0.0809883299182382,
+        "negative_log_likelihood": 1.2511509222226471
+      },
+      "seed": 31
+    },
+    {
+      "condition": "global_rate_acceleration",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.330244674430768,
+            "factorized_exponential": 0.006049681426064256,
+            "factorized_piecewise": 0.006784727147909945,
+            "factorized_weibull": 0.005947900593249774
+          },
+          "true_hazard_per_hour": 0.01944
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.1403142999969216,
+            "factorized_exponential": 0.5549378617974746,
+            "factorized_piecewise": 0.5797891838704081,
+            "factorized_weibull": 0.5584270248162616
+          },
+          "true_hazard_per_hour": 0.9503999999999999
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3396514779588242,
+            "factorized_exponential": 0.24961011901887825,
+            "factorized_piecewise": 0.26178910233939706,
+            "factorized_weibull": 0.24960936988452545
+          },
+          "true_hazard_per_hour": 0.59136
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.832887319091938,
+        "cox_initial_partial_nll": 6.2886938920117235,
+        "cox_validation_baseline_scale": 1.1995276192389202,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1105395393930581,
+          -0.0847363913972432
+        ],
+        "weibull_shape": 0.9902532842535365
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7642795371247375,
+          "integrated_brier_score": 0.0769299475763327,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7642795371247375,
+          "integrated_brier_score": 0.08943425098270627,
+          "negative_log_likelihood": 1.2088149916520827
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7642795371247375,
+          "integrated_brier_score": 0.08924479508830978,
+          "negative_log_likelihood": 1.199402389019243
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7642795371247375,
+          "integrated_brier_score": 0.08932166602713285,
+          "negative_log_likelihood": 1.2059482027442756
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7642795371247375,
+        "integrated_brier_score": 0.0653994954135546,
+        "negative_log_likelihood": 1.025316099025932
+      },
+      "seed": 31
+    },
+    {
+      "condition": "decreasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.330244674430768,
+            "factorized_exponential": 0.006049681426064256,
+            "factorized_piecewise": 0.006784727147909945,
+            "factorized_weibull": 0.005947900593249774
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.1403142999969216,
+            "factorized_exponential": 0.5549378617974746,
+            "factorized_piecewise": 0.5797891838704081,
+            "factorized_weibull": 0.5584270248162616
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3396514779588242,
+            "factorized_exponential": 0.24961011901887825,
+            "factorized_piecewise": 0.26178910233939706,
+            "factorized_weibull": 0.24960936988452545
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.832887319091938,
+        "cox_initial_partial_nll": 6.2886938920117235,
+        "cox_validation_baseline_scale": 1.1995276192389202,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1105395393930581,
+          -0.0847363913972432
+        ],
+        "weibull_shape": 0.9902532842535365
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7123193545527086,
+          "integrated_brier_score": 0.13518513883994754,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7123193545527086,
+          "integrated_brier_score": 0.1374389034069886,
+          "negative_log_likelihood": 1.4475251872451784
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7123193545527086,
+          "integrated_brier_score": 0.13700939911517704,
+          "negative_log_likelihood": 1.4346004006070012
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7123193545527086,
+          "integrated_brier_score": 0.13730435605376917,
+          "negative_log_likelihood": 1.4413639954517852
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7123193545527086,
+        "integrated_brier_score": 0.12848345590522497,
+        "negative_log_likelihood": 1.2925722403648596
+      },
+      "seed": 31
+    },
+    {
+      "condition": "increasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.330244674430768,
+            "factorized_exponential": 0.006049681426064256,
+            "factorized_piecewise": 0.006784727147909945,
+            "factorized_weibull": 0.005947900593249774
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.1403142999969216,
+            "factorized_exponential": 0.5549378617974746,
+            "factorized_piecewise": 0.5797891838704081,
+            "factorized_weibull": 0.5584270248162616
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3396514779588242,
+            "factorized_exponential": 0.24961011901887825,
+            "factorized_piecewise": 0.26178910233939706,
+            "factorized_weibull": 0.24960936988452545
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.832887319091938,
+        "cox_initial_partial_nll": 6.2886938920117235,
+        "cox_validation_baseline_scale": 1.1995276192389202,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1105395393930581,
+          -0.0847363913972432
+        ],
+        "weibull_shape": 0.9902532842535365
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7902027992002285,
+          "integrated_brier_score": 0.047680821722575414,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7902027992002285,
+          "integrated_brier_score": 0.04840364963618331,
+          "negative_log_likelihood": 1.1096348653908186
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7902027992002285,
+          "integrated_brier_score": 0.04903871334309977,
+          "negative_log_likelihood": 1.1197231755706645
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7902027992002285,
+          "integrated_brier_score": 0.048547900758236444,
+          "negative_log_likelihood": 1.1129243330577192
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7902027992002285,
+        "integrated_brier_score": 0.04370879477181328,
+        "negative_log_likelihood": 1.0102414816069447
+      },
+      "seed": 31
+    },
+    {
+      "condition": "typed_factor_reversal",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.330244674430768,
+            "factorized_exponential": 0.006049681426064256,
+            "factorized_piecewise": 0.006784727147909945,
+            "factorized_weibull": 0.005947900593249774
+          },
+          "true_hazard_per_hour": 1.4814814814814816
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.1403142999969216,
+            "factorized_exponential": 0.5549378617974746,
+            "factorized_piecewise": 0.5797891838704081,
+            "factorized_weibull": 0.5584270248162616
+          },
+          "true_hazard_per_hour": 0.030303030303030304
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3396514779588242,
+            "factorized_exponential": 0.24961011901887825,
+            "factorized_piecewise": 0.26178910233939706,
+            "factorized_weibull": 0.24960936988452545
+          },
+          "true_hazard_per_hour": 0.048701298701298704
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.832887319091938,
+        "cox_initial_partial_nll": 6.2886938920117235,
+        "cox_validation_baseline_scale": 1.1995276192389202,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1105395393930581,
+          -0.0847363913972432
+        ],
+        "weibull_shape": 0.9902532842535365
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.18780092240636562,
+          "integrated_brier_score": 0.656175706233182,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.18780092240636562,
+          "integrated_brier_score": 0.6369180861813438,
+          "negative_log_likelihood": 3.699158997635517
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.18780092240636562,
+          "integrated_brier_score": 0.6345542921490797,
+          "negative_log_likelihood": 3.619729566669692
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.18780092240636562,
+          "integrated_brier_score": 0.6363481530863507,
+          "negative_log_likelihood": 3.6734165653395965
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.8121990775936344,
+        "integrated_brier_score": 0.11270302500770409,
+        "negative_log_likelihood": 0.9261985945109648
+      },
+      "seed": 31
+    },
+    {
+      "condition": "in_distribution",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.191013188305999,
+            "factorized_exponential": 0.009600863224194995,
+            "factorized_piecewise": 0.009240722320000805,
+            "factorized_weibull": 0.009623620407454282
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.9672783281747124,
+            "factorized_exponential": 0.5893617156135343,
+            "factorized_piecewise": 0.5922215134335063,
+            "factorized_weibull": 0.5888268986338027
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3755100510919198,
+            "factorized_exponential": 0.3280062868350753,
+            "factorized_piecewise": 0.32830454714902824,
+            "factorized_weibull": 0.3279135039525891
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.854681688069947,
+        "cox_initial_partial_nll": 6.27270390566029,
+        "cox_validation_baseline_scale": 1.4638951020399331,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.01991886303838554,
+          0.09318750605503665
+        ],
+        "weibull_shape": 1.001447154762033
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7352449888641426,
+          "integrated_brier_score": 0.08214369685520578,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7352449888641426,
+          "integrated_brier_score": 0.08238838719316703,
+          "negative_log_likelihood": 1.2557618726890523
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7352449888641426,
+          "integrated_brier_score": 0.08245346457734314,
+          "negative_log_likelihood": 1.2595014542646505
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7352449888641426,
+          "integrated_brier_score": 0.08238299872687081,
+          "negative_log_likelihood": 1.255763083557102
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7352449888641426,
+        "integrated_brier_score": 0.0830840705657591,
+        "negative_log_likelihood": 1.2484588305214492
+      },
+      "seed": 41
+    },
+    {
+      "condition": "global_rate_acceleration",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.191013188305999,
+            "factorized_exponential": 0.009600863224194995,
+            "factorized_piecewise": 0.009240722320000805,
+            "factorized_weibull": 0.009623620407454282
+          },
+          "true_hazard_per_hour": 0.01944
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.9672783281747124,
+            "factorized_exponential": 0.5893617156135343,
+            "factorized_piecewise": 0.5922215134335063,
+            "factorized_weibull": 0.5888268986338027
+          },
+          "true_hazard_per_hour": 0.9503999999999999
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3755100510919198,
+            "factorized_exponential": 0.3280062868350753,
+            "factorized_piecewise": 0.32830454714902824,
+            "factorized_weibull": 0.3279135039525891
+          },
+          "true_hazard_per_hour": 0.59136
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.854681688069947,
+        "cox_initial_partial_nll": 6.27270390566029,
+        "cox_validation_baseline_scale": 1.4638951020399331,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.01991886303838554,
+          0.09318750605503665
+        ],
+        "weibull_shape": 1.001447154762033
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7421410891089109,
+          "integrated_brier_score": 0.0719356613713173,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7421410891089109,
+          "integrated_brier_score": 0.07990990549207311,
+          "negative_log_likelihood": 1.1532209391274653
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7421410891089109,
+          "integrated_brier_score": 0.08007069560969447,
+          "negative_log_likelihood": 1.153867490786953
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7421410891089109,
+          "integrated_brier_score": 0.07992421825372814,
+          "negative_log_likelihood": 1.1535241318186953
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7421410891089109,
+        "integrated_brier_score": 0.06603758858180354,
+        "negative_log_likelihood": 1.0421544789541233
+      },
+      "seed": 41
+    },
+    {
+      "condition": "decreasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.191013188305999,
+            "factorized_exponential": 0.009600863224194995,
+            "factorized_piecewise": 0.009240722320000805,
+            "factorized_weibull": 0.009623620407454282
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.9672783281747124,
+            "factorized_exponential": 0.5893617156135343,
+            "factorized_piecewise": 0.5922215134335063,
+            "factorized_weibull": 0.5888268986338027
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3755100510919198,
+            "factorized_exponential": 0.3280062868350753,
+            "factorized_piecewise": 0.32830454714902824,
+            "factorized_weibull": 0.3279135039525891
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.854681688069947,
+        "cox_initial_partial_nll": 6.27270390566029,
+        "cox_validation_baseline_scale": 1.4638951020399331,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.01991886303838554,
+          0.09318750605503665
+        ],
+        "weibull_shape": 1.001447154762033
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.6698374419435512,
+          "integrated_brier_score": 0.1412670777885145,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.6698374419435512,
+          "integrated_brier_score": 0.14366096678370374,
+          "negative_log_likelihood": 1.46847209787674
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6698374419435512,
+          "integrated_brier_score": 0.1438065724870249,
+          "negative_log_likelihood": 1.4735627636548132
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6698374419435512,
+          "integrated_brier_score": 0.14367884671222864,
+          "negative_log_likelihood": 1.4694394985642283
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.6698374419435512,
+        "integrated_brier_score": 0.13566314407712204,
+        "negative_log_likelihood": 1.2760644712978944
+      },
+      "seed": 41
+    },
+    {
+      "condition": "increasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.191013188305999,
+            "factorized_exponential": 0.009600863224194995,
+            "factorized_piecewise": 0.009240722320000805,
+            "factorized_weibull": 0.009623620407454282
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.9672783281747124,
+            "factorized_exponential": 0.5893617156135343,
+            "factorized_piecewise": 0.5922215134335063,
+            "factorized_weibull": 0.5888268986338027
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3755100510919198,
+            "factorized_exponential": 0.3280062868350753,
+            "factorized_piecewise": 0.32830454714902824,
+            "factorized_weibull": 0.3279135039525891
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.854681688069947,
+        "cox_initial_partial_nll": 6.27270390566029,
+        "cox_validation_baseline_scale": 1.4638951020399331,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.01991886303838554,
+          0.09318750605503665
+        ],
+        "weibull_shape": 1.001447154762033
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7683484008943327,
+          "integrated_brier_score": 0.03965015386731303,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7683484008943327,
+          "integrated_brier_score": 0.039340175851036045,
+          "negative_log_likelihood": 1.1328717367366123
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7683484008943327,
+          "integrated_brier_score": 0.03939523324517845,
+          "negative_log_likelihood": 1.1335008518808243
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7683484008943327,
+          "integrated_brier_score": 0.03931528922475299,
+          "negative_log_likelihood": 1.1323586716772036
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7683484008943327,
+        "integrated_brier_score": 0.035005067571186405,
+        "negative_log_likelihood": 1.034964704205506
+      },
+      "seed": 41
+    },
+    {
+      "condition": "typed_factor_reversal",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.191013188305999,
+            "factorized_exponential": 0.009600863224194995,
+            "factorized_piecewise": 0.009240722320000805,
+            "factorized_weibull": 0.009623620407454282
+          },
+          "true_hazard_per_hour": 1.4814814814814816
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.9672783281747124,
+            "factorized_exponential": 0.5893617156135343,
+            "factorized_piecewise": 0.5922215134335063,
+            "factorized_weibull": 0.5888268986338027
+          },
+          "true_hazard_per_hour": 0.030303030303030304
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3755100510919198,
+            "factorized_exponential": 0.3280062868350753,
+            "factorized_piecewise": 0.32830454714902824,
+            "factorized_weibull": 0.3279135039525891
+          },
+          "true_hazard_per_hour": 0.048701298701298704
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.854681688069947,
+        "cox_initial_partial_nll": 6.27270390566029,
+        "cox_validation_baseline_scale": 1.4638951020399331,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.01991886303838554,
+          0.09318750605503665
+        ],
+        "weibull_shape": 1.001447154762033
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.1906792414969399,
+          "integrated_brier_score": 0.6570819279821677,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.1906792414969399,
+          "integrated_brier_score": 0.6431136789661345,
+          "negative_log_likelihood": 3.8092215062260766
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.1906792414969399,
+          "integrated_brier_score": 0.6439987747258052,
+          "negative_log_likelihood": 3.877328855371576
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.1906792414969399,
+          "integrated_brier_score": 0.6431963578924126,
+          "negative_log_likelihood": 3.8134148877038214
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.8093207585030601,
+        "integrated_brier_score": 0.10830241757070125,
+        "negative_log_likelihood": 0.9499458614440651
+      },
+      "seed": 41
+    },
+    {
+      "condition": "in_distribution",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.1720569572168262,
+            "factorized_exponential": 0.007636111676339701,
+            "factorized_piecewise": 0.006891252136542247,
+            "factorized_weibull": 0.008205421611036953
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.0282945907751464,
+            "factorized_exponential": 0.47302512842267436,
+            "factorized_piecewise": 0.4504043288699867,
+            "factorized_weibull": 0.4630554632803987
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.2345395125865315,
+            "factorized_exponential": 0.21587529989596377,
+            "factorized_piecewise": 0.20428245321107324,
+            "factorized_weibull": 0.21566274141259031
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.855235297369567,
+        "cox_initial_partial_nll": 6.2586117952710065,
+        "cox_validation_baseline_scale": 1.1345350892189323,
+        "piecewise_log_multipliers": [
+          0.0,
+          0.12602242808798317,
+          0.05906048201728128
+        ],
+        "weibull_shape": 1.0438345932177078
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7563961988304093,
+          "integrated_brier_score": 0.0759203511085722,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7563961988304093,
+          "integrated_brier_score": 0.0837870645507519,
+          "negative_log_likelihood": 1.2739304685648944
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7563961988304093,
+          "integrated_brier_score": 0.08344710098641005,
+          "negative_log_likelihood": 1.2776536661965203
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7563961988304093,
+          "integrated_brier_score": 0.08379827372678544,
+          "negative_log_likelihood": 1.2754185668254796
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7563961988304093,
+        "integrated_brier_score": 0.07675381456930198,
+        "negative_log_likelihood": 1.2498862230736665
+      },
+      "seed": 53
+    },
+    {
+      "condition": "global_rate_acceleration",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.1720569572168262,
+            "factorized_exponential": 0.007636111676339701,
+            "factorized_piecewise": 0.006891252136542247,
+            "factorized_weibull": 0.008205421611036953
+          },
+          "true_hazard_per_hour": 0.01944
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.0282945907751464,
+            "factorized_exponential": 0.47302512842267436,
+            "factorized_piecewise": 0.4504043288699867,
+            "factorized_weibull": 0.4630554632803987
+          },
+          "true_hazard_per_hour": 0.9503999999999999
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.2345395125865315,
+            "factorized_exponential": 0.21587529989596377,
+            "factorized_piecewise": 0.20428245321107324,
+            "factorized_weibull": 0.21566274141259031
+          },
+          "true_hazard_per_hour": 0.59136
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.855235297369567,
+        "cox_initial_partial_nll": 6.2586117952710065,
+        "cox_validation_baseline_scale": 1.1345350892189323,
+        "piecewise_log_multipliers": [
+          0.0,
+          0.12602242808798317,
+          0.05906048201728128
+        ],
+        "weibull_shape": 1.0438345932177078
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7605262089406797,
+          "integrated_brier_score": 0.08167155947688885,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7605262089406797,
+          "integrated_brier_score": 0.09816898956245539,
+          "negative_log_likelihood": 1.2406173293975546
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7605262089406797,
+          "integrated_brier_score": 0.09817443570544918,
+          "negative_log_likelihood": 1.2550693896754603
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7605262089406797,
+          "integrated_brier_score": 0.09896953576163559,
+          "negative_log_likelihood": 1.2586273189978896
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7605262089406797,
+        "integrated_brier_score": 0.05990691576526775,
+        "negative_log_likelihood": 0.977916781107259
+      },
+      "seed": 53
+    },
+    {
+      "condition": "decreasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.1720569572168262,
+            "factorized_exponential": 0.007636111676339701,
+            "factorized_piecewise": 0.006891252136542247,
+            "factorized_weibull": 0.008205421611036953
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.0282945907751464,
+            "factorized_exponential": 0.47302512842267436,
+            "factorized_piecewise": 0.4504043288699867,
+            "factorized_weibull": 0.4630554632803987
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.2345395125865315,
+            "factorized_exponential": 0.21587529989596377,
+            "factorized_piecewise": 0.20428245321107324,
+            "factorized_weibull": 0.21566274141259031
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.855235297369567,
+        "cox_initial_partial_nll": 6.2586117952710065,
+        "cox_validation_baseline_scale": 1.1345350892189323,
+        "piecewise_log_multipliers": [
+          0.0,
+          0.12602242808798317,
+          0.05906048201728128
+        ],
+        "weibull_shape": 1.0438345932177078
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.6922625516192132,
+          "integrated_brier_score": 0.139858947955186,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.6922625516192132,
+          "integrated_brier_score": 0.14687334216760306,
+          "negative_log_likelihood": 1.47727769573059
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6922625516192132,
+          "integrated_brier_score": 0.1471480789493355,
+          "negative_log_likelihood": 1.49448883964395
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6922625516192132,
+          "integrated_brier_score": 0.14755672709630335,
+          "negative_log_likelihood": 1.5065438097419845
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.6922625516192132,
+        "integrated_brier_score": 0.13125625930828286,
+        "negative_log_likelihood": 1.2882468253978085
+      },
+      "seed": 53
+    },
+    {
+      "condition": "increasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.1720569572168262,
+            "factorized_exponential": 0.007636111676339701,
+            "factorized_piecewise": 0.006891252136542247,
+            "factorized_weibull": 0.008205421611036953
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.0282945907751464,
+            "factorized_exponential": 0.47302512842267436,
+            "factorized_piecewise": 0.4504043288699867,
+            "factorized_weibull": 0.4630554632803987
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.2345395125865315,
+            "factorized_exponential": 0.21587529989596377,
+            "factorized_piecewise": 0.20428245321107324,
+            "factorized_weibull": 0.21566274141259031
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.855235297369567,
+        "cox_initial_partial_nll": 6.2586117952710065,
+        "cox_validation_baseline_scale": 1.1345350892189323,
+        "piecewise_log_multipliers": [
+          0.0,
+          0.12602242808798317,
+          0.05906048201728128
+        ],
+        "weibull_shape": 1.0438345932177078
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7899520383693046,
+          "integrated_brier_score": 0.04102390405487744,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7899520383693046,
+          "integrated_brier_score": 0.04852751101060009,
+          "negative_log_likelihood": 1.1460098979286455
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7899520383693046,
+          "integrated_brier_score": 0.04772075743953561,
+          "negative_log_likelihood": 1.1376455079340748
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7899520383693046,
+          "integrated_brier_score": 0.04801115138891174,
+          "negative_log_likelihood": 1.134533483033409
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7899520383693046,
+        "integrated_brier_score": 0.0375492911654737,
+        "negative_log_likelihood": 1.0236757506137613
+      },
+      "seed": 53
+    },
+    {
+      "condition": "typed_factor_reversal",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.1720569572168262,
+            "factorized_exponential": 0.007636111676339701,
+            "factorized_piecewise": 0.006891252136542247,
+            "factorized_weibull": 0.008205421611036953
+          },
+          "true_hazard_per_hour": 1.4814814814814816
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 2.0282945907751464,
+            "factorized_exponential": 0.47302512842267436,
+            "factorized_piecewise": 0.4504043288699867,
+            "factorized_weibull": 0.4630554632803987
+          },
+          "true_hazard_per_hour": 0.030303030303030304
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.2345395125865315,
+            "factorized_exponential": 0.21587529989596377,
+            "factorized_piecewise": 0.20428245321107324,
+            "factorized_weibull": 0.21566274141259031
+          },
+          "true_hazard_per_hour": 0.048701298701298704
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.855235297369567,
+        "cox_initial_partial_nll": 6.2586117952710065,
+        "cox_validation_baseline_scale": 1.1345350892189323,
+        "piecewise_log_multipliers": [
+          0.0,
+          0.12602242808798317,
+          0.05906048201728128
+        ],
+        "weibull_shape": 1.0438345932177078
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.1944376498214373,
+          "integrated_brier_score": 0.6208787158973614,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.1944376498214373,
+          "integrated_brier_score": 0.6019339763633381,
+          "negative_log_likelihood": 3.2956016102186734
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.1944376498214373,
+          "integrated_brier_score": 0.6042760419224695,
+          "negative_log_likelihood": 3.353033938677066
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.1944376498214373,
+          "integrated_brier_score": 0.6042277572469007,
+          "negative_log_likelihood": 3.3850323878265427
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.8055623501785627,
+        "integrated_brier_score": 0.11896243465244512,
+        "negative_log_likelihood": 0.9359867372823358
+      },
+      "seed": 53
+    },
+    {
+      "condition": "in_distribution",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.069487806565369,
+            "factorized_exponential": 0.009272311778935062,
+            "factorized_piecewise": 0.010311921267553677,
+            "factorized_weibull": 0.009271523364108643
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.7758635355646124,
+            "factorized_exponential": 0.4560239596861987,
+            "factorized_piecewise": 0.48219124639778677,
+            "factorized_weibull": 0.4560381954377921
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3933811446660038,
+            "factorized_exponential": 0.3110426903922568,
+            "factorized_piecewise": 0.32981766382667427,
+            "factorized_weibull": 0.3110508951838496
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.8851807967110465,
+        "cox_initial_partial_nll": 6.252609657745397,
+        "cox_validation_baseline_scale": 1.1907083283054398,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1634824471104669,
+          -0.03317337692682485
+        ],
+        "weibull_shape": 0.9999564728378199
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7287002701094172,
+          "integrated_brier_score": 0.07827237679123857,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7287002701094172,
+          "integrated_brier_score": 0.07703847088723256,
+          "negative_log_likelihood": 1.2930731147574501
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7287002701094172,
+          "integrated_brier_score": 0.07725800365209515,
+          "negative_log_likelihood": 1.2983001339991427
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7287002701094172,
+          "integrated_brier_score": 0.07703850878084727,
+          "negative_log_likelihood": 1.293079836472225
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7287002701094172,
+        "integrated_brier_score": 0.07752148288259399,
+        "negative_log_likelihood": 1.2956210137787025
+      },
+      "seed": 67
+    },
+    {
+      "condition": "global_rate_acceleration",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.069487806565369,
+            "factorized_exponential": 0.009272311778935062,
+            "factorized_piecewise": 0.010311921267553677,
+            "factorized_weibull": 0.009271523364108643
+          },
+          "true_hazard_per_hour": 0.01944
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.7758635355646124,
+            "factorized_exponential": 0.4560239596861987,
+            "factorized_piecewise": 0.48219124639778677,
+            "factorized_weibull": 0.4560381954377921
+          },
+          "true_hazard_per_hour": 0.9503999999999999
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3933811446660038,
+            "factorized_exponential": 0.3110426903922568,
+            "factorized_piecewise": 0.32981766382667427,
+            "factorized_weibull": 0.3110508951838496
+          },
+          "true_hazard_per_hour": 0.59136
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.8851807967110465,
+        "cox_initial_partial_nll": 6.252609657745397,
+        "cox_validation_baseline_scale": 1.1907083283054398,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1634824471104669,
+          -0.03317337692682485
+        ],
+        "weibull_shape": 0.9999564728378199
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7399288141077496,
+          "integrated_brier_score": 0.05851431727972786,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7399288141077496,
+          "integrated_brier_score": 0.06771075790367627,
+          "negative_log_likelihood": 1.1931576689247345
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7399288141077496,
+          "integrated_brier_score": 0.06793568760705457,
+          "negative_log_likelihood": 1.1848430964812942
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7399288141077496,
+          "integrated_brier_score": 0.06770983434627566,
+          "negative_log_likelihood": 1.1931509471914377
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7399288141077496,
+        "integrated_brier_score": 0.054519266219849566,
+        "negative_log_likelihood": 1.0814086944564838
+      },
+      "seed": 67
+    },
+    {
+      "condition": "decreasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.069487806565369,
+            "factorized_exponential": 0.009272311778935062,
+            "factorized_piecewise": 0.010311921267553677,
+            "factorized_weibull": 0.009271523364108643
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.7758635355646124,
+            "factorized_exponential": 0.4560239596861987,
+            "factorized_piecewise": 0.48219124639778677,
+            "factorized_weibull": 0.4560381954377921
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3933811446660038,
+            "factorized_exponential": 0.3110426903922568,
+            "factorized_piecewise": 0.32981766382667427,
+            "factorized_weibull": 0.3110508951838496
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.8851807967110465,
+        "cox_initial_partial_nll": 6.252609657745397,
+        "cox_validation_baseline_scale": 1.1907083283054398,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1634824471104669,
+          -0.03317337692682485
+        ],
+        "weibull_shape": 0.9999564728378199
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.6797654229774658,
+          "integrated_brier_score": 0.13021948282810306,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.6797654229774658,
+          "integrated_brier_score": 0.1289137597045809,
+          "negative_log_likelihood": 1.4460796104541072
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6797654229774658,
+          "integrated_brier_score": 0.12843854477646163,
+          "negative_log_likelihood": 1.4337327071320314
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6797654229774658,
+          "integrated_brier_score": 0.12891330200596454,
+          "negative_log_likelihood": 1.4460626145845454
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.6797654229774658,
+        "integrated_brier_score": 0.1252652712522677,
+        "negative_log_likelihood": 1.3616001045448485
+      },
+      "seed": 67
+    },
+    {
+      "condition": "increasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.069487806565369,
+            "factorized_exponential": 0.009272311778935062,
+            "factorized_piecewise": 0.010311921267553677,
+            "factorized_weibull": 0.009271523364108643
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.7758635355646124,
+            "factorized_exponential": 0.4560239596861987,
+            "factorized_piecewise": 0.48219124639778677,
+            "factorized_weibull": 0.4560381954377921
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3933811446660038,
+            "factorized_exponential": 0.3110426903922568,
+            "factorized_piecewise": 0.32981766382667427,
+            "factorized_weibull": 0.3110508951838496
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.8851807967110465,
+        "cox_initial_partial_nll": 6.252609657745397,
+        "cox_validation_baseline_scale": 1.1907083283054398,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1634824471104669,
+          -0.03317337692682485
+        ],
+        "weibull_shape": 0.9999564728378199
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7628566194990154,
+          "integrated_brier_score": 0.045962022986145684,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.7628566194990154,
+          "integrated_brier_score": 0.04331085967960557,
+          "negative_log_likelihood": 1.2083726938827688
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7628566194990154,
+          "integrated_brier_score": 0.04436834044039783,
+          "negative_log_likelihood": 1.2320347886274507
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7628566194990154,
+          "integrated_brier_score": 0.04331163967590294,
+          "negative_log_likelihood": 1.208390486713111
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7628566194990154,
+        "integrated_brier_score": 0.036963774699109365,
+        "negative_log_likelihood": 1.0660607609360702
+      },
+      "seed": 67
+    },
+    {
+      "condition": "typed_factor_reversal",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.069487806565369,
+            "factorized_exponential": 0.009272311778935062,
+            "factorized_piecewise": 0.010311921267553677,
+            "factorized_weibull": 0.009271523364108643
+          },
+          "true_hazard_per_hour": 1.4814814814814816
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.7758635355646124,
+            "factorized_exponential": 0.4560239596861987,
+            "factorized_piecewise": 0.48219124639778677,
+            "factorized_weibull": 0.4560381954377921
+          },
+          "true_hazard_per_hour": 0.030303030303030304
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.3933811446660038,
+            "factorized_exponential": 0.3110426903922568,
+            "factorized_piecewise": 0.32981766382667427,
+            "factorized_weibull": 0.3110508951838496
+          },
+          "true_hazard_per_hour": 0.048701298701298704
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.8851807967110465,
+        "cox_initial_partial_nll": 6.252609657745397,
+        "cox_validation_baseline_scale": 1.1907083283054398,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.1634824471104669,
+          -0.03317337692682485
+        ],
+        "weibull_shape": 0.9999564728378199
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.14746719560573696,
+          "integrated_brier_score": 0.66470720612582,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.14746719560573696,
+          "integrated_brier_score": 0.6464110317314141,
+          "negative_log_likelihood": 3.69869355826964
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.14746719560573696,
+          "integrated_brier_score": 0.6431557923376795,
+          "negative_log_likelihood": 3.641893696312151
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.14746719560573696,
+          "integrated_brier_score": 0.6464108035466748,
+          "negative_log_likelihood": 3.6986107617293724
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.852532804394263,
+        "integrated_brier_score": 0.09240626218227055,
+        "negative_log_likelihood": 0.9366455708365088
+      },
+      "seed": 67
+    },
+    {
+      "condition": "in_distribution",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.2141149430544607,
+            "factorized_exponential": 0.00883386917040414,
+            "factorized_piecewise": 0.008172799512329586,
+            "factorized_weibull": 0.009574893916972336
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6861445076401356,
+            "factorized_exponential": 0.39057751960412956,
+            "factorized_piecewise": 0.38836857007955633,
+            "factorized_weibull": 0.383306912913444
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6818540844733856,
+            "factorized_exponential": 0.3931686624113126,
+            "factorized_piecewise": 0.38783321382701613,
+            "factorized_weibull": 0.38407126094606353
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.797530478124741,
+        "cox_initial_partial_nll": 6.217527420852601,
+        "cox_validation_baseline_scale": 1.5241996144207628,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.03488277174635576,
+          0.18233458777119174
+        ],
+        "weibull_shape": 1.0510708467667944
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.772189349112426,
+          "integrated_brier_score": 0.08483466369744631,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.6841770764847688,
+          "integrated_brier_score": 0.07935728822450007,
+          "negative_log_likelihood": 1.3491270058796345
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.772189349112426,
+          "integrated_brier_score": 0.07922571578892221,
+          "negative_log_likelihood": 1.3481362696816166
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6841770764847688,
+          "integrated_brier_score": 0.07921499532004121,
+          "negative_log_likelihood": 1.344433536035308
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.772189349112426,
+        "integrated_brier_score": 0.07723175763663016,
+        "negative_log_likelihood": 1.3271727816215342
+      },
+      "seed": 79
+    },
+    {
+      "condition": "global_rate_acceleration",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.2141149430544607,
+            "factorized_exponential": 0.00883386917040414,
+            "factorized_piecewise": 0.008172799512329586,
+            "factorized_weibull": 0.009574893916972336
+          },
+          "true_hazard_per_hour": 0.01944
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6861445076401356,
+            "factorized_exponential": 0.39057751960412956,
+            "factorized_piecewise": 0.38836857007955633,
+            "factorized_weibull": 0.383306912913444
+          },
+          "true_hazard_per_hour": 0.9503999999999999
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6818540844733856,
+            "factorized_exponential": 0.3931686624113126,
+            "factorized_piecewise": 0.38783321382701613,
+            "factorized_weibull": 0.38407126094606353
+          },
+          "true_hazard_per_hour": 0.59136
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.797530478124741,
+        "cox_initial_partial_nll": 6.217527420852601,
+        "cox_validation_baseline_scale": 1.5241996144207628,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.03488277174635576,
+          0.18233458777119174
+        ],
+        "weibull_shape": 1.0510708467667944
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.7708632519546833,
+          "integrated_brier_score": 0.0670588898400789,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.692237115047072,
+          "integrated_brier_score": 0.07715608783153168,
+          "negative_log_likelihood": 1.2665893293287243
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7708632519546833,
+          "integrated_brier_score": 0.07785825394462158,
+          "negative_log_likelihood": 1.268042123206634
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.692237115047072,
+          "integrated_brier_score": 0.07781873349487496,
+          "negative_log_likelihood": 1.2741199411599036
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.7708632519546833,
+        "integrated_brier_score": 0.06256304951243469,
+        "negative_log_likelihood": 1.1271766135928851
+      },
+      "seed": 79
+    },
+    {
+      "condition": "decreasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.2141149430544607,
+            "factorized_exponential": 0.00883386917040414,
+            "factorized_piecewise": 0.008172799512329586,
+            "factorized_weibull": 0.009574893916972336
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6861445076401356,
+            "factorized_exponential": 0.39057751960412956,
+            "factorized_piecewise": 0.38836857007955633,
+            "factorized_weibull": 0.383306912913444
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6818540844733856,
+            "factorized_exponential": 0.3931686624113126,
+            "factorized_piecewise": 0.38783321382701613,
+            "factorized_weibull": 0.38407126094606353
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.797530478124741,
+        "cox_initial_partial_nll": 6.217527420852601,
+        "cox_validation_baseline_scale": 1.5241996144207628,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.03488277174635576,
+          0.18233458777119174
+        ],
+        "weibull_shape": 1.0510708467667944
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.712785309021612,
+          "integrated_brier_score": 0.15433668081652197,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.6538394906665512,
+          "integrated_brier_score": 0.1493011666905964,
+          "negative_log_likelihood": 1.6046869916787825
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.712785309021612,
+          "integrated_brier_score": 0.14936528949117076,
+          "negative_log_likelihood": 1.6181832996765126
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6538394906665512,
+          "integrated_brier_score": 0.14994109102049777,
+          "negative_log_likelihood": 1.6334714440373184
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.712785309021612,
+        "integrated_brier_score": 0.1395344825579372,
+        "negative_log_likelihood": 1.471830166957063
+      },
+      "seed": 79
+    },
+    {
+      "condition": "increasing_hazard_shape",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.2141149430544607,
+            "factorized_exponential": 0.00883386917040414,
+            "factorized_piecewise": 0.008172799512329586,
+            "factorized_weibull": 0.009574893916972336
+          },
+          "true_hazard_per_hour": 0.00972
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6861445076401356,
+            "factorized_exponential": 0.39057751960412956,
+            "factorized_piecewise": 0.38836857007955633,
+            "factorized_weibull": 0.383306912913444
+          },
+          "true_hazard_per_hour": 0.47519999999999996
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6818540844733856,
+            "factorized_exponential": 0.3931686624113126,
+            "factorized_piecewise": 0.38783321382701613,
+            "factorized_weibull": 0.38407126094606353
+          },
+          "true_hazard_per_hour": 0.29568
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.797530478124741,
+        "cox_initial_partial_nll": 6.217527420852601,
+        "cox_validation_baseline_scale": 1.5241996144207628,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.03488277174635576,
+          0.18233458777119174
+        ],
+        "weibull_shape": 1.0510708467667944
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.8064863410039026,
+          "integrated_brier_score": 0.05124357709374676,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.6787332346476472,
+          "integrated_brier_score": 0.04645476479961843,
+          "negative_log_likelihood": 1.2328664124781867
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.8064863410039026,
+          "integrated_brier_score": 0.046384092380685575,
+          "negative_log_likelihood": 1.232927998340102
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6787332346476472,
+          "integrated_brier_score": 0.04574319131610371,
+          "negative_log_likelihood": 1.2139565000533403
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.8064863410039026,
+        "integrated_brier_score": 0.039046004486300384,
+        "negative_log_likelihood": 1.0613117561514738
+      },
+      "seed": 79
+    },
+    {
+      "condition": "typed_factor_reversal",
+      "context_risks": {
+        "location|book|inside|cabinet|quiet": {
+          "model_risk_scores": {
+            "factorized_cox": -2.2141149430544607,
+            "factorized_exponential": 0.00883386917040414,
+            "factorized_piecewise": 0.008172799512329586,
+            "factorized_weibull": 0.009574893916972336
+          },
+          "true_hazard_per_hour": 1.4814814814814816
+        },
+        "location|cup|on|table|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6861445076401356,
+            "factorized_exponential": 0.39057751960412956,
+            "factorized_piecewise": 0.38836857007955633,
+            "factorized_weibull": 0.383306912913444
+          },
+          "true_hazard_per_hour": 0.030303030303030304
+        },
+        "location|tool|on|shelf|busy": {
+          "model_risk_scores": {
+            "factorized_cox": 1.6818540844733856,
+            "factorized_exponential": 0.3931686624113126,
+            "factorized_piecewise": 0.38783321382701613,
+            "factorized_weibull": 0.38407126094606353
+          },
+          "true_hazard_per_hour": 0.048701298701298704
+        }
+      },
+      "fit": {
+        "cox_final_partial_nll": 5.797530478124741,
+        "cox_initial_partial_nll": 6.217527420852601,
+        "cox_validation_baseline_scale": 1.5241996144207628,
+        "piecewise_log_multipliers": [
+          0.0,
+          -0.03488277174635576,
+          0.18233458777119174
+        ],
+        "weibull_shape": 1.0510708467667944
+      },
+      "models": {
+        "factorized_cox": {
+          "concordance_index": 0.18347128815312985,
+          "integrated_brier_score": 0.6972295343372169,
+          "negative_log_likelihood": null
+        },
+        "factorized_exponential": {
+          "concordance_index": 0.19076564924987066,
+          "integrated_brier_score": 0.6597040179815286,
+          "negative_log_likelihood": 3.729224633513091
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.18347128815312985,
+          "integrated_brier_score": 0.6595692786595485,
+          "negative_log_likelihood": 3.8355165881847437
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.19076564924987066,
+          "integrated_brier_score": 0.6624797685697803,
+          "negative_log_likelihood": 3.8586913050190903
+        }
+      },
+      "oracle": {
+        "concordance_index": 0.8165287118468701,
+        "integrated_brier_score": 0.09011159302308921,
+        "negative_log_likelihood": 0.9229432363998432
+      },
+      "seed": 79
+    }
+  ]
+}

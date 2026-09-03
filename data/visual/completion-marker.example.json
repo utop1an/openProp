@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "dataset_id": "replace_with_registry_dataset_id",
+  "source_release": "replace_with_exact_release_or_manifest_digest",
+  "license_accepted_by_user": true,
+  "files": [
+    {
+      "path": "relative/path/to/file",
+      "bytes": 0,
+      "sha256": "replace_with_64_hex_sha256"
+    }
+  ]
+}

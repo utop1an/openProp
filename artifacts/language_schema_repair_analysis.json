@@ -1,0 +1,61 @@
+{
+  "aggregate": {
+    "cases": 80,
+    "model_query_clustered_bootstrap_95_ci": [
+      0.0,
+      0.03896103896103896
+    ],
+    "models": 2,
+    "paired_sign_test_p": 1.0,
+    "paired_top1_delta": 0.0125,
+    "query_clusters": 60,
+    "top1_improvements": 1,
+    "top1_regressions": 0
+  },
+  "models": [
+    {
+      "artifact": "artifacts\\language_temporal_paraphrase_gemma3_4b.json",
+      "cases": 40,
+      "model": "gemma3:4b",
+      "paired_sign_test_p": 1.0,
+      "paired_top1_delta": 0.02499999999999991,
+      "queries": 30,
+      "query_clustered_bootstrap_95_ci": [
+        0.0,
+        0.07692307692307693
+      ],
+      "rank_improvements": 2,
+      "rank_regressions": 0,
+      "repair_cases": 4,
+      "repaired_top1": 0.7,
+      "tolerant_top1": 0.675,
+      "top1_improvements": 1,
+      "top1_regressions": 0
+    },
+    {
+      "artifact": "artifacts\\language_temporal_paraphrase_llama3_2.json",
+      "cases": 40,
+      "model": "llama3.2:latest",
+      "paired_sign_test_p": 1.0,
+      "paired_top1_delta": 0.0,
+      "queries": 30,
+      "query_clustered_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "rank_improvements": 0,
+      "rank_regressions": 0,
+      "repair_cases": 0,
+      "repaired_top1": 0.725,
+      "tolerant_top1": 0.725,
+      "top1_improvements": 0,
+      "top1_regressions": 0
+    }
+  ],
+  "protocol": {
+    "bootstrap_samples": 10000,
+    "bootstrap_unit": "model-query cluster",
+    "paired_strategy": "llm-schema-repaired minus llm-tolerant",
+    "seed": 20260826
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "aggregate": {
+    "exact_frame": {
+      "case_clustered_task_stratified_bootstrap_95_ci": [
+        0.1875,
+        0.4
+      ],
+      "paired_delta": 0.2875
+    },
+    "property_f1": {
+      "case_clustered_task_stratified_bootstrap_95_ci": [
+        0.13339285714285715,
+        0.19714285714285715
+      ],
+      "paired_delta": 0.16577380952380955
+    },
+    "value_recall": {
+      "case_clustered_task_stratified_bootstrap_95_ci": [
+        0.15625,
+        0.23333333333333334
+      ],
+      "paired_delta": 0.19583333333333336
+    }
+  },
+  "models": [
+    {
+      "artifact": "artifacts/alfred_language_gemma3_4b_selection.json",
+      "cases": 40,
+      "metrics": {
+        "exact_frame": {
+          "after": 0.35,
+          "before": 0.2,
+          "improvements": 6,
+          "paired_delta": 0.14999999999999997,
+          "paired_sign_test_p": 0.03125,
+          "regressions": 0,
+          "task_stratified_bootstrap_95_ci": [
+            0.05,
+            0.25
+          ]
+        },
+        "property_f1": {
+          "after": 0.8699999999999999,
+          "before": 0.7875,
+          "improvements": 14,
+          "paired_delta": 0.0824999999999999,
+          "paired_sign_test_p": 0.0001220703125,
+          "regressions": 0,
+          "task_stratified_bootstrap_95_ci": [
+            0.055833333333333325,
+            0.10999999999999999
+          ]
+        },
+        "value_recall": {
+          "after": 0.625,
+          "before": 0.5083333333333333,
+          "improvements": 14,
+          "paired_delta": 0.1166666666666667,
+          "paired_sign_test_p": 0.0001220703125,
+          "regressions": 0,
+          "task_stratified_bootstrap_95_ci": [
+            0.075,
+            0.15833333333333333
+          ]
+        }
+      },
+      "model": "gemma3:4b",
+      "selection_action_rate": 0.35,
+      "selection_actions": {
+        "added cleanliness": 4,
+        "added location": 1,
+        "added thermal_state": 9,
+        "removed conflicting cleanliness": 3
+      },
+      "selection_after": {
+        "cleanliness": {
+          "fn": 3,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.7,
+          "tp": 7
+        },
+        "location": {
+          "fn": 4,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9,
+          "tp": 36
+        },
+        "thermal_state": {
+          "fn": 6,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.7,
+          "tp": 14
+        },
+        "type": {
+          "fn": 4,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9,
+          "tp": 36
+        }
+      },
+      "selection_before": {
+        "cleanliness": {
+          "fn": 7,
+          "fp": 3,
+          "precision": 0.5,
+          "recall": 0.3,
+          "tp": 3
+        },
+        "location": {
+          "fn": 5,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.875,
+          "tp": 35
+        },
+        "thermal_state": {
+          "fn": 15,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.25,
+          "tp": 5
+        },
+        "type": {
+          "fn": 4,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9,
+          "tp": 36
+        }
+      }
+    },
+    {
+      "artifact": "artifacts/alfred_language_llama3_2_selection.json",
+      "cases": 40,
+      "metrics": {
+        "exact_frame": {
+          "after": 0.425,
+          "before": 0.0,
+          "improvements": 17,
+          "paired_delta": 0.425,
+          "paired_sign_test_p": 1.52587890625e-05,
+          "regressions": 0,
+          "task_stratified_bootstrap_95_ci": [
+            0.275,
+            0.575
+          ]
+        },
+        "property_f1": {
+          "after": 0.7940476190476191,
+          "before": 0.545,
+          "improvements": 31,
+          "paired_delta": 0.24904761904761907,
+          "paired_sign_test_p": 9.313225746154785e-10,
+          "regressions": 0,
+          "task_stratified_bootstrap_95_ci": [
+            0.20154761904761903,
+            0.2982142857142857
+          ]
+        },
+        "value_recall": {
+          "after": 0.675,
+          "before": 0.4,
+          "improvements": 29,
+          "paired_delta": 0.275,
+          "paired_sign_test_p": 3.725290298461914e-09,
+          "regressions": 0,
+          "task_stratified_bootstrap_95_ci": [
+            0.22083333333333335,
+            0.3291666666666667
+          ]
+        }
+      },
+      "model": "llama3.2",
+      "selection_action_rate": 0.775,
+      "selection_actions": {
+        "added cleanliness": 1,
+        "added location": 2,
+        "added thermal_state": 4,
+        "added type": 27,
+        "removed conflicting cleanliness": 10,
+        "removed conflicting thermal_state": 3
+      },
+      "selection_after": {
+        "cleanliness": {
+          "fn": 1,
+          "fp": 4,
+          "precision": 0.6923076923076923,
+          "recall": 0.9,
+          "tp": 9
+        },
+        "location": {
+          "fn": 7,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.825,
+          "tp": 33
+        },
+        "thermal_state": {
+          "fn": 3,
+          "fp": 3,
+          "precision": 0.85,
+          "recall": 0.85,
+          "tp": 17
+        },
+        "type": {
+          "fn": 11,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.725,
+          "tp": 29
+        }
+      },
+      "selection_before": {
+        "cleanliness": {
+          "fn": 2,
+          "fp": 14,
+          "precision": 0.36363636363636365,
+          "recall": 0.8,
+          "tp": 8
+        },
+        "location": {
+          "fn": 9,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.775,
+          "tp": 31
+        },
+        "thermal_state": {
+          "fn": 7,
+          "fp": 6,
+          "precision": 0.6842105263157895,
+          "recall": 0.65,
+          "tp": 13
+        },
+        "type": {
+          "fn": 38,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.05,
+          "tp": 2
+        }
+      }
+    }
+  ],
+  "protocol": {
+    "bootstrap_samples": 10000,
+    "bootstrap_unit": "case cluster, stratified by task type",
+    "paired_strategy": "llm-evidence-fused minus llm-ontology-normalized",
+    "primary_denominator": "all selected cases including failures",
+    "sample": "shared frozen 40-case valid-unseen sample",
+    "seed": 20260826,
+    "selection_inputs": "query spans, train PDDL vocabulary, schema, and parsed frame only"
+  }
+}

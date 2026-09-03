@@ -1,0 +1,368 @@
+{
+  "confirmation": {
+    "bm25_evidence_minus_bm25": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.05,
+          0.225
+        ],
+        "cluster": "task_id",
+        "delta": 0.125,
+        "losses": 0,
+        "seed": 20260928,
+        "stratum": "task_type",
+        "ties": 35,
+        "wins": 5
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.0,
+          0.02857142857142857
+        ],
+        "cluster": "task_id",
+        "delta": 0.014285714285714285,
+        "losses": 0,
+        "seed": 20260926,
+        "stratum": "task_type",
+        "ties": 37,
+        "wins": 3
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.08333333333333334,
+          0.2125
+        ],
+        "cluster": "task_id",
+        "delta": 0.14583333333333334,
+        "losses": 0,
+        "seed": 20260927,
+        "stratum": "task_type",
+        "ties": 27,
+        "wins": 13
+      }
+    },
+    "bm25_evidence_minus_evidence": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.225,
+          0.5
+        ],
+        "cluster": "task_id",
+        "delta": 0.35,
+        "losses": 0,
+        "seed": 20260938,
+        "stratum": "task_type",
+        "ties": 26,
+        "wins": 14
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.10178571428571426,
+          0.22261904761904758
+        ],
+        "cluster": "task_id",
+        "delta": 0.15678571428571425,
+        "losses": 1,
+        "seed": 20260936,
+        "stratum": "task_type",
+        "ties": 15,
+        "wins": 24
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.125,
+          0.25833333333333336
+        ],
+        "cluster": "task_id",
+        "delta": 0.18750000000000003,
+        "losses": 0,
+        "seed": 20260937,
+        "stratum": "task_type",
+        "ties": 21,
+        "wins": 19
+      }
+    }
+  },
+  "development": {
+    "bm25_evidence_minus_bm25": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.075,
+          0.3
+        ],
+        "cluster": "task_id",
+        "delta": 0.175,
+        "losses": 0,
+        "seed": 20260828,
+        "stratum": "task_type",
+        "ties": 33,
+        "wins": 7
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.0,
+          0.029523809523809518
+        ],
+        "cluster": "task_id",
+        "delta": 0.014523809523809522,
+        "losses": 0,
+        "seed": 20260826,
+        "stratum": "task_type",
+        "ties": 37,
+        "wins": 3
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.04166666666666667,
+          0.21666666666666665
+        ],
+        "cluster": "task_id",
+        "delta": 0.125,
+        "losses": 1,
+        "seed": 20260827,
+        "stratum": "task_type",
+        "ties": 28,
+        "wins": 11
+      }
+    },
+    "bm25_evidence_minus_evidence": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.2,
+          0.475
+        ],
+        "cluster": "task_id",
+        "delta": 0.325,
+        "losses": 0,
+        "seed": 20260838,
+        "stratum": "task_type",
+        "ties": 27,
+        "wins": 13
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.07261904761904761,
+          0.20345238095238094
+        ],
+        "cluster": "task_id",
+        "delta": 0.13285714285714284,
+        "losses": 1,
+        "seed": 20260836,
+        "stratum": "task_type",
+        "ties": 21,
+        "wins": 18
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.08333333333333334,
+          0.2166666666666667
+        ],
+        "cluster": "task_id",
+        "delta": 0.14583333333333334,
+        "losses": 0,
+        "seed": 20260837,
+        "stratum": "task_type",
+        "ties": 26,
+        "wins": 14
+      }
+    }
+  },
+  "protocol": {
+    "comparison": "paired case metrics with task-id cluster bootstrap",
+    "input": "artifacts\\alfred_retrieval_baseline.json",
+    "labels_used_for_method_selection": false,
+    "stratification": "ALFRED task type"
+  },
+  "valid_seen": {
+    "bm25_evidence_minus_bm25": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.06352459016393443,
+          0.13414634146341464
+        ],
+        "cluster": "task_id",
+        "delta": 0.09856262833675565,
+        "losses": 13,
+        "seed": 20261028,
+        "stratum": "task_type",
+        "ties": 413,
+        "wins": 61
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.0032345013477088945,
+          0.008892713711990819
+        ],
+        "cluster": "task_id",
+        "delta": 0.005964603500537791,
+        "losses": 0,
+        "seed": 20261026,
+        "stratum": "task_type",
+        "ties": 472,
+        "wins": 15
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.04557551563539588,
+          0.07905544147843943
+        ],
+        "cluster": "task_id",
+        "delta": 0.06194387405886379,
+        "losses": 17,
+        "seed": 20261027,
+        "stratum": "task_type",
+        "ties": 380,
+        "wins": 90
+      }
+    },
+    "bm25_evidence_minus_evidence": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.3180873180873181,
+          0.4143763213530655
+        ],
+        "cluster": "task_id",
+        "delta": 0.3655030800821355,
+        "losses": 3,
+        "seed": 20261038,
+        "stratum": "task_type",
+        "ties": 303,
+        "wins": 181
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.17516006402561024,
+          0.23021208483393357
+        ],
+        "cluster": "task_id",
+        "delta": 0.20167204458785568,
+        "losses": 5,
+        "seed": 20261036,
+        "stratum": "task_type",
+        "ties": 195,
+        "wins": 287
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.19862542955326462,
+          0.25745257452574527
+        ],
+        "cluster": "task_id",
+        "delta": 0.22792607802874743,
+        "losses": 1,
+        "seed": 20261037,
+        "stratum": "task_type",
+        "ties": 248,
+        "wins": 238
+      }
+    }
+  },
+  "valid_unseen": {
+    "bm25_evidence_minus_bm25": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.07066381156316917,
+          0.1767337807606264
+        ],
+        "cluster": "task_id",
+        "delta": 0.12445414847161572,
+        "losses": 17,
+        "seed": 20261128,
+        "stratum": "task_type",
+        "ties": 367,
+        "wins": 74
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.0034219748505462783,
+          0.009588744588744588
+        ],
+        "cluster": "task_id",
+        "delta": 0.0064254522769806605,
+        "losses": 1,
+        "seed": 20261126,
+        "stratum": "task_type",
+        "ties": 441,
+        "wins": 16
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.0624113475177305,
+          0.12416851441241686
+        ],
+        "cluster": "task_id",
+        "delta": 0.09352256186317322,
+        "losses": 20,
+        "seed": 20261127,
+        "stratum": "task_type",
+        "ties": 321,
+        "wins": 117
+      }
+    },
+    "bm25_evidence_minus_evidence": {
+      "exact_frame": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.2794759825327511,
+          0.38362068965517243
+        ],
+        "cluster": "task_id",
+        "delta": 0.3318777292576419,
+        "losses": 11,
+        "seed": 20261138,
+        "stratum": "task_type",
+        "ties": 284,
+        "wins": 163
+      },
+      "property_f1": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.14091478696741855,
+          0.18889899909008187
+        ],
+        "cluster": "task_id",
+        "delta": 0.163994593470576,
+        "losses": 11,
+        "seed": 20261136,
+        "stratum": "task_type",
+        "ties": 205,
+        "wins": 242
+      },
+      "value_recall": {
+        "bootstrap_samples": 20000,
+        "ci_95": [
+          0.1702819956616052,
+          0.2293016558675306
+        ],
+        "cluster": "task_id",
+        "delta": 0.19941775836972345,
+        "losses": 5,
+        "seed": 20261137,
+        "stratum": "task_type",
+        "ties": 247,
+        "wins": 206
+      }
+    }
+  }
+}

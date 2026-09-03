@@ -1,0 +1,173 @@
+{
+  "aggregate": {
+    "interval_aware": {
+      "exact_test_nll": {
+        "maximum": 2.315386581417846,
+        "mean": 2.2913947438392044,
+        "minimum": 2.242317260672801,
+        "standard_deviation": 0.02699930084083712
+      },
+      "mean_absolute_hazard_error": {
+        "maximum": 0.013492803982932566,
+        "mean": 0.005834975513978541,
+        "minimum": 0.0013110099873626102,
+        "standard_deviation": 0.004399239194355675
+      },
+      "schedule_gap": {
+        "maximum": 0.010835588750831904,
+        "mean": 0.0038058602281558886,
+        "minimum": 0.001267739579577265,
+        "standard_deviation": 0.0035834837923346963
+      }
+    },
+    "naive": {
+      "exact_test_nll": {
+        "maximum": 2.3552834756996055,
+        "mean": 2.3350578047173993,
+        "minimum": 2.305602509999895,
+        "standard_deviation": 0.01879726370719051
+      },
+      "mean_absolute_hazard_error": {
+        "maximum": 0.06337524163836823,
+        "mean": 0.05588280338209057,
+        "minimum": 0.050426825231309064,
+        "standard_deviation": 0.004404368729478889
+      },
+      "schedule_gap": {
+        "maximum": 0.078851564956883,
+        "mean": 0.07448481327664752,
+        "minimum": 0.06322749029154548,
+        "standard_deviation": 0.005776068270462857
+      }
+    }
+  },
+  "protocol": {
+    "claim_scope": "synthetic mechanism validation",
+    "inspection_intervals_hours": [
+      0.5,
+      4.0
+    ],
+    "latent_hazard_per_hour": 0.25,
+    "samples_per_schedule": 600,
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "test_samples_per_schedule": 400
+  },
+  "runs": [
+    {
+      "interval_aware": {
+        "exact_test_nll": 2.315386581417846,
+        "hazards": {
+          "inspection-0.5h": 0.24869728968682042,
+          "inspection-4h": 0.24742955010724316
+        },
+        "mean_absolute_hazard_error": 0.0019365801029682106,
+        "schedule_gap": 0.001267739579577265
+      },
+      "naive": {
+        "exact_test_nll": 2.3552834756996055,
+        "hazards": {
+          "inspection-0.5h": 0.23385618252189855,
+          "inspection-4h": 0.1570796460176991
+        },
+        "mean_absolute_hazard_error": 0.05453208573020117,
+        "schedule_gap": 0.07677653650419944
+      },
+      "seed": 101,
+      "true_hazard_per_hour": 0.25
+    },
+    {
+      "interval_aware": {
+        "exact_test_nll": 2.242317260672801,
+        "hazards": {
+          "inspection-0.5h": 0.2442470107397387,
+          "inspection-4h": 0.24123611061792583
+        },
+        "mean_absolute_hazard_error": 0.007258439321167737,
+        "schedule_gap": 0.003010900121812876
+      },
+      "naive": {
+        "exact_test_nll": 2.305602509999895,
+        "hazards": {
+          "inspection-0.5h": 0.22992189064690566,
+          "inspection-4h": 0.15474890829694324
+        },
+        "mean_absolute_hazard_error": 0.05766460052807555,
+        "schedule_gap": 0.07517298234996242
+      },
+      "seed": 211,
+      "true_hazard_per_hour": 0.25
+    },
+    {
+      "interval_aware": {
+        "exact_test_nll": 2.2824199870844923,
+        "hazards": {
+          "inspection-0.5h": 0.25087984251270834,
+          "inspection-4h": 0.24825782253798312
+        },
+        "mean_absolute_hazard_error": 0.0013110099873626102,
+        "schedule_gap": 0.0026220199747252204
+      },
+      "naive": {
+        "exact_test_nll": 2.3257420510869884,
+        "hazards": {
+          "inspection-0.5h": 0.2357824823578248,
+          "inspection-4h": 0.15738699007717752
+        },
+        "mean_absolute_hazard_error": 0.053415263782498834,
+        "schedule_gap": 0.0783954922806473
+      },
+      "seed": 307,
+      "true_hazard_per_hour": 0.25
+    },
+    {
+      "interval_aware": {
+        "exact_test_nll": 2.3083945933240257,
+        "hazards": {
+          "inspection-0.5h": 0.23108940164165148,
+          "inspection-4h": 0.24192499039248339
+        },
+        "mean_absolute_hazard_error": 0.013492803982932566,
+        "schedule_gap": 0.010835588750831904
+      },
+      "naive": {
+        "exact_test_nll": 2.355083276395647,
+        "hazards": {
+          "inspection-0.5h": 0.2182385035074045,
+          "inspection-4h": 0.15501101321585903
+        },
+        "mean_absolute_hazard_error": 0.06337524163836823,
+        "schedule_gap": 0.06322749029154548
+      },
+      "seed": 401,
+      "true_hazard_per_hour": 0.25
+    },
+    {
+      "interval_aware": {
+        "exact_test_nll": 2.3084552966968577,
+        "hazards": {
+          "inspection-0.5h": 0.2545295178185455,
+          "inspection-4h": 0.25582257053237767
+        },
+        "mean_absolute_hazard_error": 0.0051760441754615805,
+        "schedule_gap": 0.0012930527138321768
+      },
+      "naive": {
+        "exact_test_nll": 2.33357771040486,
+        "hazards": {
+          "inspection-0.5h": 0.23899895724713244,
+          "inspection-4h": 0.16014739229024944
+        },
+        "mean_absolute_hazard_error": 0.050426825231309064,
+        "schedule_gap": 0.078851564956883
+      },
+      "seed": 503,
+      "true_hazard_per_hour": 0.25
+    }
+  ]
+}

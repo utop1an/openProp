@@ -1,0 +1,102 @@
+{
+  "ontology": {
+    "alias_policy": "exact or unique token-containment match",
+    "ambiguous_policy": "preserve original value",
+    "annotation_text_used_for_fit": false,
+    "object_labels": 53,
+    "predeclared_schema_semantics": [
+      "thermal and cleanliness aliases",
+      "receptacle class to on/inside relation"
+    ],
+    "receptacle_labels": 24,
+    "source_split": "train",
+    "validation_labels_used_for_fit": false
+  },
+  "protocol": {
+    "ambiguous_evidence_policy": "no property emitted",
+    "candidate_or_matcher_access": false,
+    "gold_use": "evaluation only",
+    "missing_evidence_policy": "no property emitted",
+    "ontology_fit": "train PDDL labels only",
+    "performance_claim": "selection mechanism only",
+    "scope": "model-independent query evidence coverage audit"
+  },
+  "splits": {
+    "valid_seen": {
+      "by_property": {
+        "cleanliness": {
+          "fn": 17,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8482142857142857,
+          "tp": 95
+        },
+        "location": {
+          "fn": 213,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.5626283367556468,
+          "tp": 274
+        },
+        "thermal_state": {
+          "fn": 79,
+          "fp": 1,
+          "precision": 0.9935483870967742,
+          "recall": 0.6609442060085837,
+          "tp": 154
+        },
+        "type": {
+          "fn": 72,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8521560574948666,
+          "tp": 415
+        }
+      },
+      "cases": 487,
+      "exact_property_set_rate": 0.40451745379876797,
+      "micro_property_f1": 0.8308237378210805,
+      "micro_property_precision": 0.9989350372736954,
+      "micro_property_recall": 0.711144806671721,
+      "strict_canonical_value_recall": 0.6580742987111448
+    },
+    "valid_unseen": {
+      "by_property": {
+        "cleanliness": {
+          "fn": 21,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8141592920353983,
+          "tp": 92
+        },
+        "location": {
+          "fn": 161,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.648471615720524,
+          "tp": 297
+        },
+        "thermal_state": {
+          "fn": 60,
+          "fp": 1,
+          "precision": 0.9946236559139785,
+          "recall": 0.7551020408163265,
+          "tp": 185
+        },
+        "type": {
+          "fn": 81,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8231441048034934,
+          "tp": 377
+        }
+      },
+      "cases": 458,
+      "exact_property_set_rate": 0.4650655021834061,
+      "micro_property_f1": 0.8544474393530996,
+      "micro_property_precision": 0.9989495798319328,
+      "micro_property_recall": 0.7464678178963893,
+      "strict_canonical_value_recall": 0.7032967032967034
+    }
+  }
+}

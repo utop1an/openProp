@@ -1,0 +1,5225 @@
+{
+  "protocol": {
+    "cases": 40,
+    "evaluation_target": "human language to typed goal property frame",
+    "model": "gemma3:4b",
+    "primary_denominator": "all selected cases including request and parse failures",
+    "repair_input_boundary": "property schema and raw response only",
+    "response_source": "live Ollama",
+    "selection": "first annotation from first sorted N trajectories per supported task",
+    "source": "official ALFRED 2.1.0 lite trajectories",
+    "split": "valid_unseen",
+    "temporal_observation_claim": "none",
+    "trajectories_per_task": 10,
+    "unique_queries": 40,
+    "visual_grounding_claim": "none"
+  },
+  "raw_responses": {
+    "Clean a spatula to put it away.": {
+      "error": null,
+      "latency_seconds": 2.970074799959548,
+      "query": "Clean a spatula to put it away.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "spatula",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "spatula"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "put",
+              "scalar": "away",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Fill up a mug with water and take to the coffee machine.": {
+      "error": null,
+      "latency_seconds": 3.138292199932039,
+      "query": "Fill up a mug with water and take to the coffee machine.",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "mug"
+                },
+                {
+                  "role": "spatial relation",
+                  "value": "coffee machine"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "destination",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "water",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Get an apple from the sink and heat it up in the microwave": {
+      "error": null,
+      "latency_seconds": 3.077304199920036,
+      "query": "Get an apple from the sink and heat it up in the microwave",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "apple",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "apple"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "sink",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired thermal state of the target object, such as hot or cold",
+            "known_property": false,
+            "property_name": "thermal_state",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "hot",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Heat up a potato and put it in the trash.": {
+      "error": null,
+      "latency_seconds": 3.053204600000754,
+      "query": "Heat up a potato and put it in the trash.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "potato",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "potato"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "trash",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired thermal state of the target object, such as hot or cold",
+            "known_property": false,
+            "property_name": "thermal_state",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "hot",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Move a bottle of hand soap from the sink to the toilet.": {
+      "error": null,
+      "latency_seconds": 3.1498053000541404,
+      "query": "Move a bottle of hand soap from the sink to the toilet.",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bottle of hand soap"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "destination",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "bottle",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Move the bat in the corner to the bed": {
+      "error": null,
+      "latency_seconds": 10.490021099918522,
+      "query": "Move the bat in the corner to the bed",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bat"
+                },
+                {
+                  "role": "destination",
+                  "value": "corner"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "in",
+              "scalar": "inside",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "bat",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Pick up the egg, put it in the refrigerator and then put it in the sink.": {
+      "error": null,
+      "latency_seconds": 2.7461630000034347,
+      "query": "Pick up the egg, put it in the refrigerator and then put it in the sink.",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "egg"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "refrigerator",
+              "scalar": "inside",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "egg"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "sink",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Pick up the white coffee cup, fill it in the sink, place it in the coffee maker.": {
+      "error": null,
+      "latency_seconds": 4.116228300030343,
+      "query": "Pick up the white coffee cup, fill it in the sink, place it in the coffee maker.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "coffee cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "white coffee cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "sink",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "white coffee cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "coffee maker",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Place a cooked apple into the sink.": {
+      "error": null,
+      "latency_seconds": 2.4621682999422774,
+      "query": "Place a cooked apple into the sink.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "apple",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "apple"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "sink",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Place a cool lettuce in the sink.": {
+      "error": null,
+      "latency_seconds": 2.4688639999367297,
+      "query": "Place a cool lettuce in the sink.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "lettuce",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "lettuce"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "sink",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Place a heated cup in a cabinet": {
+      "error": null,
+      "latency_seconds": 2.6623616999713704,
+      "query": "Place a heated cup in a cabinet",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "heated cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "on",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Place a microwaved apple in the fridge.": {
+      "error": null,
+      "latency_seconds": 2.3734639999456704,
+      "query": "Place a microwaved apple in the fridge.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "apple",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "apple"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "fridge",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Place chilled lettuce into a sink": {
+      "error": null,
+      "latency_seconds": 2.689245200017467,
+      "query": "Place chilled lettuce into a sink",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "lettuce"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "sink",
+              "scalar": "inside",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "lettuce",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Place the green bottle on the toilet baisin.": {
+      "error": null,
+      "latency_seconds": 2.7664211000083014,
+      "query": "Place the green bottle on the toilet baisin.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "bottle",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bottle"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "toilet baisin",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Place the salt shaker in the cabinet beside the fridge.": {
+      "error": null,
+      "latency_seconds": 5.897880300064571,
+      "query": "Place the salt shaker in the cabinet beside the fridge.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "salt shaker",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "salt shaker"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "beside",
+              "scalar": "cabinet",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cabinet"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "fridge",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Place the salt shaker in the cabinet.": {
+      "error": null,
+      "latency_seconds": 19.636373299988918,
+      "query": "Place the salt shaker in the cabinet.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "salt shaker",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "salt shaker"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "cabinet",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put a chilled potato in the microwave.": {
+      "error": null,
+      "latency_seconds": 3.070549300056882,
+      "query": "Put a chilled potato in the microwave.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "potato",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "potato"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "microwave",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired cleanliness state of the target object",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.2,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "chilled",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Put a clean spatula in a drawer.": {
+      "error": null,
+      "latency_seconds": 2.8430707999505103,
+      "query": "Put a clean spatula in a drawer.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "spatula",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "spatula"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "drawer",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put a cleaned bar of soap on a counter.": {
+      "error": null,
+      "latency_seconds": 2.820378999924287,
+      "query": "Put a cleaned bar of soap on a counter.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "bar of soap",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bar of soap"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "counter",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put a cleaned blue cloth in a cabinet.": {
+      "error": null,
+      "latency_seconds": 3.5394234000705183,
+      "query": "Put a cleaned blue cloth in a cabinet.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cloth",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cloth"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "cabinet",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired cleanliness state of the target object",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.5,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cleaned",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Put a cleaned mug on the coffee maker to the right of the stove.": {
+      "error": null,
+      "latency_seconds": 3.3448005999671295,
+      "query": "Put a cleaned mug on the coffee maker to the right of the stove.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.3,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "mug",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "mug"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "to the right of",
+              "scalar": "coffee maker",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired cleanliness state of the target object",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cleaned",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Put a cold slice of bread in a microwave.": {
+      "error": null,
+      "latency_seconds": 3.6885743000311777,
+      "query": "Put a cold slice of bread in a microwave.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "slice",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "desired cleanliness state of the target object",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.5,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cold",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bread"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "microwave",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put a cold slice of bread in the microwave.": {
+      "error": null,
+      "latency_seconds": 3.715716299950145,
+      "query": "Put a cold slice of bread in the microwave.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "slice",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "desired cleanliness state of the target object",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.5,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cold",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bread"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "microwave",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put a heated apple next to the lettuce on the middle shelf in the refrigerator.": {
+      "error": null,
+      "latency_seconds": 3.9687832000199705,
+      "query": "Put a heated apple next to the lettuce on the middle shelf in the refrigerator.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "apple",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "apple"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "next to",
+              "scalar": "lettuce",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "heated apple"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "middle shelf",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired thermal state of the target object, such as hot or cold",
+            "known_property": false,
+            "property_name": "thermal_state",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "heated",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Put a salt shaker in a drawer.": {
+      "error": null,
+      "latency_seconds": 3.53763010003604,
+      "query": "Put a salt shaker in a drawer.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "salt shaker",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "salt shaker"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "drawer",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put a warm cup in the cabinet.": {
+      "error": null,
+      "latency_seconds": 3.16057860001456,
+      "query": "Put a warm cup in the cabinet.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "cabinet",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired thermal state of the target object, such as hot or cold",
+            "known_property": false,
+            "property_name": "thermal_state",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "warm",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Put a wet soap on the counter.": {
+      "error": null,
+      "latency_seconds": 2.7158699999563396,
+      "query": "Put a wet soap on the counter.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "soap",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "soap"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "counter",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put the baseball bat on the bed": {
+      "error": null,
+      "latency_seconds": 5.223222799948417,
+      "query": "Put the baseball bat on the bed",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "baseball bat",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "baseball bat"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "bed",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Put the cooked green apple in the fridge": {
+      "error": null,
+      "latency_seconds": 2.5333606000058353,
+      "query": "Put the cooked green apple in the fridge",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cooked green apple"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "fridge",
+              "scalar": "inside",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "apple",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Rinse off the soap and place it on the counter.": {
+      "error": null,
+      "latency_seconds": 3.5746826000977308,
+      "query": "Rinse off the soap and place it on the counter.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "object",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "soap"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "counter",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired cleanliness state of the target object",
+            "known_property": false,
+            "property_name": "cleanliness",
+            "relevance": 0.3,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "soap",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "To acquire an odd item as place it where it is not useful.": {
+      "error": null,
+      "latency_seconds": 5.884858599980362,
+      "query": "To acquire an odd item as place it where it is not useful.",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "item"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "not useful",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "odd item",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "To chill lettuce for cooking.": {
+      "error": null,
+      "latency_seconds": 2.3782798999454826,
+      "query": "To chill lettuce for cooking.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "lettuce",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "lettuce"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "chill",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Use the microwave to heat an apple.": {
+      "error": null,
+      "latency_seconds": 2.5071342999581248,
+      "query": "Use the microwave to heat an apple.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.75,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "apple",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.85,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "apple"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "microwave",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "Warm up the cup inside the cabinet.": {
+      "error": null,
+      "latency_seconds": 3.22882820002269,
+      "query": "Warm up the cup inside the cabinet.",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.2,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cup",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "cup"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "cabinet",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired thermal state of the target object, such as hot or cold",
+            "known_property": false,
+            "property_name": "thermal_state",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "warm",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "Wash the spatula, put it in the first drawer": {
+      "error": null,
+      "latency_seconds": 2.8944517999188974,
+      "query": "Wash the spatula, put it in the first drawer",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "spatula",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "spatula"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "first drawer",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "place a bat on the bed": {
+      "error": null,
+      "latency_seconds": 3.2013112000422552,
+      "query": "place a bat on the bed",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "bat",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bat"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "bed",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "place a potato inside the microwave": {
+      "error": null,
+      "latency_seconds": 2.558292399975471,
+      "query": "place a potato inside the microwave",
+      "response": {
+        "constraints": [
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "potato"
+                }
+              ],
+              "kind": "relation",
+              "predicate": null,
+              "scalar": "inside",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.7,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "potato",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    },
+    "place a soap dispenser on top of the toilet": {
+      "error": null,
+      "latency_seconds": 2.733449900057167,
+      "query": "place a soap dispenser on top of the toilet",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "soap dispenser",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.9,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "soap dispenser"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "on",
+              "scalar": "toilet",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "placed a cooled slice of bread that you cut inside of the microwave": {
+      "error": null,
+      "latency_seconds": 3.2084168000146747,
+      "query": "placed a cooled slice of bread that you cut inside of the microwave",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "bread"
+                }
+              ],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "slice",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "slice of bread"
+                },
+                {
+                  "role": "destination",
+                  "value": "microwave"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "inside",
+              "vector": []
+            },
+            "value_type": "relation"
+          }
+        ]
+      }
+    },
+    "put a cooled potato inside the microwave": {
+      "error": null,
+      "latency_seconds": 3.126163800014183,
+      "query": "put a cooled potato inside the microwave",
+      "response": {
+        "constraints": [
+          {
+            "description": "semantic object category",
+            "known_property": false,
+            "property_name": "type",
+            "relevance": 0.6,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "potato",
+              "vector": []
+            },
+            "value_type": "semantic"
+          },
+          {
+            "description": "goal spatial relation between the target object and a receptacle or surface",
+            "known_property": false,
+            "property_name": "location",
+            "relevance": 0.8,
+            "tolerance": null,
+            "value": {
+              "arguments": [
+                {
+                  "role": "object",
+                  "value": "potato"
+                }
+              ],
+              "kind": "relation",
+              "predicate": "inside",
+              "scalar": "microwave",
+              "vector": []
+            },
+            "value_type": "relation"
+          },
+          {
+            "description": "desired thermal state of the target object, such as hot or cold",
+            "known_property": false,
+            "property_name": "thermal_state",
+            "relevance": 0.5,
+            "tolerance": null,
+            "value": {
+              "arguments": [],
+              "kind": "scalar",
+              "predicate": null,
+              "scalar": "cooled",
+              "vector": []
+            },
+            "value_type": "semantic"
+          }
+        ]
+      }
+    }
+  },
+  "reports": [
+    {
+      "cases": 40,
+      "completed": 40,
+      "exact_frame_accuracy": 1.0,
+      "exact_frame_accuracy_by_task": {
+        "pick_and_place_simple": 1.0,
+        "pick_clean_then_place_in_recep": 1.0,
+        "pick_cool_then_place_in_recep": 1.0,
+        "pick_heat_then_place_in_recep": 1.0
+      },
+      "failures": 0,
+      "parse_success_rate": 1.0,
+      "property_f1": 1.0,
+      "property_precision": 1.0,
+      "property_recall": 1.0,
+      "relevance_mae": 0.0,
+      "repair_rate": 0.0,
+      "results": [
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_185459_653538:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_185515_986084:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_185530_954329:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_191429_743650:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_191501_563086:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_004404_604165:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_080800_275989:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_080825_222432:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_221208_560499:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_221300_362511:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_221355_558505:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190908_022321_380927:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_224631_058932:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_224718_745017:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_224843_443882:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_033157_424297:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_033228_194678:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_033306_962974:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_040233_171346:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_040303_217739:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_040327_147149:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_173120_648218:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_182259_116320:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_182353_418140:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_182435_622538:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_020258_749030:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_020329_050110:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_020403_745438:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_083346_800823:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_083429_887065:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_083507_594820:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190907_161745_664033:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.0,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "thermal_state",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 1.0
+        }
+      ],
+      "strategy": "gold",
+      "validation_error_rate": 0.0,
+      "value_recall": 1.0
+    },
+    {
+      "cases": 40,
+      "completed": 35,
+      "exact_frame_accuracy": 0.0,
+      "exact_frame_accuracy_by_task": {
+        "pick_and_place_simple": 0.0,
+        "pick_clean_then_place_in_recep": 0.0,
+        "pick_cool_then_place_in_recep": 0.0,
+        "pick_heat_then_place_in_recep": 0.0
+      },
+      "failures": 5,
+      "parse_success_rate": 0.875,
+      "property_f1": 0.775,
+      "property_precision": 0.85,
+      "property_recall": 0.725,
+      "relevance_mae": 0.4033333333333333,
+      "repair_rate": 0.0,
+      "results": [
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185459_653538:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185515_986084:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.175,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185530_954329:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.5
+        },
+        {
+          "case_id": "trial_T20190906_191429_743650:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.175,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_191501_563086:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.5
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.22499999999999998,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_004404_604165:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.25,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.26666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_080800_275989:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_080825_222432:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_221208_560499:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_221300_362511:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.26666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_221355_558505:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190908_022321_380927:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_224631_058932:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_224718_745017:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_224843_443882:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_033157_424297:ann-0",
+          "error": "LLMError: predicate must be a non-empty string",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_033228_194678:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.325,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_033306_962974:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040233_171346:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040303_217739:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040327_147149:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_173120_648218:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_182259_116320:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_182353_418140:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_182435_622538:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_020258_749030:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "trial_T20190907_020329_050110:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_020403_745438:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083346_800823:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083429_887065:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3499999999999999,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083507_594820:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_161745_664033:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        }
+      ],
+      "strategy": "llm-strict",
+      "validation_error_rate": 0.0,
+      "value_recall": 0.2
+    },
+    {
+      "cases": 40,
+      "completed": 36,
+      "exact_frame_accuracy": 0.0,
+      "exact_frame_accuracy_by_task": {
+        "pick_and_place_simple": 0.0,
+        "pick_clean_then_place_in_recep": 0.0,
+        "pick_cool_then_place_in_recep": 0.0,
+        "pick_heat_then_place_in_recep": 0.0
+      },
+      "failures": 4,
+      "parse_success_rate": 0.9,
+      "property_f1": 0.7875,
+      "property_precision": 0.875,
+      "property_recall": 0.7333333333333333,
+      "relevance_mae": 0.38666666666666666,
+      "repair_rate": 0.0,
+      "results": [
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185459_653538:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185515_986084:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.175,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185530_954329:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.5
+        },
+        {
+          "case_id": "trial_T20190906_191429_743650:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.175,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_191501_563086:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.5
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.22499999999999998,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_004404_604165:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.25,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.26666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_080800_275989:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_080825_222432:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_221208_560499:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_221300_362511:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.26666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_221355_558505:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190908_022321_380927:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_224631_058932:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_224718_745017:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_224843_443882:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_033157_424297:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.5,
+          "property_precision": 1.0,
+          "property_recall": 0.3333333333333333,
+          "relevance_mae": 0.3333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [
+            "location: predicate must be a non-empty string"
+          ],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_033228_194678:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.325,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_033306_962974:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040233_171346:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040303_217739:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040327_147149:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_173120_648218:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_182259_116320:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_182353_418140:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_182435_622538:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_020258_749030:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "trial_T20190907_020329_050110:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_020403_745438:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083346_800823:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083429_887065:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3499999999999999,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083507_594820:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_161745_664033:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        }
+      ],
+      "strategy": "llm-tolerant",
+      "validation_error_rate": 0.025,
+      "value_recall": 0.20833333333333331
+    },
+    {
+      "cases": 40,
+      "completed": 36,
+      "exact_frame_accuracy": 0.025,
+      "exact_frame_accuracy_by_task": {
+        "pick_and_place_simple": 0.1,
+        "pick_clean_then_place_in_recep": 0.0,
+        "pick_cool_then_place_in_recep": 0.0,
+        "pick_heat_then_place_in_recep": 0.0
+      },
+      "failures": 4,
+      "parse_success_rate": 0.9,
+      "property_f1": 0.7875,
+      "property_precision": 0.875,
+      "property_recall": 0.7333333333333333,
+      "relevance_mae": 0.38666666666666666,
+      "repair_rate": 0.775,
+      "results": [
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185459_653538:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.5
+        },
+        {
+          "case_id": "trial_T20190906_185515_986084:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.175,
+          "repair_actions": [
+            "constraint[0] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_185530_954329:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 1.0
+        },
+        {
+          "case_id": "trial_T20190906_191429_743650:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.175,
+          "repair_actions": [
+            "constraint[0] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_191501_563086:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.5
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.22499999999999998,
+          "repair_actions": [
+            "constraint[0] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.2,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_004404_604165:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.25,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_and_place_simple",
+          "validation_errors": [],
+          "value_recall": 0.5
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.26666666666666666,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_080800_275989:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_080825_222432:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_221208_560499:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[0] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_221300_362511:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.26666666666666666,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_221355_558505:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190908_022321_380927:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_clean_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_224631_058932:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4,
+          "repair_actions": [
+            "constraint[2] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_224718_745017:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4,
+          "repair_actions": [
+            "constraint[2] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "cleanliness",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_224843_443882:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_033157_424297:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.5,
+          "property_precision": 1.0,
+          "property_recall": 0.3333333333333333,
+          "relevance_mae": 0.3333333333333333,
+          "repair_actions": [],
+          "selected_properties": [
+            "type"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [
+            "location: predicate must be a non-empty string"
+          ],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_033228_194678:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.6666666666666666,
+          "property_precision": 0.6666666666666666,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.325,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "cleanliness"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "trial_T20190907_033306_962974:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "trial_T20190907_040233_171346:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4333333333333333,
+          "repair_actions": [
+            "constraint[0] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040303_217739:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_040327_147149:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_173120_648218:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_cool_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190906_182259_116320:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.39999999999999997,
+          "repair_actions": [
+            "constraint[0] location: moved scalar to predicate and predicate to object"
+          ],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "trial_T20190906_182353_418140:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190906_182435_622538:ann-0",
+          "error": "LLMError: duplicate property constraint: location",
+          "ignored_properties": [],
+          "property_f1": 0.0,
+          "property_precision": 0.0,
+          "property_recall": 0.0,
+          "relevance_mae": 1.0,
+          "repair_actions": [],
+          "selected_properties": [],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.0
+        },
+        {
+          "case_id": "trial_T20190907_020258_749030:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "trial_T20190907_020329_050110:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_020403_745438:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.4333333333333333,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083346_800823:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        },
+        {
+          "case_id": "trial_T20190907_083429_887065:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 0.8,
+          "property_precision": 1.0,
+          "property_recall": 0.6666666666666666,
+          "relevance_mae": 0.3499999999999999,
+          "repair_actions": [],
+          "selected_properties": [
+            "location",
+            "type"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_083507_594820:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.3333333333333333
+        },
+        {
+          "case_id": "trial_T20190907_161745_664033:ann-0",
+          "error": null,
+          "ignored_properties": [],
+          "property_f1": 1.0,
+          "property_precision": 1.0,
+          "property_recall": 1.0,
+          "relevance_mae": 0.3666666666666667,
+          "repair_actions": [
+            "constraint[1] location: moved redundant scalar to object"
+          ],
+          "selected_properties": [
+            "type",
+            "location",
+            "thermal_state"
+          ],
+          "task_type": "pick_heat_then_place_in_recep",
+          "validation_errors": [],
+          "value_recall": 0.6666666666666666
+        }
+      ],
+      "strategy": "llm-schema-repaired",
+      "validation_error_rate": 0.025,
+      "value_recall": 0.2958333333333333
+    }
+  ],
+  "selected_cases": [
+    {
+      "case_id": "trial_T20190906_184021_215264:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a salt shaker in a drawer.",
+      "source_path": "valid_unseen/pick_and_place_simple-PepperShaker-None-Drawer-10/trial_T20190906_184021_215264/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_185459_653538:ann-0",
+      "floorplan": "FloorPlan308",
+      "query": "place a bat on the bed",
+      "source_path": "valid_unseen/pick_and_place_simple-BaseballBat-None-Bed-308/trial_T20190906_185459_653538/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_185515_986084:ann-0",
+      "floorplan": "FloorPlan308",
+      "query": "Move the bat in the corner to the bed",
+      "source_path": "valid_unseen/pick_and_place_simple-BaseballBat-None-Bed-308/trial_T20190906_185515_986084/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_185530_954329:ann-0",
+      "floorplan": "FloorPlan308",
+      "query": "Put the baseball bat on the bed",
+      "source_path": "valid_unseen/pick_and_place_simple-BaseballBat-None-Bed-308/trial_T20190906_185530_954329/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_191429_743650:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Place the salt shaker in the cabinet beside the fridge.",
+      "source_path": "valid_unseen/pick_and_place_simple-SaltShaker-None-Cabinet-10/trial_T20190906_191429_743650/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_191445_723170:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "To acquire an odd item as place it where it is not useful.",
+      "source_path": "valid_unseen/pick_and_place_simple-SaltShaker-None-Cabinet-10/trial_T20190906_191445_723170/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190906_191501_563086:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Place the salt shaker in the cabinet.",
+      "source_path": "valid_unseen/pick_and_place_simple-SaltShaker-None-Cabinet-10/trial_T20190906_191501_563086/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_004321_405868:ann-0",
+      "floorplan": "FloorPlan424",
+      "query": "Move a bottle of hand soap from the sink to the toilet.",
+      "source_path": "valid_unseen/pick_and_place_simple-SoapBottle-None-Toilet-424/trial_T20190907_004321_405868/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_004351_281384:ann-0",
+      "floorplan": "FloorPlan424",
+      "query": "Place the green bottle on the toilet baisin.",
+      "source_path": "valid_unseen/pick_and_place_simple-SoapBottle-None-Toilet-424/trial_T20190907_004351_281384/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_004404_604165:ann-0",
+      "floorplan": "FloorPlan424",
+      "query": "place a soap dispenser on top of the toilet",
+      "source_path": "valid_unseen/pick_and_place_simple-SoapBottle-None-Toilet-424/trial_T20190907_004404_604165/traj_data.json",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "case_id": "trial_T20190907_074045_109439:ann-0",
+      "floorplan": "FloorPlan424",
+      "query": "Rinse off the soap and place it on the counter.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424/trial_T20190907_074045_109439/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_074106_050405:ann-0",
+      "floorplan": "FloorPlan424",
+      "query": "Put a wet soap on the counter.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424/trial_T20190907_074106_050405/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_074124_966890:ann-0",
+      "floorplan": "FloorPlan424",
+      "query": "Put a cleaned bar of soap on a counter.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424/trial_T20190907_074124_966890/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_080730_211959:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Wash the spatula, put it in the first drawer",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Spatula-None-Drawer-10/trial_T20190907_080730_211959/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_080800_275989:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a clean spatula in a drawer.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Spatula-None-Drawer-10/trial_T20190907_080800_275989/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_080825_222432:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Clean a spatula to put it away.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Spatula-None-Drawer-10/trial_T20190907_080825_222432/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_221208_560499:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Fill up a mug with water and take to the coffee machine.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_221208_560499/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_221300_362511:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a cleaned mug on the coffee maker to the right of the stove.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_221300_362511/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_221355_558505:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Pick up the white coffee cup, fill it in the sink, place it in the coffee maker.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-10/trial_T20190907_221355_558505/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190908_022321_380927:ann-0",
+      "floorplan": "FloorPlan424",
+      "query": "Put a cleaned blue cloth in a cabinet.",
+      "source_path": "valid_unseen/pick_clean_then_place_in_recep-Cloth-None-Cabinet-424/trial_T20190908_022321_380927/traj_data.json",
+      "task_type": "pick_clean_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_224631_058932:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a cold slice of bread in the microwave.",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-BreadSliced-None-Microwave-10/trial_T20190906_224631_058932/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_224718_745017:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a cold slice of bread in a microwave.",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-BreadSliced-None-Microwave-10/trial_T20190906_224718_745017/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_224843_443882:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "placed a cooled slice of bread that you cut inside of the microwave",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-BreadSliced-None-Microwave-10/trial_T20190906_224843_443882/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_033157_424297:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "place a potato inside the microwave",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Potato-None-Microwave-10/trial_T20190907_033157_424297/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_033228_194678:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a chilled potato in the microwave.",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Potato-None-Microwave-10/trial_T20190907_033228_194678/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_033306_962974:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "put a cooled potato inside the microwave",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Potato-None-Microwave-10/trial_T20190907_033306_962974/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_040233_171346:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Place chilled lettuce into a sink",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Lettuce-None-SinkBasin-10/trial_T20190907_040233_171346/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_040303_217739:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "To chill lettuce for cooking.",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Lettuce-None-SinkBasin-10/trial_T20190907_040303_217739/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_040327_147149:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Place a cool lettuce in the sink.",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Lettuce-None-SinkBasin-10/trial_T20190907_040327_147149/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_173120_648218:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Pick up the egg, put it in the refrigerator and then put it in the sink.",
+      "source_path": "valid_unseen/pick_cool_then_place_in_recep-Egg-None-SinkBasin-10/trial_T20190907_173120_648218/traj_data.json",
+      "task_type": "pick_cool_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_182259_116320:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put the cooked green apple in the fridge",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Apple-None-Fridge-10/trial_T20190906_182259_116320/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_182353_418140:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Place a microwaved apple in the fridge.",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Apple-None-Fridge-10/trial_T20190906_182353_418140/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190906_182435_622538:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a heated apple next to the lettuce on the middle shelf in the refrigerator.",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Apple-None-Fridge-10/trial_T20190906_182435_622538/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_020258_749030:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Get an apple from the sink and heat it up in the microwave",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Apple-None-SinkBasin-10/trial_T20190907_020258_749030/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_020329_050110:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Place a cooked apple into the sink.",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Apple-None-SinkBasin-10/trial_T20190907_020329_050110/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_020403_745438:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Use the microwave to heat an apple.",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Apple-None-SinkBasin-10/trial_T20190907_020403_745438/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_083346_800823:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Warm up the cup inside the cabinet.",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Cup-None-Cabinet-10/trial_T20190907_083346_800823/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_083429_887065:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Place a heated cup in a cabinet",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Cup-None-Cabinet-10/trial_T20190907_083429_887065/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_083507_594820:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Put a warm cup in the cabinet.",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Cup-None-Cabinet-10/trial_T20190907_083507_594820/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    },
+    {
+      "case_id": "trial_T20190907_161745_664033:ann-0",
+      "floorplan": "FloorPlan10",
+      "query": "Heat up a potato and put it in the trash.",
+      "source_path": "valid_unseen/pick_heat_then_place_in_recep-Potato-None-GarbageCan-10/trial_T20190907_161745_664033/traj_data.json",
+      "task_type": "pick_heat_then_place_in_recep"
+    }
+  ]
+}

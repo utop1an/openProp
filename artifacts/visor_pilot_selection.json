@@ -1,0 +1,799 @@
+{
+  "eligible_count": 157,
+  "inventory_count": 158,
+  "minimum_eligibility": {
+    "frame_count": 6,
+    "nonhand_instance_count": 2,
+    "requires_contact_ambiguity_or_reappearance_signal": true
+  },
+  "participants_by_split": {
+    "calibration": [
+      "P14",
+      "P15",
+      "P24",
+      "P30"
+    ],
+    "test": [
+      "P02",
+      "P04",
+      "P12",
+      "P18",
+      "P25",
+      "P28"
+    ],
+    "train": [
+      "P01",
+      "P03",
+      "P06",
+      "P07",
+      "P10",
+      "P11",
+      "P17",
+      "P22",
+      "P26",
+      "P27",
+      "P32",
+      "P35",
+      "P37"
+    ]
+  },
+  "performance_evidence": false,
+  "protocol_id": "openprop-visor-pilot-selection-v1",
+  "schema_version": 1,
+  "screening_statistics_are_not_performance_evidence": true,
+  "selected_count": 44,
+  "selection_seed": "openprop-visor-pilot-v1",
+  "selection_uses_model_outputs": false,
+  "selection_uses_test_performance": false,
+  "split_is_participant_disjoint": true,
+  "videos": [
+    {
+      "contact_link_count": 32,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 22,
+      "nonhand_instance_count": 54,
+      "official_split": "train",
+      "open_vocabulary_name_count": 11,
+      "participant_id": "P14",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 4,
+      "video_id": "P14_05"
+    },
+    {
+      "contact_link_count": 166,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 110,
+      "nonhand_instance_count": 388,
+      "official_split": "train",
+      "open_vocabulary_name_count": 37,
+      "participant_id": "P15",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 19,
+      "video_id": "P15_02"
+    },
+    {
+      "contact_link_count": 667,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 497,
+      "nonhand_instance_count": 2782,
+      "official_split": "train",
+      "open_vocabulary_name_count": 50,
+      "participant_id": "P24",
+      "same_name_ambiguous_frame_count": 1,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 83,
+      "video_id": "P24_05"
+    },
+    {
+      "contact_link_count": 665,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 550,
+      "nonhand_instance_count": 2009,
+      "official_split": "train",
+      "open_vocabulary_name_count": 62,
+      "participant_id": "P24",
+      "same_name_ambiguous_frame_count": 1,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 92,
+      "video_id": "P24_08"
+    },
+    {
+      "contact_link_count": 1591,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 1115,
+      "nonhand_instance_count": 4194,
+      "official_split": "train",
+      "open_vocabulary_name_count": 112,
+      "participant_id": "P30",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 187,
+      "video_id": "P30_05"
+    },
+    {
+      "contact_link_count": 1737,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 1094,
+      "nonhand_instance_count": 3852,
+      "official_split": "train",
+      "open_vocabulary_name_count": 43,
+      "participant_id": "P30",
+      "same_name_ambiguous_frame_count": 1,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 44,
+      "video_id": "P30_107"
+    },
+    {
+      "contact_link_count": 1016,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 875,
+      "nonhand_instance_count": 3224,
+      "official_split": "train",
+      "open_vocabulary_name_count": 108,
+      "participant_id": "P30",
+      "same_name_ambiguous_frame_count": 2,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 149,
+      "video_id": "P30_111"
+    },
+    {
+      "contact_link_count": 69,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 59,
+      "nonhand_instance_count": 194,
+      "official_split": "train",
+      "open_vocabulary_name_count": 17,
+      "participant_id": "P30",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "calibration",
+      "subsequence_count": 10,
+      "video_id": "P30_112"
+    },
+    {
+      "contact_link_count": 366,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 120,
+      "nonhand_instance_count": 453,
+      "official_split": "val",
+      "open_vocabulary_name_count": 22,
+      "participant_id": "P02",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 20,
+      "video_id": "P02_02"
+    },
+    {
+      "contact_link_count": 1180,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 813,
+      "nonhand_instance_count": 2879,
+      "official_split": "val",
+      "open_vocabulary_name_count": 78,
+      "participant_id": "P02",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 137,
+      "video_id": "P02_09"
+    },
+    {
+      "contact_link_count": 711,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 554,
+      "nonhand_instance_count": 2597,
+      "official_split": "val",
+      "open_vocabulary_name_count": 50,
+      "participant_id": "P02",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 93,
+      "video_id": "P02_12"
+    },
+    {
+      "contact_link_count": 259,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 191,
+      "nonhand_instance_count": 784,
+      "official_split": "val",
+      "open_vocabulary_name_count": 47,
+      "participant_id": "P04",
+      "same_name_ambiguous_frame_count": 1,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 33,
+      "video_id": "P04_06"
+    },
+    {
+      "contact_link_count": 114,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 72,
+      "nonhand_instance_count": 369,
+      "official_split": "val",
+      "open_vocabulary_name_count": 36,
+      "participant_id": "P04",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 12,
+      "video_id": "P04_13"
+    },
+    {
+      "contact_link_count": 142,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 110,
+      "nonhand_instance_count": 438,
+      "official_split": "val",
+      "open_vocabulary_name_count": 32,
+      "participant_id": "P04",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 19,
+      "video_id": "P04_24"
+    },
+    {
+      "contact_link_count": 281,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 183,
+      "nonhand_instance_count": 979,
+      "official_split": "val",
+      "open_vocabulary_name_count": 61,
+      "participant_id": "P12",
+      "same_name_ambiguous_frame_count": 4,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 31,
+      "video_id": "P12_04"
+    },
+    {
+      "contact_link_count": 91,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 69,
+      "nonhand_instance_count": 178,
+      "official_split": "val",
+      "open_vocabulary_name_count": 25,
+      "participant_id": "P18",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 12,
+      "video_id": "P18_01"
+    },
+    {
+      "contact_link_count": 70,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 44,
+      "nonhand_instance_count": 244,
+      "official_split": "val",
+      "open_vocabulary_name_count": 22,
+      "participant_id": "P18",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 8,
+      "video_id": "P18_02"
+    },
+    {
+      "contact_link_count": 250,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 198,
+      "nonhand_instance_count": 1026,
+      "official_split": "val",
+      "open_vocabulary_name_count": 34,
+      "participant_id": "P25",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 33,
+      "video_id": "P25_09"
+    },
+    {
+      "contact_link_count": 232,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 198,
+      "nonhand_instance_count": 893,
+      "official_split": "val",
+      "open_vocabulary_name_count": 21,
+      "participant_id": "P25",
+      "same_name_ambiguous_frame_count": 1,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 33,
+      "video_id": "P25_101"
+    },
+    {
+      "contact_link_count": 170,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 108,
+      "nonhand_instance_count": 329,
+      "official_split": "val",
+      "open_vocabulary_name_count": 23,
+      "participant_id": "P28",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "test",
+      "subsequence_count": 18,
+      "video_id": "P28_05"
+    },
+    {
+      "contact_link_count": 680,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 485,
+      "nonhand_instance_count": 2067,
+      "official_split": "train",
+      "open_vocabulary_name_count": 56,
+      "participant_id": "P01",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 82,
+      "video_id": "P01_01"
+    },
+    {
+      "contact_link_count": 57,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 61,
+      "nonhand_instance_count": 115,
+      "official_split": "train",
+      "open_vocabulary_name_count": 20,
+      "participant_id": "P01",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 11,
+      "video_id": "P01_03"
+    },
+    {
+      "contact_link_count": 1715,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 1319,
+      "nonhand_instance_count": 3915,
+      "official_split": "train",
+      "open_vocabulary_name_count": 79,
+      "participant_id": "P01",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 221,
+      "video_id": "P01_09"
+    },
+    {
+      "contact_link_count": 175,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 149,
+      "nonhand_instance_count": 392,
+      "official_split": "train",
+      "open_vocabulary_name_count": 33,
+      "participant_id": "P01",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 25,
+      "video_id": "P01_103"
+    },
+    {
+      "contact_link_count": 43,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 42,
+      "nonhand_instance_count": 73,
+      "official_split": "train",
+      "open_vocabulary_name_count": 11,
+      "participant_id": "P03",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 7,
+      "video_id": "P03_03"
+    },
+    {
+      "contact_link_count": 139,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 108,
+      "nonhand_instance_count": 480,
+      "official_split": "train",
+      "open_vocabulary_name_count": 26,
+      "participant_id": "P03",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 18,
+      "video_id": "P03_05"
+    },
+    {
+      "contact_link_count": 592,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 502,
+      "nonhand_instance_count": 2197,
+      "official_split": "train",
+      "open_vocabulary_name_count": 55,
+      "participant_id": "P03",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 85,
+      "video_id": "P03_101"
+    },
+    {
+      "contact_link_count": 61,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 42,
+      "nonhand_instance_count": 148,
+      "official_split": "train",
+      "open_vocabulary_name_count": 12,
+      "participant_id": "P03",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 7,
+      "video_id": "P03_17"
+    },
+    {
+      "contact_link_count": 53,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 40,
+      "nonhand_instance_count": 121,
+      "official_split": "train",
+      "open_vocabulary_name_count": 12,
+      "participant_id": "P06",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 7,
+      "video_id": "P06_01"
+    },
+    {
+      "contact_link_count": 132,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 100,
+      "nonhand_instance_count": 292,
+      "official_split": "train",
+      "open_vocabulary_name_count": 23,
+      "participant_id": "P06",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 17,
+      "video_id": "P06_107"
+    },
+    {
+      "contact_link_count": 24,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 24,
+      "nonhand_instance_count": 61,
+      "official_split": "train",
+      "open_vocabulary_name_count": 9,
+      "participant_id": "P06",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 4,
+      "video_id": "P06_110"
+    },
+    {
+      "contact_link_count": 55,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 42,
+      "nonhand_instance_count": 133,
+      "official_split": "train",
+      "open_vocabulary_name_count": 23,
+      "participant_id": "P07",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 7,
+      "video_id": "P07_08"
+    },
+    {
+      "contact_link_count": 1161,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 803,
+      "nonhand_instance_count": 3424,
+      "official_split": "train",
+      "open_vocabulary_name_count": 104,
+      "participant_id": "P10",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 134,
+      "video_id": "P10_04"
+    },
+    {
+      "contact_link_count": 89,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 52,
+      "nonhand_instance_count": 118,
+      "official_split": "train",
+      "open_vocabulary_name_count": 18,
+      "participant_id": "P11",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 9,
+      "video_id": "P11_107"
+    },
+    {
+      "contact_link_count": 41,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 28,
+      "nonhand_instance_count": 62,
+      "official_split": "train",
+      "open_vocabulary_name_count": 12,
+      "participant_id": "P17",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 5,
+      "video_id": "P17_01"
+    },
+    {
+      "contact_link_count": 743,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 552,
+      "nonhand_instance_count": 1852,
+      "official_split": "train",
+      "open_vocabulary_name_count": 56,
+      "participant_id": "P22",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 92,
+      "video_id": "P22_01"
+    },
+    {
+      "contact_link_count": 1400,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 1060,
+      "nonhand_instance_count": 3609,
+      "official_split": "train",
+      "open_vocabulary_name_count": 85,
+      "participant_id": "P22",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 179,
+      "video_id": "P22_07"
+    },
+    {
+      "contact_link_count": 189,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 131,
+      "nonhand_instance_count": 608,
+      "official_split": "train",
+      "open_vocabulary_name_count": 23,
+      "participant_id": "P26",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 22,
+      "video_id": "P26_110"
+    },
+    {
+      "contact_link_count": 985,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 758,
+      "nonhand_instance_count": 2726,
+      "official_split": "train",
+      "open_vocabulary_name_count": 54,
+      "participant_id": "P27",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 128,
+      "video_id": "P27_101"
+    },
+    {
+      "contact_link_count": 131,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 109,
+      "nonhand_instance_count": 439,
+      "official_split": "train",
+      "open_vocabulary_name_count": 38,
+      "participant_id": "P32",
+      "same_name_ambiguous_frame_count": 27,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 19,
+      "video_id": "P32_01"
+    },
+    {
+      "contact_link_count": 733,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 671,
+      "nonhand_instance_count": 2325,
+      "official_split": "train",
+      "open_vocabulary_name_count": 55,
+      "participant_id": "P35",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 113,
+      "video_id": "P35_105"
+    },
+    {
+      "contact_link_count": 510,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 418,
+      "nonhand_instance_count": 1569,
+      "official_split": "train",
+      "open_vocabulary_name_count": 48,
+      "participant_id": "P35",
+      "same_name_ambiguous_frame_count": 1,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 71,
+      "video_id": "P35_109"
+    },
+    {
+      "contact_link_count": 770,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 545,
+      "nonhand_instance_count": 2328,
+      "official_split": "train",
+      "open_vocabulary_name_count": 46,
+      "participant_id": "P37",
+      "same_name_ambiguous_frame_count": 12,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 91,
+      "video_id": "P37_101"
+    },
+    {
+      "contact_link_count": 178,
+      "download": {
+        "dense_annotations": false,
+        "sparse_rgb_frames": true
+      },
+      "frame_count": 101,
+      "nonhand_instance_count": 414,
+      "official_split": "train",
+      "open_vocabulary_name_count": 12,
+      "participant_id": "P37",
+      "same_name_ambiguous_frame_count": 0,
+      "sparse_reappearance_gap_count": 0,
+      "split": "train",
+      "subsequence_count": 17,
+      "video_id": "P37_103"
+    }
+  ]
+}

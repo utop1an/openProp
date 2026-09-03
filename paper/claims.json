@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "paper_policy": {
+    "primary_scope": "language-conditioned current-entity grounding from heterogeneous, incomplete, and stale evidence",
+    "result_boundary": "synthetic mechanism validation plus external ALFRED language parsing; semi-real longitudinal performance remains pending",
+    "truth_boundary": "current truth is evaluation-only and must never enter matcher entities"
+  },
+  "claims": [
+    {
+      "id": "C1_TYPED_COMPOSITION",
+      "claim": "Typed factorization reuses familiar context values on held-out combinations and changes the final grounding decision.",
+      "status": "supported_synthetic",
+      "scope": "Five-seed synthetic factorized exponential generator with held-out complete context tuples.",
+      "paper_role": "primary_method_evidence",
+      "evidence": [
+        {
+          "artifact": "artifacts/compositional_persistence_multiseed_results.json",
+          "sha256": "948131ff7b2ab921a91ec95a5b699b238a1748ff9054b372c8df6dd56a24d86d",
+          "checks": [
+            {"pointer": "/aggregate/global/negative_log_likelihood/mean", "expected": 1.7948987521874324, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/global/negative_log_likelihood/standard_deviation", "expected": 0.03292013115712652, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/global/concordance_index/mean", "expected": 0.5, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/global/concordance_index/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/global/integrated_brier_score/mean", "expected": 0.24340310488100564, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/global/integrated_brier_score/standard_deviation", "expected": 0.0034948956813497215, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/negative_log_likelihood/mean", "expected": 1.239012848059974, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/negative_log_likelihood/standard_deviation", "expected": 0.06890560431666147, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/concordance_index/mean", "expected": 0.748894717687214, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/concordance_index/standard_deviation", "expected": 0.014496369402536574, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/integrated_brier_score/mean", "expected": 0.07948341893947485, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/integrated_brier_score/standard_deviation", "expected": 0.010023989426299498, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/global/grounding_top1/mean", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/global/grounding_top1/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/factorized/grounding_top1/mean", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/factorized/grounding_top1/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/neural/negative_log_likelihood/mean", "expected": 1.2661728384689506, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/negative_log_likelihood/standard_deviation", "expected": 0.06128833735145791, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/concordance_index/mean", "expected": 0.7226016010057414, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/concordance_index/standard_deviation", "expected": 0.026283381806762936, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/integrated_brier_score/mean", "expected": 0.08358843866032235, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/integrated_brier_score/standard_deviation", "expected": 0.008813920638042087, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/grounding_top1/mean", "expected": 0.9722222222222222, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/grounding_top1/standard_deviation", "expected": 0.05555555555555554, "absolute_tolerance": 1e-12}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2_TYPED_COMPONENTS",
+      "claim": "Subject, relation, and scene each contribute independently to held-out-context survival calibration.",
+      "status": "supported_synthetic",
+      "scope": "Ten paired seeds on the declared factorized generator; NLL is the predeclared primary metric.",
+      "paper_role": "primary_ablation",
+      "evidence": [
+        {
+          "artifact": "artifacts/typed_context_component_ablation.json",
+          "sha256": "c7d2b8ca657c179dd38fc08030760230d0405bcf21d37084e12e2de5be9212c4",
+          "checks": [
+            {"pointer": "/seeds", "expected": [31, 41, 53, 67, 79, 83, 97, 109, 127, 149]},
+            {"pointer": "/protocol/delta_orientation", "expected": "positive paired delta means full_context is better"},
+            {"pointer": "/protocol/selection", "expected": "condition matrix and metrics fixed before execution"},
+            {"pointer": "/protocol/test_policy", "expected": "same paired test rows for every condition; no test selection"},
+            {"pointer": "/paired_full_advantage/subject_relation/negative_log_likelihood/mean_full_advantage", "expected": 0.40218163462999806, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/subject_relation/negative_log_likelihood/simultaneous_bootstrap_95_ci/0", "expected": 0.36386323738987636, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/subject_relation/negative_log_likelihood/simultaneous_bootstrap_95_ci/1", "expected": 0.44050003187011977, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/subject_relation/negative_log_likelihood/wins", "expected": 10, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_full_advantage/subject_scene/negative_log_likelihood/mean_full_advantage", "expected": 0.156448923343793, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/subject_scene/negative_log_likelihood/simultaneous_bootstrap_95_ci/0", "expected": 0.13719999964168605, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/subject_scene/negative_log_likelihood/simultaneous_bootstrap_95_ci/1", "expected": 0.17569784704589997, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/subject_scene/negative_log_likelihood/wins", "expected": 10, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_full_advantage/relation_scene/negative_log_likelihood/mean_full_advantage", "expected": 0.05204478298759958, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/relation_scene/negative_log_likelihood/simultaneous_bootstrap_95_ci/0", "expected": 0.037751322438247234, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/relation_scene/negative_log_likelihood/simultaneous_bootstrap_95_ci/1", "expected": 0.06633824353695193, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_full_advantage/relation_scene/negative_log_likelihood/wins", "expected": 10, "absolute_tolerance": 0.0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3_DECISION_UTILITY",
+      "claim": "Each typed context group can change an analytically controlled entity-ranking decision.",
+      "status": "supported_synthetic",
+      "scope": "Single frozen confirmation run on ten untouched seeds and 40 balanced synthetic cases.",
+      "paper_role": "primary_decision_evidence",
+      "evidence": [
+        {
+          "artifact": "artifacts/component_balanced_grounding_confirmation.json",
+          "sha256": "6487aef7e46d99cdb6a58ef75b3b926dbd4ef671a054fca9a48857334cb08112",
+          "checks": [
+            {"pointer": "/phase", "expected": "confirmation"},
+            {"pointer": "/seeds", "expected": [157, 163, 173, 181, 191, 199, 211, 223, 227, 239]},
+            {"pointer": "/cases/total", "expected": 40, "absolute_tolerance": 0.0},
+            {"pointer": "/cases/target_old", "expected": 20, "absolute_tolerance": 0.0},
+            {"pointer": "/cases/target_new", "expected": 20, "absolute_tolerance": 0.0},
+            {"pointer": "/protocol/axis_isolation", "expected": "within each case both plausible candidates share all typed context values"},
+            {"pointer": "/protocol/case_design", "expected": "analytic confidence-age crossover from true generator hazards"},
+            {"pointer": "/protocol/confirmation_policy", "expected": "confirmation seeds untouched until analytic cases pass development audit"},
+            {"pointer": "/protocol/truth_boundary", "expected": "current truth labels never enter matcher entities"},
+            {"pointer": "/aggregate/full_context/top1_by_probe/subject/mean", "expected": 0.9733333333333334, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/full_context/top1_by_probe/subject/standard_deviation", "expected": 0.08000000000000002, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/no_subject/top1_by_probe/subject/mean", "expected": 0.6266666666666666, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/no_subject/top1_by_probe/subject/standard_deviation", "expected": 0.09977753031397177, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_probe_advantage/subject/mean_full_advantage", "expected": 0.3466666666666667, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_probe_advantage/subject/simultaneous_bootstrap_95_ci/0", "expected": 0.32888888888888884, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_probe_advantage/subject/simultaneous_bootstrap_95_ci/1", "expected": 0.3644444444444445, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_probe_advantage/subject/wins", "expected": 10, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/full_context/top1_by_probe/relation/mean", "expected": 0.9933333333333333, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/full_context/top1_by_probe/relation/standard_deviation", "expected": 0.019999999999999997, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/no_relation/top1_by_probe/relation/mean", "expected": 0.6666666666666666, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/no_relation/top1_by_probe/relation/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_probe_advantage/relation/mean_full_advantage", "expected": 0.3266666666666667, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_probe_advantage/relation/simultaneous_bootstrap_95_ci/0", "expected": 0.31333333333333335, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_probe_advantage/relation/simultaneous_bootstrap_95_ci/1", "expected": 0.3400000000000001, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_probe_advantage/relation/wins", "expected": 10, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/full_context/top1_by_probe/scene/mean", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/full_context/top1_by_probe/scene/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/no_scene/top1_by_probe/scene/mean", "expected": 0.5, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/no_scene/top1_by_probe/scene/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_probe_advantage/scene/mean_full_advantage", "expected": 0.5, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_probe_advantage/scene/simultaneous_bootstrap_95_ci/0", "expected": 0.5, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_probe_advantage/scene/simultaneous_bootstrap_95_ci/1", "expected": 0.5, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_probe_advantage/scene/wins", "expected": 10, "absolute_tolerance": 0.0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C4_INTERVAL_CENSORING",
+      "claim": "Interval-aware learning prevents inspection frequency from becoming a false persistence signal and a scene-conditioned grounding bias.",
+      "status": "supported_synthetic",
+      "scope": "Synthetic equal-hazard mechanism validation plus a frozen ten-seed, 40-case analytic grounding confirmation; not natural prevalence or real observation-process evidence.",
+      "paper_role": "secondary_observation_process_evidence",
+      "evidence": [
+        {
+          "artifact": "artifacts/observation_process_results.json",
+          "sha256": "df952b8053f7f3f82c59ef22481cce0ffda7b6efba8f0eccff787357b6a5c6bf",
+          "checks": [
+            {"pointer": "/protocol/claim_scope", "expected": "synthetic mechanism validation"},
+            {"pointer": "/protocol/inspection_intervals_hours", "expected": [0.5, 4.0]},
+            {"pointer": "/protocol/latent_hazard_per_hour", "expected": 0.25, "absolute_tolerance": 0.0},
+            {"pointer": "/protocol/samples_per_schedule", "expected": 600, "absolute_tolerance": 0.0},
+            {"pointer": "/protocol/seeds", "expected": [101, 211, 307, 401, 503]},
+            {"pointer": "/protocol/test_samples_per_schedule", "expected": 400, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/naive/mean_absolute_hazard_error/mean", "expected": 0.05588280338209057, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/mean_absolute_hazard_error/standard_deviation", "expected": 0.004404368729478889, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/interval_aware/mean_absolute_hazard_error/mean", "expected": 0.005834975513978541, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/interval_aware/mean_absolute_hazard_error/standard_deviation", "expected": 0.004399239194355675, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/schedule_gap/mean", "expected": 0.07448481327664752, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/schedule_gap/standard_deviation", "expected": 0.005776068270462857, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/interval_aware/schedule_gap/mean", "expected": 0.0038058602281558886, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/interval_aware/schedule_gap/standard_deviation", "expected": 0.0035834837923346963, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/exact_test_nll/mean", "expected": 2.3350578047173993, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/exact_test_nll/standard_deviation", "expected": 0.01879726370719051, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/interval_aware/exact_test_nll/mean", "expected": 2.2913947438392044, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/interval_aware/exact_test_nll/standard_deviation", "expected": 0.02699930084083712, "absolute_tolerance": 1e-12}
+          ]
+        },
+        {
+          "artifact": "artifacts/observation_grounding_confirmation.json",
+          "sha256": "2c9c55c206da3449f5395705abc6b543495bbf78a03c421d06f4e29ea9378c01",
+          "checks": [
+            {"pointer": "/phase", "expected": "confirmation"},
+            {"pointer": "/seeds", "expected": [607, 701, 809, 907, 1009, 1103, 1201, 1301, 1409, 1511]},
+            {"pointer": "/protocol/claim_scope", "expected": "synthetic controlled decision evidence"},
+            {"pointer": "/protocol/latent_hazard_per_hour", "expected": 0.25, "absolute_tolerance": 0.0},
+            {"pointer": "/protocol/scene_inspection_intervals_hours/frequent-scene", "expected": 0.5, "absolute_tolerance": 0.0},
+            {"pointer": "/protocol/scene_inspection_intervals_hours/sparse-scene", "expected": 4.0, "absolute_tolerance": 0.0},
+            {"pointer": "/protocol/development_seeds", "expected": [101, 211, 307, 401, 503]},
+            {"pointer": "/protocol/confirmation_seeds", "expected": [607, 701, 809, 907, 1009, 1103, 1201, 1301, 1409, 1511]},
+            {"pointer": "/protocol/samples_per_scene", "expected": 600, "absolute_tolerance": 0.0},
+            {"pointer": "/protocol/cases_fixed_before_confirmation", "expected": true},
+            {"pointer": "/protocol/case_design", "expected": "target has a 3h observation and distractor a 4h observation under equal latent hazards"},
+            {"pointer": "/protocol/target_scene_balance", "expected": "20 frequent-scene and 20 sparse-scene targets"},
+            {"pointer": "/protocol/truth_boundary", "expected": "current truth labels never enter matcher entities"},
+            {"pointer": "/protocol/candidate_order_policy", "expected": "analytic cases alternate candidate order; reversal is tested"},
+            {"pointer": "/protocol/query_policy", "expected": "scene is persistence context but is not a query constraint"},
+            {"pointer": "/protocol/primary_metric", "expected": "overall top1"},
+            {"pointer": "/protocol/secondary_metrics", "expected": ["worst target-scene top1", "absolute target-scene top1 gap"]},
+            {"pointer": "/protocol/bootstrap_samples", "expected": 20000, "absolute_tolerance": 0.0},
+            {"pointer": "/cases/total", "expected": 40, "absolute_tolerance": 0.0},
+            {"pointer": "/cases/target_frequent_scene", "expected": 20, "absolute_tolerance": 0.0},
+            {"pointer": "/cases/target_sparse_scene", "expected": 20, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/naive/top1/mean", "expected": 0.55, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/top1/standard_deviation", "expected": 0.15, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/worst_target_scene_top1/mean", "expected": 0.1, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/worst_target_scene_top1/standard_deviation", "expected": 0.3, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/target_scene_gap/mean", "expected": 0.9, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/naive/target_scene_gap/standard_deviation", "expected": 0.3, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/interval_aware/top1/mean", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/interval_aware/top1/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/interval_aware/worst_target_scene_top1/mean", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/interval_aware/worst_target_scene_top1/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/interval_aware/target_scene_gap/mean", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/interval_aware/target_scene_gap/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/oracle/top1/mean", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/oracle/top1/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/oracle/worst_target_scene_top1/mean", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/oracle/worst_target_scene_top1/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/oracle/target_scene_gap/mean", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/oracle/target_scene_gap/standard_deviation", "expected": 0.0, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_interval_advantage/top1/orientation", "expected": "interval_aware minus naive"},
+            {"pointer": "/paired_interval_advantage/top1/mean_advantage", "expected": 0.45, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_interval_advantage/top1/bootstrap_95_ci/0", "expected": 0.35, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_interval_advantage/top1/bootstrap_95_ci/1", "expected": 0.5, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_interval_advantage/top1/wins", "expected": 9, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_interval_advantage/top1/ties", "expected": 1, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_interval_advantage/top1/losses", "expected": 0, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_interval_advantage/worst_target_scene_top1/mean_advantage", "expected": 0.9, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_interval_advantage/worst_target_scene_top1/bootstrap_95_ci/0", "expected": 0.7, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_interval_advantage/worst_target_scene_top1/bootstrap_95_ci/1", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_interval_advantage/target_scene_gap/orientation", "expected": "naive minus interval_aware"},
+            {"pointer": "/paired_interval_advantage/target_scene_gap/mean_advantage", "expected": 0.9, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_interval_advantage/target_scene_gap/bootstrap_95_ci/0", "expected": 0.7, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_interval_advantage/target_scene_gap/bootstrap_95_ci/1", "expected": 1.0, "absolute_tolerance": 0.0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C5_EXTERNAL_LANGUAGE",
+      "claim": "Positive lexical evidence improves a train-only BM25 typed-frame baseline on independently authored ALFRED instructions.",
+      "status": "supported_external_language",
+      "scope": "ALFRED valid-unseen language-to-frame parsing only; not visual, temporal, or end-to-end grounding.",
+      "paper_role": "secondary_external_language_evidence",
+      "evidence": [
+        {
+          "artifact": "artifacts/alfred_retrieval_baseline.json",
+          "sha256": "9fa8ef2ab584b6d11415c2b22fbbe3198b152268ed66dc94d9b554bc547b0bca",
+          "checks": [
+            {"pointer": "/protocol/baseline", "expected": "BM25 top-1 train typed-frame retrieval"},
+            {"pointer": "/protocol/bm25_evidence_policy/exact_train_query", "expected": "use top-1 training frame unchanged"},
+            {"pointer": "/protocol/bm25_evidence_policy/novel_query", "expected": "add and override only span-supported evidence"},
+            {"pointer": "/protocol/bm25_evidence_policy/unsupported_state", "expected": "preserve; absence of a recognised cue is unknown"},
+            {"pointer": "/protocol/bm25_evidence_policy/validation_labels_used", "expected": false},
+            {"pointer": "/protocol/candidate_or_matcher_access", "expected": false},
+            {"pointer": "/protocol/parameter_source", "expected": "standard fixed defaults; no validation tuning"},
+            {"pointer": "/protocol/retriever/source_split", "expected": "train"},
+            {"pointer": "/protocol/retriever/validation_data_used_for_fit", "expected": false},
+            {"pointer": "/protocol/temporal_claim", "expected": "none"},
+            {"pointer": "/protocol/validation_task_id_overlap_with_train", "expected": 0, "absolute_tolerance": 0.0},
+            {"pointer": "/valid_seen/evidence_only/cases", "expected": 487, "absolute_tolerance": 0.0},
+            {"pointer": "/valid_unseen/evidence_only/cases", "expected": 458, "absolute_tolerance": 0.0},
+            {"pointer": "/valid_seen/evidence_only/property_f1", "expected": 0.787728561650533, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/evidence_only/value_recall", "expected": 0.6522929500342232, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/evidence_only/exact_frame", "expected": 0.34496919917864477, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_top1/property_f1", "expected": 0.9834360027378508, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_top1/value_recall", "expected": 0.8182751540041068, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_top1/exact_frame", "expected": 0.6119096509240246, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence/property_f1", "expected": 0.9894006062383887, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence/value_recall", "expected": 0.8802190280629706, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence/exact_frame", "expected": 0.7104722792607803, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/evidence_only/property_f1", "expected": 0.8216157205240175, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/evidence_only/value_recall", "expected": 0.6965065502183406, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/evidence_only/exact_frame", "expected": 0.4039301310043668, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_top1/property_f1", "expected": 0.9791848617176128, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_top1/value_recall", "expected": 0.8024017467248908, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_top1/exact_frame", "expected": 0.611353711790393, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence/property_f1", "expected": 0.9856103139945935, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence/value_recall", "expected": 0.895924308588064, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence/exact_frame", "expected": 0.7358078602620087, "absolute_tolerance": 1e-12}
+          ]
+        },
+        {
+          "artifact": "artifacts/alfred_retrieval_comparison.json",
+          "sha256": "9bba93cefd232e7368a3aa84cccc8cc80326d769c0bf54a96e20b9a59830ff10",
+          "checks": [
+            {"pointer": "/protocol/comparison", "expected": "paired case metrics with task-id cluster bootstrap"},
+            {"pointer": "/protocol/labels_used_for_method_selection", "expected": false},
+            {"pointer": "/protocol/stratification", "expected": "ALFRED task type"},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/property_f1/delta", "expected": 0.005964603500537791, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/property_f1/ci_95/0", "expected": 0.0032345013477088945, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/property_f1/ci_95/1", "expected": 0.008892713711990819, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/value_recall/delta", "expected": 0.06194387405886379, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/value_recall/ci_95/0", "expected": 0.04557551563539588, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/value_recall/ci_95/1", "expected": 0.07905544147843943, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/exact_frame/delta", "expected": 0.09856262833675565, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/exact_frame/ci_95/0", "expected": 0.06352459016393443, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_seen/bm25_evidence_minus_bm25/exact_frame/ci_95/1", "expected": 0.13414634146341464, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/property_f1/delta", "expected": 0.0064254522769806605, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/property_f1/ci_95/0", "expected": 0.0034219748505462783, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/property_f1/ci_95/1", "expected": 0.009588744588744588, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/value_recall/delta", "expected": 0.09352256186317322, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/value_recall/ci_95/0", "expected": 0.0624113475177305, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/value_recall/ci_95/1", "expected": 0.12416851441241686, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/exact_frame/delta", "expected": 0.12445414847161572, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/exact_frame/ci_95/0", "expected": 0.07066381156316917, "absolute_tolerance": 1e-12},
+            {"pointer": "/valid_unseen/bm25_evidence_minus_bm25/exact_frame/ci_95/1", "expected": 0.1767337807606264, "absolute_tolerance": 1e-12}
+          ]
+        },
+        {
+          "artifact": "artifacts/alfred_retrieval_vs_llm.json",
+          "sha256": "805889fab540173addf1d4715d241ffc187704bd92c9bf3d4c15b908f48827c0",
+          "checks": [
+            {"pointer": "/protocol/bootstrap_cluster", "expected": "task_id"},
+            {"pointer": "/protocol/bootstrap_stratum", "expected": "task_type"},
+            {"pointer": "/protocol/method_selection_labels_used", "expected": false},
+            {"pointer": "/protocol/pairing", "expected": "case_id"},
+            {"pointer": "/protocol/sample", "expected": "frozen valid_unseen confirmation sample"},
+            {"pointer": "/gemma3_4b/exact_frame/delta", "expected": 0.45, "absolute_tolerance": 1e-12},
+            {"pointer": "/gemma3_4b/exact_frame/ci_95/0", "expected": 0.3, "absolute_tolerance": 1e-12},
+            {"pointer": "/gemma3_4b/exact_frame/ci_95/1", "expected": 0.6, "absolute_tolerance": 1e-12},
+            {"pointer": "/gemma3_4b/value_recall/delta", "expected": 0.3875, "absolute_tolerance": 1e-12},
+            {"pointer": "/gemma3_4b/value_recall/ci_95/0", "expected": 0.29583333333333334, "absolute_tolerance": 1e-12},
+            {"pointer": "/gemma3_4b/value_recall/ci_95/1", "expected": 0.4791666666666667, "absolute_tolerance": 1e-12},
+            {"pointer": "/llama3_2/exact_frame/delta", "expected": 0.4, "absolute_tolerance": 1e-12},
+            {"pointer": "/llama3_2/exact_frame/ci_95/0", "expected": 0.25, "absolute_tolerance": 1e-12},
+            {"pointer": "/llama3_2/exact_frame/ci_95/1", "expected": 0.55, "absolute_tolerance": 1e-12},
+            {"pointer": "/llama3_2/value_recall/delta", "expected": 0.3166666666666667, "absolute_tolerance": 1e-12},
+            {"pointer": "/llama3_2/value_recall/ci_95/0", "expected": 0.22083333333333335, "absolute_tolerance": 1e-12},
+            {"pointer": "/llama3_2/value_recall/ci_95/1", "expected": 0.4125, "absolute_tolerance": 1e-12}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C6_FALSE_POSITIVE_OBSERVATIONS",
+      "claim": "Training-only observation-process estimation can remove substantial hazard bias from false-positive detections when the violation is large enough to identify.",
+      "status": "supported_synthetic",
+      "scope": "Five paired synthetic seeds with an irreversible exponential transition, regular opportunity grid, homogeneous detector, and false-positive rates 0.00 to 0.10; the primary NLL family uses simultaneous intervals.",
+      "paper_role": "secondary_observation_process_stress",
+      "evidence": [
+        {
+          "artifact": "artifacts/false_positive_observation_results.json",
+          "sha256": "aa04b2b9a6f62f5d4d8a61bdc9a7ea638d237698c242d0c66566673024a92302",
+          "checks": [
+            {"pointer": "/protocol/seeds", "expected": [101, 211, 307, 401, 503]},
+            {"pointer": "/protocol/false_positive_rates", "expected": [0.0, 0.02, 0.05, 0.1]},
+            {"pointer": "/protocol/paired_training_transition_draws", "expected": true},
+            {"pointer": "/protocol/paired_exact_test_partitions", "expected": true},
+            {"pointer": "/protocol/validation_or_test_tuning", "expected": false},
+            {"pointer": "/protocol/claim_scope", "expected": "synthetic false-positive observation-process mechanism validation"},
+            {"pointer": "/aggregate/0.10/perfect_specificity_em/absolute_hazard_error/mean", "expected": 0.0284308485452976, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.10/estimated_specificity_em/absolute_hazard_error/mean", "expected": 0.00609841063788128, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.10/estimated_parameters/false_positive_rate/mean", "expected": 0.09474716270288115, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.10/mean_fixed_minus_estimated_nll", "expected": 0.0061491797078339515, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.10/simultaneous_bootstrap_95_ci/0", "expected": 0.0034291986739987124, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.10/simultaneous_bootstrap_95_ci/1", "expected": 0.00886916074166919, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.10/wins_ties_losses", "expected": [5, 0, 0]},
+            {"pointer": "/primary_paired_inference/0.05/simultaneous_bootstrap_95_ci/0", "expected": -0.00013891325149438917, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.05/simultaneous_bootstrap_95_ci/1", "expected": 0.002096324166269826, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.02/mean_fixed_minus_estimated_nll", "expected": -0.00008767777739899784, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.02/simultaneous_bootstrap_95_ci/0", "expected": -0.0005583369394069983, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.02/simultaneous_bootstrap_95_ci/1", "expected": 0.0003829813846090026, "absolute_tolerance": 1e-12}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C7_RECURRENT_OBSERVATIONS",
+      "claim": "A training-only reversible binary observation process can repair current-state prediction when return transitions violate an irreversible model.",
+      "status": "supported_synthetic",
+      "scope": "Five paired synthetic seeds with a binary continuous-time Markov chain, regular opportunity grid, known initial state, homogeneous detector, and return rates 0.00 to 0.45 per hour; the primary NLL family covers three nonzero return rates with simultaneous intervals.",
+      "paper_role": "secondary_recurrent_observation_stress",
+      "evidence": [
+        {
+          "artifact": "artifacts/recurrent_observation_results.json",
+          "sha256": "cb218c04fe5a9826c01f70be0f6a15308884b508f6c81ab64a25bbf22dd78c45",
+          "checks": [
+            {"pointer": "/protocol/seeds", "expected": [101, 211, 307, 401, 503]},
+            {"pointer": "/protocol/return_rates_per_hour", "expected": [0.0, 0.15, 0.3, 0.45]},
+            {"pointer": "/protocol/paired_training_random_streams", "expected": true},
+            {"pointer": "/protocol/paired_exact_test_horizons_and_outcome_uniforms", "expected": true},
+            {"pointer": "/protocol/validation_or_test_tuning", "expected": false},
+            {"pointer": "/protocol/claim_scope", "expected": "synthetic recurrent binary-state mechanism validation"},
+            {"pointer": "/aggregate/0.00/irreversible_em/exact_test_nll/mean", "expected": 0.46055535122017044, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.00/reversible_em/exact_test_nll/mean", "expected": 0.4606090008010104, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.15/reversible_em/return_rate_per_hour/mean", "expected": 0.14756517608959654, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.30/reversible_em/return_rate_per_hour/mean", "expected": 0.31281770221278377, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.45/reversible_em/return_rate_per_hour/mean", "expected": 0.4870759480743627, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.15/mean_irreversible_minus_reversible_nll", "expected": 0.06038140529395515, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.15/simultaneous_bootstrap_95_ci/0", "expected": 0.05015834664022051, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.15/wins_ties_losses", "expected": [5, 0, 0]},
+            {"pointer": "/primary_paired_inference/0.30/mean_irreversible_minus_reversible_nll", "expected": 0.08098892694706819, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.30/simultaneous_bootstrap_95_ci/0", "expected": 0.07313744339363752, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.30/wins_ties_losses", "expected": [5, 0, 0]},
+            {"pointer": "/primary_paired_inference/0.45/mean_irreversible_minus_reversible_nll", "expected": 0.08262714684613856, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.45/simultaneous_bootstrap_95_ci/0", "expected": 0.07560360693332807, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.45/wins_ties_losses", "expected": [5, 0, 0]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C8_IRREGULAR_OBSERVATIONS",
+      "claim": "Using each logged elapsed interval prevents bursty observation timing from becoming a false transition-rate signal in recurrent current-state prediction.",
+      "status": "supported_synthetic",
+      "scope": "Five paired synthetic seeds with fixed 12-hour follow-up, a recurrent binary continuous-time Markov chain, exogenous two-gap schedules, known initial state, homogeneous detector, and gap contrasts 0.00 to 0.90; the primary NLL family covers three nonzero contrasts with simultaneous intervals.",
+      "paper_role": "secondary_irregular_observation_stress",
+      "evidence": [
+        {
+          "artifact": "artifacts/irregular_observation_results.json",
+          "sha256": "0308c04c5c16bc4b7248a8f8e76657351da80dbb0e9565da88228d39b1bbfbe4",
+          "checks": [
+            {"pointer": "/protocol/seeds", "expected": [101, 211, 307, 401, 503]},
+            {"pointer": "/protocol/gap_contrasts", "expected": [0.0, 0.5, 0.75, 0.9]},
+            {"pointer": "/protocol/paired_training_random_streams", "expected": true},
+            {"pointer": "/protocol/paired_burst_positions", "expected": true},
+            {"pointer": "/protocol/paired_exact_state_test_rows", "expected": true},
+            {"pointer": "/protocol/validation_or_test_tuning", "expected": false},
+            {"pointer": "/protocol/claim_scope", "expected": "synthetic bursty irregular-observation mechanism validation"},
+            {"pointer": "/protocol/rate_search_bounds_per_hour", "expected": [1e-6, 5.0]},
+            {"pointer": "/aggregate/0.00/mean_grid_em/exact_state_test_nll/mean", "expected": 0.6299094780121841, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.00/exact_interval_em/exact_state_test_nll/mean", "expected": 0.6298994304790891, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.50/exact_interval_em/forward_rate_per_hour/mean", "expected": 0.285519885208349, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.50/exact_interval_em/return_rate_per_hour/mean", "expected": 0.44224448999459653, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.75/exact_interval_em/forward_rate_per_hour/mean", "expected": 0.2914566576142719, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.75/exact_interval_em/return_rate_per_hour/mean", "expected": 0.44784732348714784, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.90/exact_interval_em/forward_rate_per_hour/mean", "expected": 0.3099395749372342, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.90/exact_interval_em/return_rate_per_hour/mean", "expected": 0.4635864795274557, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.50/mean_grid_minus_exact_interval_nll", "expected": 0.003907309221059885, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.50/simultaneous_bootstrap_95_ci/0", "expected": 0.0015118359715206248, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.50/wins_ties_losses", "expected": [5, 0, 0]},
+            {"pointer": "/primary_paired_inference/0.75/mean_grid_minus_exact_interval_nll", "expected": 0.014460180527738165, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.75/simultaneous_bootstrap_95_ci/0", "expected": 0.012172596409108678, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.75/wins_ties_losses", "expected": [5, 0, 0]},
+            {"pointer": "/primary_paired_inference/0.90/mean_grid_minus_exact_interval_nll", "expected": 0.031396174638698884, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.90/simultaneous_bootstrap_95_ci/0", "expected": 0.029067019466075004, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.90/wins_ties_losses", "expected": [5, 0, 0]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C9_SOURCE_RELIABILITY",
+      "claim": "Preserving source identity in a recurrent observation likelihood prevents conflicting source reliability from flattening current-state evidence.",
+      "status": "supported_synthetic",
+      "scope": "Five paired synthetic seeds with two conditionally independent sources, fixed source-average observation parameters, a binary recurrent CTMC, known initial state, regular opportunities, and three nonzero conflict severities; current truth is evaluation-only.",
+      "paper_role": "secondary_source_reliability_stress",
+      "evidence": [
+        {
+          "artifact": "artifacts/source_reliability_results.json",
+          "sha256": "2107c1b1672bba33b4c213bc460a7d06d65aeae00c04c096b4a2dbd05ae23764",
+          "checks": [
+            {"pointer": "/design/seeds", "expected": [101, 211, 307, 401, 503]},
+            {"pointer": "/design/severity_levels", "expected": [0.0, 0.33, 0.67, 1.0]},
+            {"pointer": "/design/paired_training_random_streams", "expected": true},
+            {"pointer": "/design/paired_source_grounding_state_paths_within_seed", "expected": true},
+            {"pointer": "/design/latent_training_states_retained", "expected": false},
+            {"pointer": "/aggregate/0.00/pooled_sources_em/source_grounding_test_nll/mean", "expected": 0.2959062370568805, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.00/source_aware_em/source_grounding_test_nll/mean", "expected": 0.29594646995329077, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.33/source_aware_em/source_grounding_test_nll/mean", "expected": 0.2790575922588083, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/0.67/source_aware_em/source_grounding_test_nll/mean", "expected": 0.21386460289927994, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/1.00/source_aware_em/source_grounding_test_nll/mean", "expected": 0.12738342157250512, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.33/mean_pooled_minus_source_aware_grounding_nll", "expected": 0.021726279120467894, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.33/simultaneous_bootstrap_95_ci/0", "expected": 0.02058551849904365, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.33/wins_ties_losses", "expected": [5, 0, 0]},
+            {"pointer": "/primary_paired_inference/0.67/mean_pooled_minus_source_aware_grounding_nll", "expected": 0.08234722641314565, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.67/simultaneous_bootstrap_95_ci/0", "expected": 0.07977705200745555, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/0.67/wins_ties_losses", "expected": [5, 0, 0]},
+            {"pointer": "/primary_paired_inference/1.00/mean_pooled_minus_source_aware_grounding_nll", "expected": 0.1700632294169202, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/1.00/simultaneous_bootstrap_95_ci/0", "expected": 0.16565409760511282, "absolute_tolerance": 1e-12},
+            {"pointer": "/primary_paired_inference/1.00/wins_ties_losses", "expected": [5, 0, 0]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N1_NEURAL_NECESSITY",
+      "claim": "The neural persistence parameterization is necessary for the current compositional benchmark.",
+      "status": "contradicted",
+      "scope": "The factorized exponential model outperforms the neural model on every five-seed aggregate metric.",
+      "paper_role": "forbidden_claim",
+      "evidence": [
+        {
+          "artifact": "artifacts/compositional_persistence_multiseed_results.json",
+          "sha256": "948131ff7b2ab921a91ec95a5b699b238a1748ff9054b372c8df6dd56a24d86d",
+          "checks": [
+            {"pointer": "/aggregate/factorized/negative_log_likelihood/mean", "expected": 1.239012848059974, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/negative_log_likelihood/mean", "expected": 1.2661728384689506, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/concordance_index/mean", "expected": 0.748894717687214, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/concordance_index/mean", "expected": 0.7226016010057414, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/integrated_brier_score/mean", "expected": 0.07948341893947485, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/neural/integrated_brier_score/mean", "expected": 0.08358843866032235, "absolute_tolerance": 1e-12},
+            {"pointer": "/aggregate/factorized/grounding_top1/mean", "expected": 1.0, "absolute_tolerance": 0.0},
+            {"pointer": "/aggregate/neural/grounding_top1/mean", "expected": 0.9722222222222222, "absolute_tolerance": 1e-12}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N2_REAL_WORLD_GROUNDING",
+      "claim": "OpenProp improves real-world or semi-real longitudinal entity grounding.",
+      "status": "pending_external",
+      "scope": "No official TEACh longitudinal result is currently available.",
+      "paper_role": "submission_blocker",
+      "evidence": []
+    },
+    {
+      "id": "N3_GENERAL_ADAPTATION_SAFETY",
+      "claim": "Calibration-only typed adaptation is generally safe under arbitrary nonlinear shift and label noise.",
+      "status": "contradicted",
+      "scope": "A frozen ten-seed synthetic development audit under local nonlinear shifts and 20% independent label flips contains held-out ranking regressions; no fresh confirmation was run.",
+      "paper_role": "forbidden_claim",
+      "evidence": [
+        {
+          "artifact": "artifacts/repeated_evidence_adaptation_development.json",
+          "sha256": "ce7247134e186684bd86a71c63359867c5e31c074f7623dfce89a1a59d89a403",
+          "checks": [
+            {"pointer": "/protocol/stage", "expected": "development; not independent confirmation"},
+            {"pointer": "/activation_counts/correct_source_control/0.2/single_noisy_15", "expected": 2, "absolute_tolerance": 0.0},
+            {"pointer": "/activation_counts/correct_source_control/0.2/repeat5_cases15_confident", "expected": 0, "absolute_tolerance": 0.0},
+            {"pointer": "/paired_delta_vs_deployed_source/local_subject_scene_bump/0.2/repeat5_cases15_confident/affected/concordance_index/mean", "expected": -0.03629469122426869, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_delta_vs_deployed_source/local_subject_scene_bump/0.2/repeat5_cases15_confident/affected/concordance_index/bootstrap_95_ci_lower", "expected": -0.10888407367280609, "absolute_tolerance": 1e-12},
+            {"pointer": "/paired_delta_vs_deployed_source/local_subject_scene_bump/0.2/repeat5_cases15_confident/affected/concordance_index/minimum", "expected": -0.36294691224268694, "absolute_tolerance": 1e-12}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "activities": [
+    "clean",
+    "decoration",
+    "meal"
+  ],
+  "contains_download_urls": false,
+  "data_types": [
+    6
+  ],
+  "declared_download_bytes": 1945428787,
+  "manifest_sha256": "507b37b286a1e49661fd156d564d4d4fe1e9a7fa7b068fa21a496bc15a77a4bb",
+  "performance_evidence": false,
+  "protocol_id": "openprop-adt-groundtruth-screening-v1",
+  "schema_version": 1,
+  "sequences": [
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 20147262,
+      "sequence_name": "Apartment_release_clean_seq131_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 19748739,
+      "sequence_name": "Apartment_release_clean_seq133_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21178856,
+      "sequence_name": "Apartment_release_clean_seq134_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21880584,
+      "sequence_name": "Apartment_release_clean_seq135_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21913158,
+      "sequence_name": "Apartment_release_clean_seq136_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21000067,
+      "sequence_name": "Apartment_release_clean_seq137_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21341557,
+      "sequence_name": "Apartment_release_clean_seq138_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 20548495,
+      "sequence_name": "Apartment_release_clean_seq140_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 20902045,
+      "sequence_name": "Apartment_release_clean_seq141_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21305209,
+      "sequence_name": "Apartment_release_clean_seq142_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 20117325,
+      "sequence_name": "Apartment_release_clean_seq143_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 20916399,
+      "sequence_name": "Apartment_release_clean_seq144_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21231559,
+      "sequence_name": "Apartment_release_clean_seq145_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21908190,
+      "sequence_name": "Apartment_release_clean_seq146_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 20924606,
+      "sequence_name": "Apartment_release_clean_seq147_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21372745,
+      "sequence_name": "Apartment_release_clean_seq148_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 21302960,
+      "sequence_name": "Apartment_release_clean_seq149_M1292"
+    },
+    {
+      "activity": "clean",
+      "declared_groundtruth_bytes": 17651995,
+      "sequence_name": "Apartment_release_clean_seq150_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 14538354,
+      "sequence_name": "Apartment_release_decoration_seq131_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 14475471,
+      "sequence_name": "Apartment_release_decoration_seq132_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 14600454,
+      "sequence_name": "Apartment_release_decoration_seq133_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 14791532,
+      "sequence_name": "Apartment_release_decoration_seq134_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 13336746,
+      "sequence_name": "Apartment_release_decoration_seq135_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 15528858,
+      "sequence_name": "Apartment_release_decoration_seq136_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 15642220,
+      "sequence_name": "Apartment_release_decoration_seq137_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 14205602,
+      "sequence_name": "Apartment_release_decoration_seq138_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 14204059,
+      "sequence_name": "Apartment_release_decoration_seq139_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 14609169,
+      "sequence_name": "Apartment_release_decoration_seq140_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 56412755,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq131_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 53335089,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq132_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 55940426,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq133_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 53148709,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq134_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 55157977,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq135_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 52507991,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq136_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 55479902,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq137_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 53873483,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq138_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 55915462,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq139_M1292"
+    },
+    {
+      "activity": "decoration",
+      "declared_groundtruth_bytes": 55466462,
+      "sequence_name": "Apartment_release_decoration_skeleton_seq140_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 21320911,
+      "sequence_name": "Apartment_release_meal_seq131_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 19258142,
+      "sequence_name": "Apartment_release_meal_seq132_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 17506693,
+      "sequence_name": "Apartment_release_meal_seq133_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 21042516,
+      "sequence_name": "Apartment_release_meal_seq136_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 19966591,
+      "sequence_name": "Apartment_release_meal_seq138_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 21656427,
+      "sequence_name": "Apartment_release_meal_seq139_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 18855707,
+      "sequence_name": "Apartment_release_meal_seq140_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 19316888,
+      "sequence_name": "Apartment_release_meal_seq141_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 16170349,
+      "sequence_name": "Apartment_release_meal_seq142_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 19134548,
+      "sequence_name": "Apartment_release_meal_seq143_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 21338208,
+      "sequence_name": "Apartment_release_meal_seq144_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 18676898,
+      "sequence_name": "Apartment_release_meal_seq145_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 16427200,
+      "sequence_name": "Apartment_release_meal_seq146_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 20510513,
+      "sequence_name": "Apartment_release_meal_seq147_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 18056514,
+      "sequence_name": "Apartment_release_meal_seq149_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 20416047,
+      "sequence_name": "Apartment_release_meal_seq150_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 58345632,
+      "sequence_name": "Apartment_release_meal_skeleton_seq131_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 64724856,
+      "sequence_name": "Apartment_release_meal_skeleton_seq132_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 59531925,
+      "sequence_name": "Apartment_release_meal_skeleton_seq133_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 64125923,
+      "sequence_name": "Apartment_release_meal_skeleton_seq134_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 64687297,
+      "sequence_name": "Apartment_release_meal_skeleton_seq135_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 64122595,
+      "sequence_name": "Apartment_release_meal_skeleton_seq136_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 63661050,
+      "sequence_name": "Apartment_release_meal_skeleton_seq137_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 63641753,
+      "sequence_name": "Apartment_release_meal_skeleton_seq139_M1292"
+    },
+    {
+      "activity": "meal",
+      "declared_groundtruth_bytes": 64371132,
+      "sequence_name": "Apartment_release_meal_skeleton_seq140_M1292"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "dataset": {
+    "split_contract": "all feature values seen in train; validation/test tuples held out",
+    "test_contexts": 3,
+    "test_examples": 240,
+    "train_contexts": 12,
+    "train_examples": 960,
+    "validation_contexts": 3,
+    "validation_examples": 240
+  },
+  "grounding": [
+    {
+      "accuracy_by_tag": {
+        "compositional-ood": 0.0,
+        "en": 0.0,
+        "informative-scene-context": 0.0,
+        "subject-book": 0.0,
+        "subject-cup": 0.0,
+        "subject-tool": 0.0
+      },
+      "cases": 36,
+      "mean_reciprocal_rank": 0.5,
+      "name": "no-decay",
+      "top1_accuracy": 0.0
+    },
+    {
+      "accuracy_by_tag": {
+        "compositional-ood": 0.0,
+        "en": 0.0,
+        "informative-scene-context": 0.0,
+        "subject-book": 0.0,
+        "subject-cup": 0.0,
+        "subject-tool": 0.0
+      },
+      "cases": 36,
+      "mean_reciprocal_rank": 0.5,
+      "name": "fixed-four-hour",
+      "top1_accuracy": 0.0
+    },
+    {
+      "accuracy_by_tag": {
+        "compositional-ood": 0.0,
+        "en": 0.0,
+        "informative-scene-context": 0.0,
+        "subject-book": 0.0,
+        "subject-cup": 0.0,
+        "subject-tool": 0.0
+      },
+      "cases": 36,
+      "mean_reciprocal_rank": 0.5,
+      "name": "global-exponential",
+      "top1_accuracy": 0.0
+    },
+    {
+      "accuracy_by_tag": {
+        "compositional-ood": 0.0,
+        "en": 0.0,
+        "informative-scene-context": 0.0,
+        "subject-book": 0.0,
+        "subject-cup": 0.0,
+        "subject-tool": 0.0
+      },
+      "cases": 36,
+      "mean_reciprocal_rank": 0.5,
+      "name": "per-context-exponential",
+      "top1_accuracy": 0.0
+    },
+    {
+      "accuracy_by_tag": {
+        "compositional-ood": 1.0,
+        "en": 1.0,
+        "informative-scene-context": 1.0,
+        "subject-book": 1.0,
+        "subject-cup": 1.0,
+        "subject-tool": 1.0
+      },
+      "cases": 36,
+      "mean_reciprocal_rank": 1.0,
+      "name": "factorized-exponential",
+      "top1_accuracy": 1.0
+    },
+    {
+      "accuracy_by_tag": {
+        "compositional-ood": 1.0,
+        "en": 1.0,
+        "informative-scene-context": 1.0,
+        "subject-book": 1.0,
+        "subject-cup": 1.0,
+        "subject-tool": 1.0
+      },
+      "cases": 36,
+      "mean_reciprocal_rank": 1.0,
+      "name": "neural-compositional",
+      "top1_accuracy": 1.0
+    }
+  ],
+  "survival": [
+    {
+      "concordance_index": 0.5,
+      "examples": 240,
+      "horizons": [
+        {
+          "brier_score": 0.15192463231377623,
+          "evaluable_examples": 236,
+          "expected_calibration_error": 0.09152879008915105,
+          "hours": 1.0
+        },
+        {
+          "brier_score": 0.3281732909857796,
+          "evaluable_examples": 208,
+          "expected_calibration_error": 0.29129574254498264,
+          "hours": 4.0
+        },
+        {
+          "brier_score": 0.2520386387075671,
+          "evaluable_examples": 177,
+          "expected_calibration_error": 0.29444290333180156,
+          "hours": 8.0
+        },
+        {
+          "brier_score": 0.15777529298491755,
+          "evaluable_examples": 161,
+          "expected_calibration_error": 0.25166345004765855,
+          "hours": 12.0
+        }
+      ],
+      "integrated_brier_score": 0.24547260070190877,
+      "name": "global-exponential",
+      "negative_log_likelihood": 1.8301000386305624
+    },
+    {
+      "concordance_index": 0.5,
+      "examples": 240,
+      "horizons": [
+        {
+          "brier_score": 0.15192463231377623,
+          "evaluable_examples": 236,
+          "expected_calibration_error": 0.09152879008915105,
+          "hours": 1.0
+        },
+        {
+          "brier_score": 0.3281732909857796,
+          "evaluable_examples": 208,
+          "expected_calibration_error": 0.29129574254498264,
+          "hours": 4.0
+        },
+        {
+          "brier_score": 0.2520386387075671,
+          "evaluable_examples": 177,
+          "expected_calibration_error": 0.29444290333180156,
+          "hours": 8.0
+        },
+        {
+          "brier_score": 0.15777529298491755,
+          "evaluable_examples": 161,
+          "expected_calibration_error": 0.25166345004765855,
+          "hours": 12.0
+        }
+      ],
+      "integrated_brier_score": 0.24547260070190877,
+      "name": "per-context-exponential",
+      "negative_log_likelihood": 1.8301000386305624
+    },
+    {
+      "concordance_index": 0.7285335648677055,
+      "examples": 240,
+      "horizons": [
+        {
+          "brier_score": 0.1294695122995791,
+          "evaluable_examples": 236,
+          "expected_calibration_error": 0.046897837094113985,
+          "hours": 1.0
+        },
+        {
+          "brier_score": 0.14502502494248182,
+          "evaluable_examples": 208,
+          "expected_calibration_error": 0.062312507007095744,
+          "hours": 4.0
+        },
+        {
+          "brier_score": 0.06148140230285855,
+          "evaluable_examples": 177,
+          "expected_calibration_error": 0.03322753251135672,
+          "hours": 8.0
+        },
+        {
+          "brier_score": 0.05052529946469052,
+          "evaluable_examples": 161,
+          "expected_calibration_error": 0.042044568276096775,
+          "hours": 12.0
+        }
+      ],
+      "integrated_brier_score": 0.09534255126262456,
+      "name": "neural-compositional",
+      "negative_log_likelihood": 1.376042539157083
+    },
+    {
+      "concordance_index": 0.7285335648677055,
+      "examples": 240,
+      "horizons": [
+        {
+          "brier_score": 0.12770208997541144,
+          "evaluable_examples": 236,
+          "expected_calibration_error": 0.02699903666168372,
+          "hours": 1.0
+        },
+        {
+          "brier_score": 0.14965602964311187,
+          "evaluable_examples": 208,
+          "expected_calibration_error": 0.07891133203080808,
+          "hours": 4.0
+        },
+        {
+          "brier_score": 0.06350523428156356,
+          "evaluable_examples": 177,
+          "expected_calibration_error": 0.053884139796215515,
+          "hours": 8.0
+        },
+        {
+          "brier_score": 0.051708556551364325,
+          "evaluable_examples": 161,
+          "expected_calibration_error": 0.05327416212858339,
+          "hours": 12.0
+        }
+      ],
+      "integrated_brier_score": 0.0975261171766356,
+      "name": "factorized-exponential",
+      "negative_log_likelihood": 1.3738910737215533
+    }
+  ],
+  "training": {
+    "epochs": 350,
+    "factorized_validation_hazard_scale": 1.0151469692716266,
+    "final_loss": 1.4312504529953003,
+    "initial_loss": 4.5563530921936035,
+    "seed": 41,
+    "validation_hazard_scale": 1.1351588067804366
+  }
+}

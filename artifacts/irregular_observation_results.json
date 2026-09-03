@@ -1,0 +1,1809 @@
+{
+  "aggregate": {
+    "0.00": {
+      "exact_interval_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.023145851043802013,
+          "mean": 0.010523046717397854,
+          "minimum": 0.0010725041318329631,
+          "standard_deviation": 0.008412999011928457
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.04171752612429419,
+          "mean": 0.021195881815852947,
+          "minimum": 0.001515023568128382,
+          "standard_deviation": 0.012958617223717238
+        },
+        "actual_interval_train_nll": {
+          "maximum": 16.30663264220585,
+          "mean": 16.24705248034192,
+          "minimum": 16.200449428761203,
+          "standard_deviation": 0.03669625279299933
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.2207945287064604,
+          "mean": 0.21965005099762433,
+          "minimum": 0.21739930327884632,
+          "standard_deviation": 0.001198731956752792
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6322849261123001,
+          "mean": 0.6298994304790891,
+          "minimum": 0.6250099956747291,
+          "standard_deviation": 0.0025945100933066436
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.323145851043802,
+          "mean": 0.2994976545489298,
+          "minimum": 0.2839114270850735,
+          "standard_deviation": 0.013463309906521356
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.4917175261242942,
+          "mean": 0.4546686242022556,
+          "minimum": 0.42658068522155573,
+          "standard_deviation": 0.024400719545958884
+        }
+      },
+      "logged_process": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "actual_interval_train_nll": {
+          "maximum": 16.310765812663732,
+          "mean": 16.249537071246262,
+          "minimum": 16.20095499755881,
+          "standard_deviation": 0.037813985174455514
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22050779323766587,
+          "mean": 0.21951509842772957,
+          "minimum": 0.21737458706683882,
+          "standard_deviation": 0.0011399018079801353
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6317789504935875,
+          "mean": 0.6296094735092085,
+          "minimum": 0.6249665331415204,
+          "standard_deviation": 0.0024659575983984423
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.45,
+          "mean": 0.45,
+          "minimum": 0.45,
+          "standard_deviation": 0.0
+        }
+      },
+      "mean_grid_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.023346020083179986,
+          "mean": 0.009671467727251904,
+          "minimum": 0.000363401940743191,
+          "standard_deviation": 0.00874910491064407
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.03939287584626655,
+          "mean": 0.020024864435427014,
+          "minimum": 0.0030156005143280873,
+          "standard_deviation": 0.011810203276140017
+        },
+        "actual_interval_train_nll": {
+          "maximum": 16.306632311310203,
+          "mean": 16.247051972776223,
+          "minimum": 16.200446221199385,
+          "standard_deviation": 0.03669703889783637
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22077750863555184,
+          "mean": 0.21965459511453606,
+          "minimum": 0.21739306924390994,
+          "standard_deviation": 0.0011997500944103934
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6322497411530879,
+          "mean": 0.6299094780121841,
+          "minimum": 0.6249966928634971,
+          "standard_deviation": 0.002597562882799575
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.32334602008318,
+          "mean": 0.2996669403060201,
+          "minimum": 0.2837123741447604,
+          "standard_deviation": 0.013037376882524232
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.48939287584626656,
+          "mean": 0.45482970874953654,
+          "minimum": 0.4299951166065217,
+          "standard_deviation": 0.022740932489140112
+        }
+      }
+    },
+    "0.50": {
+      "exact_interval_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.043622674270257455,
+          "mean": 0.024491719526811527,
+          "minimum": 0.014605534369902251,
+          "standard_deviation": 0.010576739346180898
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.06487708086006166,
+          "mean": 0.02608959377906712,
+          "minimum": 0.004094661192126925,
+          "standard_deviation": 0.022437296018693906
+        },
+        "actual_interval_train_nll": {
+          "maximum": 15.646115402377587,
+          "mean": 15.559397863460125,
+          "minimum": 15.423948828513906,
+          "standard_deviation": 0.0929179397659653
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.2210903588112359,
+          "mean": 0.219906032796885,
+          "minimum": 0.21782116707305127,
+          "standard_deviation": 0.0011712575168952254
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6330311868837833,
+          "mean": 0.630534964491356,
+          "minimum": 0.6259906659545278,
+          "standard_deviation": 0.0025621870426231377
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3250290118379012,
+          "mean": 0.285519885208349,
+          "minimum": 0.25637732572974253,
+          "standard_deviation": 0.022406204859316565
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.48560221588229924,
+          "mean": 0.44224448999459653,
+          "minimum": 0.38512291913993835,
+          "standard_deviation": 0.03352538173896491
+        }
+      },
+      "logged_process": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "actual_interval_train_nll": {
+          "maximum": 15.651711225394378,
+          "mean": 15.564953132935361,
+          "minimum": 15.428949614514407,
+          "standard_deviation": 0.09312365424144885
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22050779323766587,
+          "mean": 0.21951509842772957,
+          "minimum": 0.21737458706683882,
+          "standard_deviation": 0.0011399018079801353
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6317789504935875,
+          "mean": 0.6296094735092085,
+          "minimum": 0.6249665331415204,
+          "standard_deviation": 0.0024659575983984423
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.45,
+          "mean": 0.45,
+          "minimum": 0.45,
+          "standard_deviation": 0.0
+        }
+      },
+      "mean_grid_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.10380693522898621,
+          "mean": 0.09458656207390874,
+          "minimum": 0.07812743752468243,
+          "standard_deviation": 0.010603431669625052
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.16093118050280825,
+          "mean": 0.13348308569090214,
+          "minimum": 0.1067643598305188,
+          "standard_deviation": 0.017774936076335787
+        },
+        "actual_interval_train_nll": {
+          "maximum": 15.677903324915007,
+          "mean": 15.589906754056466,
+          "minimum": 15.454271382416609,
+          "standard_deviation": 0.09511345590202093
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22313647667143882,
+          "mean": 0.221273023691108,
+          "minimum": 0.2178583758928165,
+          "standard_deviation": 0.001956003445961315
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6388035823763029,
+          "mean": 0.634442273712416,
+          "minimum": 0.6262987867347035,
+          "standard_deviation": 0.004716117584010077
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.22187256247531756,
+          "mean": 0.20541343792609126,
+          "minimum": 0.19619306477101378,
+          "standard_deviation": 0.010603431669625052
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.3432356401694812,
+          "mean": 0.3165169143090979,
+          "minimum": 0.28906881949719176,
+          "standard_deviation": 0.017774936076335787
+        }
+      }
+    },
+    "0.75": {
+      "exact_interval_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.020542813838427154,
+          "mean": 0.013385838257789806,
+          "minimum": 0.004612063178662029,
+          "standard_deviation": 0.005197327445898073
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.02725399520082089,
+          "mean": 0.013039261542092917,
+          "minimum": 0.00048317106757772565,
+          "standard_deviation": 0.011544892168189514
+        },
+        "actual_interval_train_nll": {
+          "maximum": 14.891557918853087,
+          "mean": 14.799032687829264,
+          "minimum": 14.727256916964532,
+          "standard_deviation": 0.0643459306301902
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.2208068755943455,
+          "mean": 0.21961891254197108,
+          "minimum": 0.21736035089921357,
+          "standard_deviation": 0.0012187774499612324
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6323852287269857,
+          "mean": 0.6298573525295558,
+          "minimum": 0.6249303830415507,
+          "standard_deviation": 0.0026532075443077554
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3121062396801543,
+          "mean": 0.2914566576142719,
+          "minimum": 0.27945718616157283,
+          "standard_deviation": 0.011541411496165296
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.4767332915055242,
+          "mean": 0.44784732348714784,
+          "minimum": 0.4227460047991791,
+          "standard_deviation": 0.017282154396059582
+        }
+      },
+      "logged_process": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "actual_interval_train_nll": {
+          "maximum": 14.896345016041641,
+          "mean": 14.801432799049119,
+          "minimum": 14.728707746124599,
+          "standard_deviation": 0.06496108640186271
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22050779323766587,
+          "mean": 0.21951509842772957,
+          "minimum": 0.21737458706683882,
+          "standard_deviation": 0.0011399018079801353
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6317789504935875,
+          "mean": 0.6296094735092085,
+          "minimum": 0.6249665331415204,
+          "standard_deviation": 0.0024659575983984423
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.45,
+          "mean": 0.45,
+          "minimum": 0.45,
+          "standard_deviation": 0.0
+        }
+      },
+      "mean_grid_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.15999471401723356,
+          "mean": 0.15228393236859245,
+          "minimum": 0.14731450682818542,
+          "standard_deviation": 0.005295885580966544
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.2516906248096933,
+          "mean": 0.22803006274569385,
+          "minimum": 0.2158462174330949,
+          "standard_deviation": 0.01280778326792402
+        },
+        "actual_interval_train_nll": {
+          "maximum": 14.981235243490351,
+          "mean": 14.880512390240122,
+          "minimum": 14.809386275565515,
+          "standard_deviation": 0.06541961957750644
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22606827659544346,
+          "mean": 0.22440304238083522,
+          "minimum": 0.221043072813378,
+          "standard_deviation": 0.0018248851760623028
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6488213101953593,
+          "mean": 0.644317533057294,
+          "minimum": 0.6360199778155105,
+          "standard_deviation": 0.004605678741357499
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.15268549317181457,
+          "mean": 0.14771606763140754,
+          "minimum": 0.14000528598276643,
+          "standard_deviation": 0.005295885580966544
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.2341537825669051,
+          "mean": 0.22196993725430617,
+          "minimum": 0.1983093751903067,
+          "standard_deviation": 0.01280778326792403
+        }
+      }
+    },
+    "0.90": {
+      "exact_interval_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.05335515451592854,
+          "mean": 0.02360577978829851,
+          "minimum": 0.003459892264309483,
+          "standard_deviation": 0.016687580475281114
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.06274243201816038,
+          "mean": 0.036327362096870305,
+          "minimum": 0.01729626975679477,
+          "standard_deviation": 0.016232604519688536
+        },
+        "actual_interval_train_nll": {
+          "maximum": 14.169252437857446,
+          "mean": 14.07869586460008,
+          "minimum": 13.973386880830594,
+          "standard_deviation": 0.07041189027132007
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22071813711758814,
+          "mean": 0.2195737143032484,
+          "minimum": 0.21736437481525672,
+          "standard_deviation": 0.0011906589142342214
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6322793292429035,
+          "mean": 0.6297471176930426,
+          "minimum": 0.624933379274479,
+          "standard_deviation": 0.0025889145517691953
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3533551545159285,
+          "mean": 0.3099395749372342,
+          "minimum": 0.2814099729389175,
+          "standard_deviation": 0.02714614211264157
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.5127424320181604,
+          "mean": 0.4635864795274557,
+          "minimum": 0.41601434419798217,
+          "standard_deviation": 0.03739762372744785
+        }
+      },
+      "logged_process": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "actual_interval_train_nll": {
+          "maximum": 14.170587214057155,
+          "mean": 14.082909643081745,
+          "minimum": 13.975805665155542,
+          "standard_deviation": 0.07090769098796622
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.22050779323766587,
+          "mean": 0.21951509842772957,
+          "minimum": 0.21737458706683882,
+          "standard_deviation": 0.0011399018079801353
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6317789504935875,
+          "mean": 0.6296094735092085,
+          "minimum": 0.6249665331415204,
+          "standard_deviation": 0.0024659575983984423
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.3,
+          "mean": 0.3,
+          "minimum": 0.3,
+          "standard_deviation": 0.0
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.45,
+          "mean": 0.45,
+          "minimum": 0.45,
+          "standard_deviation": 0.0
+        }
+      },
+      "mean_grid_em": {
+        "absolute_forward_rate_error": {
+          "maximum": 0.1987076723114303,
+          "mean": 0.1937912225264842,
+          "minimum": 0.18857478998618082,
+          "standard_deviation": 0.0034972369322523013
+        },
+        "absolute_return_rate_error": {
+          "maximum": 0.32253757928653537,
+          "mean": 0.30846162788892295,
+          "minimum": 0.29462328169021706,
+          "standard_deviation": 0.01083649553048928
+        },
+        "actual_interval_train_nll": {
+          "maximum": 14.260554265849056,
+          "mean": 14.171990877332243,
+          "minimum": 14.06343864985315,
+          "standard_deviation": 0.06801151242617182
+        },
+        "exact_state_test_brier": {
+          "maximum": 0.23040748328083263,
+          "mean": 0.22920511518820208,
+          "minimum": 0.22583146283973138,
+          "standard_deviation": 0.0017009895167763756
+        },
+        "exact_state_test_nll": {
+          "maximum": 0.6640639580061204,
+          "mean": 0.6611432923317414,
+          "minimum": 0.6522992502105375,
+          "standard_deviation": 0.0044493830677326705
+        },
+        "forward_rate_per_hour": {
+          "maximum": 0.11142521001381915,
+          "mean": 0.10620877747351579,
+          "minimum": 0.10129232768856969,
+          "standard_deviation": 0.0034972369322522952
+        },
+        "return_rate_per_hour": {
+          "maximum": 0.15537671830978295,
+          "mean": 0.14153837211107706,
+          "minimum": 0.12746242071346467,
+          "standard_deviation": 0.010836495530489277
+        }
+      }
+    }
+  },
+  "primary_paired_inference": {
+    "0.50": {
+      "mean_grid_minus_exact_interval_nll": 0.003907309221059885,
+      "simultaneous_bootstrap_95_ci": [
+        0.0015118359715206248,
+        0.006302782470599145
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    },
+    "0.75": {
+      "mean_grid_minus_exact_interval_nll": 0.014460180527738165,
+      "simultaneous_bootstrap_95_ci": [
+        0.012172596409108678,
+        0.016747764646367652
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    },
+    "0.90": {
+      "mean_grid_minus_exact_interval_nll": 0.031396174638698884,
+      "simultaneous_bootstrap_95_ci": [
+        0.029067019466075004,
+        0.033725329811322764
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    }
+  },
+  "protocol": {
+    "claim_scope": "synthetic bursty irregular-observation mechanism validation",
+    "detection_sensitivity": 0.9,
+    "estimation_data": "training elapsed intervals plus missing/negative/positive outcomes only; latent paths discarded",
+    "false_positive_rate": 0.04,
+    "forward_rate_per_hour": 0.3,
+    "gap_contrasts": [
+      0.0,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "inspection_probability_state_0": 0.7,
+    "inspection_probability_state_1": 0.75,
+    "logged_process_role": "oracle-style data-generating reference, not a learned comparator",
+    "long_gaps_per_episode": 2,
+    "mean_interval_hours": 0.75,
+    "observation_count": 16,
+    "paired_burst_positions": true,
+    "paired_exact_state_test_rows": true,
+    "paired_training_random_streams": true,
+    "primary_family": "mean-grid minus exact-interval exact-state test NLL at three nonzero gap contrasts",
+    "rate_search_bounds_per_hour": [
+      1e-06,
+      5.0
+    ],
+    "return_rate_per_hour": 0.45,
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "simultaneous_inference": "paired max-standardized-deviation bootstrap, 20000 shared seed resamples",
+    "test_rows": 20000,
+    "total_followup_hours": 12.0,
+    "train_episodes": 600,
+    "validation_or_test_tuning": false,
+    "zero_contrast_role": "compatibility control excluded from the primary family"
+  },
+  "runs": [
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8953622128224809,
+        "false_positive_rate": 0.04032918996320949,
+        "final_training_observation_nll": 16.235067387875077,
+        "forward_rate_per_hour": 0.3019059021220172,
+        "initial_training_observation_nll": 16.40237933142665,
+        "inspection_probability_state_0": 0.6994836035772197,
+        "inspection_probability_state_1": 0.7476775888861663,
+        "iterations": 49,
+        "return_rate_per_hour": 0.4917175261242942
+      },
+      "gap_contrast": 0.0,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.29740382466804494,
+        "iterations": 75,
+        "return_rate_per_hour": 0.48939287584626656
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.001905902122017189,
+          "absolute_return_rate_error": 0.04171752612429419,
+          "actual_interval_train_nll": 16.235067387875077,
+          "exact_state_test_brier": 0.2199249490598857,
+          "exact_state_test_nll": 0.630587286911266,
+          "forward_rate_per_hour": 0.3019059021220172,
+          "return_rate_per_hour": 0.4917175261242942
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 16.239377803802242,
+          "exact_state_test_brier": 0.21975887485625498,
+          "exact_state_test_nll": 0.6302259816767383,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.002596175331955053,
+          "absolute_return_rate_error": 0.03939287584626655,
+          "actual_interval_train_nll": 16.23506901720668,
+          "exact_state_test_brier": 0.21999790051618157,
+          "exact_state_test_nll": 0.6307537378756874,
+          "forward_rate_per_hour": 0.29740382466804494,
+          "return_rate_per_hour": 0.48939287584626656
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 0,
+        "maximum_interval_hours": 0.75,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.75,
+        "total_followup_hours": 12.0
+      },
+      "seed": 101
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8867121493623639,
+        "false_positive_rate": 0.04618758721633502,
+        "final_training_observation_nll": 15.613477233727401,
+        "forward_rate_per_hour": 0.28539446563009774,
+        "initial_training_observation_nll": 15.92872532734223,
+        "inspection_probability_state_0": 0.6992903617320402,
+        "inspection_probability_state_1": 0.7454608611816745,
+        "iterations": 26,
+        "return_rate_per_hour": 0.48560221588229924
+      },
+      "gap_contrast": 0.5,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.19619306477101378,
+        "iterations": 43,
+        "return_rate_per_hour": 0.3432356401694812
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.014605534369902251,
+          "absolute_return_rate_error": 0.035602215882299226,
+          "actual_interval_train_nll": 15.613477233727426,
+          "exact_state_test_brier": 0.22030836901371387,
+          "exact_state_test_nll": 0.6314699951921585,
+          "forward_rate_per_hour": 0.28539446563009774,
+          "return_rate_per_hour": 0.48560221588229924
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 15.622467197174796,
+          "exact_state_test_brier": 0.21975887485625498,
+          "exact_state_test_nll": 0.6302259816767383,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.10380693522898621,
+          "absolute_return_rate_error": 0.1067643598305188,
+          "actual_interval_train_nll": 15.645249333129108,
+          "exact_state_test_brier": 0.22277421893427207,
+          "exact_state_test_nll": 0.6382912075076868,
+          "forward_rate_per_hour": 0.19619306477101378,
+          "return_rate_per_hour": 0.3432356401694812
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 3.375,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.375,
+        "total_followup_hours": 12.0
+      },
+      "seed": 101
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8949071897056342,
+        "false_positive_rate": 0.043959387103526676,
+        "final_training_observation_nll": 14.851515173540065,
+        "forward_rate_per_hour": 0.2858827963218313,
+        "initial_training_observation_nll": 15.138983667570168,
+        "inspection_probability_state_0": 0.696807520641538,
+        "inspection_probability_state_1": 0.7506680661780617,
+        "iterations": 14,
+        "return_rate_per_hour": 0.45048317106757774
+      },
+      "gap_contrast": 0.75,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.14267422788593087,
+        "iterations": 27,
+        "return_rate_per_hour": 0.22135837605226988
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.01411720367816871,
+          "absolute_return_rate_error": 0.00048317106757772565,
+          "actual_interval_train_nll": 14.851515173540047,
+          "exact_state_test_brier": 0.2198723116842361,
+          "exact_state_test_nll": 0.6305025051315003,
+          "forward_rate_per_hour": 0.2858827963218313,
+          "return_rate_per_hour": 0.45048317106757774
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.853193006749652,
+          "exact_state_test_brier": 0.21975887485625498,
+          "exact_state_test_nll": 0.6302259816767383,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.15732577211406912,
+          "absolute_return_rate_error": 0.22864162394773013,
+          "actual_interval_train_nll": 14.925104231434583,
+          "exact_state_test_brier": 0.22541741078551217,
+          "exact_state_test_nll": 0.6472931911846677,
+          "forward_rate_per_hour": 0.14267422788593087,
+          "return_rate_per_hour": 0.22135837605226988
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 4.6875,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.1875,
+        "total_followup_hours": 12.0
+      },
+      "seed": 101
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8946231887639879,
+        "false_positive_rate": 0.039802395964655186,
+        "final_training_observation_nll": 14.169252437857446,
+        "forward_rate_per_hour": 0.3270483400335937,
+        "initial_training_observation_nll": 14.42848917943236,
+        "inspection_probability_state_0": 0.6972019041389241,
+        "inspection_probability_state_1": 0.7501910372725982,
+        "iterations": 10,
+        "return_rate_per_hour": 0.4947459022858598
+      },
+      "gap_contrast": 0.9,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.1045676864127128,
+        "iterations": 11,
+        "return_rate_per_hour": 0.13799811971675421
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.027048340033593687,
+          "absolute_return_rate_error": 0.044745902285859784,
+          "actual_interval_train_nll": 14.169252437857446,
+          "exact_state_test_brier": 0.21978216193465397,
+          "exact_state_test_nll": 0.6302833931003241,
+          "forward_rate_per_hour": 0.3270483400335937,
+          "return_rate_per_hour": 0.4947459022858598
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.170587214057155,
+          "exact_state_test_brier": 0.21975887485625498,
+          "exact_state_test_nll": 0.6302259816767383,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.1954323135872872,
+          "absolute_return_rate_error": 0.3120018802832458,
+          "actual_interval_train_nll": 14.260554265849056,
+          "exact_state_test_brier": 0.2298061179355219,
+          "exact_state_test_nll": 0.6630352419338783,
+          "forward_rate_per_hour": 0.1045676864127128,
+          "return_rate_per_hour": 0.13799811971675421
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 5.475,
+        "mean_interval_hours": 0.7499999999999999,
+        "minimum_interval_hours": 0.07499999999999998,
+        "total_followup_hours": 11.999999999999998
+      },
+      "seed": 101
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9034629065535681,
+        "false_positive_rate": 0.04652825666560339,
+        "final_training_observation_nll": 16.225732203742435,
+        "forward_rate_per_hour": 0.2839114270850735,
+        "initial_training_observation_nll": 16.66804035200352,
+        "inspection_probability_state_0": 0.6933738450466346,
+        "inspection_probability_state_1": 0.7541794196511928,
+        "iterations": 42,
+        "return_rate_per_hour": 0.44848497643187163
+      },
+      "gap_contrast": 0.0,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.2837123741447604,
+        "iterations": 58,
+        "return_rate_per_hour": 0.4469843994856719
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.01608857291492649,
+          "absolute_return_rate_error": 0.001515023568128382,
+          "actual_interval_train_nll": 16.225732203742425,
+          "exact_state_test_brier": 0.21739930327884632,
+          "exact_state_test_nll": 0.6250099956747291,
+          "forward_rate_per_hour": 0.2839114270850735,
+          "return_rate_per_hour": 0.44848497643187163
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 16.226683114054364,
+          "exact_state_test_brier": 0.21737458706683882,
+          "exact_state_test_nll": 0.6249665331415204,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.016287625855239574,
+          "absolute_return_rate_error": 0.0030156005143280873,
+          "actual_interval_train_nll": 16.22573108074529,
+          "exact_state_test_brier": 0.21739306924390994,
+          "exact_state_test_nll": 0.6249966928634971,
+          "forward_rate_per_hour": 0.2837123741447604,
+          "return_rate_per_hour": 0.4469843994856719
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 0,
+        "maximum_interval_hours": 0.75,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.75,
+        "total_followup_hours": 12.0
+      },
+      "seed": 211
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9026918687194074,
+        "false_positive_rate": 0.03732394477015448,
+        "final_training_observation_nll": 15.641469034931418,
+        "forward_rate_per_hour": 0.3250290118379012,
+        "initial_training_observation_nll": 15.730752968786186,
+        "inspection_probability_state_0": 0.6947774473224917,
+        "inspection_probability_state_1": 0.7526771026696534,
+        "iterations": 23,
+        "return_rate_per_hour": 0.45613833235973295
+      },
+      "gap_contrast": 0.5,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.22187256247531756,
+        "iterations": 36,
+        "return_rate_per_hour": 0.31393506908033897
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.02502901183790124,
+          "absolute_return_rate_error": 0.006138332359732934,
+          "actual_interval_train_nll": 15.64146903493141,
+          "exact_state_test_brier": 0.21782116707305127,
+          "exact_state_test_nll": 0.6259906659545278,
+          "forward_rate_per_hour": 0.3250290118379012,
+          "return_rate_per_hour": 0.45613833235973295
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 15.644467180462012,
+          "exact_state_test_brier": 0.21737458706683882,
+          "exact_state_test_nll": 0.6249665331415204,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.07812743752468243,
+          "absolute_return_rate_error": 0.13606493091966104,
+          "actual_interval_train_nll": 15.677903324915007,
+          "exact_state_test_brier": 0.2178583758928165,
+          "exact_state_test_nll": 0.6262987867347035,
+          "forward_rate_per_hour": 0.22187256247531756,
+          "return_rate_per_hour": 0.31393506908033897
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 3.375,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.375,
+        "total_followup_hours": 12.0
+      },
+      "seed": 211
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9005829506885327,
+        "false_positive_rate": 0.040654252800153584,
+        "final_training_observation_nll": 14.790286447847496,
+        "forward_rate_per_hour": 0.29538793682133796,
+        "initial_training_observation_nll": 14.865228600690216,
+        "inspection_probability_state_0": 0.6956903034757442,
+        "inspection_probability_state_1": 0.7538656383301306,
+        "iterations": 13,
+        "return_rate_per_hour": 0.4438216389967501
+      },
+      "gap_contrast": 0.75,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.15117670167862882,
+        "iterations": 21,
+        "return_rate_per_hour": 0.22362710470380595
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.004612063178662029,
+          "absolute_return_rate_error": 0.0061783610032499214,
+          "actual_interval_train_nll": 14.790286447847496,
+          "exact_state_test_brier": 0.21736035089921357,
+          "exact_state_test_nll": 0.6249303830415507,
+          "forward_rate_per_hour": 0.29538793682133796,
+          "return_rate_per_hour": 0.4438216389967501
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.79081461997369,
+          "exact_state_test_brier": 0.21737458706683882,
+          "exact_state_test_nll": 0.6249665331415204,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.14882329832137117,
+          "absolute_return_rate_error": 0.22637289529619406,
+          "actual_interval_train_nll": 14.870382992228526,
+          "exact_state_test_brier": 0.221043072813378,
+          "exact_state_test_nll": 0.6360199778155105,
+          "forward_rate_per_hour": 0.15117670167862882,
+          "return_rate_per_hour": 0.22362710470380595
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 4.6875,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.1875,
+        "total_followup_hours": 12.0
+      },
+      "seed": 211
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.908796458970642,
+        "false_positive_rate": 0.04203995259569572,
+        "final_training_observation_nll": 13.973386880830601,
+        "forward_rate_per_hour": 0.2814099729389175,
+        "initial_training_observation_nll": 14.033925400686652,
+        "inspection_probability_state_0": 0.6951004924378353,
+        "inspection_probability_state_1": 0.7530251679598631,
+        "iterations": 9,
+        "return_rate_per_hour": 0.41601434419798217
+      },
+      "gap_contrast": 0.9,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.10863691779095429,
+        "iterations": 13,
+        "return_rate_per_hour": 0.15285721216484358
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.01859002706108248,
+          "absolute_return_rate_error": 0.033985655802017845,
+          "actual_interval_train_nll": 13.973386880830594,
+          "exact_state_test_brier": 0.21736437481525672,
+          "exact_state_test_nll": 0.624933379274479,
+          "forward_rate_per_hour": 0.2814099729389175,
+          "return_rate_per_hour": 0.41601434419798217
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 13.975805665155542,
+          "exact_state_test_brier": 0.21737458706683882,
+          "exact_state_test_nll": 0.6249665331415204,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.1913630822090457,
+          "absolute_return_rate_error": 0.29714278783515646,
+          "actual_interval_train_nll": 14.06343864985315,
+          "exact_state_test_brier": 0.22583146283973138,
+          "exact_state_test_nll": 0.6522992502105375,
+          "forward_rate_per_hour": 0.10863691779095429,
+          "return_rate_per_hour": 0.15285721216484358
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 5.475,
+        "mean_interval_hours": 0.7499999999999999,
+        "minimum_interval_hours": 0.07499999999999998,
+        "total_followup_hours": 11.999999999999998
+      },
+      "seed": 211
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9275446982994655,
+        "false_positive_rate": 0.05100643226234605,
+        "final_training_observation_nll": 16.30663264220585,
+        "forward_rate_per_hour": 0.298927495868167,
+        "initial_training_observation_nll": 16.78609794363426,
+        "inspection_probability_state_0": 0.6956146206558936,
+        "inspection_probability_state_1": 0.741581644202683,
+        "iterations": 36,
+        "return_rate_per_hour": 0.4729437389209772
+      },
+      "gap_contrast": 0.0,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.2996365980592568,
+        "iterations": 69,
+        "return_rate_per_hour": 0.47274355711614235
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.0010725041318329631,
+          "absolute_return_rate_error": 0.022943738920977175,
+          "actual_interval_train_nll": 16.30663264220585,
+          "exact_state_test_brier": 0.21962531762654175,
+          "exact_state_test_nll": 0.6298230872005564,
+          "forward_rate_per_hour": 0.298927495868167,
+          "return_rate_per_hour": 0.4729437389209772
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 16.310765812663732,
+          "exact_state_test_brier": 0.2194867136758855,
+          "exact_state_test_nll": 0.6295287472019994,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.000363401940743191,
+          "absolute_return_rate_error": 0.022743557116142343,
+          "actual_interval_train_nll": 16.306632311310203,
+          "exact_state_test_brier": 0.219612105295682,
+          "exact_state_test_nll": 0.629794283952445,
+          "forward_rate_per_hour": 0.2996365980592568,
+          "return_rate_per_hour": 0.47274355711614235
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 0,
+        "maximum_interval_hours": 0.75,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.75,
+        "total_followup_hours": 12.0
+      },
+      "seed": 307
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9160643922244323,
+        "false_positive_rate": 0.05093335380696737,
+        "final_training_observation_nll": 15.646115402377564,
+        "forward_rate_per_hour": 0.2852713715160857,
+        "initial_training_observation_nll": 16.060024871806956,
+        "inspection_probability_state_0": 0.69387392392811,
+        "inspection_probability_state_1": 0.740311263607347,
+        "iterations": 14,
+        "return_rate_per_hour": 0.43026432139888515
+      },
+      "gap_contrast": 0.5,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.21419897483816538,
+        "iterations": 34,
+        "return_rate_per_hour": 0.3110906590832833
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.014728628483914263,
+          "absolute_return_rate_error": 0.01973567860111486,
+          "actual_interval_train_nll": 15.646115402377587,
+          "exact_state_test_brier": 0.21951328180764318,
+          "exact_state_test_nll": 0.6296000920121014,
+          "forward_rate_per_hour": 0.2852713715160857,
+          "return_rate_per_hour": 0.43026432139888515
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 15.651711225394378,
+          "exact_state_test_brier": 0.2194867136758855,
+          "exact_state_test_nll": 0.6295287472019994,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.0858010251618346,
+          "absolute_return_rate_error": 0.1389093409167167,
+          "actual_interval_train_nll": 15.675497644907267,
+          "exact_state_test_brier": 0.2203645799424679,
+          "exact_state_test_nll": 0.6320578416969425,
+          "forward_rate_per_hour": 0.21419897483816538,
+          "return_rate_per_hour": 0.3110906590832833
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 3.375,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.375,
+        "total_followup_hours": 12.0
+      },
+      "seed": 307
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.906655381392394,
+        "false_positive_rate": 0.043305570878188065,
+        "final_training_observation_nll": 14.891557918853099,
+        "forward_rate_per_hour": 0.3121062396801543,
+        "initial_training_observation_nll": 15.769109221470192,
+        "inspection_probability_state_0": 0.6970263890119498,
+        "inspection_probability_state_1": 0.7330946834701543,
+        "iterations": 16,
+        "return_rate_per_hour": 0.4767332915055242
+      },
+      "gap_contrast": 0.75,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.15268549317181457,
+        "iterations": 24,
+        "return_rate_per_hour": 0.2341537825669051
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.012106239680154285,
+          "absolute_return_rate_error": 0.02673329150552417,
+          "actual_interval_train_nll": 14.891557918853087,
+          "exact_state_test_brier": 0.2195192717420531,
+          "exact_state_test_nll": 0.6295989839132125,
+          "forward_rate_per_hour": 0.3121062396801543,
+          "return_rate_per_hour": 0.4767332915055242
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.896345016041641,
+          "exact_state_test_brier": 0.2194867136758855,
+          "exact_state_test_nll": 0.6295287472019994,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.14731450682818542,
+          "absolute_return_rate_error": 0.2158462174330949,
+          "actual_interval_train_nll": 14.981235243490351,
+          "exact_state_test_brier": 0.2239282914425818,
+          "exact_state_test_nll": 0.6427595202958836,
+          "forward_rate_per_hour": 0.15268549317181457,
+          "return_rate_per_hour": 0.2341537825669051
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 4.6875,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.1875,
+        "total_followup_hours": 12.0
+      },
+      "seed": 307
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8989939747113571,
+        "false_positive_rate": 0.042777514728699416,
+        "final_training_observation_nll": 14.120530957552717,
+        "forward_rate_per_hour": 0.28442451493342163,
+        "initial_training_observation_nll": 14.368924876063675,
+        "inspection_probability_state_0": 0.6947332847162694,
+        "inspection_probability_state_1": 0.7348366086936192,
+        "iterations": 9,
+        "return_rate_per_hour": 0.42713344937848124
+      },
+      "gap_contrast": 0.9,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.10129232768856969,
+        "iterations": 8,
+        "return_rate_per_hour": 0.13399738965053992
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.015575485066578354,
+          "absolute_return_rate_error": 0.022866550621518766,
+          "actual_interval_train_nll": 14.120530957552722,
+          "exact_state_test_brier": 0.21950837072829937,
+          "exact_state_test_nll": 0.629590744579741,
+          "forward_rate_per_hour": 0.28442451493342163,
+          "return_rate_per_hour": 0.42713344937848124
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.124503955508407,
+          "exact_state_test_brier": 0.2194867136758855,
+          "exact_state_test_nll": 0.6295287472019994,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.1987076723114303,
+          "absolute_return_rate_error": 0.3160026103494601,
+          "actual_interval_train_nll": 14.203674673222194,
+          "exact_state_test_brier": 0.22983940639471448,
+          "exact_state_test_nll": 0.6636747600051314,
+          "forward_rate_per_hour": 0.10129232768856969,
+          "return_rate_per_hour": 0.13399738965053992
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 5.475,
+        "mean_interval_hours": 0.7499999999999999,
+        "minimum_interval_hours": 0.07499999999999998,
+        "total_followup_hours": 11.999999999999998
+      },
+      "seed": 307
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.890882955573321,
+        "false_positive_rate": 0.042662167713265184,
+        "final_training_observation_nll": 16.200449428761193,
+        "forward_rate_per_hour": 0.28959759662558937,
+        "initial_training_observation_nll": 16.63758891829393,
+        "inspection_probability_state_0": 0.703255490271428,
+        "inspection_probability_state_1": 0.7474158739999583,
+        "iterations": 54,
+        "return_rate_per_hour": 0.42658068522155573
+      },
+      "gap_contrast": 0.0,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.2942358845748583,
+        "iterations": 32,
+        "return_rate_per_hour": 0.4299951166065217
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.010402403374410618,
+          "absolute_return_rate_error": 0.023419314778444278,
+          "actual_interval_train_nll": 16.200449428761203,
+          "exact_state_test_brier": 0.22050615631638754,
+          "exact_state_test_nll": 0.6317918564965943,
+          "forward_rate_per_hour": 0.28959759662558937,
+          "return_rate_per_hour": 0.42658068522155573
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 16.20095499755881,
+          "exact_state_test_brier": 0.22050779323766587,
+          "exact_state_test_nll": 0.6317789504935875,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.005764115425141714,
+          "absolute_return_rate_error": 0.020004883393478334,
+          "actual_interval_train_nll": 16.200446221199385,
+          "exact_state_test_brier": 0.22049239188135497,
+          "exact_state_test_nll": 0.6317529342162032,
+          "forward_rate_per_hour": 0.2942358845748583,
+          "return_rate_per_hour": 0.4299951166065217
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 0,
+        "maximum_interval_hours": 0.75,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.75,
+        "total_followup_hours": 12.0
+      },
+      "seed": 401
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8951000586149077,
+        "false_positive_rate": 0.044217256801869484,
+        "final_training_observation_nll": 15.471978817750323,
+        "forward_rate_per_hour": 0.25637732572974253,
+        "initial_training_observation_nll": 15.81834008885726,
+        "inspection_probability_state_0": 0.695982633586053,
+        "inspection_probability_state_1": 0.7550538053346975,
+        "iterations": 19,
+        "return_rate_per_hour": 0.38512291913993835
+      },
+      "gap_contrast": 0.5,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.19682198939602147,
+        "iterations": 38,
+        "return_rate_per_hour": 0.28906881949719176
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.043622674270257455,
+          "absolute_return_rate_error": 0.06487708086006166,
+          "actual_interval_train_nll": 15.471978817750296,
+          "exact_state_test_brier": 0.2207969872787808,
+          "exact_state_test_nll": 0.6325828824142093,
+          "forward_rate_per_hour": 0.25637732572974253,
+          "return_rate_per_hour": 0.38512291913993835
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 15.477170447131211,
+          "exact_state_test_brier": 0.22050779323766587,
+          "exact_state_test_nll": 0.6317789504935875,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.10317801060397852,
+          "absolute_return_rate_error": 0.16093118050280825,
+          "actual_interval_train_nll": 15.496612084914341,
+          "exact_state_test_brier": 0.2222314670145446,
+          "exact_state_test_nll": 0.6367599502464443,
+          "forward_rate_per_hour": 0.19682198939602147,
+          "return_rate_per_hour": 0.28906881949719176
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 3.375,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.375,
+        "total_followup_hours": 12.0
+      },
+      "seed": 401
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9072053766786278,
+        "false_positive_rate": 0.04052756801064307,
+        "final_training_observation_nll": 14.727256916964523,
+        "forward_rate_per_hour": 0.28444912908646314,
+        "initial_training_observation_nll": 15.027930531463104,
+        "inspection_probability_state_0": 0.700214359995726,
+        "inspection_probability_state_1": 0.7531556361434802,
+        "iterations": 13,
+        "return_rate_per_hour": 0.4227460047991791
+      },
+      "gap_contrast": 0.75,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.14000528598276643,
+        "iterations": 19,
+        "return_rate_per_hour": 0.1983093751903067
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.015550870913536852,
+          "absolute_return_rate_error": 0.02725399520082089,
+          "actual_interval_train_nll": 14.727256916964532,
+          "exact_state_test_brier": 0.22053575279000714,
+          "exact_state_test_nll": 0.6318696618345299,
+          "forward_rate_per_hour": 0.28444912908646314,
+          "return_rate_per_hour": 0.4227460047991791
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.728707746124599,
+          "exact_state_test_brier": 0.22050779323766587,
+          "exact_state_test_nll": 0.6317789504935875,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.15999471401723356,
+          "absolute_return_rate_error": 0.2516906248096933,
+          "actual_interval_train_nll": 14.809386275565515,
+          "exact_state_test_brier": 0.22606827659544346,
+          "exact_state_test_nll": 0.6488213101953593,
+          "forward_rate_per_hour": 0.14000528598276643,
+          "return_rate_per_hour": 0.1983093751903067
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 4.6875,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.1875,
+        "total_followup_hours": 12.0
+      },
+      "seed": 401
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9086649179439887,
+        "false_positive_rate": 0.036449142879349715,
+        "final_training_observation_nll": 14.024034056524618,
+        "forward_rate_per_hour": 0.3533551545159285,
+        "initial_training_observation_nll": 14.72179332305431,
+        "inspection_probability_state_0": 0.7016833996166902,
+        "inspection_probability_state_1": 0.7510740697576939,
+        "iterations": 11,
+        "return_rate_per_hour": 0.5127424320181604
+      },
+      "gap_contrast": 0.9,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.105121745461523,
+        "iterations": 13,
+        "return_rate_per_hour": 0.12746242071346467
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.05335515451592854,
+          "absolute_return_rate_error": 0.06274243201816038,
+          "actual_interval_train_nll": 14.024034056524615,
+          "exact_state_test_brier": 0.22071813711758814,
+          "exact_state_test_nll": 0.6322793292429035,
+          "forward_rate_per_hour": 0.3533551545159285,
+          "return_rate_per_hour": 0.5127424320181604
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.027075886860333,
+          "exact_state_test_brier": 0.22050779323766587,
+          "exact_state_test_nll": 0.6317789504935875,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.19487825453847699,
+          "absolute_return_rate_error": 0.32253757928653537,
+          "actual_interval_train_nll": 14.13129716302106,
+          "exact_state_test_brier": 0.23040748328083263,
+          "exact_state_test_nll": 0.6640639580061204,
+          "forward_rate_per_hour": 0.105121745461523,
+          "return_rate_per_hour": 0.12746242071346467
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 5.475,
+        "mean_interval_hours": 0.7499999999999999,
+        "minimum_interval_hours": 0.07499999999999998,
+        "total_followup_hours": 11.999999999999998
+      },
+      "seed": 401
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.8772032864858903,
+        "false_positive_rate": 0.030531819924239444,
+        "final_training_observation_nll": 16.267380739125034,
+        "forward_rate_per_hour": 0.323145851043802,
+        "initial_training_observation_nll": 16.39308278067002,
+        "inspection_probability_state_0": 0.7012984139230459,
+        "inspection_probability_state_1": 0.7521381204454882,
+        "iterations": 41,
+        "return_rate_per_hour": 0.4336161943125793
+      },
+      "gap_contrast": 0.0,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.32334602008318,
+        "iterations": 58,
+        "return_rate_per_hour": 0.43503259469308025
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.023145851043802013,
+          "absolute_return_rate_error": 0.016383805687420705,
+          "actual_interval_train_nll": 16.26738073912504,
+          "exact_state_test_brier": 0.2207945287064604,
+          "exact_state_test_nll": 0.6322849261123001,
+          "forward_rate_per_hour": 0.323145851043802,
+          "return_rate_per_hour": 0.4336161943125793
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 16.269903628152157,
+          "exact_state_test_brier": 0.22044752330200268,
+          "exact_state_test_nll": 0.6315471550321969,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.023346020083179986,
+          "absolute_return_rate_error": 0.014967405306919757,
+          "actual_interval_train_nll": 16.26738123341956,
+          "exact_state_test_brier": 0.22077750863555184,
+          "exact_state_test_nll": 0.6322497411530879,
+          "forward_rate_per_hour": 0.32334602008318,
+          "return_rate_per_hour": 0.43503259469308025
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 0,
+        "maximum_interval_hours": 0.75,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.75,
+        "total_followup_hours": 12.0
+      },
+      "seed": 503
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9038230685842368,
+        "false_positive_rate": 0.0392957891353805,
+        "final_training_observation_nll": 15.42394882851391,
+        "forward_rate_per_hour": 0.27552725132791756,
+        "initial_training_observation_nll": 15.538545723085702,
+        "inspection_probability_state_0": 0.6935399331594884,
+        "inspection_probability_state_1": 0.7645225915211439,
+        "iterations": 26,
+        "return_rate_per_hour": 0.45409466119212694
+      },
+      "gap_contrast": 0.5,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.19798059814993807,
+        "iterations": 37,
+        "return_rate_per_hour": 0.3252543837151941
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.024472748672082434,
+          "absolute_return_rate_error": 0.004094661192126925,
+          "actual_interval_train_nll": 15.423948828513906,
+          "exact_state_test_brier": 0.2210903588112359,
+          "exact_state_test_nll": 0.6330311868837833,
+          "forward_rate_per_hour": 0.27552725132791756,
+          "return_rate_per_hour": 0.45409466119212694
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 15.428949614514407,
+          "exact_state_test_brier": 0.22044752330200268,
+          "exact_state_test_nll": 0.6315471550321969,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.10201940185006192,
+          "absolute_return_rate_error": 0.1247456162848059,
+          "actual_interval_train_nll": 15.454271382416609,
+          "exact_state_test_brier": 0.22313647667143882,
+          "exact_state_test_nll": 0.6388035823763029,
+          "forward_rate_per_hour": 0.19798059814993807,
+          "return_rate_per_hour": 0.3252543837151941
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 3.375,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.375,
+        "total_followup_hours": 12.0
+      },
+      "seed": 503
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9021223570240725,
+        "false_positive_rate": 0.04219458240150195,
+        "final_training_observation_nll": 14.734546981941184,
+        "forward_rate_per_hour": 0.27945718616157283,
+        "initial_training_observation_nll": 15.00933940846532,
+        "inspection_probability_state_0": 0.6939180981803784,
+        "inspection_probability_state_1": 0.76583189385977,
+        "iterations": 13,
+        "return_rate_per_hour": 0.44545251106670813
+      },
+      "gap_contrast": 0.75,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.15203862943789698,
+        "iterations": 24,
+        "return_rate_per_hour": 0.23240104775824322
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.020542813838427154,
+          "absolute_return_rate_error": 0.004547488933291877,
+          "actual_interval_train_nll": 14.734546981941163,
+          "exact_state_test_brier": 0.2208068755943455,
+          "exact_state_test_nll": 0.6323852287269857,
+          "forward_rate_per_hour": 0.27945718616157283,
+          "return_rate_per_hour": 0.44545251106670813
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.738103606356008,
+          "exact_state_test_brier": 0.22044752330200268,
+          "exact_state_test_nll": 0.6315471550321969,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.147961370562103,
+          "absolute_return_rate_error": 0.2175989522417568,
+          "actual_interval_train_nll": 14.816453208481638,
+          "exact_state_test_brier": 0.2255581602672606,
+          "exact_state_test_nll": 0.6466936657950488,
+          "forward_rate_per_hour": 0.15203862943789698,
+          "return_rate_per_hour": 0.23240104775824322
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 4.6875,
+        "mean_interval_hours": 0.75,
+        "minimum_interval_hours": 0.1875,
+        "total_followup_hours": 12.0
+      },
+      "seed": 503
+    },
+    {
+      "exact_interval_estimate": {
+        "converged": true,
+        "detection_sensitivity": 0.9001101607579096,
+        "false_positive_rate": 0.044786642480100454,
+        "final_training_observation_nll": 14.106274990235022,
+        "forward_rate_per_hour": 0.30345989226430947,
+        "initial_training_observation_nll": 14.173294968709925,
+        "inspection_probability_state_0": 0.6897181019634027,
+        "inspection_probability_state_1": 0.7755396493346216,
+        "iterations": 9,
+        "return_rate_per_hour": 0.4672962697567948
+      },
+      "gap_contrast": 0.9,
+      "mean_grid_estimate": {
+        "converged": true,
+        "forward_rate_per_hour": 0.11142521001381915,
+        "iterations": 13,
+        "return_rate_per_hour": 0.15537671830978295
+      },
+      "models": {
+        "exact_interval_em": {
+          "absolute_forward_rate_error": 0.003459892264309483,
+          "absolute_return_rate_error": 0.01729626975679477,
+          "actual_interval_train_nll": 14.106274990235027,
+          "exact_state_test_brier": 0.22049552692044386,
+          "exact_state_test_nll": 0.6316487422677651,
+          "forward_rate_per_hour": 0.30345989226430947,
+          "return_rate_per_hour": 0.4672962697567948
+        },
+        "logged_process": {
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "actual_interval_train_nll": 14.116575493827286,
+          "exact_state_test_brier": 0.22044752330200268,
+          "exact_state_test_nll": 0.6315471550321969,
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45
+        },
+        "mean_grid_em": {
+          "absolute_forward_rate_error": 0.18857478998618082,
+          "absolute_return_rate_error": 0.29462328169021706,
+          "actual_interval_train_nll": 14.200989634715755,
+          "exact_state_test_brier": 0.23014110549020997,
+          "exact_state_test_nll": 0.6626432515030396,
+          "forward_rate_per_hour": 0.11142521001381915,
+          "return_rate_per_hour": 0.15537671830978295
+        }
+      },
+      "schedule": {
+        "long_gaps_per_episode": 2,
+        "maximum_interval_hours": 5.475,
+        "mean_interval_hours": 0.7499999999999999,
+        "minimum_interval_hours": 0.07499999999999998,
+        "total_followup_hours": 11.999999999999998
+      },
+      "seed": 503
+    }
+  ],
+  "simultaneous_inference_details": {
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20260827,
+    "confidence": 0.95,
+    "critical_value": 2.057981593415707,
+    "family": [
+      "0.50",
+      "0.75",
+      "0.90"
+    ],
+    "family_size": 3,
+    "intervals": {
+      "0.50": [
+        0.0015118359715206248,
+        0.006302782470599145
+      ],
+      "0.75": [
+        0.012172596409108678,
+        0.016747764646367652
+      ],
+      "0.90": [
+        0.029067019466075004,
+        0.033725329811322764
+      ]
+    },
+    "method": "paired bootstrap max standardized mean deviation",
+    "shared_resample_indices": true
+  }
+}

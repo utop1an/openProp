@@ -1,0 +1,512 @@
+{
+  "audit": {
+    "cases_by_split": {
+      "valid_seen": 487,
+      "valid_unseen": 458
+    },
+    "cases_by_task_type": {
+      "pick_and_place_simple": 242,
+      "pick_clean_then_place_in_recep": 225,
+      "pick_cool_then_place_in_recep": 235,
+      "pick_heat_then_place_in_recep": 243
+    },
+    "excluded_trajectories": 207,
+    "excluded_trajectories_by_reason": {
+      "multi_entity_goal": 83,
+      "multiple_target_instances": 57,
+      "nested_multi_entity_goal": 67
+    },
+    "floorplans_by_split": {
+      "valid_seen": 88,
+      "valid_unseen": 4
+    },
+    "protocol": {
+      "excluded_task_policy": {
+        "look_at_obj_in_light": "multi_entity_goal",
+        "pick_and_place_with_movable_recep": "nested_multi_entity_goal",
+        "pick_two_obj_and_place": "multiple_target_instances"
+      },
+      "gold_labels": "trajectory PDDL parameters and task family",
+      "language": "human task descriptions",
+      "observation_claim": "none; lite release has no frame-level visibility state",
+      "source": "official ALFRED 2.1.0 lite trajectory JSONs"
+    },
+    "supported_cases": 945,
+    "trajectories_by_split": {
+      "valid_seen": 251,
+      "valid_unseen": 255
+    }
+  },
+  "sample_cases": [
+    {
+      "annotation_index": 0,
+      "case_id": "trial_T20190908_050633_745514:ann-0",
+      "floorplan": "FloorPlan329",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "book",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "side table"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "move a magazine from the bed to the table"
+      },
+      "query": "move a magazine from the bed to the table",
+      "source_path": "valid_seen/pick_and_place_simple-Book-None-SideTable-329/trial_T20190908_050633_745514/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190908_050633_745514",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190908_050633_745514:ann-1",
+      "floorplan": "FloorPlan329",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "book",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "side table"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Place book on right bedside table"
+      },
+      "query": "Place book on right bedside table",
+      "source_path": "valid_seen/pick_and_place_simple-Book-None-SideTable-329/trial_T20190908_050633_745514/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190908_050633_745514",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 2,
+      "case_id": "trial_T20190908_050633_745514:ann-2",
+      "floorplan": "FloorPlan329",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "book",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "side table"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Move a game from the bed to the bedside table"
+      },
+      "query": "Move a game from the bed to the bedside table",
+      "source_path": "valid_seen/pick_and_place_simple-Book-None-SideTable-329/trial_T20190908_050633_745514/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190908_050633_745514",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 0,
+      "case_id": "trial_T20190907_042856_259139:ann-0",
+      "floorplan": "FloorPlan229",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "book",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "sofa"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Move a book from a desk to a sofa."
+      },
+      "query": "Move a book from a desk to a sofa.",
+      "source_path": "valid_seen/pick_and_place_simple-Book-None-Sofa-229/trial_T20190907_042856_259139/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_042856_259139",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_042856_259139:ann-1",
+      "floorplan": "FloorPlan229",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "book",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "sofa"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "move the book to the couch"
+      },
+      "query": "move the book to the couch",
+      "source_path": "valid_seen/pick_and_place_simple-Book-None-Sofa-229/trial_T20190907_042856_259139/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_042856_259139",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 2,
+      "case_id": "trial_T20190907_042856_259139:ann-2",
+      "floorplan": "FloorPlan229",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "book",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "sofa"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Move the book from the table to the sofa"
+      },
+      "query": "Move the book from the table to the sofa",
+      "source_path": "valid_seen/pick_and_place_simple-Book-None-Sofa-229/trial_T20190907_042856_259139/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_042856_259139",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 0,
+      "case_id": "trial_T20190907_171639_045329:ann-0",
+      "floorplan": "FloorPlan201",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "bowl",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "coffee table"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Move a bowl from a dining table to a coffee table."
+      },
+      "query": "Move a bowl from a dining table to a coffee table.",
+      "source_path": "valid_seen/pick_and_place_simple-Bowl-None-CoffeeTable-201/trial_T20190907_171639_045329/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_171639_045329",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_171639_045329:ann-1",
+      "floorplan": "FloorPlan201",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "bowl",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "coffee table"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Put a bowl on a table."
+      },
+      "query": "Put a bowl on a table.",
+      "source_path": "valid_seen/pick_and_place_simple-Bowl-None-CoffeeTable-201/trial_T20190907_171639_045329/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_171639_045329",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 2,
+      "case_id": "trial_T20190907_171639_045329:ann-2",
+      "floorplan": "FloorPlan201",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "bowl",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "coffee table"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Move a bowl from the table to the coffee table"
+      },
+      "query": "Move a bowl from the table to the coffee table",
+      "source_path": "valid_seen/pick_and_place_simple-Bowl-None-CoffeeTable-201/trial_T20190907_171639_045329/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_171639_045329",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 0,
+      "case_id": "trial_T20190907_164104_229696:ann-0",
+      "floorplan": "FloorPlan224",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "box",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "dresser"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "move a box from the couch to the dresser"
+      },
+      "query": "move a box from the couch to the dresser",
+      "source_path": "valid_seen/pick_and_place_simple-Box-None-Dresser-224/trial_T20190907_164104_229696/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_164104_229696",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 1,
+      "case_id": "trial_T20190907_164104_229696:ann-1",
+      "floorplan": "FloorPlan224",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "box",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "dresser"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Move and empty box and newspaper to the TV stand"
+      },
+      "query": "Move and empty box and newspaper to the TV stand",
+      "source_path": "valid_seen/pick_and_place_simple-Box-None-Dresser-224/trial_T20190907_164104_229696/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_164104_229696",
+      "task_type": "pick_and_place_simple"
+    },
+    {
+      "annotation_index": 2,
+      "case_id": "trial_T20190907_164104_229696:ann-2",
+      "floorplan": "FloorPlan224",
+      "gold_frame": {
+        "constraints": [
+          {
+            "desired_value": "box",
+            "property_name": "type",
+            "relevance": 0.5,
+            "tolerance": null
+          },
+          {
+            "desired_value": {
+              "arguments": {
+                "object": "dresser"
+              },
+              "predicate": "on"
+            },
+            "property_name": "location",
+            "relevance": 0.5,
+            "tolerance": null
+          }
+        ],
+        "text": "Take the box from the couch, put it on the dresser"
+      },
+      "query": "Take the box from the couch, put it on the dresser",
+      "source_path": "valid_seen/pick_and_place_simple-Box-None-Dresser-224/trial_T20190907_164104_229696/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_164104_229696",
+      "task_type": "pick_and_place_simple"
+    }
+  ],
+  "sample_exclusions": [
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-AlarmClock-None-DeskLamp-323/trial_T20190909_044715_250790/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190909_044715_250790",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-BaseballBat-None-DeskLamp-303/trial_T20190907_060414_846460/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_060414_846460",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-Bowl-None-DeskLamp-301/trial_T20190909_150719_492274/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190909_150719_492274",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-Bowl-None-DeskLamp-316/trial_T20190908_230702_962704/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190908_230702_962704",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-Box-None-DeskLamp-205/trial_T20190907_074425_330493/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_074425_330493",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-CD-None-DeskLamp-302/trial_T20190907_154618_526741/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_154618_526741",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-CD-None-DeskLamp-314/trial_T20190907_114323_767231/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_114323_767231",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_224451_655673",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-Cloth-None-DeskLamp-303/trial_T20190908_170503_844252/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190908_170503_844252",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-CreditCard-None-FloorLamp-206/trial_T20190908_083541_210340/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190908_083541_210340",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-CreditCard-None-FloorLamp-207/trial_T20190907_031918_448619/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190907_031918_448619",
+      "task_type": "look_at_obj_in_light"
+    },
+    {
+      "reason": "multi_entity_goal",
+      "source_path": "valid_seen/look_at_obj_in_light-CreditCard-None-FloorLamp-227/trial_T20190908_173545_981227/traj_data.json",
+      "split": "valid_seen",
+      "task_id": "trial_T20190908_173545_981227",
+      "task_type": "look_at_obj_in_light"
+    }
+  ]
+}

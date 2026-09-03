@@ -1,0 +1,1048 @@
+{
+  "aggregate": {
+    "0.6": {
+      "duration_shift": {
+        "factorized_exponential": {
+          "concordance_index": {
+            "maximum": 0.7255083586961316,
+            "mean": 0.6990897209760197,
+            "minimum": 0.6627320125130344,
+            "standard_deviation": 0.023556370893597363
+          },
+          "integrated_brier_score": {
+            "maximum": 0.14281082647848214,
+            "mean": 0.11747606031217916,
+            "minimum": 0.10276651454326058,
+            "standard_deviation": 0.013399476732028114
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.786236664293604,
+            "mean": 1.6210232406991538,
+            "minimum": 1.5226889585828332,
+            "standard_deviation": 0.0890016742330074
+          }
+        },
+        "factorized_piecewise": {
+          "concordance_index": {
+            "maximum": 0.7255083586961316,
+            "mean": 0.6990897209760197,
+            "minimum": 0.6627320125130344,
+            "standard_deviation": 0.023556370893597363
+          },
+          "integrated_brier_score": {
+            "maximum": 0.15161659764983337,
+            "mean": 0.11881138104605983,
+            "minimum": 0.10164347601333504,
+            "standard_deviation": 0.017077961193257454
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.7399633444848612,
+            "mean": 1.5678427614648487,
+            "minimum": 1.4711430140388841,
+            "standard_deviation": 0.09179147419590138
+          }
+        },
+        "factorized_weibull": {
+          "concordance_index": {
+            "maximum": 0.7255083586961316,
+            "mean": 0.6990897209760197,
+            "minimum": 0.6627320125130344,
+            "standard_deviation": 0.023556370893597363
+          },
+          "integrated_brier_score": {
+            "maximum": 0.14529198543602034,
+            "mean": 0.11831502419439312,
+            "minimum": 0.10031529770876497,
+            "standard_deviation": 0.014773530443780923
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.6700845437658964,
+            "mean": 1.4870212877182594,
+            "minimum": 1.3537637390890866,
+            "standard_deviation": 0.10223234430969716
+          }
+        }
+      },
+      "in_distribution": {
+        "factorized_exponential": {
+          "concordance_index": {
+            "maximum": 0.7255083586961316,
+            "mean": 0.6940147801398379,
+            "minimum": 0.6627320125130344,
+            "standard_deviation": 0.02626544744868509
+          },
+          "integrated_brier_score": {
+            "maximum": 0.14589515659703306,
+            "mean": 0.12051335173247467,
+            "minimum": 0.10146921013958651,
+            "standard_deviation": 0.014285752990640497
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.783493670675671,
+            "mean": 1.6185508662784631,
+            "minimum": 1.494885309230328,
+            "standard_deviation": 0.09352977301361118
+          }
+        },
+        "factorized_piecewise": {
+          "concordance_index": {
+            "maximum": 0.7255083586961316,
+            "mean": 0.6990897209760197,
+            "minimum": 0.6627320125130344,
+            "standard_deviation": 0.023556370893597363
+          },
+          "integrated_brier_score": {
+            "maximum": 0.14263737122892656,
+            "mean": 0.11794195621330412,
+            "minimum": 0.09950562375711618,
+            "standard_deviation": 0.013882106937609136
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.6869023856800964,
+            "mean": 1.5458438985647112,
+            "minimum": 1.4106755712324814,
+            "standard_deviation": 0.08944901025807393
+          }
+        },
+        "factorized_weibull": {
+          "concordance_index": {
+            "maximum": 0.7255083586961316,
+            "mean": 0.6990897209760197,
+            "minimum": 0.6627320125130344,
+            "standard_deviation": 0.023556370893597363
+          },
+          "integrated_brier_score": {
+            "maximum": 0.14212000803201563,
+            "mean": 0.1180941522163093,
+            "minimum": 0.09985897242520769,
+            "standard_deviation": 0.013584998191040998
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.6609094563354618,
+            "mean": 1.4843062806536447,
+            "minimum": 1.3497701551224182,
+            "standard_deviation": 0.09995999053459538
+          }
+        }
+      }
+    },
+    "1.6": {
+      "duration_shift": {
+        "factorized_exponential": {
+          "concordance_index": {
+            "maximum": 0.8000044105323513,
+            "mean": 0.7859109324400335,
+            "minimum": 0.7768540512008445,
+            "standard_deviation": 0.007775863795650414
+          },
+          "integrated_brier_score": {
+            "maximum": 0.03998171856508779,
+            "mean": 0.03373480206929242,
+            "minimum": 0.030408401682811854,
+            "standard_deviation": 0.0035026716135456632
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.2942713402741683,
+            "mean": 1.2352579470295335,
+            "minimum": 1.171808187884548,
+            "standard_deviation": 0.04777273455657067
+          }
+        },
+        "factorized_piecewise": {
+          "concordance_index": {
+            "maximum": 0.8000044105323513,
+            "mean": 0.7859109324400335,
+            "minimum": 0.7768540512008445,
+            "standard_deviation": 0.007775863795650414
+          },
+          "integrated_brier_score": {
+            "maximum": 0.0370704136487346,
+            "mean": 0.030477447931203838,
+            "minimum": 0.027068740537321976,
+            "standard_deviation": 0.0036676844861807554
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.2378823454163923,
+            "mean": 1.1792860055055228,
+            "minimum": 1.133153663383164,
+            "standard_deviation": 0.043545250103190825
+          }
+        },
+        "factorized_weibull": {
+          "concordance_index": {
+            "maximum": 0.8000044105323513,
+            "mean": 0.7859109324400335,
+            "minimum": 0.7768540512008445,
+            "standard_deviation": 0.007775863795650414
+          },
+          "integrated_brier_score": {
+            "maximum": 0.03859033295002255,
+            "mean": 0.03076798556794228,
+            "minimum": 0.0267948019209974,
+            "standard_deviation": 0.004340073968635064
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.2017993864110126,
+            "mean": 1.1271910571963493,
+            "minimum": 1.0605614365059843,
+            "standard_deviation": 0.053304543549001014
+          }
+        }
+      },
+      "in_distribution": {
+        "factorized_exponential": {
+          "concordance_index": {
+            "maximum": 0.8000044105323513,
+            "mean": 0.7859109324400335,
+            "minimum": 0.7768540512008445,
+            "standard_deviation": 0.007775863795650414
+          },
+          "integrated_brier_score": {
+            "maximum": 0.038314663574236935,
+            "mean": 0.03171142508070905,
+            "minimum": 0.027606528004318998,
+            "standard_deviation": 0.0037718659177798947
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.2873893853759506,
+            "mean": 1.2216139707012403,
+            "minimum": 1.1697347983306032,
+            "standard_deviation": 0.05023257975402932
+          }
+        },
+        "factorized_piecewise": {
+          "concordance_index": {
+            "maximum": 0.8000044105323513,
+            "mean": 0.7859109324400335,
+            "minimum": 0.7768540512008445,
+            "standard_deviation": 0.007775863795650414
+          },
+          "integrated_brier_score": {
+            "maximum": 0.038265550391824915,
+            "mean": 0.03023943846198216,
+            "minimum": 0.02609222741527711,
+            "standard_deviation": 0.004399035092377893
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.2557218704826703,
+            "mean": 1.1839921974007779,
+            "minimum": 1.1390528429814457,
+            "standard_deviation": 0.04501244386622096
+          }
+        },
+        "factorized_weibull": {
+          "concordance_index": {
+            "maximum": 0.8000044105323513,
+            "mean": 0.7859109324400335,
+            "minimum": 0.7768540512008445,
+            "standard_deviation": 0.007775863795650414
+          },
+          "integrated_brier_score": {
+            "maximum": 0.03777246682619702,
+            "mean": 0.029471525088746384,
+            "minimum": 0.025125352788442957,
+            "standard_deviation": 0.004543744613984832
+          },
+          "negative_log_likelihood": {
+            "maximum": 1.2013049250151997,
+            "mean": 1.1210699951198997,
+            "minimum": 1.0551528987232959,
+            "standard_deviation": 0.05265642701402736
+          }
+        }
+      }
+    }
+  },
+  "protocol": {
+    "calibration": "condition-specific validation only; never test",
+    "claim_scope": "synthetic duration-shift mechanism validation",
+    "conditions": {
+      "duration_shift": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "in_distribution": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      }
+    },
+    "evaluation_horizons_hours": [
+      1.0,
+      4.0,
+      8.0,
+      12.0,
+      18.0
+    ],
+    "paired_test_partitions": true,
+    "piecewise_bin_edges_hours": [
+      2.0,
+      4.0
+    ],
+    "samples_per_context": 80,
+    "seeds": [
+      31,
+      41,
+      53,
+      67,
+      79
+    ],
+    "true_shapes": [
+      0.6,
+      1.6
+    ]
+  },
+  "runs": [
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 0.5915101333876557,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.723787301451385,
+          "integrated_brier_score": 0.1186557341827848,
+          "negative_log_likelihood": 1.5836541321316429
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.723787301451385,
+          "integrated_brier_score": 0.11554086071797516,
+          "negative_log_likelihood": 1.5118897341974262
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.723787301451385,
+          "integrated_brier_score": 0.11540477768461216,
+          "negative_log_likelihood": 1.4683985549318135
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.8316455787192552,
+        -1.1538016821799355
+      ],
+      "seed": 31,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 0.5858559791638069,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.723787301451385,
+          "integrated_brier_score": 0.11503870947681978,
+          "negative_log_likelihood": 1.5711405127926794
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.723787301451385,
+          "integrated_brier_score": 0.11556571973261984,
+          "negative_log_likelihood": 1.5144994574660913
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.723787301451385,
+          "integrated_brier_score": 0.11821692628920347,
+          "negative_log_likelihood": 1.4709623975556612
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.9364938210552033,
+        -0.8472300639012128
+      ],
+      "seed": 31,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 0.5918301967009535,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.6627320125130344,
+          "integrated_brier_score": 0.14589515659703306,
+          "negative_log_likelihood": 1.783493670675671
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6627320125130344,
+          "integrated_brier_score": 0.14263737122892656,
+          "negative_log_likelihood": 1.6869023856800964
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6627320125130344,
+          "integrated_brier_score": 0.14212000803201563,
+          "negative_log_likelihood": 1.6609094563354618
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.9012344746284587,
+        -1.3287845033502916
+      ],
+      "seed": 41,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 0.6028364077530721,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.6627320125130344,
+          "integrated_brier_score": 0.14281082647848214,
+          "negative_log_likelihood": 1.786236664293604
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6627320125130344,
+          "integrated_brier_score": 0.15161659764983337,
+          "negative_log_likelihood": 1.7399633444848612
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6627320125130344,
+          "integrated_brier_score": 0.14529198543602034,
+          "negative_log_likelihood": 1.6700845437658964
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.8901363143944206,
+        -1.9917021985657475
+      ],
+      "seed": 41,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 0.6299912028541498,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7255083586961316,
+          "integrated_brier_score": 0.10146921013958651,
+          "negative_log_likelihood": 1.494885309230328
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7255083586961316,
+          "integrated_brier_score": 0.09950562375711618,
+          "negative_log_likelihood": 1.4106755712324814
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7255083586961316,
+          "integrated_brier_score": 0.09985897242520769,
+          "negative_log_likelihood": 1.3497701551224182
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.551526219258032,
+        -0.8685419049295531
+      ],
+      "seed": 53,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 0.6104398728014993,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7255083586961316,
+          "integrated_brier_score": 0.10276651454326058,
+          "negative_log_likelihood": 1.5226889585828332
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7255083586961316,
+          "integrated_brier_score": 0.10164347601333504,
+          "negative_log_likelihood": 1.4711430140388841
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7255083586961316,
+          "integrated_brier_score": 0.10031529770876497,
+          "negative_log_likelihood": 1.3537637390890866
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.6371092950091847,
+        -0.38244367492063314
+      ],
+      "seed": 53,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 0.5966467948869278,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.6705670961521606,
+          "integrated_brier_score": 0.1181952341884269,
+          "negative_log_likelihood": 1.6144506786439337
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6959418003330704,
+          "integrated_brier_score": 0.11655853404966607,
+          "negative_log_likelihood": 1.5719377047256287
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6959418003330704,
+          "integrated_brier_score": 0.11723472455805817,
+          "negative_log_likelihood": 1.4650566533016116
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.6851734623101503,
+        -1.1257781903000554
+      ],
+      "seed": 67,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 0.6114562771279227,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.6959418003330704,
+          "integrated_brier_score": 0.11353621471744899,
+          "negative_log_likelihood": 1.6146056739254055
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6959418003330704,
+          "integrated_brier_score": 0.11245157795551579,
+          "negative_log_likelihood": 1.5624084868000094
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6959418003330704,
+          "integrated_brier_score": 0.1136406593995271,
+          "negative_log_likelihood": 1.4611974784524087
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.5893577520643567,
+        -0.7540251914683019
+      ],
+      "seed": 67,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 0.6379264883335551,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.6874791318864775,
+          "integrated_brier_score": 0.11835142355454205,
+          "negative_log_likelihood": 1.6162705407107396
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6874791318864775,
+          "integrated_brier_score": 0.11546739131283666,
+          "negative_log_likelihood": 1.5478140969879226
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6874791318864775,
+          "integrated_brier_score": 0.11585227838165281,
+          "negative_log_likelihood": 1.4773965835769183
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.7123035246245764,
+        -1.0740491070262066
+      ],
+      "seed": 79,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 0.6643060025296197,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.6874791318864775,
+          "integrated_brier_score": 0.11322803634488433,
+          "negative_log_likelihood": 1.6104443939012467
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.6874791318864775,
+          "integrated_brier_score": 0.1127795338789951,
+          "negative_log_likelihood": 1.5511995045343976
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.6874791318864775,
+          "integrated_brier_score": 0.11411025213844972,
+          "negative_log_likelihood": 1.4790982797282437
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        -0.692053057965713,
+        -0.7916679959064294
+      ],
+      "seed": 79,
+      "true_shape": 0.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 1.5996731591636157,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.8000044105323513,
+          "integrated_brier_score": 0.028745453057601088,
+          "negative_log_likelihood": 1.1697347983306032
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.8000044105323513,
+          "integrated_brier_score": 0.026486034293467152,
+          "negative_log_likelihood": 1.1390528429814457
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.8000044105323513,
+          "integrated_brier_score": 0.025717816225103857,
+          "negative_log_likelihood": 1.0551528987232959
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.7981156967418036,
+        1.3086812447061502
+      ],
+      "seed": 31,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 1.5759939817370494,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.8000044105323513,
+          "integrated_brier_score": 0.030408401682811854,
+          "negative_log_likelihood": 1.171808187884548
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.8000044105323513,
+          "integrated_brier_score": 0.027333858933280927,
+          "negative_log_likelihood": 1.133153663383164
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.8000044105323513,
+          "integrated_brier_score": 0.0267948019209974,
+          "negative_log_likelihood": 1.0605614365059843
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.7731811767155239,
+        1.0532127065829475
+      ],
+      "seed": 31,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 1.5901058408066338,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7869897411683908,
+          "integrated_brier_score": 0.03288747036217726,
+          "negative_log_likelihood": 1.2873893853759506
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7869897411683908,
+          "integrated_brier_score": 0.030899116218078927,
+          "negative_log_likelihood": 1.216073946261734
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7869897411683908,
+          "integrated_brier_score": 0.030184224561351333,
+          "negative_log_likelihood": 1.1606910615320056
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.7874115602557031,
+        1.1526432929212487
+      ],
+      "seed": 41,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 1.5999989502566165,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7869897411683908,
+          "integrated_brier_score": 0.03510650169088244,
+          "negative_log_likelihood": 1.2942713402741683
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7869897411683908,
+          "integrated_brier_score": 0.03152717999904616,
+          "negative_log_likelihood": 1.225905150771719
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7869897411683908,
+          "integrated_brier_score": 0.03229225787469534,
+          "negative_log_likelihood": 1.1772211595946134
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.8084119227450649,
+        0.4884953613882022
+      ],
+      "seed": 41,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 1.7157836414566265,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7838030047115299,
+          "integrated_brier_score": 0.027606528004318998,
+          "negative_log_likelihood": 1.1792912680567047
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7838030047115299,
+          "integrated_brier_score": 0.02609222741527711,
+          "negative_log_likelihood": 1.164648491436975
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7838030047115299,
+          "integrated_brier_score": 0.025125352788442957,
+          "negative_log_likelihood": 1.0887968864590014
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.8330042981412085,
+        1.4085758814015248
+      ],
+      "seed": 53,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 1.5759419075182415,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7838030047115299,
+          "integrated_brier_score": 0.031304511927043095,
+          "negative_log_likelihood": 1.2052302229478582
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7838030047115299,
+          "integrated_brier_score": 0.027068740537321976,
+          "negative_log_likelihood": 1.1492615312237227
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7838030047115299,
+          "integrated_brier_score": 0.027609255950443966,
+          "negative_log_likelihood": 1.0954081219992486
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.8380130201304327,
+        0.785375687602837
+      ],
+      "seed": 53,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 1.599098276940955,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.781903454587051,
+          "integrated_brier_score": 0.03100301040521097,
+          "negative_log_likelihood": 1.1945751484416196
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.781903454587051,
+          "integrated_brier_score": 0.0294542639912627,
+          "negative_log_likelihood": 1.1444638358410644
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.781903454587051,
+          "integrated_brier_score": 0.028557765042636758,
+          "negative_log_likelihood": 1.0994042038699954
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.5808752725803785,
+        1.2089752139760297
+      ],
+      "seed": 67,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 1.632922976345582,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.781903454587051,
+          "integrated_brier_score": 0.03187287648063693,
+          "negative_log_likelihood": 1.217797288503882
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.781903454587051,
+          "integrated_brier_score": 0.029387046537635523,
+          "negative_log_likelihood": 1.150227336732616
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.781903454587051,
+          "integrated_brier_score": 0.028553279143552143,
+          "negative_log_likelihood": 1.1009651814708878
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.7406267228971908,
+        0.8759015677604803
+      ],
+      "seed": 67,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "in_distribution",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 24.0,
+        "validation": 24.0
+      },
+      "learned_shape": 1.6827422813822326,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7768540512008445,
+          "integrated_brier_score": 0.038314663574236935,
+          "negative_log_likelihood": 1.2770792533013233
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7768540512008445,
+          "integrated_brier_score": 0.038265550391824915,
+          "negative_log_likelihood": 1.2557218704826703
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7768540512008445,
+          "integrated_brier_score": 0.03777246682619702,
+          "negative_log_likelihood": 1.2013049250151997
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.8764833726070138,
+        1.3252351007051877
+      ],
+      "seed": 79,
+      "true_shape": 1.6
+    },
+    {
+      "condition": "duration_shift",
+      "horizons_hours": {
+        "test": 24.0,
+        "train": 6.0,
+        "validation": 12.0
+      },
+      "learned_shape": 1.7276744401829383,
+      "models": {
+        "factorized_exponential": {
+          "concordance_index": 0.7768540512008445,
+          "integrated_brier_score": 0.03998171856508779,
+          "negative_log_likelihood": 1.2871826955372114
+        },
+        "factorized_piecewise": {
+          "concordance_index": 0.7768540512008445,
+          "integrated_brier_score": 0.0370704136487346,
+          "negative_log_likelihood": 1.2378823454163923
+        },
+        "factorized_weibull": {
+          "concordance_index": 0.7768540512008445,
+          "integrated_brier_score": 0.03859033295002255,
+          "negative_log_likelihood": 1.2017993864110126
+        }
+      },
+      "piecewise_log_multipliers": [
+        0.0,
+        0.9445875733932411,
+        0.9648254377994911
+      ],
+      "seed": 79,
+      "true_shape": 1.6
+    }
+  ],
+  "shift_penalties": {
+    "0.6": {
+      "factorized_exponential": {
+        "integrated_brier_score": {
+          "maximum": 0.0012973044036740655,
+          "mean": -0.0030372914202954986,
+          "minimum": -0.005123387209657715,
+          "standard_deviation": 0.0022851180184658326
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.027803649352505122,
+          "mean": 0.002472374420690748,
+          "minimum": -0.012513619338963444,
+          "standard_deviation": 0.013715410559426744
+        }
+      },
+      "factorized_piecewise": {
+        "integrated_brier_score": {
+          "maximum": 0.008979226420906816,
+          "mean": 0.0008694248327557024,
+          "minimum": -0.00410695609415028,
+          "standard_deviation": 0.004593684917423359
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.060467442806402705,
+          "mean": 0.02199886290013766,
+          "minimum": -0.009529217925619227,
+          "standard_deviation": 0.02884824007942234
+        }
+      },
+      "factorized_weibull": {
+        "integrated_brier_score": {
+          "maximum": 0.003171977404004711,
+          "mean": 0.00022087197808382807,
+          "minimum": -0.0035940651585310707,
+          "standard_deviation": 0.0026033013975526103
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.009175087430434603,
+          "mean": 0.0027150070646146498,
+          "minimum": -0.003859174849202951,
+          "standard_deviation": 0.00418657174209228
+        }
+      }
+    },
+    "1.6": {
+      "factorized_exponential": {
+        "integrated_brier_score": {
+          "maximum": 0.003697983922724097,
+          "mean": 0.0020233769885833705,
+          "minimum": 0.0008698660754259575,
+          "standard_deviation": 0.0009412810847611353
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.0259389548911535,
+          "mean": 0.013643976328293306,
+          "minimum": 0.002073389553944871,
+          "standard_deviation": 0.009327877702445742
+        }
+      },
+      "factorized_piecewise": {
+        "integrated_brier_score": {
+          "maximum": 0.0009765131220448656,
+          "mean": 0.00023800946922167623,
+          "minimum": -0.0011951367430903179,
+          "standard_deviation": 0.0008020568675505197
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.00983120450998487,
+          "mean": -0.0047061918952551185,
+          "minimum": -0.01783952506627795,
+          "standard_deviation": 0.011035731357699776
+        }
+      },
+      "factorized_weibull": {
+        "integrated_brier_score": {
+          "maximum": 0.002483903162001009,
+          "mean": 0.0012964604791958962,
+          "minimum": -4.485899084614303e-06,
+          "standard_deviation": 0.00089870504691292
+        },
+        "negative_log_likelihood": {
+          "maximum": 0.016530098062607745,
+          "mean": 0.006121062076449757,
+          "minimum": 0.0004944613958128841,
+          "standard_deviation": 0.0056841709456789775
+        }
+      }
+    }
+  }
+}

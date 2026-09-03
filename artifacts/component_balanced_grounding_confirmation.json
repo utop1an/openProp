@@ -1,0 +1,1249 @@
+{
+  "aggregate": {
+    "full_context": {
+      "top1": {
+        "maximum": 1.0,
+        "mean": 0.9875,
+        "minimum": 0.9,
+        "standard_deviation": 0.030103986446980733
+      },
+      "top1_by_probe": {
+        "relation": {
+          "maximum": 1.0,
+          "mean": 0.9933333333333333,
+          "minimum": 0.9333333333333333,
+          "standard_deviation": 0.019999999999999997
+        },
+        "scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "subject": {
+          "maximum": 1.0,
+          "mean": 0.9733333333333334,
+          "minimum": 0.7333333333333333,
+          "standard_deviation": 0.08000000000000002
+        }
+      }
+    },
+    "intercept_only": {
+      "top1": {
+        "maximum": 0.5,
+        "mean": 0.4975,
+        "minimum": 0.475,
+        "standard_deviation": 0.007500000000000007
+      },
+      "top1_by_probe": {
+        "relation": {
+          "maximum": 0.6666666666666666,
+          "mean": 0.6599999999999999,
+          "minimum": 0.6,
+          "standard_deviation": 0.019999999999999997
+        },
+        "scene": {
+          "maximum": 0.5,
+          "mean": 0.5,
+          "minimum": 0.5,
+          "standard_deviation": 0.0
+        },
+        "subject": {
+          "maximum": 0.3333333333333333,
+          "mean": 0.3333333333333333,
+          "minimum": 0.3333333333333333,
+          "standard_deviation": 0.0
+        }
+      }
+    },
+    "no_relation": {
+      "top1": {
+        "maximum": 0.875,
+        "mean": 0.81,
+        "minimum": 0.65,
+        "standard_deviation": 0.06442049363362562
+      },
+      "top1_by_probe": {
+        "relation": {
+          "maximum": 0.6666666666666666,
+          "mean": 0.6666666666666666,
+          "minimum": 0.6666666666666666,
+          "standard_deviation": 0.0
+        },
+        "scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "subject": {
+          "maximum": 1.0,
+          "mean": 0.8266666666666667,
+          "minimum": 0.4,
+          "standard_deviation": 0.17178798302300166
+        }
+      }
+    },
+    "no_scene": {
+      "top1": {
+        "maximum": 0.625,
+        "mean": 0.5475,
+        "minimum": 0.5,
+        "standard_deviation": 0.03783186487605388
+      },
+      "top1_by_probe": {
+        "relation": {
+          "maximum": 1.0,
+          "mean": 0.7933333333333333,
+          "minimum": 0.6666666666666666,
+          "standard_deviation": 0.1008849730028104
+        },
+        "scene": {
+          "maximum": 0.5,
+          "mean": 0.5,
+          "minimum": 0.5,
+          "standard_deviation": 0.0
+        },
+        "subject": {
+          "maximum": 0.3333333333333333,
+          "mean": 0.3333333333333333,
+          "minimum": 0.3333333333333333,
+          "standard_deviation": 0.0
+        }
+      }
+    },
+    "no_subject": {
+      "top1": {
+        "maximum": 0.875,
+        "mean": 0.8025,
+        "minimum": 0.7,
+        "standard_deviation": 0.06368869601428499
+      },
+      "top1_by_probe": {
+        "relation": {
+          "maximum": 1.0,
+          "mean": 0.8466666666666667,
+          "minimum": 0.6666666666666666,
+          "standard_deviation": 0.13678856352455462
+        },
+        "scene": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "subject": {
+          "maximum": 0.6666666666666666,
+          "mean": 0.6266666666666666,
+          "minimum": 0.3333333333333333,
+          "standard_deviation": 0.09977753031397177
+        }
+      }
+    }
+  },
+  "cases": {
+    "probes": [
+      "subject",
+      "relation",
+      "scene"
+    ],
+    "target_new": 20,
+    "target_old": 20,
+    "total": 40
+  },
+  "conditions": {
+    "full_context": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "intercept_only": [],
+    "no_relation": [
+      1,
+      4
+    ],
+    "no_scene": [
+      1,
+      2,
+      3
+    ],
+    "no_subject": [
+      2,
+      3,
+      4
+    ]
+  },
+  "paired_probe_advantage": {
+    "relation": {
+      "ablation": "no_relation",
+      "bootstrap_95_ci": [
+        0.31333333333333335,
+        0.33333333333333337
+      ],
+      "losses": 0,
+      "mean_full_advantage": 0.3266666666666667,
+      "simultaneous_bootstrap_95_ci": [
+        0.31333333333333335,
+        0.3400000000000001
+      ],
+      "ties": 0,
+      "wins": 10
+    },
+    "scene": {
+      "ablation": "no_scene",
+      "bootstrap_95_ci": [
+        0.5,
+        0.5
+      ],
+      "losses": 0,
+      "mean_full_advantage": 0.5,
+      "simultaneous_bootstrap_95_ci": [
+        0.5,
+        0.5
+      ],
+      "ties": 0,
+      "wins": 10
+    },
+    "subject": {
+      "ablation": "no_subject",
+      "bootstrap_95_ci": [
+        0.33333333333333337,
+        0.3666666666666667
+      ],
+      "losses": 0,
+      "mean_full_advantage": 0.3466666666666667,
+      "simultaneous_bootstrap_95_ci": [
+        0.32888888888888884,
+        0.3644444444444445
+      ],
+      "ties": 0,
+      "wins": 10
+    }
+  },
+  "phase": "confirmation",
+  "protocol": {
+    "axis_isolation": "within each case both plausible candidates share all typed context values",
+    "bootstrap_samples": 20000,
+    "case_design": "analytic confidence-age crossover from true generator hazards",
+    "confirmation_policy": "confirmation seeds untouched until analytic cases pass development audit",
+    "confirmation_seeds": [
+      157,
+      163,
+      173,
+      181,
+      191,
+      199,
+      211,
+      223,
+      227,
+      239
+    ],
+    "development_seeds": [
+      31,
+      41,
+      53,
+      67,
+      79,
+      83,
+      97,
+      109,
+      127,
+      149
+    ],
+    "epochs": 1200,
+    "samples_per_context": 80,
+    "simultaneous_inference": "paired bootstrap max standardized mean deviation; one shared seed resample across the three predeclared primary comparisons",
+    "truth_boundary": "current truth labels never enter matcher entities"
+  },
+  "runs": [
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 1.1439427871846823
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.7375,
+          "top1": 0.475,
+          "top1_by_probe": {
+            "relation": 0.6,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.05,
+            "old": 0.9
+          },
+          "validation_hazard_scale": 0.9589019814703988
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9375,
+          "top1": 0.875,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 0.75,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.848822302432266
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 0.7258545629359291
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9375,
+          "top1": 0.875,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 1.3543248430804407
+        }
+      },
+      "seed": 157
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 1.0956767326065782
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8443678405890404
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9375,
+          "top1": 0.875,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 0.75,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8025113808718187
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.775,
+          "top1": 0.55,
+          "top1_by_probe": {
+            "relation": 0.8,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.85
+          },
+          "validation_hazard_scale": 0.6944227192384671
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9,
+          "top1": 0.8,
+          "top1_by_probe": {
+            "relation": 0.8,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 0.85,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 1.2154979028581718
+        }
+      },
+      "seed": 163
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8876671103737089
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.7496434606083399
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.925,
+          "top1": 0.85,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.9333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.7,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.7255036300823288
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.775,
+          "top1": 0.55,
+          "top1_by_probe": {
+            "relation": 0.8,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.85
+          },
+          "validation_hazard_scale": 0.5825875879578161
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.875,
+          "top1": 0.75,
+          "top1_by_probe": {
+            "relation": 0.7333333333333333,
+            "scene": 1.0,
+            "subject": 0.6
+          },
+          "top1_by_target_age": {
+            "new": 0.7,
+            "old": 0.8
+          },
+          "validation_hazard_scale": 0.9841043604670745
+        }
+      },
+      "seed": 173
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 1.0026905058759725
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8818287258541277
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.925,
+          "top1": 0.85,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.9333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.7,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8512349732099799
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 0.6046371478322417
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9375,
+          "top1": 0.875,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 1.2227356545303147
+        }
+      },
+      "seed": 181
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 1.0111211160788869
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8014080054673958
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9125,
+          "top1": 0.825,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.8666666666666667
+          },
+          "top1_by_target_age": {
+            "new": 0.65,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8355113642944759
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.775,
+          "top1": 0.55,
+          "top1_by_probe": {
+            "relation": 0.8,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.85
+          },
+          "validation_hazard_scale": 0.5883352779157874
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.8875,
+          "top1": 0.775,
+          "top1_by_probe": {
+            "relation": 0.7333333333333333,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 0.8,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 1.1029559306050434
+        }
+      },
+      "seed": 191
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9875,
+          "top1": 0.975,
+          "top1_by_probe": {
+            "relation": 0.9333333333333333,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 0.95,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.855762846067435
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.6549475191128851
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.875,
+          "top1": 0.75,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 0.5,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.6006662753163431
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.775,
+          "top1": 0.55,
+          "top1_by_probe": {
+            "relation": 0.8,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.85
+          },
+          "validation_hazard_scale": 0.5357376455924043
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.875,
+          "top1": 0.75,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 0.75,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 0.9264859779980243
+        }
+      },
+      "seed": 199
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.9662665280258229
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.7677378838522182
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9125,
+          "top1": 0.825,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.8666666666666667
+          },
+          "top1_by_target_age": {
+            "new": 0.65,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.7148923178163896
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 0.5980458249522608
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.875,
+          "top1": 0.75,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 0.75,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 1.0465603841155318
+        }
+      },
+      "seed": 211
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.95,
+          "top1": 0.9,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 0.7333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.8,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8751627286158512
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.7633035910647686
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.825,
+          "top1": 0.65,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.4
+          },
+          "top1_by_target_age": {
+            "new": 0.3,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8015482742875419
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.8125,
+          "top1": 0.625,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.5612408442045237
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.85,
+          "top1": 0.7,
+          "top1_by_probe": {
+            "relation": 0.8666666666666667,
+            "scene": 1.0,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.4,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.9777417599611026
+        }
+      },
+      "seed": 223
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 1.0181629628703277
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.863088003393028
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9,
+          "top1": 0.8,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.8
+          },
+          "top1_by_target_age": {
+            "new": 0.6,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8334822789889021
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.7875,
+          "top1": 0.575,
+          "top1_by_probe": {
+            "relation": 0.8666666666666667,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.9
+          },
+          "validation_hazard_scale": 0.6782301904829972
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9375,
+          "top1": 0.875,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 1.13973921546982
+        }
+      },
+      "seed": 227
+    },
+    {
+      "conditions": {
+        "full_context": {
+          "active_feature_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 1.0,
+          "top1": 1.0,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 1.0
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 1.0055096571865272
+        },
+        "intercept_only": {
+          "active_feature_indices": [],
+          "mean_reciprocal_rank": 0.75,
+          "top1": 0.5,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.0,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.8361634030061713
+        },
+        "no_relation": {
+          "active_feature_indices": [
+            1,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9,
+          "top1": 0.8,
+          "top1_by_probe": {
+            "relation": 0.6666666666666666,
+            "scene": 1.0,
+            "subject": 0.8
+          },
+          "top1_by_target_age": {
+            "new": 0.6,
+            "old": 1.0
+          },
+          "validation_hazard_scale": 0.7268282384868937
+        },
+        "no_scene": {
+          "active_feature_indices": [
+            1,
+            2,
+            3
+          ],
+          "mean_reciprocal_rank": 0.7875,
+          "top1": 0.575,
+          "top1_by_probe": {
+            "relation": 0.8666666666666667,
+            "scene": 0.5,
+            "subject": 0.3333333333333333
+          },
+          "top1_by_target_age": {
+            "new": 0.25,
+            "old": 0.9
+          },
+          "validation_hazard_scale": 0.6919418092113033
+        },
+        "no_subject": {
+          "active_feature_indices": [
+            2,
+            3,
+            4
+          ],
+          "mean_reciprocal_rank": 0.9375,
+          "top1": 0.875,
+          "top1_by_probe": {
+            "relation": 1.0,
+            "scene": 1.0,
+            "subject": 0.6666666666666666
+          },
+          "top1_by_target_age": {
+            "new": 1.0,
+            "old": 0.75
+          },
+          "validation_hazard_scale": 1.1474776065809824
+        }
+      },
+      "seed": 239
+    }
+  ],
+  "seeds": [
+    157,
+    163,
+    173,
+    181,
+    191,
+    199,
+    211,
+    223,
+    227,
+    239
+  ],
+  "simultaneous_probe_inference": {
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20270827,
+    "confidence": 0.95,
+    "critical_value": 2.0000000000000053,
+    "family": [
+      "subject",
+      "relation",
+      "scene"
+    ],
+    "family_size": 3,
+    "method": "paired bootstrap max standardized mean deviation",
+    "metric": "axis-isolated top1 full-model advantage",
+    "orientation": "positive means full_context is better",
+    "shared_resample_indices": true
+  }
+}

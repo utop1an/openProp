@@ -1,0 +1,704 @@
+{
+  "models": [
+    {
+      "artifact": "artifacts/alfred_language_gemma3_4b.json",
+      "by_property": {
+        "cleanliness": {
+          "conditional_value_accuracy": 0.0,
+          "gold_count": 10,
+          "selection_recall": 0.3,
+          "value_recall": 0.0
+        },
+        "location": {
+          "conditional_value_accuracy": 0.2571428571428571,
+          "gold_count": 40,
+          "selection_recall": 0.875,
+          "value_recall": 0.225
+        },
+        "thermal_state": {
+          "conditional_value_accuracy": 0.4,
+          "gold_count": 20,
+          "selection_recall": 0.25,
+          "value_recall": 0.1
+        },
+        "type": {
+          "conditional_value_accuracy": 0.6111111111111112,
+          "gold_count": 40,
+          "selection_recall": 0.9,
+          "value_recall": 0.55
+        }
+      },
+      "cases": 40,
+      "mismatch_examples": [
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "gold": "pepper shaker",
+          "predicted": "salt shaker",
+          "property": "type",
+          "query": "Put a salt shaker in a drawer.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "drawer"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "drawer"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Put a salt shaker in a drawer.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_185459_653538:ann-0",
+          "gold": "baseball bat",
+          "predicted": "bat",
+          "property": "type",
+          "query": "place a bat on the bed",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_185515_986084:ann-0",
+          "gold": "baseball bat",
+          "predicted": "bat",
+          "property": "type",
+          "query": "Move the bat in the corner to the bed",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_185515_986084:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "bed"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "in"
+            },
+            "predicate": "inside"
+          },
+          "property": "location",
+          "query": "Move the bat in the corner to the bed",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "gold": "salt shaker",
+          "predicted": "odd item",
+          "property": "type",
+          "query": "To acquire an odd item as place it where it is not useful.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "cabinet"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "not useful"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "To acquire an odd item as place it where it is not useful.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_191501_563086:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "cabinet"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "cabinet"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Place the salt shaker in the cabinet.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "gold": "soap bottle",
+          "predicted": "bottle",
+          "property": "type",
+          "query": "Move a bottle of hand soap from the sink to the toilet.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "toilet"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "destination"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Move a bottle of hand soap from the sink to the toilet.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "gold": "soap bottle",
+          "predicted": "bottle",
+          "property": "type",
+          "query": "Place the green bottle on the toilet baisin.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "toilet"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "toilet baisin"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Place the green bottle on the toilet baisin.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004404_604165:ann-0",
+          "gold": "soap bottle",
+          "predicted": "soap dispenser",
+          "property": "type",
+          "query": "place a soap dispenser on top of the toilet",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "gold": "soap bar",
+          "predicted": "object",
+          "property": "type",
+          "query": "Rinse off the soap and place it on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "gold": "clean",
+          "predicted": "soap",
+          "property": "cleanliness",
+          "query": "Rinse off the soap and place it on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "counter top"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "counter"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Rinse off the soap and place it on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "gold": "soap bar",
+          "predicted": "soap",
+          "property": "type",
+          "query": "Put a wet soap on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "gold": "clean",
+          "predicted": null,
+          "property": "cleanliness",
+          "query": "Put a wet soap on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "counter top"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "counter"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Put a wet soap on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "gold": "soap bar",
+          "predicted": "bar of soap",
+          "property": "type",
+          "query": "Put a cleaned bar of soap on a counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "gold": "clean",
+          "predicted": null,
+          "property": "cleanliness",
+          "query": "Put a cleaned bar of soap on a counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "counter top"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "counter"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Put a cleaned bar of soap on a counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "gold": "clean",
+          "predicted": null,
+          "property": "cleanliness",
+          "query": "Wash the spatula, put it in the first drawer",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "drawer"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "first drawer"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Wash the spatula, put it in the first drawer",
+          "task_type": "pick_clean_then_place_in_recep"
+        }
+      ],
+      "model": "gemma3:4b",
+      "parse_failures": [
+        {
+          "case_id": "trial_T20190906_191429_743650:ann-0",
+          "error": "LLMError: duplicate property constraint: location"
+        },
+        {
+          "case_id": "trial_T20190907_221355_558505:ann-0",
+          "error": "LLMError: duplicate property constraint: location"
+        },
+        {
+          "case_id": "trial_T20190907_173120_648218:ann-0",
+          "error": "LLMError: duplicate property constraint: location"
+        },
+        {
+          "case_id": "trial_T20190906_182435_622538:ann-0",
+          "error": "LLMError: duplicate property constraint: location"
+        }
+      ],
+      "relation_mismatch_components": {
+        "argument_exact": 6,
+        "argument_total": 26,
+        "predicate_exact": 9,
+        "predicate_total": 26
+      },
+      "repair_cases": 35
+    },
+    {
+      "artifact": "artifacts/alfred_language_llama3_2.json",
+      "by_property": {
+        "cleanliness": {
+          "conditional_value_accuracy": 0.625,
+          "gold_count": 10,
+          "selection_recall": 0.8,
+          "value_recall": 0.5
+        },
+        "location": {
+          "conditional_value_accuracy": 0.12903225806451613,
+          "gold_count": 40,
+          "selection_recall": 0.775,
+          "value_recall": 0.1
+        },
+        "thermal_state": {
+          "conditional_value_accuracy": 0.6923076923076923,
+          "gold_count": 20,
+          "selection_recall": 0.65,
+          "value_recall": 0.45
+        },
+        "type": {
+          "conditional_value_accuracy": 0.5,
+          "gold_count": 40,
+          "selection_recall": 0.05,
+          "value_recall": 0.025
+        }
+      },
+      "cases": 40,
+      "mismatch_examples": [
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "gold": "pepper shaker",
+          "predicted": null,
+          "property": "type",
+          "query": "Put a salt shaker in a drawer.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_184021_215264:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "drawer"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "drawer"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Put a salt shaker in a drawer.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_185459_653538:ann-0",
+          "gold": "baseball bat",
+          "predicted": null,
+          "property": "type",
+          "query": "place a bat on the bed",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_185530_954329:ann-0",
+          "gold": "baseball bat",
+          "predicted": null,
+          "property": "type",
+          "query": "Put the baseball bat on the bed",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "gold": "salt shaker",
+          "predicted": null,
+          "property": "type",
+          "query": "To acquire an odd item as place it where it is not useful.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_191445_723170:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "cabinet"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "not useful"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "To acquire an odd item as place it where it is not useful.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_191501_563086:ann-0",
+          "gold": "salt shaker",
+          "predicted": null,
+          "property": "type",
+          "query": "Place the salt shaker in the cabinet.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190906_191501_563086:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "cabinet"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "cabinet"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Place the salt shaker in the cabinet.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "gold": "soap bottle",
+          "predicted": null,
+          "property": "type",
+          "query": "Move a bottle of hand soap from the sink to the toilet.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004321_405868:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "toilet"
+            },
+            "predicate": "on"
+          },
+          "predicted": null,
+          "property": "location",
+          "query": "Move a bottle of hand soap from the sink to the toilet.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "gold": "soap bottle",
+          "predicted": null,
+          "property": "type",
+          "query": "Place the green bottle on the toilet baisin.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004351_281384:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "toilet"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "toilet baisin"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Place the green bottle on the toilet baisin.",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_004404_604165:ann-0",
+          "gold": "soap bottle",
+          "predicted": null,
+          "property": "type",
+          "query": "place a soap dispenser on top of the toilet",
+          "task_type": "pick_and_place_simple"
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "gold": "soap bar",
+          "predicted": null,
+          "property": "type",
+          "query": "Rinse off the soap and place it on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "gold": "clean",
+          "predicted": null,
+          "property": "cleanliness",
+          "query": "Rinse off the soap and place it on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074045_109439:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "counter top"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "counter"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Rinse off the soap and place it on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "gold": "soap bar",
+          "predicted": null,
+          "property": "type",
+          "query": "Put a wet soap on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "gold": "clean",
+          "predicted": "wet",
+          "property": "cleanliness",
+          "query": "Put a wet soap on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074106_050405:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "counter top"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "counter"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Put a wet soap on the counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "gold": "soap bar",
+          "predicted": null,
+          "property": "type",
+          "query": "Put a cleaned bar of soap on a counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "gold": "clean",
+          "predicted": "cleaned",
+          "property": "cleanliness",
+          "query": "Put a cleaned bar of soap on a counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_074124_966890:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "counter top"
+            },
+            "predicate": "on"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "counter"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Put a cleaned bar of soap on a counter.",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "gold": "spatula",
+          "predicted": null,
+          "property": "type",
+          "query": "Wash the spatula, put it in the first drawer",
+          "task_type": "pick_clean_then_place_in_recep"
+        },
+        {
+          "case_id": "trial_T20190907_080730_211959:ann-0",
+          "gold": {
+            "arguments": {
+              "object": "drawer"
+            },
+            "predicate": "inside"
+          },
+          "predicted": {
+            "arguments": {
+              "object": "first drawer"
+            },
+            "predicate": "on"
+          },
+          "property": "location",
+          "query": "Wash the spatula, put it in the first drawer",
+          "task_type": "pick_clean_then_place_in_recep"
+        }
+      ],
+      "model": "llama3.2",
+      "parse_failures": [
+        {
+          "case_id": "trial_T20190906_185515_986084:ann-0",
+          "error": "LLMError: the LLM produced no usable registered property constraints"
+        },
+        {
+          "case_id": "trial_T20190906_191429_743650:ann-0",
+          "error": "LLMError: the LLM produced no usable registered property constraints"
+        },
+        {
+          "case_id": "trial_T20190907_221208_560499:ann-0",
+          "error": "LLMError: the LLM produced no usable registered property constraints"
+        },
+        {
+          "case_id": "trial_T20190907_033306_962974:ann-0",
+          "error": "LLMError: the LLM produced no usable registered property constraints"
+        },
+        {
+          "case_id": "trial_T20190907_173120_648218:ann-0",
+          "error": "LLMError: the LLM produced no usable registered property constraints"
+        }
+      ],
+      "relation_mismatch_components": {
+        "argument_exact": 13,
+        "argument_total": 27,
+        "predicate_exact": 4,
+        "predicate_total": 27
+      },
+      "repair_cases": 0
+    }
+  ],
+  "protocol": {
+    "analysis_strategy": "schema-repaired tolerant replay",
+    "cases_per_model": 40,
+    "claim_scope": "language to typed goal frame only",
+    "failure_denominator": "all selected cases",
+    "inputs": [
+      "artifacts/alfred_language_gemma3_4b.json",
+      "artifacts/alfred_language_llama3_2.json"
+    ],
+    "shared_frozen_sample": true
+  }
+}

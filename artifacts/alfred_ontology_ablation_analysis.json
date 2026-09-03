@@ -1,0 +1,77 @@
+{
+  "aggregate": {
+    "case_clustered_task_stratified_bootstrap_95_ci": [
+      0.16041666666666665,
+      0.28125
+    ],
+    "case_clusters": 40,
+    "model_case_pairs": 80,
+    "models": 2,
+    "paired_value_recall_delta": 0.22083333333333335
+  },
+  "models": [
+    {
+      "artifact": "artifacts/alfred_language_gemma3_4b_ontology.json",
+      "cases": 40,
+      "exact_frame_improvements": 7,
+      "exact_frame_regressions": 0,
+      "model": "gemma3:4b",
+      "normalisation_actions": {
+        "cleanliness": 2,
+        "location.object": 9,
+        "location.predicate": 11,
+        "thermal_state": 3,
+        "type": 3
+      },
+      "normalisation_rate": 0.525,
+      "ontology_exact_frame": 0.2,
+      "ontology_value_recall": 0.5083333333333333,
+      "paired_sign_test_p": 1.9073486328125e-06,
+      "paired_value_recall_delta": 0.21250000000000002,
+      "schema_repaired_exact_frame": 0.025,
+      "schema_repaired_value_recall": 0.2958333333333333,
+      "task_stratified_bootstrap_95_ci": [
+        0.14583333333333331,
+        0.2791666666666667
+      ],
+      "value_improvements": 20,
+      "value_regressions": 0
+    },
+    {
+      "artifact": "artifacts/alfred_language_llama3_2_ontology.json",
+      "cases": 40,
+      "exact_frame_improvements": 0,
+      "exact_frame_regressions": 0,
+      "model": "llama3.2",
+      "normalisation_actions": {
+        "cleanliness": 2,
+        "location.object": 9,
+        "location.predicate": 18,
+        "thermal_state": 2,
+        "type": 1
+      },
+      "normalisation_rate": 0.6,
+      "ontology_exact_frame": 0.0,
+      "ontology_value_recall": 0.4,
+      "paired_sign_test_p": 2.384185791015625e-07,
+      "paired_value_recall_delta": 0.22916666666666669,
+      "schema_repaired_exact_frame": 0.0,
+      "schema_repaired_value_recall": 0.17083333333333334,
+      "task_stratified_bootstrap_95_ci": [
+        0.1625,
+        0.2958333333333333
+      ],
+      "value_improvements": 23,
+      "value_regressions": 0
+    }
+  ],
+  "protocol": {
+    "bootstrap_samples": 10000,
+    "bootstrap_unit": "case cluster, stratified by task type",
+    "ontology_fit": "train PDDL labels only; no annotation text",
+    "paired_strategy": "llm-ontology-normalized minus llm-schema-repaired",
+    "primary_denominator": "all selected cases including failures",
+    "sample": "shared frozen 40-case valid-unseen sample",
+    "seed": 20260826
+  }
+}

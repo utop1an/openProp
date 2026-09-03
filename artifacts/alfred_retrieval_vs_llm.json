@@ -1,0 +1,97 @@
+{
+  "gemma3_4b": {
+    "exact_frame": {
+      "bootstrap_samples": 20000,
+      "ci_95": [
+        0.3,
+        0.6
+      ],
+      "cluster": "task_id",
+      "delta": 0.45,
+      "losses": 1,
+      "seed": 20260828,
+      "stratum": "task_type",
+      "ties": 20,
+      "wins": 19
+    },
+    "property_f1": {
+      "bootstrap_samples": 20000,
+      "ci_95": [
+        0.10499999999999998,
+        0.3414285714285714
+      ],
+      "cluster": "task_id",
+      "delta": 0.21928571428571425,
+      "losses": 4,
+      "seed": 20260826,
+      "stratum": "task_type",
+      "ties": 25,
+      "wins": 11
+    },
+    "value_recall": {
+      "bootstrap_samples": 20000,
+      "ci_95": [
+        0.29583333333333334,
+        0.4791666666666667
+      ],
+      "cluster": "task_id",
+      "delta": 0.3875,
+      "losses": 0,
+      "seed": 20260827,
+      "stratum": "task_type",
+      "ties": 13,
+      "wins": 27
+    }
+  },
+  "llama3_2": {
+    "exact_frame": {
+      "bootstrap_samples": 20000,
+      "ci_95": [
+        0.25,
+        0.55
+      ],
+      "cluster": "task_id",
+      "delta": 0.4,
+      "losses": 1,
+      "seed": 20260838,
+      "stratum": "task_type",
+      "ties": 22,
+      "wins": 17
+    },
+    "property_f1": {
+      "bootstrap_samples": 20000,
+      "ci_95": [
+        0.14166666666666666,
+        0.35
+      ],
+      "cluster": "task_id",
+      "delta": 0.24095238095238095,
+      "losses": 2,
+      "seed": 20260836,
+      "stratum": "task_type",
+      "ties": 22,
+      "wins": 16
+    },
+    "value_recall": {
+      "bootstrap_samples": 20000,
+      "ci_95": [
+        0.22083333333333335,
+        0.4125
+      ],
+      "cluster": "task_id",
+      "delta": 0.3166666666666667,
+      "losses": 0,
+      "seed": 20260837,
+      "stratum": "task_type",
+      "ties": 16,
+      "wins": 24
+    }
+  },
+  "protocol": {
+    "bootstrap_cluster": "task_id",
+    "bootstrap_stratum": "task_type",
+    "method_selection_labels_used": false,
+    "pairing": "case_id",
+    "sample": "frozen valid_unseen confirmation sample"
+  }
+}

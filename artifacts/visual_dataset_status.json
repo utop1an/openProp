@@ -1,0 +1,90 @@
+{
+  "data_root": "/home/uto/datasets/openprop",
+  "datasets": [
+    {
+      "claim_role": "controlled_causal_end_to_end",
+      "completion_marker_ready": true,
+      "completion_marker_summary": null,
+      "credential_status": "not_required",
+      "end_to_end_query_claim_eligible": true,
+      "id": "ai2thor_ithor",
+      "priority": "required_now",
+      "ready": true,
+      "repository_artifacts": [
+        {
+          "bytes": 13151,
+          "exists": true,
+          "path": "artifacts/ai2thor_protocol/scene_split.json",
+          "sha256": "68f9065ce2b3af9d371da765f8da55138741ed05916ef985002af068134588a9"
+        },
+        {
+          "bytes": 11269,
+          "exists": true,
+          "path": "artifacts/visual_protocol/experiment_protocol.json",
+          "sha256": "f0aeabe61442d1aef9a129e794896d28ed9e16fae7f77585b8bdf23538d9901e"
+        }
+      ],
+      "repository_artifacts_ready": true
+    },
+    {
+      "claim_role": "room_person_disjoint_end_to_end_confirmation",
+      "completion_marker_ready": false,
+      "completion_marker_summary": null,
+      "credential_status": "not_required",
+      "end_to_end_query_claim_eligible": true,
+      "id": "custom_real_video",
+      "priority": "required_before_real_world_claim",
+      "ready": false,
+      "repository_artifacts": [],
+      "repository_artifacts_ready": true
+    },
+    {
+      "claim_role": "state_change_and_changed_object_association",
+      "completion_marker_ready": false,
+      "completion_marker_summary": null,
+      "credential_status": "missing",
+      "end_to_end_query_claim_eligible": false,
+      "id": "ego4d_hands_objects",
+      "priority": "secondary_real_perception",
+      "ready": false,
+      "repository_artifacts": [],
+      "repository_artifacts_ready": true
+    },
+    {
+      "claim_role": "occlusion_tracking_and_moved_object_identity",
+      "completion_marker_ready": true,
+      "completion_marker_summary": {
+        "file_count": 646,
+        "source_release": "ADT manifest sha256:507b37b286a1e49661fd156d564d4d4fe1e9a7fa7b068fa21a496bc15a77a4bb"
+      },
+      "credential_status": "configured_file",
+      "end_to_end_query_claim_eligible": false,
+      "id": "aria_digital_twin",
+      "priority": "secondary_real_tracking",
+      "ready": true,
+      "repository_artifacts": [],
+      "repository_artifacts_ready": true
+    },
+    {
+      "claim_role": "active_object_candidates_and_appearance_shift",
+      "completion_marker_ready": true,
+      "completion_marker_summary": {
+        "file_count": 205,
+        "source_release": "VISOR DOI 10.5523/bris.2v6cgv1x04ol22qp9rm9x2j6a7"
+      },
+      "credential_status": "not_required",
+      "end_to_end_query_claim_eligible": false,
+      "id": "epic_kitchens_visor",
+      "priority": "secondary_real_candidates",
+      "ready": true,
+      "repository_artifacts": [],
+      "repository_artifacts_ready": true
+    }
+  ],
+  "performance_evidence": false,
+  "protocol_id": "openprop-visual-datasets-v1",
+  "real_world_claim_ready": false,
+  "registry_path": "/mnt/c/anu/openProp/data/visual/registry.json",
+  "required_now_ready": true,
+  "schema_version": 1
+}

@@ -1,0 +1,2512 @@
+{
+  "benchmark": "source-specific reliability under conflicting recurrent observations",
+  "design": {
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "train_episodes_per_condition": 400,
+    "exact_test_rows_per_seed": 20000,
+    "severity_levels": [
+      0.0,
+      0.33,
+      0.67,
+      1.0
+    ],
+    "fixed_source_average_parameters": {
+      "inspection_probability_state_0": 0.65,
+      "inspection_probability_state_1": 0.65,
+      "detection_sensitivity": 0.8,
+      "false_positive_rate": 0.1
+    },
+    "paired_training_random_streams": true,
+    "paired_exact_state_test_rows_within_seed": true,
+    "paired_source_grounding_state_paths_within_seed": true,
+    "latent_training_states_retained": false,
+    "primary_family": "pooled minus source-aware filtered current-state NLL at three nonzero source-conflict severities",
+    "zero_severity_role": "nested compatibility control excluded from the primary family",
+    "simultaneous_inference": "paired max-standardized-deviation bootstrap, 20000 shared seed resamples"
+  },
+  "runs": [
+    {
+      "seed": 101,
+      "severity": 0.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        }
+      ],
+      "comparable_source_opportunities": 4025,
+      "source_disagreement_rate": 0.23478260869565218,
+      "source_aware_estimate": {
+        "iterations": 12,
+        "converged": true,
+        "initial_training_observation_nll": 50.28001415335248,
+        "final_training_observation_nll": 48.22544638969374,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.6521705584046591,
+            "inspection_probability_state_1": 0.6386025141405592,
+            "detection_sensitivity": 0.7895439294462118,
+            "false_positive_rate": 0.1029774965692213
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.6464304658669937,
+            "inspection_probability_state_1": 0.6462088155122299,
+            "detection_sensitivity": 0.7992935312561195,
+            "false_positive_rate": 0.10520260594946455
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 12,
+        "converged": true,
+        "initial_training_observation_nll": 50.28001415335248,
+        "final_training_observation_nll": 48.22727073271203,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6493108432675809,
+          "inspection_probability_state_1": 0.6423881349830777,
+          "detection_sensitivity": 0.7943127752944106,
+          "false_positive_rate": 0.10405354062891832
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.27124705113996045,
+          "return_rate_per_hour": 0.44257383529178834,
+          "absolute_forward_rate_error": 0.02875294886003954,
+          "absolute_return_rate_error": 0.007426164708211669,
+          "exact_state_test_nll": 0.6311824571854818,
+          "exact_state_test_brier": 0.22015372652276255,
+          "source_grounding_test_nll": 0.29327683004421373,
+          "source_grounding_test_brier": 0.08943578974064553
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.2712272628665945,
+          "return_rate_per_hour": 0.44282020397031713,
+          "absolute_forward_rate_error": 0.0287727371334055,
+          "absolute_return_rate_error": 0.007179796029682883,
+          "exact_state_test_nll": 0.6311914269459725,
+          "exact_state_test_brier": 0.22015768525845997,
+          "source_grounding_test_nll": 0.2932993666124411,
+          "source_grounding_test_brier": 0.08945199884557123
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6302259816767383,
+          "exact_state_test_brier": 0.21975887485625498,
+          "source_grounding_test_nll": 0.29313587264012014,
+          "source_grounding_test_brier": 0.08941434807158993
+        }
+      }
+    },
+    {
+      "seed": 101,
+      "severity": 0.33,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.7325,
+          "inspection_probability_state_1": 0.5675,
+          "detection_sensitivity": 0.8495,
+          "false_positive_rate": 0.0736
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.5675,
+          "inspection_probability_state_1": 0.7325,
+          "detection_sensitivity": 0.7505000000000001,
+          "false_positive_rate": 0.1264
+        }
+      ],
+      "comparable_source_opportunities": 3949,
+      "source_disagreement_rate": 0.22562674094707522,
+      "source_aware_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.21712003708703,
+        "final_training_observation_nll": 47.54891925699104,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.7326841213040343,
+            "inspection_probability_state_1": 0.5588311578286224,
+            "detection_sensitivity": 0.8615032716830602,
+            "false_positive_rate": 0.07603476717712193
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.5614822734647484,
+            "inspection_probability_state_1": 0.7390563675621162,
+            "detection_sensitivity": 0.7646303954255732,
+            "false_positive_rate": 0.12523583705448102
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 14,
+        "converged": true,
+        "initial_training_observation_nll": 50.21712003708703,
+        "final_training_observation_nll": 48.160942414307456,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6437159453411103,
+          "inspection_probability_state_1": 0.6560044577245868,
+          "detection_sensitivity": 0.8148051773030531,
+          "false_positive_rate": 0.1012437753480587
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.296538176566541,
+          "return_rate_per_hour": 0.5423603753493726,
+          "absolute_forward_rate_error": 0.003461823433458966,
+          "absolute_return_rate_error": 0.09236037534937264,
+          "exact_state_test_nll": 0.6328501600734752,
+          "exact_state_test_brier": 0.2209432856967228,
+          "source_grounding_test_nll": 0.2993274216373628,
+          "source_grounding_test_brier": 0.09155791315415433
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.3016766171275942,
+          "return_rate_per_hour": 0.5225317516405669,
+          "absolute_forward_rate_error": 0.0016766171275942043,
+          "absolute_return_rate_error": 0.07253175164056685,
+          "exact_state_test_nll": 0.6314921964543427,
+          "exact_state_test_brier": 0.22033803302381239,
+          "source_grounding_test_nll": 0.2759253479523454,
+          "source_grounding_test_brier": 0.08354803177739974
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6302259816767383,
+          "exact_state_test_brier": 0.21975887485625498,
+          "source_grounding_test_nll": 0.27433647656702903,
+          "source_grounding_test_brier": 0.08304309330819976
+        }
+      }
+    },
+    {
+      "seed": 101,
+      "severity": 0.67,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.8175,
+          "inspection_probability_state_1": 0.48250000000000004,
+          "detection_sensitivity": 0.9005000000000001,
+          "false_positive_rate": 0.046400000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.48250000000000004,
+          "inspection_probability_state_1": 0.8175,
+          "detection_sensitivity": 0.6995,
+          "false_positive_rate": 0.15360000000000001
+        }
+      ],
+      "comparable_source_opportunities": 3736,
+      "source_disagreement_rate": 0.23153104925053533,
+      "source_aware_estimate": {
+        "iterations": 16,
+        "converged": true,
+        "initial_training_observation_nll": 50.03761533805752,
+        "final_training_observation_nll": 45.18545271358753,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.8193098616435982,
+            "inspection_probability_state_1": 0.48102751603225247,
+            "detection_sensitivity": 0.8896690172066317,
+            "false_positive_rate": 0.04670797108849057
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.4671659478100053,
+            "inspection_probability_state_1": 0.8319680758457786,
+            "detection_sensitivity": 0.7138208262146657,
+            "false_positive_rate": 0.13824766565737823
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.44206626405391,
+        "final_training_observation_nll": 47.868006292612236,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6385840528577675,
+          "inspection_probability_state_1": 0.6661391289510851,
+          "detection_sensitivity": 0.7774643034968578,
+          "false_positive_rate": 0.0859365672280733
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.27815613092109653,
+          "return_rate_per_hour": 0.47840686607262306,
+          "absolute_forward_rate_error": 0.021843869078903455,
+          "absolute_return_rate_error": 0.02840686607262305,
+          "exact_state_test_nll": 0.6318595318940936,
+          "exact_state_test_brier": 0.22047057299504827,
+          "source_grounding_test_nll": 0.2934517934364906,
+          "source_grounding_test_brier": 0.0893452036297085
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.2940137442313894,
+          "return_rate_per_hour": 0.48509080220596257,
+          "absolute_forward_rate_error": 0.0059862557686106155,
+          "absolute_return_rate_error": 0.03509080220596256,
+          "exact_state_test_nll": 0.6308342421819754,
+          "exact_state_test_brier": 0.22003147558806413,
+          "source_grounding_test_nll": 0.21003906429283115,
+          "source_grounding_test_brier": 0.06218463264220946
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6302259816767383,
+          "exact_state_test_brier": 0.21975887485625498,
+          "source_grounding_test_nll": 0.20891930817673998,
+          "source_grounding_test_brier": 0.06179708994837707
+        }
+      }
+    },
+    {
+      "seed": 101,
+      "severity": 1.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.9,
+          "inspection_probability_state_1": 0.4,
+          "detection_sensitivity": 0.9500000000000001,
+          "false_positive_rate": 0.020000000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.4,
+          "inspection_probability_state_1": 0.9,
+          "detection_sensitivity": 0.65,
+          "false_positive_rate": 0.18
+        }
+      ],
+      "comparable_source_opportunities": 3429,
+      "source_disagreement_rate": 0.24963546223388744,
+      "source_aware_estimate": {
+        "iterations": 18,
+        "converged": true,
+        "initial_training_observation_nll": 48.21866756193052,
+        "final_training_observation_nll": 41.35241899653163,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.8950883341886519,
+            "inspection_probability_state_1": 0.39696923769975023,
+            "detection_sensitivity": 0.9589834190580125,
+            "false_positive_rate": 0.020099679739618934
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.395834303351884,
+            "inspection_probability_state_1": 0.9123569713518029,
+            "detection_sensitivity": 0.6484091952359936,
+            "false_positive_rate": 0.17104851729343634
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 19,
+        "converged": true,
+        "initial_training_observation_nll": 49.66150553122909,
+        "final_training_observation_nll": 47.38752551089024,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6350390806210321,
+          "inspection_probability_state_1": 0.6759488042549641,
+          "detection_sensitivity": 0.730438472015709,
+          "false_positive_rate": 0.07102368050777301
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.26133640225366433,
+          "return_rate_per_hour": 0.45525623748871674,
+          "absolute_forward_rate_error": 0.038663597746335654,
+          "absolute_return_rate_error": 0.005256237488716731,
+          "exact_state_test_nll": 0.6327308635014947,
+          "exact_state_test_brier": 0.22081568509054772,
+          "source_grounding_test_nll": 0.29550801062621557,
+          "source_grounding_test_brier": 0.08956308930838969
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.29196771288524903,
+          "return_rate_per_hour": 0.49299309200180713,
+          "absolute_forward_rate_error": 0.008032287114750958,
+          "absolute_return_rate_error": 0.04299309200180712,
+          "exact_state_test_nll": 0.6312042532953819,
+          "exact_state_test_brier": 0.2201972993518668,
+          "source_grounding_test_nll": 0.1229491349833332,
+          "source_grounding_test_brier": 0.03505015344474069
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6302259816767383,
+          "exact_state_test_brier": 0.21975887485625498,
+          "source_grounding_test_nll": 0.12189660499670649,
+          "source_grounding_test_brier": 0.034785052792537643
+        }
+      }
+    },
+    {
+      "seed": 211,
+      "severity": 0.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        }
+      ],
+      "comparable_source_opportunities": 4004,
+      "source_disagreement_rate": 0.22352647352647353,
+      "source_aware_estimate": {
+        "iterations": 16,
+        "converged": true,
+        "initial_training_observation_nll": 50.38582622554199,
+        "final_training_observation_nll": 48.34458722066421,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.6410590021315127,
+            "inspection_probability_state_1": 0.6490372929375318,
+            "detection_sensitivity": 0.8097417597192125,
+            "false_positive_rate": 0.09585235487313633
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.6412125483566019,
+            "inspection_probability_state_1": 0.6576542372995512,
+            "detection_sensitivity": 0.7975004135378515,
+            "false_positive_rate": 0.09780548127417633
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 16,
+        "converged": true,
+        "initial_training_observation_nll": 50.38582622554199,
+        "final_training_observation_nll": 48.34578718544799,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6411196101062818,
+          "inspection_probability_state_1": 0.6533746866166283,
+          "detection_sensitivity": 0.8036740454384736,
+          "false_positive_rate": 0.09677680938304761
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.3103970516370357,
+          "return_rate_per_hour": 0.4663003060984791,
+          "absolute_forward_rate_error": 0.010397051637035692,
+          "absolute_return_rate_error": 0.0163003060984791,
+          "exact_state_test_nll": 0.6250659547927293,
+          "exact_state_test_brier": 0.21741262478614184,
+          "source_grounding_test_nll": 0.29025583664683297,
+          "source_grounding_test_brier": 0.0882077615889315
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.3101684236879776,
+          "return_rate_per_hour": 0.4659221807567771,
+          "absolute_forward_rate_error": 0.010168423687977601,
+          "absolute_return_rate_error": 0.015922180756777093,
+          "exact_state_test_nll": 0.6250635011226946,
+          "exact_state_test_brier": 0.21741169395430893,
+          "source_grounding_test_nll": 0.29032099022132046,
+          "source_grounding_test_brier": 0.088209465222902
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6249665331415204,
+          "exact_state_test_brier": 0.21737458706683882,
+          "source_grounding_test_nll": 0.2898375946885943,
+          "source_grounding_test_brier": 0.08803995047828046
+        }
+      }
+    },
+    {
+      "seed": 211,
+      "severity": 0.33,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.7325,
+          "inspection_probability_state_1": 0.5675,
+          "detection_sensitivity": 0.8495,
+          "false_positive_rate": 0.0736
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.5675,
+          "inspection_probability_state_1": 0.7325,
+          "detection_sensitivity": 0.7505000000000001,
+          "false_positive_rate": 0.1264
+        }
+      ],
+      "comparable_source_opportunities": 3948,
+      "source_disagreement_rate": 0.22973657548125634,
+      "source_aware_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.582237410353464,
+        "final_training_observation_nll": 47.79947244074527,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.735272618233724,
+            "inspection_probability_state_1": 0.5626343534539276,
+            "detection_sensitivity": 0.8548032629781976,
+            "false_positive_rate": 0.07604293336473547
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.5514345239212464,
+            "inspection_probability_state_1": 0.7439714088482796,
+            "detection_sensitivity": 0.7487071372151659,
+            "false_positive_rate": 0.11998692065702914
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 19,
+        "converged": true,
+        "initial_training_observation_nll": 50.7359864847064,
+        "final_training_observation_nll": 48.4589886463856,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6404483319467895,
+          "inspection_probability_state_1": 0.6583941963492219,
+          "detection_sensitivity": 0.7933067379760009,
+          "false_positive_rate": 0.09547975976684336
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.3178130199158026,
+          "return_rate_per_hour": 0.4716588808556431,
+          "absolute_forward_rate_error": 0.017813019915802586,
+          "absolute_return_rate_error": 0.021658880855643103,
+          "exact_state_test_nll": 0.6252356592938076,
+          "exact_state_test_brier": 0.21748238604105471,
+          "source_grounding_test_nll": 0.29582310879406176,
+          "source_grounding_test_brier": 0.09013506633793689
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.32251081972781315,
+          "return_rate_per_hour": 0.4745201949348413,
+          "absolute_forward_rate_error": 0.02251081972781316,
+          "absolute_return_rate_error": 0.02452019493484131,
+          "exact_state_test_nll": 0.6253812486542193,
+          "exact_state_test_brier": 0.2175433622057672,
+          "source_grounding_test_nll": 0.2750962048246707,
+          "source_grounding_test_brier": 0.0832351318875564
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6249665331415204,
+          "exact_state_test_brier": 0.21737458706683882,
+          "source_grounding_test_nll": 0.27425295708192055,
+          "source_grounding_test_brier": 0.08298242239144846
+        }
+      }
+    },
+    {
+      "seed": 211,
+      "severity": 0.67,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.8175,
+          "inspection_probability_state_1": 0.48250000000000004,
+          "detection_sensitivity": 0.9005000000000001,
+          "false_positive_rate": 0.046400000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.48250000000000004,
+          "inspection_probability_state_1": 0.8175,
+          "detection_sensitivity": 0.6995,
+          "false_positive_rate": 0.15360000000000001
+        }
+      ],
+      "comparable_source_opportunities": 3732,
+      "source_disagreement_rate": 0.24035369774919615,
+      "source_aware_estimate": {
+        "iterations": 20,
+        "converged": true,
+        "initial_training_observation_nll": 50.23591874471042,
+        "final_training_observation_nll": 45.589695688977514,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.8220393283811817,
+            "inspection_probability_state_1": 0.4750080695087663,
+            "detection_sensitivity": 0.9177603977529348,
+            "false_positive_rate": 0.046545883221990395
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.4710182283991323,
+            "inspection_probability_state_1": 0.8205366354511167,
+            "detection_sensitivity": 0.6937553707643498,
+            "false_positive_rate": 0.15560906876927247
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 16,
+        "converged": true,
+        "initial_training_observation_nll": 50.477814475046614,
+        "final_training_observation_nll": 48.2101757659841,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6365664261039822,
+          "inspection_probability_state_1": 0.6670638398620338,
+          "detection_sensitivity": 0.7827100123592292,
+          "false_positive_rate": 0.09383404765173636
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2871178087554223,
+          "return_rate_per_hour": 0.4789713308880181,
+          "absolute_forward_rate_error": 0.012882191244577679,
+          "absolute_return_rate_error": 0.028971330888018065,
+          "exact_state_test_nll": 0.6254870518029413,
+          "exact_state_test_brier": 0.21762107130544017,
+          "source_grounding_test_nll": 0.2932345949329492,
+          "source_grounding_test_brier": 0.08966848839843315
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.3099665110918363,
+          "return_rate_per_hour": 0.4726025603486632,
+          "absolute_forward_rate_error": 0.009966511091836328,
+          "absolute_return_rate_error": 0.022602560348663203,
+          "exact_state_test_nll": 0.6250161502505694,
+          "exact_state_test_brier": 0.2173913956294059,
+          "source_grounding_test_nll": 0.2139314472533243,
+          "source_grounding_test_brier": 0.06335122366189254
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6249665331415204,
+          "exact_state_test_brier": 0.21737458706683882,
+          "source_grounding_test_nll": 0.2135049315773749,
+          "source_grounding_test_brier": 0.06322754038046222
+        }
+      }
+    },
+    {
+      "seed": 211,
+      "severity": 1.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.9,
+          "inspection_probability_state_1": 0.4,
+          "detection_sensitivity": 0.9500000000000001,
+          "false_positive_rate": 0.020000000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.4,
+          "inspection_probability_state_1": 0.9,
+          "detection_sensitivity": 0.65,
+          "false_positive_rate": 0.18
+        }
+      ],
+      "comparable_source_opportunities": 3411,
+      "source_disagreement_rate": 0.2532981530343008,
+      "source_aware_estimate": {
+        "iterations": 18,
+        "converged": true,
+        "initial_training_observation_nll": 48.42092938423055,
+        "final_training_observation_nll": 41.325383437364835,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.9089192901932666,
+            "inspection_probability_state_1": 0.39895927177876156,
+            "detection_sensitivity": 0.9524874595670979,
+            "false_positive_rate": 0.015605978013826164
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.38569109859648115,
+            "inspection_probability_state_1": 0.9001015467496548,
+            "detection_sensitivity": 0.6300317915422495,
+            "false_positive_rate": 0.15963428162359664
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 22,
+        "converged": true,
+        "initial_training_observation_nll": 50.690152928114664,
+        "final_training_observation_nll": 47.56362742435836,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6327848198283719,
+          "inspection_probability_state_1": 0.6761162707377177,
+          "detection_sensitivity": 0.7172376677822875,
+          "false_positive_rate": 0.06533942935982467
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2785898034463955,
+          "return_rate_per_hour": 0.43323937586930045,
+          "absolute_forward_rate_error": 0.021410196553604488,
+          "absolute_return_rate_error": 0.016760624130699564,
+          "exact_state_test_nll": 0.6249688373888174,
+          "exact_state_test_brier": 0.21737811783134733,
+          "source_grounding_test_nll": 0.2913571221678263,
+          "source_grounding_test_brier": 0.08860907790525972
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.3166266387785336,
+          "return_rate_per_hour": 0.4669201618863435,
+          "absolute_forward_rate_error": 0.016626638778533598,
+          "absolute_return_rate_error": 0.016920161886343488,
+          "exact_state_test_nll": 0.625260683374256,
+          "exact_state_test_brier": 0.21749482348512528,
+          "source_grounding_test_nll": 0.12965164562605114,
+          "source_grounding_test_brier": 0.03713210994848459
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6249665331415204,
+          "exact_state_test_brier": 0.21737458706683882,
+          "source_grounding_test_nll": 0.12844388989056604,
+          "source_grounding_test_brier": 0.03677146058547026
+        }
+      }
+    },
+    {
+      "seed": 307,
+      "severity": 0.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        }
+      ],
+      "comparable_source_opportunities": 4095,
+      "source_disagreement_rate": 0.23663003663003662,
+      "source_aware_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.559507123395655,
+        "final_training_observation_nll": 48.35405358958226,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.6491866568200529,
+            "inspection_probability_state_1": 0.637783597952487,
+            "detection_sensitivity": 0.7821336953000836,
+            "false_positive_rate": 0.0973082574073318
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.6510473074728924,
+            "inspection_probability_state_1": 0.6626642714512041,
+            "detection_sensitivity": 0.7854536843989336,
+            "false_positive_rate": 0.09871286779321169
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.559507123395655,
+        "final_training_observation_nll": 48.35940747686058,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.650119007495211,
+          "inspection_probability_state_1": 0.650220476444082,
+          "detection_sensitivity": 0.7837785434493078,
+          "false_positive_rate": 0.09816937681332345
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.29350588661418686,
+          "return_rate_per_hour": 0.42646871425849786,
+          "absolute_forward_rate_error": 0.006494113385813127,
+          "absolute_return_rate_error": 0.02353128574150215,
+          "exact_state_test_nll": 0.6295294036453145,
+          "exact_state_test_brier": 0.2194858740604916,
+          "source_grounding_test_nll": 0.2960673295194968,
+          "source_grounding_test_brier": 0.09030349850494858
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.2941144689650575,
+          "return_rate_per_hour": 0.42734347913563986,
+          "absolute_forward_rate_error": 0.005885531034942493,
+          "absolute_return_rate_error": 0.022656520864360152,
+          "exact_state_test_nll": 0.6295298529997987,
+          "exact_state_test_brier": 0.21948622109802332,
+          "source_grounding_test_nll": 0.2961576438042783,
+          "source_grounding_test_brier": 0.09033821282638381
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6295287472019994,
+          "exact_state_test_brier": 0.2194867136758855,
+          "source_grounding_test_nll": 0.2950944715054798,
+          "source_grounding_test_brier": 0.08997049683204346
+        }
+      }
+    },
+    {
+      "seed": 307,
+      "severity": 0.33,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.7325,
+          "inspection_probability_state_1": 0.5675,
+          "detection_sensitivity": 0.8495,
+          "false_positive_rate": 0.0736
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.5675,
+          "inspection_probability_state_1": 0.7325,
+          "detection_sensitivity": 0.7505000000000001,
+          "false_positive_rate": 0.1264
+        }
+      ],
+      "comparable_source_opportunities": 4011,
+      "source_disagreement_rate": 0.23784592370979807,
+      "source_aware_estimate": {
+        "iterations": 17,
+        "converged": true,
+        "initial_training_observation_nll": 50.638681840199354,
+        "final_training_observation_nll": 47.873404032688335,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.7203855399262278,
+            "inspection_probability_state_1": 0.5695173318844279,
+            "detection_sensitivity": 0.8403553243283315,
+            "false_positive_rate": 0.06688205334082532
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.5689024634915057,
+            "inspection_probability_state_1": 0.7310103330092078,
+            "detection_sensitivity": 0.7375339430648624,
+            "false_positive_rate": 0.12979973190326882
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.52103707964791,
+        "final_training_observation_nll": 48.39998630491609,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6418373903120257,
+          "inspection_probability_state_1": 0.655492645491616,
+          "detection_sensitivity": 0.7893689090968402,
+          "false_positive_rate": 0.1003626869263501
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2928576667364022,
+          "return_rate_per_hour": 0.4473693247122465,
+          "absolute_forward_rate_error": 0.007142333263597811,
+          "absolute_return_rate_error": 0.0026306752877535144,
+          "exact_state_test_nll": 0.6296067072635946,
+          "exact_state_test_brier": 0.21952128058878184,
+          "source_grounding_test_nll": 0.30276534569010183,
+          "source_grounding_test_brier": 0.0922848632893607
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.305632966506089,
+          "return_rate_per_hour": 0.4439093966483699,
+          "absolute_forward_rate_error": 0.005632966506089021,
+          "absolute_return_rate_error": 0.006090603351630086,
+          "exact_state_test_nll": 0.6295738522757344,
+          "exact_state_test_brier": 0.21950627693313682,
+          "source_grounding_test_nll": 0.281417346597329,
+          "source_grounding_test_brier": 0.08557249080878775
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6295287472019994,
+          "exact_state_test_brier": 0.2194867136758855,
+          "source_grounding_test_nll": 0.2808418231989099,
+          "source_grounding_test_brier": 0.0854356574770639
+        }
+      }
+    },
+    {
+      "seed": 307,
+      "severity": 0.67,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.8175,
+          "inspection_probability_state_1": 0.48250000000000004,
+          "detection_sensitivity": 0.9005000000000001,
+          "false_positive_rate": 0.046400000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.48250000000000004,
+          "inspection_probability_state_1": 0.8175,
+          "detection_sensitivity": 0.6995,
+          "false_positive_rate": 0.15360000000000001
+        }
+      ],
+      "comparable_source_opportunities": 3796,
+      "source_disagreement_rate": 0.24683877766069548,
+      "source_aware_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.2023529773163,
+        "final_training_observation_nll": 45.687840514949706,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.8141824095014879,
+            "inspection_probability_state_1": 0.4770031498895689,
+            "detection_sensitivity": 0.8684354766908653,
+            "false_positive_rate": 0.039514483691353824
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.48815720566336124,
+            "inspection_probability_state_1": 0.8090344480632427,
+            "detection_sensitivity": 0.703064520594173,
+            "false_positive_rate": 0.1513167617313035
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 16,
+        "converged": true,
+        "initial_training_observation_nll": 50.52318095206334,
+        "final_training_observation_nll": 48.077524240623944,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6445635424662429,
+          "inspection_probability_state_1": 0.6546248694858072,
+          "detection_sensitivity": 0.7705134549143371,
+          "false_positive_rate": 0.09192733261214393
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2695960941254919,
+          "return_rate_per_hour": 0.4082781543701963,
+          "absolute_forward_rate_error": 0.030403905874508086,
+          "absolute_return_rate_error": 0.04172184562980369,
+          "exact_state_test_nll": 0.6298338619387659,
+          "exact_state_test_brier": 0.2196002474978025,
+          "source_grounding_test_nll": 0.2983828437386349,
+          "source_grounding_test_brier": 0.09098091746020878
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.3000991763528984,
+          "return_rate_per_hour": 0.42215784708095544,
+          "absolute_forward_rate_error": 9.917635289841131e-05,
+          "absolute_return_rate_error": 0.02784215291904457,
+          "exact_state_test_nll": 0.6297014175805591,
+          "exact_state_test_brier": 0.2195675630919116,
+          "source_grounding_test_nll": 0.2153965352903054,
+          "source_grounding_test_brier": 0.06405970964334773
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6295287472019994,
+          "exact_state_test_brier": 0.2194867136758855,
+          "source_grounding_test_nll": 0.21331006965382554,
+          "source_grounding_test_brier": 0.06356421564788306
+        }
+      }
+    },
+    {
+      "seed": 307,
+      "severity": 1.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.9,
+          "inspection_probability_state_1": 0.4,
+          "detection_sensitivity": 0.9500000000000001,
+          "false_positive_rate": 0.020000000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.4,
+          "inspection_probability_state_1": 0.9,
+          "detection_sensitivity": 0.65,
+          "false_positive_rate": 0.18
+        }
+      ],
+      "comparable_source_opportunities": 3453,
+      "source_disagreement_rate": 0.24210831161309007,
+      "source_aware_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 48.22655615725189,
+        "final_training_observation_nll": 41.46040057066853,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.9057091463367622,
+            "inspection_probability_state_1": 0.3860171106781675,
+            "detection_sensitivity": 0.9268762127161819,
+            "false_positive_rate": 0.017426875641217095
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.4051219182670734,
+            "inspection_probability_state_1": 0.8979122672927129,
+            "detection_sensitivity": 0.6527279297150431,
+            "false_positive_rate": 0.1609531045954106
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 22,
+        "converged": true,
+        "initial_training_observation_nll": 48.22655615725189,
+        "final_training_observation_nll": 47.48206371749903,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6430711739623192,
+          "inspection_probability_state_1": 0.6645889296331574,
+          "detection_sensitivity": 0.7359999797313316,
+          "false_positive_rate": 0.07347661513885978
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.25926974697085,
+          "return_rate_per_hour": 0.41348721216298034,
+          "absolute_forward_rate_error": 0.04073025302915001,
+          "absolute_return_rate_error": 0.03651278783701967,
+          "exact_state_test_nll": 0.6306327348698317,
+          "exact_state_test_brier": 0.21993634819569297,
+          "source_grounding_test_nll": 0.30020020873825903,
+          "source_grounding_test_brier": 0.09104867215739518
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.30025831485257,
+          "return_rate_per_hour": 0.4361781230479702,
+          "absolute_forward_rate_error": 0.0002583148525699963,
+          "absolute_return_rate_error": 0.013821876952029799,
+          "exact_state_test_nll": 0.629545202265183,
+          "exact_state_test_brier": 0.21949382140375495,
+          "source_grounding_test_nll": 0.1274333297670772,
+          "source_grounding_test_brier": 0.036383077842284936
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6295287472019994,
+          "exact_state_test_brier": 0.2194867136758855,
+          "source_grounding_test_nll": 0.12600687585571768,
+          "source_grounding_test_brier": 0.035974110999573046
+        }
+      }
+    },
+    {
+      "seed": 401,
+      "severity": 0.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        }
+      ],
+      "comparable_source_opportunities": 3992,
+      "source_disagreement_rate": 0.24248496993987975,
+      "source_aware_estimate": {
+        "iterations": 13,
+        "converged": true,
+        "initial_training_observation_nll": 50.6303090023056,
+        "final_training_observation_nll": 48.44781498737205,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.6473429085427876,
+            "inspection_probability_state_1": 0.6572610695311745,
+            "detection_sensitivity": 0.7911434774939108,
+            "false_positive_rate": 0.1042508164416065
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.6336387173353686,
+            "inspection_probability_state_1": 0.6598980178812994,
+            "detection_sensitivity": 0.8047999589764993,
+            "false_positive_rate": 0.11290191630728272
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 13,
+        "converged": true,
+        "initial_training_observation_nll": 50.6303090023056,
+        "final_training_observation_nll": 48.45460587607847,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6404786315609874,
+          "inspection_probability_state_1": 0.6586027774479246,
+          "detection_sensitivity": 0.7978968017347338,
+          "false_positive_rate": 0.1085590077021144
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.27866595354767093,
+          "return_rate_per_hour": 0.4623232833300651,
+          "absolute_forward_rate_error": 0.02133404645232906,
+          "absolute_return_rate_error": 0.012323283330065105,
+          "exact_state_test_nll": 0.6332582922501296,
+          "exact_state_test_brier": 0.22115793011220616,
+          "source_grounding_test_nll": 0.29308227369423095,
+          "source_grounding_test_brier": 0.08868351801313314
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.27879032926166086,
+          "return_rate_per_hour": 0.4625763675324669,
+          "absolute_forward_rate_error": 0.021209670738339126,
+          "absolute_return_rate_error": 0.012576367532466881,
+          "exact_state_test_nll": 0.6332569646608762,
+          "exact_state_test_brier": 0.2211575920381108,
+          "source_grounding_test_nll": 0.2930799891372045,
+          "source_grounding_test_brier": 0.0886851268796576
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6317789504935875,
+          "exact_state_test_brier": 0.22050779323766587,
+          "source_grounding_test_nll": 0.29168918611041306,
+          "source_grounding_test_brier": 0.08813943571885814
+        }
+      }
+    },
+    {
+      "seed": 401,
+      "severity": 0.33,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.7325,
+          "inspection_probability_state_1": 0.5675,
+          "detection_sensitivity": 0.8495,
+          "false_positive_rate": 0.0736
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.5675,
+          "inspection_probability_state_1": 0.7325,
+          "detection_sensitivity": 0.7505000000000001,
+          "false_positive_rate": 0.1264
+        }
+      ],
+      "comparable_source_opportunities": 3906,
+      "source_disagreement_rate": 0.23758320532514082,
+      "source_aware_estimate": {
+        "iterations": 16,
+        "converged": true,
+        "initial_training_observation_nll": 50.446464465069354,
+        "final_training_observation_nll": 47.752595601237196,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.7224359558517345,
+            "inspection_probability_state_1": 0.5773855538751275,
+            "detection_sensitivity": 0.8507779957555607,
+            "false_positive_rate": 0.07376348130217973
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.5525045573687548,
+            "inspection_probability_state_1": 0.7338099760440527,
+            "detection_sensitivity": 0.7462374770806759,
+            "false_positive_rate": 0.13468247484476917
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 14,
+        "converged": true,
+        "initial_training_observation_nll": 50.446464465069354,
+        "final_training_observation_nll": 48.34399564060304,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6365581700213325,
+          "inspection_probability_state_1": 0.6574717911013526,
+          "detection_sensitivity": 0.791408672893293,
+          "false_positive_rate": 0.10231994069920342
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2817763343271006,
+          "return_rate_per_hour": 0.4642629894480309,
+          "absolute_forward_rate_error": 0.018223665672899403,
+          "absolute_return_rate_error": 0.014262989448030894,
+          "exact_state_test_nll": 0.6330498984806819,
+          "exact_state_test_brier": 0.22106958163958484,
+          "source_grounding_test_nll": 0.3037879039827424,
+          "source_grounding_test_brier": 0.09250434528508088
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.28759773165569225,
+          "return_rate_per_hour": 0.4679181517312052,
+          "absolute_forward_rate_error": 0.012402268344307743,
+          "absolute_return_rate_error": 0.0179181517312052,
+          "exact_state_test_nll": 0.6327105063883876,
+          "exact_state_test_brier": 0.22092479266079612,
+          "source_grounding_test_nll": 0.28330953057335967,
+          "source_grounding_test_brier": 0.08550159082415289
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6317789504935875,
+          "exact_state_test_brier": 0.22050779323766587,
+          "source_grounding_test_nll": 0.2830145107011703,
+          "source_grounding_test_brier": 0.08538512504016381
+        }
+      }
+    },
+    {
+      "seed": 401,
+      "severity": 0.67,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.8175,
+          "inspection_probability_state_1": 0.48250000000000004,
+          "detection_sensitivity": 0.9005000000000001,
+          "false_positive_rate": 0.046400000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.48250000000000004,
+          "inspection_probability_state_1": 0.8175,
+          "detection_sensitivity": 0.6995,
+          "false_positive_rate": 0.15360000000000001
+        }
+      ],
+      "comparable_source_opportunities": 3724,
+      "source_disagreement_rate": 0.2403329752953813,
+      "source_aware_estimate": {
+        "iterations": 18,
+        "converged": true,
+        "initial_training_observation_nll": 48.87787742393882,
+        "final_training_observation_nll": 45.63932242853032,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.8092782996849883,
+            "inspection_probability_state_1": 0.48380993611957473,
+            "detection_sensitivity": 0.8991966507781457,
+            "false_positive_rate": 0.04576244689242293
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.4745966245931961,
+            "inspection_probability_state_1": 0.8209931413522807,
+            "detection_sensitivity": 0.6985082196441683,
+            "false_positive_rate": 0.15282846561731525
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 16,
+        "converged": true,
+        "initial_training_observation_nll": 50.76363358153106,
+        "final_training_observation_nll": 48.11843051139963,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6354354982047137,
+          "inspection_probability_state_1": 0.6657436655671035,
+          "detection_sensitivity": 0.7793767687512921,
+          "false_positive_rate": 0.09183501870109564
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2880726872472116,
+          "return_rate_per_hour": 0.4927307471981593,
+          "absolute_forward_rate_error": 0.01192731275278841,
+          "absolute_return_rate_error": 0.04273074719815928,
+          "exact_state_test_nll": 0.6336731479187526,
+          "exact_state_test_brier": 0.22136413898361135,
+          "source_grounding_test_nll": 0.2976071516955429,
+          "source_grounding_test_brier": 0.09051439176636161
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.29726537704371964,
+          "return_rate_per_hour": 0.467731438662504,
+          "absolute_forward_rate_error": 0.0027346229562803526,
+          "absolute_return_rate_error": 0.017731438662503984,
+          "exact_state_test_nll": 0.632129537308639,
+          "exact_state_test_brier": 0.22066909860068967,
+          "source_grounding_test_nll": 0.21781726998227083,
+          "source_grounding_test_brier": 0.06440877337055419
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6317789504935875,
+          "exact_state_test_brier": 0.22050779323766587,
+          "source_grounding_test_nll": 0.21784579583440342,
+          "source_grounding_test_brier": 0.06440142816843346
+        }
+      }
+    },
+    {
+      "seed": 401,
+      "severity": 1.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.9,
+          "inspection_probability_state_1": 0.4,
+          "detection_sensitivity": 0.9500000000000001,
+          "false_positive_rate": 0.020000000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.4,
+          "inspection_probability_state_1": 0.9,
+          "detection_sensitivity": 0.65,
+          "false_positive_rate": 0.18
+        }
+      ],
+      "comparable_source_opportunities": 3414,
+      "source_disagreement_rate": 0.2542472173403632,
+      "source_aware_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 48.43526413649232,
+        "final_training_observation_nll": 41.79065187748378,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.8924752329516612,
+            "inspection_probability_state_1": 0.40121921644867076,
+            "detection_sensitivity": 0.9359800792200561,
+            "false_positive_rate": 0.021277058728968692
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.3988645448550417,
+            "inspection_probability_state_1": 0.8990033755153214,
+            "detection_sensitivity": 0.6614553739536634,
+            "false_positive_rate": 0.181934300966903
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 17,
+        "converged": true,
+        "initial_training_observation_nll": 50.678013890597846,
+        "final_training_observation_nll": 47.71230743308934,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6363751128610433,
+          "inspection_probability_state_1": 0.6688491832872151,
+          "detection_sensitivity": 0.7439059250647134,
+          "false_positive_rate": 0.0816551221718699
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.25359769664194365,
+          "return_rate_per_hour": 0.4272053936536795,
+          "absolute_forward_rate_error": 0.04640230335805634,
+          "absolute_return_rate_error": 0.022794606346320523,
+          "exact_state_test_nll": 0.6345204118306806,
+          "exact_state_test_brier": 0.22164865760899452,
+          "source_grounding_test_nll": 0.30034200280705126,
+          "source_grounding_test_brier": 0.09117498787240033
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.2837501311299013,
+          "return_rate_per_hour": 0.44105033326917154,
+          "absolute_forward_rate_error": 0.016249868870098716,
+          "absolute_return_rate_error": 0.008949666730828476,
+          "exact_state_test_nll": 0.6321881579433645,
+          "exact_state_test_brier": 0.22067969717575997,
+          "source_grounding_test_nll": 0.13061944088357266,
+          "source_grounding_test_brier": 0.037224307004112875
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6317789504935875,
+          "exact_state_test_brier": 0.22050779323766587,
+          "source_grounding_test_nll": 0.1303992775966567,
+          "source_grounding_test_brier": 0.0371561757278433
+        }
+      }
+    },
+    {
+      "seed": 503,
+      "severity": 0.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.65,
+          "inspection_probability_state_1": 0.65,
+          "detection_sensitivity": 0.8,
+          "false_positive_rate": 0.1
+        }
+      ],
+      "comparable_source_opportunities": 4104,
+      "source_disagreement_rate": 0.229775828460039,
+      "source_aware_estimate": {
+        "iterations": 19,
+        "converged": true,
+        "initial_training_observation_nll": 50.4198877189865,
+        "final_training_observation_nll": 48.205965234488076,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.6471197230137137,
+            "inspection_probability_state_1": 0.665941587732475,
+            "detection_sensitivity": 0.8007967799794725,
+            "false_positive_rate": 0.10341257512339207
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.6496857575951044,
+            "inspection_probability_state_1": 0.6606816167649556,
+            "detection_sensitivity": 0.8191110755291008,
+            "false_positive_rate": 0.10912828051200292
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 14,
+        "converged": true,
+        "initial_training_observation_nll": 50.281356326579754,
+        "final_training_observation_nll": 48.20899243867231,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6483818112250302,
+          "inspection_probability_state_1": 0.6633448542316022,
+          "detection_sensitivity": 0.8096838532281114,
+          "false_positive_rate": 0.10620291251540945
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.27727790890329634,
+          "return_rate_per_hour": 0.45479620593643727,
+          "absolute_forward_rate_error": 0.022722091096703645,
+          "absolute_return_rate_error": 0.004796205936437259,
+          "exact_state_test_nll": 0.6328911569694239,
+          "exact_state_test_brier": 0.2210309447710742,
+          "source_grounding_test_nll": 0.3068489153796281,
+          "source_grounding_test_brier": 0.09393405889527003
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.2773396872514818,
+          "return_rate_per_hour": 0.4553502063110981,
+          "absolute_forward_rate_error": 0.022660312748518208,
+          "absolute_return_rate_error": 0.005350206311098116,
+          "exact_state_test_nll": 0.6329069364581239,
+          "exact_state_test_brier": 0.22103817147686997,
+          "source_grounding_test_nll": 0.3068743599912094,
+          "source_grounding_test_brier": 0.09392321016292768
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6315471550321969,
+          "exact_state_test_brier": 0.22044752330200268,
+          "source_grounding_test_nll": 0.3056137010983884,
+          "source_grounding_test_brier": 0.09345734325396832
+        }
+      }
+    },
+    {
+      "seed": 503,
+      "severity": 0.33,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.7325,
+          "inspection_probability_state_1": 0.5675,
+          "detection_sensitivity": 0.8495,
+          "false_positive_rate": 0.0736
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.5675,
+          "inspection_probability_state_1": 0.7325,
+          "detection_sensitivity": 0.7505000000000001,
+          "false_positive_rate": 0.1264
+        }
+      ],
+      "comparable_source_opportunities": 4034,
+      "source_disagreement_rate": 0.23574615765989093,
+      "source_aware_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.07977494559665,
+        "final_training_observation_nll": 47.51046821197488,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.7285159585050183,
+            "inspection_probability_state_1": 0.584658314198715,
+            "detection_sensitivity": 0.8602768303887296,
+            "false_positive_rate": 0.06277159410940827
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.5689320601422034,
+            "inspection_probability_state_1": 0.7351687533575848,
+            "detection_sensitivity": 0.758575681189724,
+            "false_positive_rate": 0.14065050787932276
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 15,
+        "converged": true,
+        "initial_training_observation_nll": 50.206791554296615,
+        "final_training_observation_nll": 48.12630185185779,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6475562128342105,
+          "inspection_probability_state_1": 0.6620230246023401,
+          "detection_sensitivity": 0.797689312924574,
+          "false_positive_rate": 0.09894165277613591
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2724586586414357,
+          "return_rate_per_hour": 0.41364483477030356,
+          "absolute_forward_rate_error": 0.027541341358564286,
+          "absolute_return_rate_error": 0.03635516522969645,
+          "exact_state_test_nll": 0.6320513245745967,
+          "exact_state_test_brier": 0.2206454491374267,
+          "source_grounding_test_nll": 0.30221557679211203,
+          "source_grounding_test_brier": 0.09267005001160471
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.28342062898746584,
+          "return_rate_per_hour": 0.4335354852719904,
+          "absolute_forward_rate_error": 0.01657937101253415,
+          "absolute_return_rate_error": 0.016464514728009638,
+          "exact_state_test_nll": 0.6318631955093462,
+          "exact_state_test_brier": 0.22057736474872564,
+          "source_grounding_test_nll": 0.27953953134633663,
+          "source_grounding_test_brier": 0.08514496400200172
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6315471550321969,
+          "exact_state_test_brier": 0.22044752330200268,
+          "source_grounding_test_nll": 0.2784511068019771,
+          "source_grounding_test_brier": 0.08480711305539565
+        }
+      }
+    },
+    {
+      "seed": 503,
+      "severity": 0.67,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.8175,
+          "inspection_probability_state_1": 0.48250000000000004,
+          "detection_sensitivity": 0.9005000000000001,
+          "false_positive_rate": 0.046400000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.48250000000000004,
+          "inspection_probability_state_1": 0.8175,
+          "detection_sensitivity": 0.6995,
+          "false_positive_rate": 0.15360000000000001
+        }
+      ],
+      "comparable_source_opportunities": 3841,
+      "source_disagreement_rate": 0.24837281957823484,
+      "source_aware_estimate": {
+        "iterations": 19,
+        "converged": true,
+        "initial_training_observation_nll": 48.92379997415063,
+        "final_training_observation_nll": 45.709416459334264,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.8139444180904596,
+            "inspection_probability_state_1": 0.49950213995641785,
+            "detection_sensitivity": 0.9112515626518299,
+            "false_positive_rate": 0.04216988020940862
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.48496666639986785,
+            "inspection_probability_state_1": 0.8225187833381967,
+            "detection_sensitivity": 0.7026871815266685,
+            "false_positive_rate": 0.17783687696273484
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 18,
+        "converged": true,
+        "initial_training_observation_nll": 50.90936999026551,
+        "final_training_observation_nll": 48.22791835955828,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6431280532560137,
+          "inspection_probability_state_1": 0.6739905178999117,
+          "detection_sensitivity": 0.7788785943744376,
+          "false_positive_rate": 0.1014452107320102
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2725359505176883,
+          "return_rate_per_hour": 0.4588410720542574,
+          "absolute_forward_rate_error": 0.02746404948231168,
+          "absolute_return_rate_error": 0.008841072054257382,
+          "exact_state_test_nll": 0.6335588079237612,
+          "exact_state_test_brier": 0.2213202791748006,
+          "source_grounding_test_nll": 0.2983827627585104,
+          "source_grounding_test_brier": 0.0913191883197212
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.2953967426186949,
+          "return_rate_per_hour": 0.47172592778489186,
+          "absolute_forward_rate_error": 0.00460325738130507,
+          "absolute_return_rate_error": 0.021725927784891852,
+          "exact_state_test_nll": 0.6320845973337315,
+          "exact_state_test_brier": 0.22069081438621374,
+          "source_grounding_test_nll": 0.21213869767766805,
+          "source_grounding_test_brier": 0.0632864134750588
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6315471550321969,
+          "exact_state_test_brier": 0.22044752330200268,
+          "source_grounding_test_nll": 0.21119157130500335,
+          "source_grounding_test_brier": 0.06294551436755083
+        }
+      }
+    },
+    {
+      "seed": 503,
+      "severity": 1.0,
+      "source_truth": [
+        {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.9,
+          "inspection_probability_state_1": 0.4,
+          "detection_sensitivity": 0.9500000000000001,
+          "false_positive_rate": 0.020000000000000004
+        },
+        {
+          "source_id": "source_b",
+          "inspection_probability_state_0": 0.4,
+          "inspection_probability_state_1": 0.9,
+          "detection_sensitivity": 0.65,
+          "false_positive_rate": 0.18
+        }
+      ],
+      "comparable_source_opportunities": 3484,
+      "source_disagreement_rate": 0.26836969001148103,
+      "source_aware_estimate": {
+        "iterations": 17,
+        "converged": true,
+        "initial_training_observation_nll": 49.81121601578658,
+        "final_training_observation_nll": 41.62163893183079,
+        "source_parameters": [
+          {
+            "source_id": "source_a",
+            "inspection_probability_state_0": 0.9009322204375168,
+            "inspection_probability_state_1": 0.4125470449322387,
+            "detection_sensitivity": 0.9494215548426926,
+            "false_positive_rate": 0.01461626914413028
+          },
+          {
+            "source_id": "source_b",
+            "inspection_probability_state_0": 0.3946274461080419,
+            "inspection_probability_state_1": 0.9007115596465792,
+            "detection_sensitivity": 0.6419219746077439,
+            "false_positive_rate": 0.1885543059711025
+          }
+        ]
+      },
+      "pooled_estimate": {
+        "iterations": 23,
+        "converged": true,
+        "initial_training_observation_nll": 49.81121601578658,
+        "final_training_observation_nll": 47.75319575545084,
+        "shared_parameters": {
+          "source_id": "source_a",
+          "inspection_probability_state_0": 0.6360787616050276,
+          "inspection_probability_state_1": 0.6791352404062216,
+          "detection_sensitivity": 0.7165673717485785,
+          "false_positive_rate": 0.07983537187565488
+        }
+      },
+      "models": {
+        "pooled_sources_em": {
+          "forward_rate_per_hour": 0.2562852197609286,
+          "return_rate_per_hour": 0.4052792238738503,
+          "absolute_forward_rate_error": 0.04371478023907138,
+          "absolute_return_rate_error": 0.04472077612614972,
+          "exact_state_test_nll": 0.6330711941247099,
+          "exact_state_test_brier": 0.22105743193377433,
+          "source_grounding_test_nll": 0.2998259106077744,
+          "source_grounding_test_brier": 0.09104830937994987
+        },
+        "source_aware_em": {
+          "forward_rate_per_hour": 0.3061454542079836,
+          "return_rate_per_hour": 0.47486934749653514,
+          "absolute_forward_rate_error": 0.006145454207983625,
+          "absolute_return_rate_error": 0.024869347496535132,
+          "exact_state_test_nll": 0.6316788067867097,
+          "exact_state_test_brier": 0.22051041248798392,
+          "source_grounding_test_nll": 0.1262635566024914,
+          "source_grounding_test_brier": 0.03601802963439199
+        },
+        "logged_process": {
+          "forward_rate_per_hour": 0.3,
+          "return_rate_per_hour": 0.45,
+          "absolute_forward_rate_error": 0.0,
+          "absolute_return_rate_error": 0.0,
+          "exact_state_test_nll": 0.6315471550321969,
+          "exact_state_test_brier": 0.22044752330200268,
+          "source_grounding_test_nll": 0.12582218503810166,
+          "source_grounding_test_brier": 0.035887321301006025
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "0.00": {
+      "pooled_sources_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.2862187703684301,
+          "standard_deviation": 0.014133844279641402,
+          "minimum": 0.27124705113996045,
+          "maximum": 0.3103970516370357
+        },
+        "return_rate_per_hour": {
+          "mean": 0.45049246898305356,
+          "standard_deviation": 0.014479113127172212,
+          "minimum": 0.42646871425849786,
+          "maximum": 0.4663003060984791
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.017940050286384214,
+          "standard_deviation": 0.008236652232625761,
+          "minimum": 0.006494113385813127,
+          "maximum": 0.02875294886003954
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.012875449162939057,
+          "standard_deviation": 0.006641539844139491,
+          "minimum": 0.004796205936437259,
+          "maximum": 0.02353128574150215
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6303854529686158,
+          "standard_deviation": 0.0029731079726764433,
+          "minimum": 0.6250659547927293,
+          "maximum": 0.6332582922501296
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.2959062370568805,
+          "standard_deviation": 0.005772066090445528,
+          "minimum": 0.29025583664683297,
+          "maximum": 0.3068489153796281
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.09011292534858575,
+          "standard_deviation": 0.0020380749065139034,
+          "minimum": 0.0882077615889315,
+          "maximum": 0.09393405889527003
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21984822005053528,
+          "standard_deviation": 0.0013616850827724485,
+          "minimum": 0.21741262478614184,
+          "maximum": 0.22115793011220616
+        }
+      },
+      "source_aware_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.28632803440655447,
+          "standard_deviation": 0.014104137043840498,
+          "minimum": 0.2712272628665945,
+          "maximum": 0.3101684236879776
+        },
+        "return_rate_per_hour": {
+          "mean": 0.45080248754125984,
+          "standard_deviation": 0.014155939003613536,
+          "minimum": 0.42734347913563986,
+          "maximum": 0.4659221807567771
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.017739335068636584,
+          "standard_deviation": 0.00843595378498678,
+          "minimum": 0.005885531034942493,
+          "maximum": 0.0287727371334055
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.012737014298877025,
+          "standard_deviation": 0.00622921038961652,
+          "minimum": 0.005350206311098116,
+          "maximum": 0.022656520864360152
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6303897364374932,
+          "standard_deviation": 0.0029768501290875324,
+          "minimum": 0.6250635011226946,
+          "maximum": 0.6332569646608762
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.29594646995329077,
+          "standard_deviation": 0.005767725126202156,
+          "minimum": 0.29032099022132046,
+          "maximum": 0.3068743599912094
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.09012160278748846,
+          "standard_deviation": 0.0020330883445957935,
+          "minimum": 0.088209465222902,
+          "maximum": 0.09392321016292768
+        },
+        "exact_state_test_brier": {
+          "mean": 0.2198502727651546,
+          "standard_deviation": 0.0013633700675036514,
+          "minimum": 0.21741169395430893,
+          "maximum": 0.2211575920381108
+        }
+      },
+      "logged_process": {
+        "forward_rate_per_hour": {
+          "mean": 0.3,
+          "standard_deviation": 0.0,
+          "minimum": 0.3,
+          "maximum": 0.3
+        },
+        "return_rate_per_hour": {
+          "mean": 0.45,
+          "standard_deviation": 0.0,
+          "minimum": 0.45,
+          "maximum": 0.45
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6296094735092085,
+          "standard_deviation": 0.0024659575983984423,
+          "minimum": 0.6249665331415204,
+          "maximum": 0.6317789504935875
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.29507416520859914,
+          "standard_deviation": 0.005544708495584064,
+          "minimum": 0.2898375946885943,
+          "maximum": 0.3056137010983884
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.08980431487094806,
+          "standard_deviation": 0.001970234058030856,
+          "minimum": 0.08803995047828046,
+          "maximum": 0.09345734325396832
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21951509842772957,
+          "standard_deviation": 0.0011399018079801353,
+          "minimum": 0.21737458706683882,
+          "maximum": 0.22050779323766587
+        }
+      }
+    },
+    "0.33": {
+      "pooled_sources_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.2922887712374564,
+          "standard_deviation": 0.015320659605243503,
+          "minimum": 0.2724586586414357,
+          "maximum": 0.3178130199158026
+        },
+        "return_rate_per_hour": {
+          "mean": 0.4678592810271193,
+          "standard_deviation": 0.04227724640964827,
+          "minimum": 0.41364483477030356,
+          "maximum": 0.5423603753493726
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.01483643672886461,
+          "standard_deviation": 0.008606149252622599,
+          "minimum": 0.003461823433458966,
+          "maximum": 0.027541341358564286
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.03345361723409932,
+          "standard_deviation": 0.03141934080693157,
+          "minimum": 0.0026306752877535144,
+          "maximum": 0.09236037534937264
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6305587499372312,
+          "standard_deviation": 0.0029300457258088506,
+          "minimum": 0.6252356592938076,
+          "maximum": 0.6330498984806819
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.30078387137927615,
+          "standard_deviation": 0.0028889667354913004,
+          "minimum": 0.29582310879406176,
+          "maximum": 0.3037879039827424
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.0918304476156275,
+          "standard_deviation": 0.000928887136975648,
+          "minimum": 0.09013506633793689,
+          "maximum": 0.09267005001160471
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21993239662071418,
+          "standard_deviation": 0.0013412754090702335,
+          "minimum": 0.21748238604105471,
+          "maximum": 0.22106958163958484
+        }
+      },
+      "source_aware_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.3001677528009309,
+          "standard_deviation": 0.013927163815463217,
+          "minimum": 0.28342062898746584,
+          "maximum": 0.32251081972781315
+        },
+        "return_rate_per_hour": {
+          "mean": 0.46848299604539473,
+          "standard_deviation": 0.030929678619408027,
+          "minimum": 0.4335354852719904,
+          "maximum": 0.5225317516405669
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.011760408543667656,
+          "standard_deviation": 0.007462360473134285,
+          "minimum": 0.0016766171275942043,
+          "maximum": 0.02251081972781316
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.027505043277250618,
+          "standard_deviation": 0.02327528209561624,
+          "minimum": 0.006090603351630086,
+          "maximum": 0.07253175164056685
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6302041998564061,
+          "standard_deviation": 0.002621105515470804,
+          "minimum": 0.6253812486542193,
+          "maximum": 0.6327105063883876
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.2790575922588083,
+          "standard_deviation": 0.0031427131606851233,
+          "minimum": 0.2750962048246707,
+          "maximum": 0.28330953057335967
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.0846004418599797,
+          "standard_deviation": 0.001002505988049546,
+          "minimum": 0.0832351318875564,
+          "maximum": 0.08557249080878775
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21977796591444762,
+          "standard_deviation": 0.001211213762041328,
+          "minimum": 0.2175433622057672,
+          "maximum": 0.22092479266079612
+        }
+      },
+      "logged_process": {
+        "forward_rate_per_hour": {
+          "mean": 0.3,
+          "standard_deviation": 0.0,
+          "minimum": 0.3,
+          "maximum": 0.3
+        },
+        "return_rate_per_hour": {
+          "mean": 0.45,
+          "standard_deviation": 0.0,
+          "minimum": 0.45,
+          "maximum": 0.45
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6296094735092085,
+          "standard_deviation": 0.0024659575983984423,
+          "minimum": 0.6249665331415204,
+          "maximum": 0.6317789504935875
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.2781793748702014,
+          "standard_deviation": 0.003484985849795138,
+          "minimum": 0.27425295708192055,
+          "maximum": 0.2830145107011703
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.08433068225445431,
+          "standard_deviation": 0.0010986806716886397,
+          "minimum": 0.08298242239144846,
+          "maximum": 0.0854356574770639
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21951509842772957,
+          "standard_deviation": 0.0011399018079801353,
+          "minimum": 0.21737458706683882,
+          "maximum": 0.22050779323766587
+        }
+      }
+    },
+    "0.67": {
+      "pooled_sources_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.27909573431338214,
+          "standard_deviation": 0.007471226726719573,
+          "minimum": 0.2695960941254919,
+          "maximum": 0.2880726872472116
+        },
+        "return_rate_per_hour": {
+          "mean": 0.46344563411665085,
+          "standard_deviation": 0.029621466484411225,
+          "minimum": 0.4082781543701963,
+          "maximum": 0.4927307471981593
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.02090426568661786,
+          "standard_deviation": 0.007471226726719573,
+          "minimum": 0.01192731275278841,
+          "maximum": 0.030403905874508086
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.030134372368572294,
+          "standard_deviation": 0.012252997814337866,
+          "minimum": 0.008841072054257382,
+          "maximum": 0.04273074719815928
+        },
+        "exact_state_test_nll": {
+          "mean": 0.630882480295663,
+          "standard_deviation": 0.003036953547882253,
+          "minimum": 0.6254870518029413,
+          "maximum": 0.6336731479187526
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.29621182931242557,
+          "standard_deviation": 0.0023602924736460663,
+          "minimum": 0.2932345949329492,
+          "maximum": 0.2983828437386349
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.09036563791488665,
+          "standard_deviation": 0.0007532939108261744,
+          "minimum": 0.0893452036297085,
+          "maximum": 0.0913191883197212
+        },
+        "exact_state_test_brier": {
+          "mean": 0.2200752619913406,
+          "standard_deviation": 0.0013868116793421953,
+          "minimum": 0.21762107130544017,
+          "maximum": 0.22136413898361135
+        }
+      },
+      "source_aware_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.29934831026770775,
+          "standard_deviation": 0.005687197572013372,
+          "minimum": 0.2940137442313894,
+          "maximum": 0.3099665110918363
+        },
+        "return_rate_per_hour": {
+          "mean": 0.4638617152165954,
+          "standard_deviation": 0.02164767758613808,
+          "minimum": 0.42215784708095544,
+          "maximum": 0.48509080220596257
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.004677964710186155,
+          "standard_deviation": 0.0032993274921630485,
+          "minimum": 9.917635289841131e-05,
+          "maximum": 0.009966511091836328
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.024998576384213232,
+          "standard_deviation": 0.005986674567907793,
+          "minimum": 0.017731438662503984,
+          "maximum": 0.03509080220596256
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6299531889310949,
+          "standard_deviation": 0.002626533404170242,
+          "minimum": 0.6250161502505694,
+          "maximum": 0.632129537308639
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.21386460289927994,
+          "standard_deviation": 0.00266789642043006,
+          "minimum": 0.21003906429283115,
+          "maximum": 0.21781726998227083
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.06345815055861254,
+          "standard_deviation": 0.0007652884336667623,
+          "minimum": 0.06218463264220946,
+          "maximum": 0.06440877337055419
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21967006945925702,
+          "standard_deviation": 0.0012143686260335938,
+          "minimum": 0.2173913956294059,
+          "maximum": 0.22069081438621374
+        }
+      },
+      "logged_process": {
+        "forward_rate_per_hour": {
+          "mean": 0.3,
+          "standard_deviation": 0.0,
+          "minimum": 0.3,
+          "maximum": 0.3
+        },
+        "return_rate_per_hour": {
+          "mean": 0.45,
+          "standard_deviation": 0.0,
+          "minimum": 0.45,
+          "maximum": 0.45
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6296094735092085,
+          "standard_deviation": 0.0024659575983984423,
+          "minimum": 0.6249665331415204,
+          "maximum": 0.6317789504935875
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.21295433530946944,
+          "standard_deviation": 0.0029578664654874975,
+          "minimum": 0.20891930817673998,
+          "maximum": 0.21784579583440342
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.06318715770254132,
+          "standard_deviation": 0.0008495806120282964,
+          "minimum": 0.06179708994837707,
+          "maximum": 0.06440142816843346
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21951509842772957,
+          "standard_deviation": 0.0011399018079801353,
+          "minimum": 0.21737458706683882,
+          "maximum": 0.22050779323766587
+        }
+      }
+    },
+    "1.00": {
+      "pooled_sources_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.2618157738147564,
+          "standard_deviation": 0.008788673852489914,
+          "minimum": 0.25359769664194365,
+          "maximum": 0.2785898034463955
+        },
+        "return_rate_per_hour": {
+          "mean": 0.42689348860970544,
+          "standard_deviation": 0.01727262447967564,
+          "minimum": 0.4052792238738503,
+          "maximum": 0.45525623748871674
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.03818422618524357,
+          "standard_deviation": 0.008788673852489914,
+          "minimum": 0.021410196553604488,
+          "maximum": 0.04640230335805634
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.02520900638578124,
+          "standard_deviation": 0.014027131641477618,
+          "minimum": 0.005256237488716731,
+          "maximum": 0.04472077612614972
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6311848083431069,
+          "standard_deviation": 0.003347179962911787,
+          "minimum": 0.6249688373888174,
+          "maximum": 0.6345204118306806
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.2974466509894253,
+          "standard_deviation": 0.00353459209761042,
+          "minimum": 0.2913571221678263,
+          "maximum": 0.30034200280705126
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.09028882732467895,
+          "standard_deviation": 0.0010283687528069548,
+          "minimum": 0.08860907790525972,
+          "maximum": 0.09117498787240033
+        },
+        "exact_state_test_brier": {
+          "mean": 0.22016724813207136,
+          "standard_deviation": 0.001499335475688255,
+          "minimum": 0.21737811783134733,
+          "maximum": 0.22164865760899452
+        }
+      },
+      "source_aware_em": {
+        "forward_rate_per_hour": {
+          "mean": 0.2997496503708475,
+          "standard_deviation": 0.011336145296902583,
+          "minimum": 0.2837501311299013,
+          "maximum": 0.3166266387785336
+        },
+        "return_rate_per_hour": {
+          "mean": 0.4624022115403655,
+          "standard_deviation": 0.021237932312960298,
+          "minimum": 0.4361781230479702,
+          "maximum": 0.49299309200180713
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.009462512764787379,
+          "standard_deviation": 0.006247536899093855,
+          "minimum": 0.0002583148525699963,
+          "maximum": 0.016626638778533598
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.021510829013508804,
+          "standard_deviation": 0.011922619476165719,
+          "minimum": 0.008949666730828476,
+          "maximum": 0.04299309200180712
+        },
+        "exact_state_test_nll": {
+          "mean": 0.629975420732979,
+          "standard_deviation": 0.002518793193910988,
+          "minimum": 0.625260683374256,
+          "maximum": 0.6321881579433645
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.12738342157250512,
+          "standard_deviation": 0.00270318875672958,
+          "minimum": 0.1229491349833332,
+          "maximum": 0.13061944088357266
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.03636153557480302,
+          "standard_deviation": 0.0007970373762930898,
+          "minimum": 0.03505015344474069,
+          "maximum": 0.037224307004112875
+        },
+        "exact_state_test_brier": {
+          "mean": 0.2196752107808982,
+          "standard_deviation": 0.0011632817501040498,
+          "minimum": 0.21749482348512528,
+          "maximum": 0.22067969717575997
+        }
+      },
+      "logged_process": {
+        "forward_rate_per_hour": {
+          "mean": 0.3,
+          "standard_deviation": 0.0,
+          "minimum": 0.3,
+          "maximum": 0.3
+        },
+        "return_rate_per_hour": {
+          "mean": 0.45,
+          "standard_deviation": 0.0,
+          "minimum": 0.45,
+          "maximum": 0.45
+        },
+        "absolute_forward_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "absolute_return_rate_error": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "exact_state_test_nll": {
+          "mean": 0.6296094735092085,
+          "standard_deviation": 0.0024659575983984423,
+          "minimum": 0.6249665331415204,
+          "maximum": 0.6317789504935875
+        },
+        "source_grounding_test_nll": {
+          "mean": 0.12651376667554973,
+          "standard_deviation": 0.002859229832533593,
+          "minimum": 0.12189660499670649,
+          "maximum": 0.1303992775966567
+        },
+        "source_grounding_test_brier": {
+          "mean": 0.036114824281286054,
+          "standard_deviation": 0.0008191988912583397,
+          "minimum": 0.034785052792537643,
+          "maximum": 0.0371561757278433
+        },
+        "exact_state_test_brier": {
+          "mean": 0.21951509842772957,
+          "standard_deviation": 0.0011399018079801353,
+          "minimum": 0.21737458706683882,
+          "maximum": 0.22050779323766587
+        }
+      }
+    }
+  },
+  "primary_paired_inference": {
+    "0.33": {
+      "paired_differences": [
+        0.0234020736850174,
+        0.020726903969391086,
+        0.02134799909277285,
+        0.020478373409382744,
+        0.022676045445775395
+      ],
+      "mean_pooled_minus_source_aware_grounding_nll": 0.021726279120467894,
+      "simultaneous_bootstrap_95_ci": [
+        0.02058551849904365,
+        0.022867039741892137
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    },
+    "0.67": {
+      "paired_differences": [
+        0.08341272914365944,
+        0.07930314767962487,
+        0.0829863084483295,
+        0.07978988171327209,
+        0.08624406508084234
+      ],
+      "mean_pooled_minus_source_aware_grounding_nll": 0.08234722641314565,
+      "simultaneous_bootstrap_95_ci": [
+        0.07977705200745555,
+        0.08491740081883575
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    },
+    "1.00": {
+      "paired_differences": [
+        0.17255887564288236,
+        0.16170547654177514,
+        0.17276687897118184,
+        0.1697225619234786,
+        0.17356235400528303
+      ],
+      "mean_pooled_minus_source_aware_grounding_nll": 0.1700632294169202,
+      "simultaneous_bootstrap_95_ci": [
+        0.16565409760511282,
+        0.17447236122872758
+      ],
+      "wins_ties_losses": [
+        5,
+        0,
+        0
+      ]
+    }
+  },
+  "simultaneous_inference_details": {
+    "method": "paired bootstrap max standardized mean deviation",
+    "family": [
+      "0.33",
+      "0.67",
+      "1.00"
+    ],
+    "family_size": 3,
+    "confidence": 0.95,
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 73109,
+    "shared_resample_indices": true,
+    "critical_value": 2.015110400571508,
+    "intervals": {
+      "0.33": [
+        0.02058551849904365,
+        0.022867039741892137
+      ],
+      "0.67": [
+        0.07977705200745555,
+        0.08491740081883575
+      ],
+      "1.00": [
+        0.16565409760511282,
+        0.17447236122872758
+      ]
+    }
+  }
+}

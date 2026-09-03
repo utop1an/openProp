@@ -1,0 +1,20 @@
+{
+  "ai2thor_version": "5.0.0",
+  "evaluation_only": true,
+  "families_requested": [
+    "open"
+  ],
+  "height": 300,
+  "host_platform": "Windows-11-10.0.26200-SP0",
+  "initialization_error": {
+    "message": "Invalid commit_id: f0825767cd50d69f666c7f282e54abfe58f1e917 - no build exists for arch=Windows platforms=",
+    "type": "ValueError"
+  },
+  "records": [],
+  "render_platform": "default",
+  "run_status": "initialization_failed",
+  "scene": "FloorPlan1",
+  "schema_version": 2,
+  "truth_boundary": "raw metadata and target identity must not be passed to the VLM or matcher",
+  "width": 300
+}

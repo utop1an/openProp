@@ -1,0 +1,14 @@
+{
+  "artifacts": 6,
+  "claims": 8,
+  "manifest": "C:\\anu\\openProp\\paper\\claims.json",
+  "metric_checks": 96,
+  "repository_root": "C:\\anu\\openProp",
+  "status_counts": {
+    "contradicted": 2,
+    "pending_external": 1,
+    "supported_external_language": 1,
+    "supported_synthetic": 4
+  },
+  "verified": true
+}
