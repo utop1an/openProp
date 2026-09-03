@@ -31,6 +31,9 @@ class HPCAssetTests(unittest.TestCase):
         self.assertNotIn("/root/.ai2thor", slurm)
         self.assertIn("preflight_ai2thor.py", slurm)
         self.assertIn("verify_ai2thor_capture.py", slurm)
+        self.assertIn("prepare_ai2thor_capture.py", slurm)
+        self.assertIn("$SCENE.verification-report.json", slurm)
+        self.assertIn("/output/prepared/$SCENE", slurm)
         self.assertNotIn("OPENAI_API_KEY=", slurm)
         self.assertNotIn("mesa-vulkan-drivers", definition := (
             self.root / "hpc" / "openprop-ai2thor.def"

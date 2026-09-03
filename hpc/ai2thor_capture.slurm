@@ -13,6 +13,7 @@ OPENPROP_BASE="${OPENPROP_BASE:-$HOME/openProp}"
 OPENPROP_SIF="${OPENPROP_SIF:-$HOME/openprop-ai2thor-v3.sif}"
 OPENPROP_CACHE="${OPENPROP_CACHE:-$HOME/openprop-cache}"
 OPENPROP_OUTPUT="${OPENPROP_OUTPUT:-$OPENPROP_BASE/artifacts/ai2thor_hpc}"
+OPENPROP_PREPARED="$OPENPROP_OUTPUT/prepared"
 SCENE="${SCENE:-FloorPlan1}"
 FAMILIES="${FAMILIES:-open toggle dirty fill}"
 RUN_PREFLIGHT="${RUN_PREFLIGHT:-1}"
@@ -73,6 +74,14 @@ read -r -a FAMILY_ARGS <<< "$FAMILIES"
 
 "$CONTAINER_RUNTIME" exec "${BIND_ARGS[@]}" "$OPENPROP_SIF" \
     bash -lc "cd /work && python -u scripts/verify_ai2thor_capture.py \
-      '/output/$SCENE.capture-manifest.json'"
+      '/output/$SCENE.capture-manifest.json' \
+      --report '/output/$SCENE.verification-report.json'"
+
+"$CONTAINER_RUNTIME" exec "${BIND_ARGS[@]}" "$OPENPROP_SIF" \
+    bash -lc "cd /work && python -u scripts/prepare_ai2thor_capture.py \
+      '/output/$SCENE.capture-manifest.json' \
+      --output-dir '/output/prepared/$SCENE'"
 
 echo "capture complete: $OPENPROP_OUTPUT/$SCENE.capture-manifest.json"
+echo "prepared inputs: $OPENPROP_PREPARED/$SCENE/inputs"
+echo "evaluation truth: $OPENPROP_PREPARED/$SCENE/truth"
