@@ -118,3 +118,12 @@ On the audited `cluster1` snapshot, `gpusrv-5` lacked both and is unsuitable for
 AI2-THOR CloudRendering until the administrator installs the matching NVIDIA
 graphics/Vulkan userspace components; `mlcv2` exposed them and is the pilot
 node used to validate the version-3 image.
+
+The first verified cluster runtime was Slurm job `136487` on `mlcv2` on
+2026-09-03. It completed in 14 seconds: the container's `vulkaninfo --summary`
+returned zero and selected the NVIDIA RTX 2080 Ti, the AI2-THOR 5.0.0
+CloudRendering controller created a 320x240 RGB frame with nine instance boxes,
+and the one-family `open` capture completed 1/1 with six content-addressed
+artifacts. This is environment and mechanism validation, not performance
+evidence. Failed job `136462` on `gpusrv-5` remains the recorded negative
+control for a CUDA-visible node without a host Vulkan ICD.
