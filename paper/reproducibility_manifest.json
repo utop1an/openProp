@@ -9,11 +9,11 @@
   },
   "source_snapshot": {
     "algorithm": "sha256 over canonical sorted path/hash rows",
-    "tree_sha256": "5d30053cc9d815ce56677d384c4e03b778357f22315d05aa706068cd3bfa65d0",
+    "tree_sha256": "d09eb86d8d125027b3430beaead97fdcfc1b668539589f35b7f46a45f836e0a4",
     "files": [
       {
         "path": "AGENTS.md",
-        "sha256": "8a52fcdd3628588d75c5c108b383375d114a997ba273ed4862b1b3ac81156a59"
+        "sha256": "1d4f5449b629efaeedca9d6439cc31051e1a25be61c0ac37ea7c54e1aa92a645"
       },
       {
         "path": "README.md",
@@ -73,7 +73,7 @@
       },
       {
         "path": "docs/ai2thor-vlm-feasibility.md",
-        "sha256": "acd2b777690e6c1017f7530ec6154ad3bbda5307f54aa931dbbde5dbc7dd7a55"
+        "sha256": "35173f72959575fe1f3e3a7851bb999ab201d1d71eb19c213082f23daa62b325"
       },
       {
         "path": "docs/alfred-controlled-ontology-ablation.md",
@@ -120,6 +120,10 @@
         "sha256": "76f5278ffc911138892b36bad69bd8ff7b886c156379c5f429a8b47d80b1899f"
       },
       {
+        "path": "docs/decisions/ADR-2026-09-03-ai2thor-candidate-eligibility.md",
+        "sha256": "1603898ddb0d508c40cff8a29bcbad4499c26dc05fc8e4f6d7e9ac550b74e8f6"
+      },
+      {
         "path": "docs/dev-notes/2026-08-21-property-temporal-grounding.md",
         "sha256": "c33e1aa23c355620957774839faeec8f6c7ec6f5df796dbbbaec4f5c51b4523e"
       },
@@ -128,8 +132,12 @@
         "sha256": "31568423de9a000a2923d016210d5877b720970d726bd5265dfcac5a3d421546"
       },
       {
+        "path": "docs/dev-notes/2026-09-03-ai2thor-hpc-capture-phase.md",
+        "sha256": "005bbcce408ee865e35a5293a4472c2763aa0702c8801bf1a77543c4add506e1"
+      },
+      {
         "path": "docs/dev-notes/README.md",
-        "sha256": "ba5d5626c9f020a76402c759f34f7a20e6ebb65a733a874d7ee67d2f2faa8de0"
+        "sha256": "5cee995dd1a9940ce83303fe59312feb761815432aae7f070eaf33ee65255fe1"
       },
       {
         "path": "docs/evaluation.md",
