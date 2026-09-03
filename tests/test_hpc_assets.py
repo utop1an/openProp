@@ -36,6 +36,9 @@ class HPCAssetTests(unittest.TestCase):
         extract_at = installer.index("tar -xzf")
         self.assertLess(verify_at, install_at)
         self.assertLess(verify_at, extract_at)
+        self.assertIn('PYTHON_BIN="${PYTHON_BIN:-python3}"', installer)
+        self.assertIn('"$PYTHON_BIN" scripts/build_hpc_transfer_manifest.py', installer)
+        self.assertIn('"$PYTHON_BIN" scripts/prepare_visual_datasets.py', installer)
         self.assertIn("refusing to overwrite a different SIF", installer)
         self.assertIn("--require-ready ai2thor_ithor", installer)
 

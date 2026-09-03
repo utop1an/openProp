@@ -11,6 +11,12 @@ BUNDLE_DIR="$1"
 OPENPROP_BASE="${OPENPROP_BASE:-$HOME/openProp}"
 OPENPROP_CACHE="${OPENPROP_CACHE:-$HOME/openprop-cache}"
 OPENPROP_SIF="${OPENPROP_SIF:-$HOME/openprop-ai2thor.sif}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
+
+if ! command -v "$PYTHON_BIN" >/dev/null 2>&1; then
+    echo "python interpreter not found: $PYTHON_BIN" >&2
+    exit 2
+fi
 
 case "$BUNDLE_DIR" in
     /*) ;;
@@ -23,7 +29,7 @@ if [ ! -d "$OPENPROP_BASE" ] || [ ! -f "$OPENPROP_BASE/scripts/build_hpc_transfe
 fi
 
 cd "$OPENPROP_BASE"
-python scripts/build_hpc_transfer_manifest.py --directory "$BUNDLE_DIR" \
+"$PYTHON_BIN" scripts/build_hpc_transfer_manifest.py --directory "$BUNDLE_DIR" \
     --output "$BUNDLE_DIR/HPC_TRANSFER_MANIFEST.json" --check
 
 if [ -e "$OPENPROP_SIF" ]; then
@@ -41,7 +47,7 @@ mkdir -p "$OPENPROP_CACHE/ai2thor"
 tar -xzf "$BUNDLE_DIR/ai2thor-cloudrendering-f0825767-cache.tar.gz" \
     -C "$OPENPROP_CACHE/ai2thor"
 
-python scripts/prepare_visual_datasets.py --initialize \
+"$PYTHON_BIN" scripts/prepare_visual_datasets.py --initialize \
     --require-ready ai2thor_ithor
 
 echo "bundle verified"
