@@ -6,7 +6,9 @@ Ollama. AI2-THOR uses the allocated GPU for Vulkan rendering; captured frames
 can later be sent to a frozen API VLM or copied to a separate inference job.
 All Python application and transitive dependency versions are exactly pinned in
 `hpc/requirements-ai2thor.txt`; the realized environment is also shipped as
-`dist/openprop-ai2thor.packages.txt`.
+`dist/openprop-ai2thor-v3.packages.txt`. Version 3 uses a small Ubuntu 24.04
+base, an isolated Python 3.12 environment, and in-image NVIDIA ICD/EGL bind
+destinations required by the cluster's SingularityCE 3.5 runtime.
 
 The complete literature-grounded execution and evaluation plan is in
 [`docs/visual-hpc-experiment-design.md`](../docs/visual-hpc-experiment-design.md).
@@ -23,8 +25,8 @@ Build once where Apptainer/Singularity image builds and downloads are allowed:
 
 ```bash
 cd "$HOME/openProp"
-apptainer build "$HOME/openprop-ai2thor.sif" hpc/openprop-ai2thor.def
-apptainer test "$HOME/openprop-ai2thor.sif"
+apptainer build "$HOME/openprop-ai2thor-v3.sif" hpc/openprop-ai2thor.def
+apptainer test "$HOME/openprop-ai2thor-v3.sif"
 ```
 
 If unprivileged builds are disabled, use the site's remote/fakeroot service or
@@ -45,9 +47,9 @@ SCENE=FloorPlan1 RUN_PREFLIGHT=1 sbatch hpc/ai2thor_capture.slurm
 
 The local build workflow writes four content-addressed files under `dist/`:
 
-- `openprop-ai2thor.sif`;
+- `openprop-ai2thor-v3.sif`;
 - `ai2thor-cloudrendering-f0825767-cache.tar.gz`;
-- `openprop-ai2thor.packages.txt`;
+- `openprop-ai2thor-v3.packages.txt`;
 - `openprop-hpc-source.tar.gz`.
 
 Verify them against `dist/HPC_TRANSFER_MANIFEST.json` after upload:
@@ -110,3 +112,9 @@ request.
 
 The image intentionally installs the Vulkan loader but not Mesa Vulkan drivers:
 software `llvmpipe` must not silently compete with the host NVIDIA ICD.
+The Slurm launcher binds only the host NVIDIA ICD and fails before container
+startup when a selected node lacks `nvidia_icd.json` or `libGLX_nvidia.so.0`.
+On the audited `cluster1` snapshot, `gpusrv-5` lacked both and is unsuitable for
+AI2-THOR CloudRendering until the administrator installs the matching NVIDIA
+graphics/Vulkan userspace components; `mlcv2` exposed them and is the pilot
+node used to validate the version-3 image.

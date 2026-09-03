@@ -10,7 +10,7 @@ fi
 BUNDLE_DIR="$1"
 OPENPROP_BASE="${OPENPROP_BASE:-$HOME/openProp}"
 OPENPROP_CACHE="${OPENPROP_CACHE:-$HOME/openprop-cache}"
-OPENPROP_SIF="${OPENPROP_SIF:-$HOME/openprop-ai2thor.sif}"
+OPENPROP_SIF="${OPENPROP_SIF:-$HOME/openprop-ai2thor-v3.sif}"
 PYTHON_BIN="${PYTHON_BIN:-python3}"
 
 if ! command -v "$PYTHON_BIN" >/dev/null 2>&1; then
@@ -34,13 +34,13 @@ cd "$OPENPROP_BASE"
 
 if [ -e "$OPENPROP_SIF" ]; then
     current_hash=$(sha256sum "$OPENPROP_SIF" | awk '{print $1}')
-    incoming_hash=$(sha256sum "$BUNDLE_DIR/openprop-ai2thor.sif" | awk '{print $1}')
+    incoming_hash=$(sha256sum "$BUNDLE_DIR/openprop-ai2thor-v3.sif" | awk '{print $1}')
     if [ "$current_hash" != "$incoming_hash" ]; then
         echo "refusing to overwrite a different SIF: $OPENPROP_SIF" >&2
         exit 2
     fi
 else
-    install -m 0444 "$BUNDLE_DIR/openprop-ai2thor.sif" "$OPENPROP_SIF"
+    install -m 0444 "$BUNDLE_DIR/openprop-ai2thor-v3.sif" "$OPENPROP_SIF"
 fi
 
 mkdir -p "$OPENPROP_CACHE/ai2thor"

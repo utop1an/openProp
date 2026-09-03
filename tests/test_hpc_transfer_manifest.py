@@ -8,6 +8,10 @@ from scripts.build_hpc_transfer_manifest import DEFAULT_FILES, build_manifest
 
 
 class HPCTransferManifestTests(unittest.TestCase):
+    def test_v3_bundle_names_the_versioned_ubuntu_image(self):
+        self.assertIn("openprop-ai2thor-v3.sif", DEFAULT_FILES)
+        self.assertIn("openprop-ai2thor-v3.packages.txt", DEFAULT_FILES)
+
     def test_manifest_hashes_every_required_artifact(self):
         with TemporaryDirectory() as temporary:
             root = Path(temporary)

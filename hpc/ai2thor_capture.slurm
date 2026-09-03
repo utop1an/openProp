@@ -10,7 +10,7 @@
 set -euo pipefail
 
 OPENPROP_BASE="${OPENPROP_BASE:-$HOME/openProp}"
-OPENPROP_SIF="${OPENPROP_SIF:-$HOME/openprop-ai2thor.sif}"
+OPENPROP_SIF="${OPENPROP_SIF:-$HOME/openprop-ai2thor-v3.sif}"
 OPENPROP_CACHE="${OPENPROP_CACHE:-$HOME/openprop-cache}"
 OPENPROP_OUTPUT="${OPENPROP_OUTPUT:-$OPENPROP_BASE/artifacts/ai2thor_hpc}"
 SCENE="${SCENE:-FloorPlan1}"
@@ -28,21 +28,36 @@ fi
 
 mkdir -p logs "$OPENPROP_CACHE/ai2thor" "$OPENPROP_CACHE/python" "$OPENPROP_OUTPUT"
 
+HOST_NVIDIA_ICD=""
+for ICD_FILE in /usr/share/vulkan/icd.d/nvidia_icd.json \
+    /etc/vulkan/icd.d/nvidia_icd.json
+do
+    if [ -s "$ICD_FILE" ]; then
+        HOST_NVIDIA_ICD="$ICD_FILE"
+        break
+    fi
+done
+if [ -z "$HOST_NVIDIA_ICD" ]; then
+    echo "Host $(hostname) has no NVIDIA Vulkan ICD; select a Vulkan-capable node" >&2
+    exit 3
+fi
+if ! ldconfig -p 2>/dev/null | grep -q 'libGLX_nvidia.so.0'; then
+    echo "Host $(hostname) has no NVIDIA Vulkan userspace library" >&2
+    exit 3
+fi
+
+export SINGULARITYENV_VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
+export APPTAINERENV_VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
+
 BIND_ARGS=(
     -B "$OPENPROP_BASE:/work"
     -B "$OPENPROP_CACHE/ai2thor:$HOME/.ai2thor"
     -B "$OPENPROP_CACHE/python:$HOME/.cache"
     -B "$OPENPROP_OUTPUT:/output"
+    -B "$HOST_NVIDIA_ICD:/usr/share/vulkan/icd.d/nvidia_icd.json:ro"
 )
-for ICD_PATH in /usr/share/vulkan/icd.d /etc/vulkan/icd.d \
-    /usr/share/glvnd/egl_vendor.d /etc/glvnd/egl_vendor.d
-do
-    if [ -d "$ICD_PATH" ]; then
-        BIND_ARGS+=(-B "$ICD_PATH:$ICD_PATH:ro")
-    fi
-done
 
-echo "host=$(hostname) scene=$SCENE gpu=${CUDA_VISIBLE_DEVICES:-unset}"
+echo "host=$(hostname) scene=$SCENE gpu=${CUDA_VISIBLE_DEVICES:-unset} icd=$HOST_NVIDIA_ICD"
 nvidia-smi
 
 if [ "$RUN_PREFLIGHT" = "1" ]; then

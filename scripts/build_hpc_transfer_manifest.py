@@ -8,9 +8,9 @@ from typing import Any
 
 
 DEFAULT_FILES = (
-    "openprop-ai2thor.sif",
+    "openprop-ai2thor-v3.sif",
     "ai2thor-cloudrendering-f0825767-cache.tar.gz",
-    "openprop-ai2thor.packages.txt",
+    "openprop-ai2thor-v3.packages.txt",
     "openprop-hpc-source.tar.gz",
 )
 
@@ -32,12 +32,15 @@ def build_manifest(directory: Path) -> dict[str, Any]:
         rows.append({"path": name, "bytes": path.stat().st_size, "sha256": _sha256(path)})
     return {
         "schema_version": 1,
-        "bundle_id": "openprop-hpc-transfer-v1",
+        "bundle_id": "openprop-hpc-transfer-v3",
         "ai2thor_version": "5.0.0",
         "ai2thor_commit": "f0825767cd50d69f666c7f282e54abfe58f1e917",
         "container_runtime_built_with": "SingularityCE 4.2.0",
         "source_platform": "WSL2 Ubuntu x86_64",
-        "hpc_runtime_requirement": "Apptainer or Singularity with NVIDIA --nv and Vulkan ICD",
+        "hpc_runtime_requirement": (
+            "Apptainer or Singularity with NVIDIA --nv, a host NVIDIA Vulkan ICD, "
+            "and file-bind support for the image ICD mountpoint"
+        ),
         "files": rows,
         "performance_evidence": False,
     }
