@@ -121,7 +121,30 @@ class AI2ThorAdapterTests(unittest.TestCase):
                 candidate_entity_ids=("Cup|1",),
             )
 
+    def test_default_candidates_require_visibility_and_a_2d_anchor(self):
+        frame = extract_ai2thor_frame(
+            {
+                "sceneName": "FloorPlan1",
+                "screenWidth": 100,
+                "screenHeight": 100,
+                "objects": [
+                    object_row("Cup|1", "Cup"),
+                    object_row("CounterTop|1", "CounterTop"),
+                    object_row("Wall|1", "Wall", visible=False),
+                ],
+            },
+            frame_id="frame",
+            image_url="frame.png",
+            captured_at=1.0,
+            instance_detections_2d={
+                "Cup|1": (10, 20, 50, 80),
+                "Wall|1": (0, 0, 100, 100),
+            },
+        )
+        self.assertEqual(("Cup|1",), frame.frame.candidate_entity_ids)
+        self.assertEqual({"Cup|1"}, set(frame.frame.candidate_regions))
+        self.assertEqual(3, len(frame.current_truth))
+
 
 if __name__ == "__main__":
     unittest.main()
-

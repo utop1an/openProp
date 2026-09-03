@@ -259,7 +259,18 @@ def extract_ai2thor_frame(
             visible_ids.append(entity_id)
 
     if candidate_entity_ids is None:
-        candidates = tuple(sorted(visible_ids))
+        # AI2-THOR's metadata visibility predicate and rendered instance
+        # detections are not equivalent. A metadata-visible object can lack a
+        # usable 2D box (for example, large receptacle surfaces), while the
+        # segmentation pass can contain non-interactable scene geometry.
+        # Only region-anchored visible objects are safe default VLM candidates;
+        # the omitted objects remain in evaluation-only current_truth.
+        if instance_detections_2d is None:
+            candidates = tuple(sorted(visible_ids))
+        else:
+            candidates = tuple(
+                sorted(set(visible_ids) & set(instance_detections_2d))
+            )
     else:
         candidates = tuple(candidate_entity_ids)
         if len(candidates) != len(set(candidates)):
@@ -408,4 +419,3 @@ def _number(value: object, field_name: str) -> float:
     if not math.isfinite(result):
         raise ValueError(f"{field_name} must be finite")
     return result
-

@@ -207,6 +207,10 @@ def prepare_ai2thor_capture_manifest(
                 "input": _output_artifact(input_path, output),
                 "truth": _output_artifact(truth_path, output),
                 "changed_entities": list(transition.changed_entity_ids),
+                "candidate_coverage": {
+                    stage: _candidate_coverage(bundle)
+                    for stage, bundle in zip(("before", "after"), bundles)
+                },
             }
         )
     return {
@@ -276,6 +280,19 @@ def _truth_frame(bundle: AI2ThorFrameBundle) -> dict[str, object]:
             }
             for item in bundle.current_truth
         ],
+    }
+
+
+def _candidate_coverage(bundle: AI2ThorFrameBundle) -> dict[str, object]:
+    visible = {
+        item.entity_id for item in bundle.current_truth if item.visible
+    }
+    candidates = set(bundle.frame.candidate_entity_ids)
+    return {
+        "visible_entities": len(visible),
+        "anchored_candidates": len(candidates),
+        "coverage": len(candidates) / len(visible) if visible else 1.0,
+        "unanchored_visible_entity_ids": sorted(visible - candidates),
     }
 
 

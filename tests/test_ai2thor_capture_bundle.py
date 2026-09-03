@@ -109,6 +109,15 @@ class AI2ThorCaptureBundleTests(unittest.TestCase):
             self.assertEqual(report["prepared_episodes"], 1)
             self.assertFalse(report["truth_exposed_to_matcher"])
             episode = report["episodes"][0]
+            self.assertEqual(
+                episode["candidate_coverage"]["before"],
+                {
+                    "visible_entities": 1,
+                    "anchored_candidates": 1,
+                    "coverage": 1.0,
+                    "unanchored_visible_entity_ids": [],
+                },
+            )
             input_path = root / "prepared" / episode["input"]["path"]
             truth_path = root / "prepared" / episode["truth"]["path"]
             inputs = json.loads(input_path.read_text(encoding="utf-8"))
