@@ -3,7 +3,8 @@
 This directory indexes durable implementation progress and open research work.
 
 ## Current
-- [AI2-THOR HPC container and resource profile](../../hpc/README.md) - Python 3.11/AI2-THOR 5.0 SIF, NVIDIA Vulkan preflight, persistent Unity-build cache, one-GPU Slurm pilot, and explicit Slurm-versus-Gadi PBS boundary.
+- [2026-09-03: AI2-THOR HPC capture and preparation phase](2026-09-03-ai2thor-hpc-capture-phase.md) - version-3 SIF deployment, cluster Vulkan diagnosis, four-family capture, candidate-box mismatch repair, preparation evidence, current experiment gates, and the physics-settling follow-up.
+- [AI2-THOR HPC container and resource profile](../../hpc/README.md) - Python 3.12/AI2-THOR 5.0 SIF, NVIDIA Vulkan preflight, persistent Unity-build cache, verified four-family GPU pilot, CPU-only preparation recovery, and explicit Slurm-versus-Gadi PBS boundary.
 - [Literature-grounded Slurm visual experiment design](../visual-hpc-experiment-design.md) - disjoint capture/inference/replay lanes, explicit LLM and VLM roles, causal simulator factors, real/public evidence boundaries, baselines, calibration, clustered inference, resources, and go/no-go gates.
 - [Visual dataset acquisition and transfer](../visual-dataset-acquisition.md) - machine-readable dataset registry, license-gated Ego4D/ADT/VISOR staging, content-addressed completion markers, minimal subset commands, and fail-closed HPC transfer verification.
 - [Global one-to-one visual assignment decision](../decisions/ADR-2026-09-01-global-visual-assignment.md) - opt-in exact joint assignment with reusable null, calibrated marginals, symmetric abstention, a fail-closed capacity bound, and explicit comparison against collision rejection.

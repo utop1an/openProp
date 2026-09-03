@@ -629,14 +629,14 @@ batch accounting instead of disappearing from the denominator. The verified
 local failure artifact is
 `artifacts/ai2thor_initialization_failure/FloorPlan1.capture-manifest.json`.
 
-On the current Windows host, AI2-THOR 5.0.0 has no Unity build for the resolved
-commit. Under WSL2, CloudRendering selected Mesa llvmpipe and crashed during
-Vulkan physical-device initialization; Linux64 under WSLg also selected
-llvmpipe, ran at roughly 0.02 FPS, and timed out during the 100-second
-`Initialize` handshake. Forcing the Mesa D3D12 driver did not produce a usable
-Unity process. These are environment feasibility results, not VLM or OpenProp
-performance results. The next valid Tier-A evidence must come from a verified
-schema-v2 bundle captured on a supported GPU-Linux renderer.
+The Windows/WSL renderer remains unsuitable, but cluster job `136541` on the
+GPU-Linux `mlcv2` node produced a verified schema-v2 four-family bundle. CPU
+job `136580` then prepared four truth-separated VLM input/truth pairs after
+candidate extraction was corrected for metadata-visible objects without 2D
+boxes. This closes the supported-renderer blocker for the pilot only. It is
+still infrastructure and mechanism evidence: four action families, physics
+settling, full scene-split capture, real VLM responses, calibration, untouched
+test evaluation, and real-video confirmation remain pending.
 
 Frozen result aggregation and artifact generation:
 

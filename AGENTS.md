@@ -39,8 +39,9 @@ Install PyTorch support with `python -m pip install -e ".[ml]"`. Ollama evaluati
 - Censoring before an evaluation horizon means the horizon label is unknown, not negative.
 - Check candidate-order invariance when synthetic candidates otherwise tie.
 - The current temporal grounding benchmark does not distinguish learned decay from fixed decay; both score perfectly.
+- AI2-THOR metadata visibility does not guarantee an instance-detection box. For oracle-box VLM inputs, use visible objects with valid 2D anchors; record omitted visible objects as missing candidate evidence.
+- AI2-THOR actions can advance unrelated movable objects through physics settling. Audit all derived changes and do not equate every changed entity with the intended intervention target.
 
 ## Memory Maintenance
 
 Use `docs/dev-notes/README.md` as the progress index and `docs/decisions/` for durable architectural choices. Update focused experiment documents when verified metrics change.
-

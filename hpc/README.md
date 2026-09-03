@@ -140,3 +140,12 @@ and the one-family `open` capture completed 1/1 with six content-addressed
 artifacts. This is environment and mechanism validation, not performance
 evidence. Failed job `136462` on `gpusrv-5` remains the recorded negative
 control for a CUDA-visible node without a host Vulkan ICD.
+
+Job `136541` subsequently captured open, toggle, dirty, and fill in
+`FloorPlan1` (4/4 records and 24 verified artifacts). Its manifest SHA-256 is
+`a49fc8fceef944c4e2e6ef527840002e771a5d393a6be7512672b8c7c81e895f`.
+Preparation job `136580` completed in three seconds after candidate extraction
+was corrected for metadata-visible objects without instance boxes. All intended
+targets are anchored in both frames; overall candidate coverage is 1.0 for
+open/toggle, 0.8 for dirty, and 0.875 for fill. Incidental DishSponge motion
+shows that physics settling must be controlled before full causal capture.
