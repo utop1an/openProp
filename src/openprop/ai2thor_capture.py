@@ -79,8 +79,27 @@ def verify_ai2thor_capture_manifest(path: str | Path) -> dict[str, object]:
         if status not in {"captured", "failed"}:
             raise ValueError("capture record has invalid status")
         success = record.get("last_action_success")
-        if success is not (status == "captured"):
-            raise ValueError("record status contradicts last_action_success")
+        semantic_success = record.get("semantic_success", success)
+        if not isinstance(success, bool) or not isinstance(semantic_success, bool):
+            raise ValueError("capture success fields must be boolean")
+        if semantic_success and not success:
+            raise ValueError("semantic success requires action success")
+        if semantic_success is not (status == "captured"):
+            raise ValueError("record status contradicts semantic success")
+        if "semantic_success" in record:
+            settling = record.get("settling")
+            if not isinstance(settling, Mapping) or settling.get("settled") is not True:
+                raise ValueError("attempted capture requires a passed settling audit")
+            change_audit = record.get("change_audit")
+            if not isinstance(change_audit, Mapping):
+                raise ValueError("semantic capture requires a change audit")
+            intended = change_audit.get("intended_change_observed")
+            if not isinstance(intended, bool):
+                raise ValueError("change audit must report intended_change_observed")
+            if semantic_success is not (success and intended):
+                raise ValueError("semantic success contradicts the change audit")
+            if change_audit.get("non_target_changes_are_causal_labels") is not False:
+                raise ValueError("non-target changes must not be causal labels")
         _nonempty(record.get("object_id"), "object_id")
         _nonempty(record.get("object_type"), "object_type")
         _nonempty(record.get("action"), "action")

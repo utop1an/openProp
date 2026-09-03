@@ -2,14 +2,14 @@
   "schema_version": 2,
   "purpose": "Machine-verifiable computational snapshot for the evidence-locked OpenProp paper; external datasets are not redistributed.",
   "revision": {
-    "commit": null,
-    "dirty": null,
-    "status": "unavailable",
-    "reason": "git metadata unavailable"
+    "commit": "1c1313b0d65a2c821045dd757e30ae9171169855",
+    "dirty": true,
+    "status": "dirty",
+    "reason": null
   },
   "source_snapshot": {
     "algorithm": "sha256 over canonical sorted path/hash rows",
-    "tree_sha256": "d09eb86d8d125027b3430beaead97fdcfc1b668539589f35b7f46a45f836e0a4",
+    "tree_sha256": "1e66b8a21cf045e33e1e68f71c5e14e631efb698275c7e582b9b77285fa897da",
     "files": [
       {
         "path": "AGENTS.md",
@@ -629,7 +629,7 @@
       },
       {
         "path": "scripts/capture_ai2thor_pilot.py",
-        "sha256": "a1836719a6e799f930f15642d380445ee21f63dde9f30e327c3d1c92f84ab380"
+        "sha256": "874dc2fbc3dd46d51fe38b8efc2677e3d0d61b8e6f50b46aca16ec2e2201d941"
       },
       {
         "path": "scripts/combine_visual_results.py",
@@ -933,7 +933,7 @@
       },
       {
         "path": "src/openprop/ai2thor_capture.py",
-        "sha256": "b4a0251051b38f9491cffe37a2be9495974089672353e9e32f1415b710041fe4"
+        "sha256": "7ca660157d2b12d6f2952e07c0105e98168449adaf182b292774125c9ea497cb"
       },
       {
         "path": "src/openprop/ai2thor_protocol.py",
@@ -1317,11 +1317,11 @@
       },
       {
         "path": "tests/test_ai2thor_capture.py",
-        "sha256": "f97f3eb2505a973e65f4717067084a0cb9f0e54bbe766b2ca6f49d22c509448e"
+        "sha256": "24401791c0292c48b273fb4dff17025ea21a1231a20df8592ba72237385e561f"
       },
       {
         "path": "tests/test_ai2thor_capture_bundle.py",
-        "sha256": "b7aa05bc2dc27e2222ddeebd46b2be021cc4d145692038134594ad3a4ddd0710"
+        "sha256": "b2aff4b15a42cbbb098b676be5e4c19e6f1c60abe9df6acccb927672b1c2d17e"
       },
       {
         "path": "tests/test_ai2thor_protocol.py",
@@ -1433,7 +1433,7 @@
       },
       {
         "path": "tests/test_hpc_assets.py",
-        "sha256": "32522a3f13a85a46289838eb300b69164844ab6268a9508d461b9506377e174b"
+        "sha256": "f2967ee01582493df0b881ddc6f23138b4dec5ac7b32c4d6858c3d1d56e49f1a"
       },
       {
         "path": "tests/test_hpc_transfer_manifest.py",

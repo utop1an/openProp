@@ -32,6 +32,11 @@ class HPCAssetTests(unittest.TestCase):
         self.assertIn("preflight_ai2thor.py", slurm)
         self.assertIn("verify_ai2thor_capture.py", slurm)
         self.assertIn("prepare_ai2thor_capture.py", slurm)
+        self.assertIn(
+            "move_receptacle open toggle dirty fill cook slice break", slurm
+        )
+        self.assertIn("--settling-stable-steps", slurm)
+        self.assertIn("--position-tolerance-metres", slurm)
         self.assertIn("$SCENE.verification-report.json", slurm)
         self.assertIn("/output/prepared/$SCENE", slurm)
         self.assertNotIn("OPENAI_API_KEY=", slurm)

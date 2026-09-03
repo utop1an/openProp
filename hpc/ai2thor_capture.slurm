@@ -15,7 +15,10 @@ OPENPROP_CACHE="${OPENPROP_CACHE:-$HOME/openprop-cache}"
 OPENPROP_OUTPUT="${OPENPROP_OUTPUT:-$OPENPROP_BASE/artifacts/ai2thor_hpc}"
 OPENPROP_PREPARED="$OPENPROP_OUTPUT/prepared"
 SCENE="${SCENE:-FloorPlan1}"
-FAMILIES="${FAMILIES:-open toggle dirty fill}"
+FAMILIES="${FAMILIES:-move_receptacle open toggle dirty fill cook slice break}"
+SETTLING_MAX_STEPS="${SETTLING_MAX_STEPS:-12}"
+SETTLING_STABLE_STEPS="${SETTLING_STABLE_STEPS:-2}"
+POSITION_TOLERANCE_METRES="${POSITION_TOLERANCE_METRES:-0.005}"
 RUN_PREFLIGHT="${RUN_PREFLIGHT:-1}"
 
 if command -v apptainer >/dev/null 2>&1; then
@@ -70,6 +73,9 @@ read -r -a FAMILY_ARGS <<< "$FAMILIES"
 "$CONTAINER_RUNTIME" exec --nv "${BIND_ARGS[@]}" "$OPENPROP_SIF" \
     bash -lc "cd /work && python -u scripts/capture_ai2thor_pilot.py \
       --scene '$SCENE' --platform cloud --families ${FAMILY_ARGS[*]} \
+      --settling-max-steps '$SETTLING_MAX_STEPS' \
+      --settling-stable-steps '$SETTLING_STABLE_STEPS' \
+      --position-tolerance-metres '$POSITION_TOLERANCE_METRES' \
       --output-dir /output"
 
 "$CONTAINER_RUNTIME" exec "${BIND_ARGS[@]}" "$OPENPROP_SIF" \

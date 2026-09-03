@@ -184,6 +184,21 @@ class AI2ThorCaptureBundleTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "every requested family"):
                 verify_ai2thor_capture_manifest(manifest)
 
+    def test_semantic_capture_requires_settling_and_consistent_change_audit(self):
+        with TemporaryDirectory() as temporary:
+            manifest = valid_manifest(Path(temporary))
+            payload = json.loads(manifest.read_text(encoding="utf-8"))
+            record = payload["records"][0]
+            record["semantic_success"] = True
+            record["settling"] = {"settled": True}
+            record["change_audit"] = {
+                "intended_change_observed": False,
+                "non_target_changes_are_causal_labels": False,
+            }
+            manifest.write_text(json.dumps(payload), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "contradicts the change audit"):
+                verify_ai2thor_capture_manifest(manifest)
+
 
 if __name__ == "__main__":
     unittest.main()
