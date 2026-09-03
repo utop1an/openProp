@@ -9,7 +9,7 @@
   },
   "source_snapshot": {
     "algorithm": "sha256 over canonical sorted path/hash rows",
-    "tree_sha256": "4cd5b57c33f11e9de02b4c10b3a9e8db7ae7f1c8b265b61690e778a670309595",
+    "tree_sha256": "980a3e1be5f48f84aa5c95c1a73effeab45cdb31ddb3f1191f1a47044b59dc42",
     "files": [
       {
         "path": "AGENTS.md",
@@ -565,7 +565,7 @@
       },
       {
         "path": "scripts/build_hpc_transfer_manifest.py",
-        "sha256": "f0108d0256cede3044e1fe2aa276678905326e03e277376168f11947f810fa5e"
+        "sha256": "17d8534fda7a2dd5aa9808b07ccee644ce9c84119ab002df7761a36ce1f61b2b"
       },
       {
         "path": "scripts/build_iclr2027_submission.py",
@@ -921,11 +921,11 @@
       },
       {
         "path": "src/openprop/ai2thor_adapter.py",
-        "sha256": "1a4f44dc21e654ead8bb0d64d8d3796287c9256c3f2634886c8fdf6537f305d6"
+        "sha256": "3a5bc4559512e9f85b03deaf853d9bd04aea5d72d2d37d35b3e275c5804e9fec"
       },
       {
         "path": "src/openprop/ai2thor_capture.py",
-        "sha256": "bb76f5b2dd3ea6959f4805442e282976fa930a944eb5b4acb078be2f7e11dee7"
+        "sha256": "b4a0251051b38f9491cffe37a2be9495974089672353e9e32f1415b710041fe4"
       },
       {
         "path": "src/openprop/ai2thor_protocol.py",
@@ -1305,7 +1305,7 @@
       },
       {
         "path": "tests/test_ai2thor_adapter.py",
-        "sha256": "efd3f5697efd5a05106066e338bbd508e34609c83b44148ce2262e37d464db25"
+        "sha256": "9ee3905db1c1bfac162df8f8746524015fc7363f6866d0252b05337deee08122"
       },
       {
         "path": "tests/test_ai2thor_capture.py",
@@ -1313,7 +1313,7 @@
       },
       {
         "path": "tests/test_ai2thor_capture_bundle.py",
-        "sha256": "0aeb4cebf693245201fd8ad123d7e642627fc2f2cf8c21ca26a9a6915dbd3112"
+        "sha256": "b7aa05bc2dc27e2222ddeebd46b2be021cc4d145692038134594ad3a4ddd0710"
       },
       {
         "path": "tests/test_ai2thor_protocol.py",
@@ -1425,11 +1425,11 @@
       },
       {
         "path": "tests/test_hpc_assets.py",
-        "sha256": "6cf8b06f6087b6944b6a045cfd2c3f00777bac0f0dddd2ff4a3ee2e4701f4eb6"
+        "sha256": "e34233801c55671e6d1b24a6c02c326fc55c069d28d701b574d1bbeafefe9e51"
       },
       {
         "path": "tests/test_hpc_transfer_manifest.py",
-        "sha256": "574b39faf7ea03b4ed02e0e165572e7c0eef1922faacd95603eee0d7ffe09487"
+        "sha256": "de4d69d6483bb6b7981b633a0fefc9cf79b2097e82de75aca402408a6fa3af3b"
       },
       {
         "path": "tests/test_interference.py",
