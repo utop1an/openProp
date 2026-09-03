@@ -9,7 +9,7 @@
   },
   "source_snapshot": {
     "algorithm": "sha256 over canonical sorted path/hash rows",
-    "tree_sha256": "980a3e1be5f48f84aa5c95c1a73effeab45cdb31ddb3f1191f1a47044b59dc42",
+    "tree_sha256": "5d30053cc9d815ce56677d384c4e03b778357f22315d05aa706068cd3bfa65d0",
     "files": [
       {
         "path": "AGENTS.md",
@@ -1425,7 +1425,7 @@
       },
       {
         "path": "tests/test_hpc_assets.py",
-        "sha256": "e34233801c55671e6d1b24a6c02c326fc55c069d28d701b574d1bbeafefe9e51"
+        "sha256": "32522a3f13a85a46289838eb300b69164844ab6268a9508d461b9506377e174b"
       },
       {
         "path": "tests/test_hpc_transfer_manifest.py",
