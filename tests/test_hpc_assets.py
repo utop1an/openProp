@@ -52,6 +52,15 @@ class HPCAssetTests(unittest.TestCase):
         self.assertIn("refusing to overwrite a different SIF", installer)
         self.assertIn("--require-ready ai2thor_ithor", installer)
 
+    def test_prepare_job_is_cpu_only_and_separates_inputs_from_truth(self):
+        slurm = (self.root / "hpc" / "ai2thor_prepare.slurm").read_text()
+        self.assertIn("#SBATCH --partition=normal", slurm)
+        self.assertNotIn("#SBATCH --gres", slurm)
+        self.assertNotIn("--nv", slurm)
+        self.assertIn("verify_ai2thor_capture.py", slurm)
+        self.assertIn("prepare_ai2thor_capture.py", slurm)
+        self.assertIn("/output/prepared/$SCENE", slurm)
+
 
 if __name__ == "__main__":
     unittest.main()

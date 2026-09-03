@@ -43,6 +43,19 @@ mkdir -p logs
 SCENE=FloorPlan1 RUN_PREFLIGHT=1 sbatch hpc/ai2thor_capture.slurm
 ```
 
+The capture job verifies the content-addressed bundle and then prepares
+physically separated VLM inputs and evaluation-only truth. If capture already
+succeeded but preparation must be retried after a code or schema fix, do not
+allocate another GPU or recapture the scene:
+
+```bash
+cd "$HOME/openProp"
+SCENE=FloorPlan1 sbatch hpc/ai2thor_prepare.slurm
+```
+
+Treat `prepared/FloorPlan1/preparation-report.json` as the completion marker;
+individual input or truth files can exist after an interrupted failed attempt.
+
 ## Prepared local transfer bundle
 
 The local build workflow writes four content-addressed files under `dist/`:
