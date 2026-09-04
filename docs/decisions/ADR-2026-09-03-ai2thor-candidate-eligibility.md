@@ -24,6 +24,13 @@ Preparation reports the visible-object denominator, anchored-candidate
 numerator, coverage, and unanchored visible IDs for each frame. Explicit caller
 candidate lists retain strict visibility and box validation.
 
+The 2026-09-05 job-136673 follow-up clarified that valid means four finite
+coordinates with positive area entirely inside the declared image bounds.
+Key presence alone is insufficient. Default candidates omit invalid boxes
+without clipping and retain their entities in truth and coverage denominators;
+explicit candidate lists still raise. The upstream cause of the reported
+invalid coordinates remains unverified.
+
 ## Consequences
 
 - Missing boxes become auditable missing candidate evidence, not negative

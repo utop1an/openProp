@@ -2,18 +2,18 @@
   "schema_version": 2,
   "purpose": "Machine-verifiable computational snapshot for the evidence-locked OpenProp paper; external datasets are not redistributed.",
   "revision": {
-    "commit": "1c1313b0d65a2c821045dd757e30ae9171169855",
+    "commit": "58ab333ce26c3b450a500ec6d5b5c1d3de7b9800",
     "dirty": true,
     "status": "dirty",
     "reason": null
   },
   "source_snapshot": {
     "algorithm": "sha256 over canonical sorted path/hash rows",
-    "tree_sha256": "1e66b8a21cf045e33e1e68f71c5e14e631efb698275c7e582b9b77285fa897da",
+    "tree_sha256": "2491201866f4e9c67db10f1ece1afecb18d1c47e3aecf9efc5cc797683e06a72",
     "files": [
       {
         "path": "AGENTS.md",
-        "sha256": "1d4f5449b629efaeedca9d6439cc31051e1a25be61c0ac37ea7c54e1aa92a645"
+        "sha256": "564ad769bd3516d3342773548869eed4480a40d1a5f42eb09074418890431f30"
       },
       {
         "path": "README.md",
@@ -121,7 +121,7 @@
       },
       {
         "path": "docs/decisions/ADR-2026-09-03-ai2thor-candidate-eligibility.md",
-        "sha256": "1603898ddb0d508c40cff8a29bcbad4499c26dc05fc8e4f6d7e9ac550b74e8f6"
+        "sha256": "7a3fee4fdac8f46c4240ab47deb884e7c49faef3998026e399d4ea74d5a78390"
       },
       {
         "path": "docs/dev-notes/2026-08-21-property-temporal-grounding.md",
@@ -136,8 +136,12 @@
         "sha256": "005bbcce408ee865e35a5293a4472c2763aa0702c8801bf1a77543c4add506e1"
       },
       {
+        "path": "docs/dev-notes/2026-09-05-iclr-development-capture-and-box-recovery.md",
+        "sha256": "5bd9dca34384e7ca39544ddf79061df9f53d756708b03baaa552b03220971631"
+      },
+      {
         "path": "docs/dev-notes/README.md",
-        "sha256": "5cee995dd1a9940ce83303fe59312feb761815432aae7f070eaf33ee65255fe1"
+        "sha256": "ba249702cfc191c36755b2c80e6c3e3fda4213389a60e59f26c4a8ab7b7c02bf"
       },
       {
         "path": "docs/evaluation.md",
@@ -229,7 +233,7 @@
       },
       {
         "path": "docs/submission-readiness.md",
-        "sha256": "e12fb7be30c9de6a72e3bcf1048ee51e1783788e578b8ed21669a173522e31d6"
+        "sha256": "ad8404406685c08143295b81fc2faf82f6aad98789ada6cbe16f770f90d510a0"
       },
       {
         "path": "docs/target-adaptation-benchmark.md",
@@ -929,7 +933,7 @@
       },
       {
         "path": "src/openprop/ai2thor_adapter.py",
-        "sha256": "3a5bc4559512e9f85b03deaf853d9bd04aea5d72d2d37d35b3e275c5804e9fec"
+        "sha256": "007fb41d202e5164ba97c2a779a6ca17a7e751c4e9afae7395fb6645e81c0d5b"
       },
       {
         "path": "src/openprop/ai2thor_capture.py",
@@ -1313,7 +1317,7 @@
       },
       {
         "path": "tests/test_ai2thor_adapter.py",
-        "sha256": "9ee3905db1c1bfac162df8f8746524015fc7363f6866d0252b05337deee08122"
+        "sha256": "62a3ec6de1774fa3c59af6d7e54786acd9930e4dbf3dc465781f6edb27b2f236"
       },
       {
         "path": "tests/test_ai2thor_capture.py",

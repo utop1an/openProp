@@ -3,6 +3,13 @@
 Date: 2026-08-27
 Target: a competitive ICLR submission, not only a working research prototype.
 
+Current execution update (2026-09-05): the active development route is AI2-THOR
+plus real-video confirmation, not a completed TEACh result. See
+[the current capture and readiness note](dev-notes/2026-09-05-iclr-development-capture-and-box-recovery.md).
+Development engineering is authorized; calibration/test and submission remain
+gated. TEACh-specific priorities below are historical, not the only possible
+external-evidence route.
+
 ## Current verdict
 
 OpenProp has a coherent problem boundary and reproducible mechanism experiments,

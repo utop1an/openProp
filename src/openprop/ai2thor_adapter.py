@@ -223,6 +223,31 @@ def normalize_ai2thor_regions(
     return result
 
 
+def _valid_ai2thor_box(
+    raw: object,
+    *,
+    screen_width: float,
+    screen_height: float,
+) -> bool:
+    """Return whether a simulator box is a finite, non-degenerate image anchor."""
+
+    if not isinstance(raw, Sequence) or isinstance(raw, (str, bytes)):
+        return False
+    if len(raw) != 4:
+        return False
+    try:
+        x1, y1, x2, y2 = (
+            _number(value, f"instance_box[{index}]")
+            for index, value in enumerate(raw)
+        )
+    except (TypeError, ValueError):
+        return False
+    return (
+        0.0 <= x1 < x2 <= screen_width
+        and 0.0 <= y1 < y2 <= screen_height
+    )
+
+
 
 def extract_ai2thor_frame(
     metadata: Mapping[str, Any],
@@ -268,8 +293,22 @@ def extract_ai2thor_frame(
         if instance_detections_2d is None:
             candidates = tuple(sorted(visible_ids))
         else:
+            screen_width = _number(metadata.get("screenWidth"), "screenWidth")
+            screen_height = _number(metadata.get("screenHeight"), "screenHeight")
+            if screen_width <= 0.0 or screen_height <= 0.0:
+                raise ValueError("screen dimensions must be positive")
+            valid_detection_ids = {
+                entity_id
+                for entity_id, raw in instance_detections_2d.items()
+                if isinstance(entity_id, str)
+                and _valid_ai2thor_box(
+                    raw,
+                    screen_width=screen_width,
+                    screen_height=screen_height,
+                )
+            }
             candidates = tuple(
-                sorted(set(visible_ids) & set(instance_detections_2d))
+                sorted(set(visible_ids) & valid_detection_ids)
             )
     else:
         candidates = tuple(candidate_entity_ids)

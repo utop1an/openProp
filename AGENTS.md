@@ -41,6 +41,7 @@ Install PyTorch support with `python -m pip install -e ".[ml]"`. Ollama evaluati
 - The current temporal grounding benchmark does not distinguish learned decay from fixed decay; both score perfectly.
 - AI2-THOR metadata visibility does not guarantee an instance-detection box. For oracle-box VLM inputs, use visible objects with valid 2D anchors; record omitted visible objects as missing candidate evidence.
 - AI2-THOR actions can advance unrelated movable objects through physics settling. Audit all derived changes and do not equate every changed entity with the intended intervention target.
+- A box key alone is not a valid anchor. Default AI2-THOR candidates exclude non-finite, degenerate, or out-of-image boxes without clipping; explicit candidates remain strict. Retry CPU preparation on existing captures after adapter fixes rather than recapturing.
 
 ## Memory Maintenance
 

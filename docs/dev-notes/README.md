@@ -3,6 +3,7 @@
 This directory indexes durable implementation progress and open research work.
 
 ## Current
+- [2026-09-05: ICLR development capture and invalid-box recovery](2026-09-05-iclr-development-capture-and-box-recovery.md) - conditional development go, eight-family implementation, settling/semantic gates, job 136673 repair, validation, and pending live audits.
 - [2026-09-03: AI2-THOR HPC capture and preparation phase](2026-09-03-ai2thor-hpc-capture-phase.md) - version-3 SIF deployment, cluster Vulkan diagnosis, four-family capture, candidate-box mismatch repair, preparation evidence, current experiment gates, and the physics-settling follow-up.
 - [AI2-THOR HPC container and resource profile](../../hpc/README.md) - Python 3.12/AI2-THOR 5.0 SIF, NVIDIA Vulkan preflight, persistent Unity-build cache, verified four-family GPU pilot, CPU-only preparation recovery, and explicit Slurm-versus-Gadi PBS boundary.
 - [Literature-grounded Slurm visual experiment design](../visual-hpc-experiment-design.md) - disjoint capture/inference/replay lanes, explicit LLM and VLM roles, causal simulator factors, real/public evidence boundaries, baselines, calibration, clustered inference, resources, and go/no-go gates.

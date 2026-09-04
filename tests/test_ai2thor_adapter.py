@@ -145,6 +145,34 @@ class AI2ThorAdapterTests(unittest.TestCase):
         self.assertEqual({"Cup|1"}, set(frame.frame.candidate_regions))
         self.assertEqual(3, len(frame.current_truth))
 
+    def test_default_candidates_omit_invalid_boxes_but_explicit_candidates_fail(self):
+        metadata = {
+            "sceneName": "FloorPlan1",
+            "screenWidth": 100,
+            "screenHeight": 100,
+            "objects": [object_row("Cup|1", "Cup")],
+        }
+        boxes = {"Cup|1": (-1, 20, 50, 80)}
+        frame = extract_ai2thor_frame(
+            metadata,
+            frame_id="frame",
+            image_url="frame.png",
+            captured_at=1.0,
+            instance_detections_2d=boxes,
+        )
+        self.assertEqual((), frame.frame.candidate_entity_ids)
+        self.assertEqual({}, frame.frame.candidate_regions)
+        self.assertEqual(1, len(frame.current_truth))
+        with self.assertRaisesRegex(ValueError, "outside the image"):
+            extract_ai2thor_frame(
+                metadata,
+                frame_id="frame",
+                image_url="frame.png",
+                captured_at=1.0,
+                candidate_entity_ids=("Cup|1",),
+                instance_detections_2d=boxes,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
